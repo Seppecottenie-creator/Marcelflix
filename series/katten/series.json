@@ -1,0 +1,21 @@
+{
+  "title": "Katten",
+  "theme": "katten",
+  "tagline": "Familie kies je niet. Nonkels ook niet.",
+  "description": "Marcel en zijn nonkels, een potplant met een verleden en een stofzuiger met een kort lontje, beramen een plan om het zakje brokjes op de bovenste plank te bemachtigen. Een Vlaamse komedie over familie, trots en veel te veel geduld.",
+  "year": 2026,
+  "age": "Alle leeftijden",
+  "match": "98%",
+  "seasons": "1 seizoen",
+  "genres": ["Komedie", "Vlaams", "Familie"],
+  "cast": "Marcel, nonkel Plant, nonkel Stofzuiger",
+  "creator": "Marcel",
+  "poster": "poster.jpg",
+  "reviews": [
+    { "quote": "Zo Vlaams dat mijn frieten er warm van werden.", "score": "5/5", "source": "Humo-ristisch" },
+    { "quote": "Nonkel Stofzuiger is een revelatie.", "score": "4,5/5", "source": "Dag Allemaal Katten" }
+  ],
+  "episodes": [
+    { "id": "ep1", "title": "Het Plan van Nonkel Stofzuiger", "soon": true, "description": "Het is een slecht plan. Het is het enige plan." }
+  ]
+}
