@@ -407,6 +407,8 @@
       "year": 2027,
       "age": "Alle leeftijden",
       "match": 95,
+      "poster": "assets/covers/pawter.jpg",
+      "backdrop": "assets/covers/pawter-wide.jpg",
       "theme": "pawter",
       "status": "soon",
       "episodes": [
