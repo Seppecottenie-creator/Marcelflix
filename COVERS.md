@@ -213,15 +213,15 @@ A real photograph, like a still from a live-action science-fiction film: an old 
 ```
 
 ## Harry Pawter en de Steen der Brokjes · `pawter`
-**Look:** candlelit magical castle, warm gold, fantasy
+**Look:** live-action fantasy op een echte kasteelset, warm kaarslicht; zwevende kaarsen, vliegende brieven, een uil, rond brilletje, een gloeiend rood brokje als magische steen (geen litteken of schoolkleuren)
 
 **Poster (2:3):**
 ```
-The cat sitting on an old leather-bound book in a candlelit stone library, floating candles above him, a small glowing golden stone in front of his paws, warm magical gold light, fantasy atmosphere, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action fantasy film shot on a practical castle set. The cat, a normal-sized house cat, sits on a tall stack of old leather-bound spellbooks in a candlelit stone library, wearing tiny round wire-rimmed glasses, looking up in wonder. Real candles float in the air above him. Just in front of his paws, a single small stone shaped like a piece of cat kibble glows with a warm, magical red light that lights up his face and whiskers. Warm golden candlelight, deep shadows, calm dark lower third with the old wooden table.
 ```
 **Breed (16:9):**
 ```
-A candlelit stone castle hall with floating candles, old books and a cauldron on the left, the cat on the right looking amazed at a glowing golden stone, warm magical gold color grade.
+A real photograph, like a still from a live-action fantasy film shot on a practical castle set: a grand stone hall with long wooden tables and hundreds of real candles floating in the air. Dozens of sealed envelopes fly through the air and pour in through an open fireplace on the left, and a large owl sits on a perch holding one in its beak. On the right side of the frame the cat, a normal-sized house cat wearing tiny round wire-rimmed glasses, stands on a table with one paw raised, eyes wide, as envelopes flutter around him. Warm golden candlelight, magical but realistic, calmer darker area on the left. No text on the envelopes.
 ```
 
 ## Spider-Marcel · `spider`
