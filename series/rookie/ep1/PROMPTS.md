@@ -123,10 +123,10 @@ The cat curled in the lap of a woman on a sofa, soft golden evening light, only 
 
 _Marcel zegt:_ Eerlijk duurt het langst. Ik bekende. Ze zuchtte. Ze aaide me toch. Ze vergeeft me altijd.
 
-## [x] s11b.jpg
+## [ ] s11b.jpg
 
 ```
-The cat lying triumphantly on top of a cabinet among flowers, staring into the camera (ECHTE FOTO: al ingevuld). cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+The cat lying triumphantly on top of a cabinet among flowers, staring into the camera (ECHTE FOTO: nog toe te voegen als s11b.jpg). cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
 ```
 
 _Marcel zegt:_ Het perfecte misdrijf. De gsm viel. Van de tafel. Per ongeluk. Er is geen bewijs. Er is alleen Marcel.

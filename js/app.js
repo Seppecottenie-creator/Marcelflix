@@ -129,7 +129,9 @@
 
     app.innerHTML = `${topbar("home")}
       <section class="hero">
-        <div class="bd" style="background-image:url('${esc(f.backdrop || f.poster)}')"></div>
+        ${(f.backdrop || f.poster)
+          ? `<div class="bd" style="background-image:url('${esc(f.backdrop || f.poster)}')"></div>`
+          : `<div class="bd gp-${esc(f.theme)}"><div class="art" style="position:absolute;inset:0"></div></div>`}
         <div class="inner">
           <div class="badge-orig"><b>M</b> SERIE</div>
           ${slogo(f)}
@@ -145,11 +147,13 @@
         ${secret.length ? row("Speciaal voor jou 💘", secret.map(cardHtml).join("")) : ""}
         ${row("Verder kijken als " + esc(currentProfile().name),
           conts.map(c => `<button class="card wide" data-play="${esc(c.s.id)}" data-ep="${esc(c.ep.id)}">
-              <img src="${esc(c.ep.still || c.s.backdrop || c.s.poster)}" alt="" loading="lazy">
+              ${(c.ep.still || c.s.backdrop || c.s.poster)
+                ? `<img src="${esc(c.ep.still || c.s.backdrop || c.s.poster)}" alt="" loading="lazy">`
+                : `<span class="gposter gp-${esc(c.s.theme)}"><span class="art"></span></span>`}
               <div class="ctitle">${esc(c.s.title)} · A${c.ep.number}</div>
               <div class="progress"><i style="width:${Math.min(92, 8 + c.v.step * 6)}%"></i></div></button>`).join("") +
           `<button class="card wide" data-joke="slapen">
-              <img src="assets/img/marcel.jpg" alt="" loading="lazy" style="object-position:50% 30%">
+              <span class="gposter gp-romance"><span class="art"></span></span>
               <div class="ctitle">Marcel: Slapen · S14 A312</div>
               <div class="progress"><i style="width:97%"></i></div></button>`)}
         ${row(`<a href="#/series" class="rowlink">Marcelflix Originals: Series ›</a>`, pub.filter(s => s.type === "series").map(cardHtml).join(""))}

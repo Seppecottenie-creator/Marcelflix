@@ -7,6 +7,6 @@
   "theme_color": "#0b0b0f",
   "icons": [
     { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
-    { "src": "assets/img/avatar-marcel.jpg", "sizes": "400x400", "type": "image/jpeg" }
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]
 }

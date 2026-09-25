@@ -6,8 +6,7 @@
   "endingsTotal": 0,
   "scenes": {
     "d01": {
-      "prompt": "ECHTE FOTO: al ingevuld",
-      "image": "../../../assets/img/marcel.jpg",
+      "prompt": "The cat sitting alone in a dimly lit living room at dusk, a single warm lamp switching on beside him, looking straight into the camera",
       "focus": "50% 35%",
       "text": "Je hebt alles gezien. Alle eindes. Alle scherven. Dan verdien je de waarheid.",
       "motion": "in",
@@ -26,7 +25,10 @@
       "text": "SCHRIJF HIER JE EIGEN BOODSCHAP. Bijvoorbeeld: Seppe heeft dit allemaal gemaakt, omdat hij je graag ziet. Ik ook. Een beetje. Vertel het niemand.",
       "motion": "out",
       "look": "warm",
-      "ending": { "id": "L", "title": "Voor altijd jullie kat" }
+      "ending": {
+        "id": "L",
+        "title": "Voor altijd jullie kat"
+      }
     }
   }
 }

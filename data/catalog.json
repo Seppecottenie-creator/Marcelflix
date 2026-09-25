@@ -17,8 +17,6 @@
       "year": 2026,
       "age": "12+",
       "match": 98,
-      "poster": "assets/img/poster-rookie.jpg",
-      "backdrop": "assets/img/marcel-wide.jpg",
       "theme": "rookie",
       "status": "available",
       "cast": "Marcel, de plant, de stofzuiger",
@@ -45,8 +43,7 @@
           "number": 1,
           "title": "De Zaak Vaas",
           "duration": "± 5 min",
-          "summary": "Eerste dag, eerste melding, eerste verdachte. Of is de dader dichter bij huis dan gedacht?",
-          "still": "assets/img/marcel-wide.jpg"
+          "summary": "Eerste dag, eerste melding, eerste verdachte. Of is de dader dichter bij huis dan gedacht?"
         }
       ],
       "type": "series"
@@ -559,7 +556,6 @@
       "year": 2026,
       "age": "Alle leeftijden",
       "match": 100,
-      "poster": "assets/img/poster-rookie.jpg",
       "theme": "romance",
       "status": "secret",
       "unlock": {
