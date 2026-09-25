@@ -68,6 +68,8 @@
       "year": 2026,
       "age": "16+",
       "match": 97,
+      "poster": "assets/covers/stranger.jpg",
+      "backdrop": "assets/covers/stranger-wide.jpg",
       "theme": "stranger",
       "status": "soon",
       "episodes": [
