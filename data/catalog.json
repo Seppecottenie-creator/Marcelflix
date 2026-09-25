@@ -533,6 +533,8 @@
       "year": 2027,
       "age": "12+",
       "match": 91,
+      "poster": "assets/covers/jurassic.jpg",
+      "backdrop": "assets/covers/jurassic-wide.jpg",
       "theme": "jurassic",
       "status": "soon",
       "episodes": [
