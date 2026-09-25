@@ -1,0 +1,5 @@
+# Tussenbestanden van tools/maak_audio.py
+series/**/*.txt
+series/**/.*.stem
+__pycache__/
+.DS_Store

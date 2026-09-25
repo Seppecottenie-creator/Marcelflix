@@ -1,0 +1,21 @@
+{
+  "title": "Harry Pawter en de Steen der Brokjes",
+  "theme": "potter",
+  "tagline": "Hij is uitverkoren. Vooral door zichzelf.",
+  "description": "Op zijn eerste verjaardag krijgt Marcel een brief. Hij eet de brief op. Er komt een tweede brief. Marcel blijkt uitverkoren voor een school voor magische katten, waar de lessen Toverdranken bestaan uit water omstoten en Verweer tegen de Zwarte Stofzuiger een verplicht vak is.",
+  "year": 2026,
+  "age": "Alle leeftijden",
+  "match": "96%",
+  "seasons": "1 jaar op school",
+  "genres": ["Fantasy", "Magie", "Brokjes"],
+  "cast": "Marcel, een uil (vijand), de Steen der Brokjes",
+  "creator": "Marcel",
+  "poster": "poster.jpg",
+  "reviews": [
+    { "quote": "Tien punten voor Marcel. Min twintig voor de gordijnen.", "score": "5/5", "source": "De Ochtendpost" },
+    { "quote": "Magisch. Behalve het einde, dat is gewoon een dutje.", "score": "4/5", "source": "Kaarsvet Magazine" }
+  ],
+  "episodes": [
+    { "id": "ep1", "title": "De Brief die Opgegeten Werd", "soon": true, "description": "Marcel is uitverkoren. De postbode is minder enthousiast." }
+  ]
+}
