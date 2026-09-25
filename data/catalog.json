@@ -193,6 +193,8 @@
       "year": 2027,
       "age": "12+",
       "match": 94,
+      "poster": "assets/covers/crown.jpg",
+      "backdrop": "assets/covers/crown-wide.jpg",
       "theme": "crown",
       "status": "soon",
       "episodes": [
