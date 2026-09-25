@@ -1,0 +1,24 @@
+{
+  "_uitleg": "Pas hier de profielnamen aan. 'avatar' mag een pad naar een foto zijn, of leeg voor een gekleurd icoontje.",
+  "profiles": [
+    {
+      "id": "ik",
+      "name": "Ik",
+      "color": "#e50914",
+      "avatar": ""
+    },
+    {
+      "id": "marcel",
+      "name": "Marcel",
+      "color": "#8a8f98",
+      "avatar": "assets/img/avatar-marcel.jpg",
+      "welcome": "Welkom terug, meneer Marcel. Uw zetel staat klaar."
+    }
+  ],
+  "featured": "rookie",
+  "voice": {
+    "rate": "-10%",
+    "pitch": "-5Hz",
+    "name": "nl-BE-ArnaudNeural"
+  }
+}

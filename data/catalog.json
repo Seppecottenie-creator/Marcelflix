@@ -1,0 +1,583 @@
+{
+  "series": [
+    {
+      "id": "rookie",
+      "title": "The Rookie: Feline Division",
+      "logoLine": [
+        "THE ROOKIE",
+        "FELINE DIVISION"
+      ],
+      "tagline": "New cop. Old soul. Zero patience.",
+      "description": "Agent Marcel begint aan zijn eerste dag bij het korps. Al na twaalf minuten staat hij voor zijn grootste zaak: een vaas, aan scherven, midden in de woonkamer. Jij beslist wie hij ondervraagt, wie hij arresteert en wat hij met de waarheid doet.",
+      "genres": [
+        "Politieserie",
+        "Komedie",
+        "Interactief"
+      ],
+      "year": 2026,
+      "age": "12+",
+      "match": 98,
+      "poster": "assets/img/poster-rookie.jpg",
+      "backdrop": "assets/img/marcel-wide.jpg",
+      "theme": "rookie",
+      "status": "available",
+      "cast": "Marcel, de plant, de stofzuiger",
+      "reviews": [
+        {
+          "who": "De Standaard van de Kattenbak",
+          "text": "Oordelend. Meesterlijk. Een hoofdrolspeler die nooit met zijn ogen knippert.",
+          "stars": 5
+        },
+        {
+          "who": "Het Nieuwsblad (van de buren)",
+          "text": "Ik heb gehuild. Om de vaas.",
+          "stars": 5
+        },
+        {
+          "who": "De stofzuiger",
+          "text": "Onterecht. Laster. Ik zeg niets zonder mijn advocaat.",
+          "stars": 1
+        }
+      ],
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "De Zaak Vaas",
+          "duration": "± 5 min",
+          "summary": "Eerste dag, eerste melding, eerste verdachte. Of is de dader dichter bij huis dan gedacht?",
+          "still": "assets/img/marcel-wide.jpg"
+        }
+      ],
+      "type": "series"
+    },
+    {
+      "id": "stranger",
+      "title": "Stranger Paws",
+      "logoLine": [
+        "STRANGER",
+        "PAWS"
+      ],
+      "tagline": "Om 3 uur 's nachts rent hij. Niemand weet waarom.",
+      "description": "Elke nacht, stipt om drie uur, sprint Marcel door de gang. Iets roept hem. De lichtjes knipperen. De kattenbak zoemt. Een mysterie uit een andere dimensie, een beetje onder de zetel.",
+      "genres": [
+        "Mysterie",
+        "Sci-fi",
+        "Jaren 80"
+      ],
+      "year": 2026,
+      "age": "16+",
+      "match": 97,
+      "theme": "stranger",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Het Geheim van 3 Uur 's Nachts",
+          "duration": "± 6 min",
+          "summary": "Binnenkort."
+        }
+      ],
+      "type": "series"
+    },
+    {
+      "id": "breaking",
+      "title": "Breaking Bowl",
+      "logoLine": [
+        "BREAKING",
+        "BOWL"
+      ],
+      "type": "series",
+      "tagline": "Say my name. (Marcel.)",
+      "description": "Een brave huiskat ontdekt dat hij de zuiverste brokjes van België kan mengen. Van voederbak tot imperium: hoe ver gaat Marcel om de beste te zijn?",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Misdaad"
+      ],
+      "year": 2027,
+      "age": "16+",
+      "match": 97,
+      "theme": "breaking",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Pilot: Kattenkruid",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "title": "The Pawffice",
+      "logoLine": [
+        "THE",
+        "PAWFFICE"
+      ],
+      "type": "series",
+      "tagline": "World's Best Boss. Volgens een mok die hij zelf kocht.",
+      "description": "Een camerateam volgt Marcel, regionaal manager van een woonkamer. Vergaderingen op het toetsenbord, pranks met de stofzuiger en heel veel blikken recht in de camera.",
+      "genres": [
+        "Mockumentary",
+        "Komedie",
+        "Romantiek"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 99,
+      "theme": "office",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Diversity Day (voor planten)",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "katten",
+      "title": "Katnonkels",
+      "logoLine": [
+        "KATNONKELS"
+      ],
+      "tagline": "Ne kat, ne plant en ne stofzuiger. Wa kan er misgaan?",
+      "description": "Marcel en zijn nonkels, de plant en de stofzuiger, beramen het plan van hun leven: de koelkast openkrijgen. Een Vlaamse komedie vol chaos, dialect en veel hart.",
+      "genres": [
+        "Vlaamse komedie",
+        "Familie"
+      ],
+      "year": 2027,
+      "age": "Alle leeftijden",
+      "match": 99,
+      "theme": "katten",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Operatie Frigo",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ],
+      "type": "series"
+    },
+    {
+      "id": "crown",
+      "title": "The Crown (van de kast)",
+      "logoLine": [
+        "THE CROWN",
+        "van de kast"
+      ],
+      "type": "series",
+      "tagline": "Wie het hoogst zit, regeert.",
+      "description": "Het epische verhaal van een dynastie die heerst vanaf de bovenste plank. Intriges, troonopvolging en de eeuwige vraag: wie mag in de zetel?",
+      "genres": [
+        "Historisch drama"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 94,
+      "theme": "crown",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "De Kroning",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "heist",
+      "title": "La Casa de Brokjes",
+      "logoLine": [
+        "LA CASA",
+        "DE BROKJES"
+      ],
+      "type": "series",
+      "tagline": "Het perfecte plan. De koelkast.",
+      "description": "Een genie met een plan, een team met codenamen (Plant, Stofzuiger, Kattenbak) en één doel: de grootste kraak ooit op de voorraadkast.",
+      "genres": [
+        "Thriller",
+        "Heist"
+      ],
+      "year": 2027,
+      "age": "16+",
+      "match": 96,
+      "theme": "heist",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Aflevering 1: Het Plan",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "thrones",
+      "title": "Game of Cushions",
+      "logoLine": [
+        "GAME OF",
+        "CUSHIONS"
+      ],
+      "type": "series",
+      "tagline": "Winter is coming. De verwarming gaat uit.",
+      "description": "Zeven kussens, één kat. Allianties worden gesmeed, dekentjes worden veroverd en niemand is veilig voor de natte neus in het holst van de nacht.",
+      "genres": [
+        "Fantasy",
+        "Drama"
+      ],
+      "year": 2027,
+      "age": "16+",
+      "match": 92,
+      "theme": "thrones",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "De Warmste Plek",
+          "duration": "± 5 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "bond",
+      "title": "Double-O-Marcel: Licence to Purr",
+      "logoLine": [
+        "DOUBLE-O-MARCEL",
+        "LICENCE TO PURR"
+      ],
+      "type": "film",
+      "tagline": "Shaken. Not stirred. Wel geaaid.",
+      "description": "Geheim agent 00-Miauw krijgt zijn gevaarlijkste missie: infiltreer het hol van de rode laserstip en red de wereld. Of toch de woonkamer.",
+      "genres": [
+        "Actie",
+        "Spionage"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 98,
+      "theme": "bond",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Licence to Purr",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "catanic",
+      "title": "Catanic",
+      "logoLine": [
+        "CATANIC"
+      ],
+      "type": "film",
+      "tagline": "I'm the king of the kattenmand!",
+      "description": "Een kat uit de derde klasse. Een zonnestraal uit de eerste. Een liefde die zelfs het grootste bad niet kon laten zinken.",
+      "genres": [
+        "Romantiek",
+        "Drama"
+      ],
+      "year": 2027,
+      "age": "Alle leeftijden",
+      "match": 99,
+      "theme": "catanic",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Catanic",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "pride",
+      "title": "Pride & Purrjudice",
+      "logoLine": [
+        "Pride &",
+        "Purrjudice"
+      ],
+      "type": "film",
+      "tagline": "Het is een algemeen erkende waarheid dat een kat in bezit van een zetel een zonnestraal zoekt.",
+      "description": "Een kostuumdrama vol trots, vooroordelen en lange blikken door het raam. Meneer Marcel dingt om de hand van de mooiste zonnestraal van het graafschap. Maar zij verschijnt maar één uur per dag.",
+      "genres": [
+        "Romantiek",
+        "Kostuumdrama"
+      ],
+      "year": 2027,
+      "age": "Alle leeftijden",
+      "match": 99,
+      "theme": "pride",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Pride & Purrjudice",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "purrstellar",
+      "title": "Purrstellar",
+      "logoLine": [
+        "PURRSTELLAR"
+      ],
+      "type": "film",
+      "tagline": "Liefde is de enige kracht die door de kattenluik gaat.",
+      "description": "De aarde raakt door zijn brokjes heen. Marcel reist door een wormgat achter de wasmachine, op zoek naar een nieuwe planeet met eindeloze voederbakken.",
+      "genres": [
+        "Sci-fi",
+        "Mysterie"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 97,
+      "theme": "purrstellar",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Purrstellar",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "pawter",
+      "title": "Harry Pawter en de Steen der Brokjes",
+      "logoLine": [
+        "HARRY PAWTER",
+        "en de Steen der Brokjes"
+      ],
+      "tagline": "Hij dacht dat hij gewoon een kat was.",
+      "description": "Een brief belandt in de kattenbak. Marcel is uitverkoren voor een school voor magische katten, waar een oude hoed beslist in welke mand je slaapt.",
+      "genres": [
+        "Fantasy",
+        "Avontuur"
+      ],
+      "year": 2027,
+      "age": "Alle leeftijden",
+      "match": 95,
+      "theme": "pawter",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Harry Pawter en de Steen der Brokjes",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ],
+      "type": "film"
+    },
+    {
+      "id": "spider",
+      "title": "Spider-Marcel",
+      "logoLine": [
+        "SPIDER-",
+        "MARCEL"
+      ],
+      "tagline": "Met grote hoogte komt groot oordeel.",
+      "description": "Marcel springt van kast naar kast. Zijn superkracht: hoog zitten en neerkijken op iedereen. Maar wanneer de laserstip opduikt, moet hij kiezen tussen plicht en jacht.",
+      "genres": [
+        "Superheld",
+        "Actie",
+        "Komedie"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 93,
+      "theme": "spider",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Spider-Marcel: Far From Home (maar wel in huis)",
+          "duration": "± 7 min",
+          "summary": "Binnenkort."
+        }
+      ],
+      "type": "film"
+    },
+    {
+      "id": "mission",
+      "title": "Mission: Impawsible",
+      "logoLine": [
+        "MISSION:",
+        "IMPAWSIBLE"
+      ],
+      "type": "film",
+      "tagline": "Deze boodschap vernietigt zichzelf. Marcel gooit ze van de tafel.",
+      "description": "Ethan Paw hangt aan één draad boven het aanrecht. Doel: één stukje ham. Zijn missie, als hij ze aanvaardt, is onmogelijk.",
+      "genres": [
+        "Actie",
+        "Thriller"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 95,
+      "theme": "mission",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Mission: Impawsible",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "topgun",
+      "title": "Top Gun: Meowerick",
+      "logoLine": [
+        "TOP GUN",
+        "MEOWERICK"
+      ],
+      "type": "film",
+      "tagline": "I feel the need. The need for feed.",
+      "description": "De beste springer van het land keert terug naar de kast om een nieuwe generatie katten te trainen. Eén sprong. Geen marge. Veel geblaas.",
+      "genres": [
+        "Actie",
+        "Romantiek"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 93,
+      "theme": "topgun",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Top Gun: Meowerick",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "jurassic",
+      "title": "Jurassic Purrk",
+      "logoLine": [
+        "JURASSIC",
+        "PURRK"
+      ],
+      "type": "film",
+      "tagline": "Life finds a way. Naar de zetel.",
+      "description": "Wetenschappers brengen de oerkat terug. Wat kan er misgaan? Alles. Vooral de gordijnen.",
+      "genres": [
+        "Sci-fi",
+        "Avontuur"
+      ],
+      "year": 2027,
+      "age": "12+",
+      "match": 91,
+      "theme": "jurassic",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Jurassic Purrk",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "homealone",
+      "title": "Home Alone: Marcel Edition",
+      "logoLine": [
+        "HOME ALONE",
+        "MARCEL EDITION"
+      ],
+      "type": "film",
+      "tagline": "Keep the change, you filthy stofzuiger.",
+      "description": "De baasjes vertrekken op reis. Marcel blijft alleen achter. Dan staan er twee verdachte figuren aan de deur: de postbode en de buurkat.",
+      "genres": [
+        "Komedie",
+        "Kerst"
+      ],
+      "year": 2027,
+      "age": "Alle leeftijden",
+      "match": 96,
+      "theme": "homealone",
+      "status": "soon",
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Home Alone",
+          "duration": "± 8 min",
+          "summary": "Binnenkort."
+        }
+      ]
+    },
+    {
+      "id": "directors-cut",
+      "title": "Director's Cut",
+      "logoLine": [
+        "DIRECTOR'S",
+        "CUT"
+      ],
+      "tagline": "Alleen voor wie alles gezien heeft.",
+      "description": "Een geheime aflevering. Ontgrendeld omdat jij alle eindes vond.",
+      "genres": [
+        "Romantiek"
+      ],
+      "year": 2026,
+      "age": "Alle leeftijden",
+      "match": 100,
+      "poster": "assets/img/poster-rookie.jpg",
+      "theme": "romance",
+      "status": "secret",
+      "unlock": {
+        "series": "rookie",
+        "episode": "ep1",
+        "endings": 3
+      },
+      "episodes": [
+        {
+          "id": "ep1",
+          "number": 1,
+          "title": "Een Brief van Marcel",
+          "duration": "± 2 min",
+          "summary": "Voor jou."
+        }
+      ],
+      "type": "film"
+    }
+  ],
+  "_uitleg": "type: series of film. status: available (speelbaar), soon (binnenkort), secret (ontgrendelt via 'unlock')."
+}

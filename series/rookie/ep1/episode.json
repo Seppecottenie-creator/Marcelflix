@@ -1,139 +1,173 @@
 {
   "title": "De Zaak Vaas",
+  "series": "The Rookie: Feline Division",
   "start": "s01",
-  "choiceSeconds": 10,
   "style": "cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.",
-  "voice": { "voice": "nl-BE-ArnaudNeural", "rate": "-10%", "pitch": "-5Hz" },
+  "endingsTotal": 3,
   "scenes": {
     "s01": {
-      "prompt": "Cat sits proudly on a white cabinet, tiny police badge and cap beside him, morning light",
+      "prompt": "The cat sits proudly on a white cabinet, a tiny police badge and police cap beside him, morning light",
       "text": "Mijn eerste dag bij het korps. Ik ben Marcel. Agent Marcel. Ze zeggen dat ik te jong ben. Ze zeggen veel.",
-      "camera": "zoom-in",
+      "motion": "in",
       "next": "s02"
     },
     "s02": {
-      "prompt": "Close-up of a smartphone showing an alert, cat's face reflected in the screen",
+      "prompt": "Close-up of a smartphone on a table showing an alert, the cat's face reflected in the screen",
       "text": "Tien uur twaalf. Een melding. Code rood in de woonkamer. Een vaas. Of wat ervan over is.",
-      "camera": "zoom-in",
+      "motion": "left",
       "next": "s03"
     },
     "s03": {
-      "prompt": "Shattered vase on the floor, red and white flowers and water, police tape",
+      "prompt": "Shattered flower vase on a floor, red and white flowers and water spread out, police tape around it",
       "text": "De plaats delict. Scherven. Water. Bloemen die nooit meer rechtop zullen staan. Iemand gaat hiervoor boeten.",
-      "camera": "pan-right",
+      "motion": "out",
+      "sfx": "glass",
       "choice": {
-        "prompt": "Waar begin je?",
+        "prompt": "Waar begin je het onderzoek?",
         "options": [
-          { "label": "Ondervraag de plant", "next": "s04a" },
-          { "label": "Onderzoek de scherven", "next": "s04b" }
+          {
+            "label": "Ondervraag de plant",
+            "next": "s04a"
+          },
+          {
+            "label": "Onderzoek de scherven",
+            "next": "s04b"
+          }
         ],
         "default": 0
       }
     },
     "s04a": {
-      "prompt": "Cat stares at a pothos plant under an interrogation lamp",
+      "prompt": "The cat stares intensely at a green pothos plant under a single interrogation lamp",
       "text": "De plant. Altijd in de buurt. Altijd stil. Te stil. Ik vroeg waar ze was om tien uur. Ze zei niets.",
-      "camera": "zoom-in",
+      "motion": "in",
+      "look": "noir",
       "next": "s05a"
     },
     "s05a": {
-      "prompt": "Pothos leaves trembling, one leaf pointing to the hallway",
+      "prompt": "Extreme close-up of pothos leaves trembling, one leaf pointing towards the hallway",
       "text": "Na een uur brak ze. Met een blad wees ze naar de gang. Een grijze schim, fluisterde ze. Planten fluisteren niet. Toch hoorde ik het.",
-      "camera": "pan-left",
+      "motion": "right",
+      "look": "noir",
       "next": "s06"
     },
     "s04b": {
-      "prompt": "Cat inspects a shard through a magnifying glass",
+      "prompt": "The cat sniffs a piece of broken vase through a magnifying glass",
       "text": "Ik bekeek de scherven. Scherp, zoals mijn verstand. En toen zag ik het.",
-      "camera": "zoom-in",
+      "motion": "in",
       "next": "s05b"
     },
     "s05b": {
-      "prompt": "Macro of one fluffy blue-grey hair on a wet shard",
+      "prompt": "Macro shot of a single fluffy blue-grey hair stuck on a wet shard",
       "text": "Een haar. Grijs. Dicht. Zacht. Heel zacht, eigenlijk. Dit zegt niets. Veel wezens zijn grijs.",
-      "camera": "zoom-out",
+      "motion": "in",
       "next": "s06"
     },
     "s06": {
-      "prompt": "Vacuum cleaner in a dark closet, dramatic side light, like a suspect",
+      "prompt": "A vacuum cleaner in a dark closet, dramatic side light, like a suspect in a lineup",
       "text": "Mijn instinct zei: de stofzuiger. Luid. Onvoorspelbaar. We hebben een verleden samen.",
-      "camera": "pan-right",
+      "motion": "out",
+      "look": "noir",
       "next": "s07"
     },
     "s07": {
-      "prompt": "Cat and vacuum cleaner face each other across a table, noir interrogation room",
+      "prompt": "The cat and the vacuum cleaner face each other across a small table, noir interrogation room",
       "text": "Zijn alibi? De stekker zat niet in het stopcontact. Handig. Veel te handig.",
-      "camera": "zoom-in",
+      "motion": "left",
+      "look": "noir",
       "choice": {
         "prompt": "Wat doe je met de verdachte?",
         "options": [
-          { "label": "Arresteer de stofzuiger", "next": "s08a" },
-          { "label": "Bekijk de camerabeelden", "next": "s08b" }
+          {
+            "label": "Arresteer de stofzuiger",
+            "next": "s08a"
+          },
+          {
+            "label": "Bekijk de camerabeelden",
+            "next": "s08b"
+          }
         ],
         "default": 0
       }
     },
     "s08a": {
-      "prompt": "Vacuum cleaner behind cardboard bars, cat standing guard, satisfied",
+      "prompt": "The vacuum cleaner behind tiny cardboard bars, the cat standing guard with a satisfied face",
       "text": "Ik arresteerde hem. Geen vragen meer. Het korps applaudisseerde. Nu ja, niemand applaudisseerde. Maar in mijn hoofd wel.",
-      "camera": "pan-left",
+      "motion": "in",
       "next": "s09a"
     },
     "s09a": {
-      "prompt": "Cat receives a medal made of a cat treat, grey pawprint visible behind him",
+      "prompt": "The cat receiving a golden medal made of a cat treat, a grey pawprint visible on the cabinet behind him",
       "text": "Zaak gesloten. Promotie. Maar soms, 's nachts, denk ik aan die pootafdruk. Niet lang. Ik slaap snel in.",
-      "camera": "zoom-out",
-      "ending": "Einde A: Gerechtelijke dwaling",
+      "motion": "out",
+      "ending": {
+        "id": "A",
+        "title": "Gerechtelijke dwaling"
+      },
       "next": "s12"
     },
     "s08b": {
-      "prompt": "Grainy security-camera footage, timestamp 10:11, blurry grey shape leaping",
+      "prompt": "Grainy security-camera footage of a living room, timestamp 10:11, a blurry grey shape leaping",
       "text": "Er was een camera. Tien uur elf. Een wazige figuur. Grijs. Rond. Springt op de kast.",
-      "camera": "pan-right",
-      "effect": "vhs",
+      "motion": "none",
+      "look": "cctv",
       "next": "s09b"
     },
     "s09b": {
-      "prompt": "Pixelated freeze-frame of two glowing orange eyes",
+      "prompt": "Zoomed, pixelated freeze-frame showing two glowing orange eyes",
       "text": "Ik zoomde in. Twee oranje ogen. Ik ken die ogen. Ik zie ze elke dag in de spiegel.",
-      "camera": "zoom-in",
-      "effect": "vhs",
+      "motion": "in",
+      "look": "cctv",
       "next": "s10"
     },
     "s10": {
-      "prompt": "Cat looking shocked, dolly-zoom effect, dark room",
+      "prompt": "The cat looking shocked, dramatic dolly-zoom effect, dark room",
       "text": "Dit is duidelijk gemanipuleerd. AI. Deepfake. Een complot. Toch?",
-      "camera": "dolly",
+      "motion": "zoom",
+      "look": "noir",
       "choice": {
-        "prompt": "De waarheid ligt op tafel. Wat doe je?",
+        "prompt": "De waarheid ligt voor je. Wat nu?",
         "options": [
-          { "label": "Beken", "next": "s11a" },
-          { "label": "Wis het bewijs", "next": "s11b" }
+          {
+            "label": "Beken",
+            "next": "s11a"
+          },
+          {
+            "label": "Wis het bewijs",
+            "next": "s11b"
+          }
         ],
-        "default": 0
+        "default": 1
       }
     },
     "s11a": {
-      "prompt": "Cat curled in a woman's lap on a sofa, golden evening light, only her hands visible",
-      "text": "Eerlijk duurt het langst. Ik bekende. Ze zuchtte. Ze aaide me toch. Ze vergeeft me altijd. [persoonlijke boodschap, nog in te vullen]",
-      "camera": "zoom-out",
-      "ending": "Einde B: Eerlijk duurt het langst",
+      "prompt": "The cat curled in the lap of a woman on a sofa, soft golden evening light, only her hands visible stroking him",
+      "text": "Eerlijk duurt het langst. Ik bekende. Ze zuchtte. Ze aaide me toch. Ze vergeeft me altijd.",
+      "motion": "out",
+      "look": "warm",
+      "ending": {
+        "id": "B",
+        "title": "Eerlijk duurt het langst"
+      },
       "next": "s12"
     },
     "s11b": {
-      "prompt": "Cat lying triumphantly on a cabinet among flowers, staring into the camera",
-      "note": "Echte foto gebruiken: sla ze op als s11b.jpg.",
-      "text": "De gsm viel. Van de tafel. Per ongeluk. Er is geen bewijs. Er is alleen Marcel.",
-      "camera": "zoom-in",
-      "ending": "Einde C: Het perfecte misdrijf",
+      "prompt": "The cat lying triumphantly on top of a cabinet among flowers, staring into the camera (ECHTE FOTO: al ingevuld)",
+      "text": "Het perfecte misdrijf. De gsm viel. Van de tafel. Per ongeluk. Er is geen bewijs. Er is alleen Marcel.",
+      "motion": "in",
+      "focus": "50% 35%",
+      "ending": {
+        "id": "C",
+        "title": "Het perfecte misdrijf"
+      },
       "next": "s12"
     },
     "s12": {
-      "prompt": "Dark hallway at night, clock showing 03:00, Christmas lights flickering red",
+      "prompt": "Dark hallway at night, a digital clock showing 03:00, Christmas lights flickering red",
       "text": "Volgende week, op Marcelflix. Om drie uur 's nachts ren ik door de gang. Jullie denken dat ik gek ben. Ik zie iets wat jullie niet zien.",
-      "camera": "pan-left",
-      "effect": "flicker",
-      "label": "Volgende week"
+      "motion": "in",
+      "look": "stranger",
+      "teaser": "stranger"
     }
   }
 }
