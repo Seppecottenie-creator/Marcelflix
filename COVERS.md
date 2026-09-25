@@ -124,15 +124,15 @@ The garden of a modern white villa under a bright blue sky with fluffy clouds, a
 ```
 
 ## The Crown (van de kast) · `crown`
-**Look:** regal, cool palace light, deep blue and gold, historical drama
+**Look:** formal royal portrait, cool palace light, muted deep blue and gold, prestigious historical drama
 
 **Poster (2:3):**
 ```
-The cat sitting majestically on top of a tall wardrobe like a monarch on a throne, a tiny golden crown on his head, velvet drapery in the background, cool regal light, deep blue and gold color grade, calm lower third.
+A formal royal portrait: the cat sits majestically and perfectly upright on top of a tall antique wardrobe as if it were a throne, a small golden crown with red velvet resting on his head, a heavy dark blue velvet curtain with gold tassels behind him, a gilded picture frame on the wall. Cool, dignified palace light from a tall window, muted deep blue and gold color grade, serious and regal expression, prestigious historical drama look, calm dark lower third.
 ```
 **Breed (16:9):**
 ```
-A stately room with tall windows and heavy curtains, the cat on the right sitting on top of a high cabinet looking down with royal disdain, a small golden crown beside him, cool palace light, deep blue and gold color grade.
+A grand, stately room with tall windows, heavy blue velvet curtains, gilded frames and a crystal chandelier. On the right side of the frame the cat sits perfectly upright on top of a tall antique cabinet and looks down with royal disdain, wearing a small golden crown with red velvet. Cool palace light, muted deep blue and gold color grade, prestigious historical drama look, calmer darker area on the left.
 ```
 
 ## La Casa de Brokjes · `heist`
