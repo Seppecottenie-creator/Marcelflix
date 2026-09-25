@@ -261,15 +261,15 @@ A real photograph, like a still from a live-action 1980s aviation action film: a
 ```
 
 ## Jurassic Purrk · `jurassic`
-**Look:** lush jungle, humid green, adventure
+**Look:** live-action 1990s adventure, jungle, rain and mist; rimpelingen in een glas water, reusachtige houten poorten met fakkels, een dinosaurussilhouet in de mist
 
 **Poster (2:3):**
 ```
-The cat standing on a mossy rock in a misty prehistoric jungle, huge ferns around him, a giant shadow looming in the fog behind him, humid green adventure film lighting, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action 1990s adventure film shot at night in the rain. The cat, a normal-sized house cat, sits on the dashboard of an old muddy safari jeep, staring with wide eyes at a glass of water on the dashboard whose surface shows perfect concentric ripples, as if something enormous is approaching. Through the rain-streaked windshield, a huge dark shape looms in the jungle behind him, barely visible. Cold blue night light, a flashlight beam cutting through the rain, water droplets on the glass, tense atmosphere, calm dark lower third with the dashboard.
 ```
 **Breed (16:9):**
 ```
-A misty prehistoric jungle with giant ferns and a huge dark silhouette in the fog on the left, the cat on the right in the foreground looking back with wide orange eyes, humid green adventure color grade.
+A real photograph, like a still from a live-action 1990s adventure film: a misty tropical jungle at dawn, enormous old wooden gates with burning torches standing half open on the left, giant ferns and dripping leaves everywhere. Far behind the gates, the silhouette of a huge long-necked dinosaur is visible in the fog. On the right side of the frame the cat, a normal-sized house cat, stands on a mossy fallen log in the foreground, one paw raised, looking back over his shoulder into the camera with wide orange eyes. Humid green light with warm torch glow, mist in the air, calmer area on the left.
 ```
 
 ## Home Alone: Marcel Edition · `homealone`
