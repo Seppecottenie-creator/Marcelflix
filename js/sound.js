@@ -148,6 +148,7 @@
         rookie: [65.4, 98, 155.6, 196],        // C mineur, spanning
         stranger: [55, 82.4, 130.8, 164.8],
         romance: [87.3, 130.8, 174.6, 220],    // F majeur, warm
+        amigos: [73.4, 110, 146.8, 185],       // D majeur, avontuurlijk
         default: [73.4, 110, 146.8, 174.6]
       };
       const notes = chords[theme] || chords.default;

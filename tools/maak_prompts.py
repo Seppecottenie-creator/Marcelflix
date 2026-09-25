@@ -25,7 +25,7 @@ def main():
     lines = [
         f"# Beeldprompts: {data.get('series', '')} · {data['title']}",
         "",
-        "Voeg bij elke prompt een referentiefoto van Marcel toe. Formaat 16:9 liggend, minstens 1920 x 1080.",
+        data.get("refNote", "Voeg bij elke prompt een referentiefoto van Marcel toe.") + " Formaat 16:9 liggend, minstens 1920 x 1080.",
         "Sla elk beeld op in deze map met de bestandsnaam hieronder (.jpg, .png of .webp).",
         "",
     ]

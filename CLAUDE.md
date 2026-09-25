@@ -14,7 +14,7 @@ Alles staat in `data/catalog.json` (`type`: series of film, `status`: available 
 
 **Series:** The Rookie: Feline Division (pilot "De Zaak Vaas", speelbaar), Stranger Paws, Breaking Bowl, The Pawffice, Katnonkels (Nonkels), The Crown (van de kast), La Casa de Brokjes, Game of Cushions.
 **Films:** Marcel Bond: License to Purr, Catanic, Pride & Purrjudice, Purrstellar, Harry Pawter en de Steen der Brokjes, Spider-Marcel, Mission: Impawsible, Top Gun: Meowerick, Jurassic Purrk, Home Alone: Marcel Edition.
-**Geheim:** Director's Cut, ontgrendelt als alle 3 eindes van de pilot gevonden zijn.
+**Geheim:** Director's Cut "De Drie Amigos" (`directors-cut`), ontgrendelt als alle 3 eindes van de pilot gevonden zijn. Geen romantiek: een gek avontuur door verschillende landen met Marcel en de dieren van de ouders, Arthur (Europese korthaar, bruin gestreept, witte kin, altijd nors) en Odiel (grote beige krulhond, vrolijk). Aflevering "De Jacht op de Gouden Brok": Parijs of Egypte, Mexico, jungletempel; 3 keuzes, 2 eindes.
 
 Profielen: "Ik" (voor haar) en "Marcel". Navigatie: Home, Series, Films (met genrefilter). Geen top 10.
 
@@ -100,4 +100,4 @@ Bouw de volledige Marcelflix-site met de pilot als speelbare aflevering, eerst m
 De site is gebouwd: `index.html`, `css/style.css`, `js/app.js` (views + routing), `js/player.js` (interactieve speler), `js/sound.js` (gesynthetiseerde geluiden).
 Data: `data/config.json`, `data/catalog.json`, `series/<serie>/<afl>/episode.json`. Hulpscripts in `tools/`.
 Hosting: GitHub Pages vanaf `main` / root (zie README). Geen build-stap.
-Nog te doen: beelden genereren voor de pilot (zie `series/rookie/ep1/PROMPTS.md`), audio genereren, persoonlijke boodschap in `series/directors-cut/ep1/episode.json` scène d03, volgende series schrijven.
+Nog te doen: beelden genereren voor de pilot (zie `series/rookie/ep1/PROMPTS.md`), audio genereren, optionele slotzin in `series/directors-cut/ep1/episode.json` scène d09, volgende series schrijven.

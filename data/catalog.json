@@ -580,20 +580,22 @@
     },
     {
       "id": "directors-cut",
-      "title": "Director's Cut",
+      "title": "De Drie Amigos",
       "logoLine": [
-        "DIRECTOR'S",
-        "CUT"
+        "DE DRIE AMIGOS",
+        "DIRECTOR'S CUT"
       ],
-      "tagline": "Alleen voor wie alles gezien heeft.",
-      "description": "Een geheime aflevering. Ontgrendeld omdat jij alle eindes vond.",
+      "tagline": "Drie dieren. Eén schatkaart. Nul plan.",
+      "description": "Marcel, zijn norse neef Arthur en de altijd vrolijke Odiel vinden een oude schatkaart naar de legendarische Gouden Brok. Een geheim avontuur via Parijs, Egypte en Mexico, ontgrendeld omdat jij alle eindes vond.",
       "genres": [
-        "Romantiek"
+        "Avontuur",
+        "Komedie",
+        "Familie"
       ],
       "year": 2026,
       "age": "Alle leeftijden",
       "match": 100,
-      "theme": "romance",
+      "theme": "amigos",
       "status": "secret",
       "unlock": {
         "series": "rookie",
@@ -604,12 +606,13 @@
         {
           "id": "ep1",
           "number": 1,
-          "title": "Een Brief van Marcel",
-          "duration": "± 2 min",
-          "summary": "Voor jou."
+          "title": "De Jacht op de Gouden Brok",
+          "duration": "± 5 min",
+          "summary": "Parijs of Egypte? Delen of opeten? Jij beslist wat de drie amigo's doen."
         }
       ],
-      "type": "film"
+      "type": "film",
+      "cast": "Marcel, Arthur, Odiel"
     }
   ],
   "_uitleg": "type: series of film. status: available (speelbaar), soon (binnenkort), secret (ontgrendelt via 'unlock')."

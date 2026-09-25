@@ -288,14 +288,23 @@ A real photograph, like a still from a live-action early-1990s Christmas family 
 
 # Geheim
 
-## Director's Cut · `directors-cut`
-**Look:** intimate live-action romantic film, golden hour, dreamy haze, warm peach, rose and gold (dezelfde stijl als de aflevering); een brief met een hartvormig lakzegel, twee koppen thee
+## De Drie Amigos (Director's Cut) · `directors-cut`
+**Look:** live-action family adventure comedy, vibrant travel colors, golden hour; Marcel met Arthur (Europese korthaar) en Odiel (beige krulhond) op schattenjacht door de wereld. Geen romantiek.
+
+**Eigen Gemini-gesprek.** Start hiervoor een nieuw gesprek en voeg foto's van de drie dieren toe (1 à 2 per dier). **Snij de foto's eerst bij** zodat er geen mensen op staan, anders zet Gemini die mee in beeld. Plak dit bericht erbij:
+
+> Ik ga je vragen om filmbeelden te maken met drie dieren die samen op avontuur gaan. Gebruik mijn foto's alleen als referentie voor hun uiterlijk, kopieer of knip de foto's nooit uit. 1) Marcel: grijze Britse korthaar, ronde brede kop, bolle wangen, dicht blauwgrijs vachtje zonder strepen, kleine oren, diep oranje ogen. 2) Arthur: slanke Europese korthaar, bruin gestreept met donkere strepen, witte kin en borst, groengele ogen, kijkt altijd een beetje nors. 3) Odiel: grote pluizige beige krulhond (doodle), zwarte neus, donkere ogen, vrolijk met zijn tong uit zijn mond. Het zijn echte dieren van normale grootte, fotorealistisch, als stills uit een live-action familiefilm. Geen mensen in beeld. Zet nooit tekst, letters, titels of logo's in het beeld. Antwoord nu enkel met "oké".
 
 **Poster (2:3):**
 ```
-Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from an intimate live-action romantic film shot at golden hour. The cat, a normal-sized house cat, sits on a wide windowsill in soft golden evening light, warm backlight glowing through the edges of his fur, looking gently into the camera with soft, loving eyes. In front of his paws lies a cream-coloured envelope sealed with a red wax seal in the shape of a small heart, next to a single red rose. Dreamy haze, sheer curtains, warm peach and rose tones, calm softly blurred lower third with the windowsill. No readable text.
+Make a vertical poster image in 2:3 portrait format with Marcel, Arthur and Odiel. Do not copy the poses or lighting from the reference photos. A real photograph, like a still from a live-action family adventure comedy film. The three animals stand side by side on a sandy desert ridge at golden hour like three heroes, each wearing a tiny straw sombrero: Marcel the grey British Shorthair in the middle looking confident, Arthur the brown tabby with the white chin on the left looking grumpy, Odiel the big fluffy beige curly dog on the right with his tongue out, happy. An old rolled-up treasure map lies at their feet, tall cacti and a glowing orange sky behind them. Warm golden light with long shadows, calm lower third with the sand. Subtle film grain. Not a painting, not digital art, not an illustration, not a photo montage. No people, no text, no letters, no title, no logo, no watermark. Realistic animal anatomy and normal animal sizes.
 ```
+Noem het **`directors-cut.jpg`**.
+
 **Breed (16:9):**
 ```
-A real photograph, like a still from an intimate live-action romantic film: a cosy living room at golden hour, sunlight streaming through the window, a soft knitted blanket on the sofa, two cups of tea steaming side by side on a small wooden table on the left, fairy lights glowing softly. On the right side of the frame the cat, a normal-sized house cat, lies curled up on the blanket, head resting on an opened handwritten letter, looking softly into the camera with half-closed, content eyes. Warm peach, rose and gold tones, dreamy haze, calmer area on the left. No readable text on the letter, no people.
+Now make a wide landscape image in 16:9 format with the same three animals, same photographic style, different poses. A real photograph, like a still from a live-action family adventure comedy film: the entrance of an ancient stone temple in a lush jungle at golden hour, vines, mist and warm sunbeams. Inside the dark doorway on the left, a single piece of cat kibble glows like gold on a stone pedestal. On the right side of the frame the three animals stand on the temple steps looking in with wonder: Marcel the grey British Shorthair in front with one paw raised, Arthur the brown tabby with the white chin next to him looking sceptical, Odiel the big fluffy beige curly dog behind them wagging and wearing a tiny sombrero. Warm golden jungle light, calmer darker area on the left. Subtle film grain. Not a painting, not digital art, not an illustration, not a photo montage. No people, no text, no letters, no title, no logo, no watermark. Realistic animal anatomy and normal animal sizes.
 ```
+Noem het **`directors-cut-wide.jpg`**.
+
+**De 12 beelden van de aflevering** staan in `series/directors-cut/ep1/PROMPTS.md` (d01, d02, d03a, …). Gebruik daarvoor hetzelfde gesprek.

@@ -1,34 +1,134 @@
 {
-  "title": "Een Brief van Marcel",
-  "series": "Director's Cut",
+  "title": "De Jacht op de Gouden Brok",
+  "series": "De Drie Amigos",
   "start": "d01",
-  "style": "soft romantic film still, golden hour light, dreamy haze, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.",
-  "endingsTotal": 0,
+  "style": "a real photograph, like a still from a live-action family adventure comedy film, vibrant travel colors, natural light, 16:9. The grey cat is the exact British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The tabby cat is Arthur: a lean European Shorthair, brown tabby with dark stripes, white chin and chest, green-yellow eyes, a permanently grumpy expression. The dog is Odiel: a big fluffy beige curly-coated doodle with a black nose, dark eyes and a happy tongue.",
+  "refNote": "Werk in een apart Gemini-gesprek met de drie dieren (zie COVERS.md, De Drie Amigos): foto's van Marcel, Arthur en Odiel, telkens bijgesneden zodat er geen mensen op staan.",
+  "endingsTotal": 2,
   "scenes": {
     "d01": {
-      "prompt": "The cat sitting alone in a dimly lit living room at dusk, a single warm lamp switching on beside him, looking straight into the camera",
-      "focus": "50% 35%",
-      "text": "Je hebt alles gezien. Alle eindes. Alle scherven. Dan verdien je de waarheid.",
+      "prompt": "The grey cat, the tabby cat and the curly beige dog sitting side by side on a sofa in a cosy Belgian living room, like a family photo, an old rolled-up treasure map on the coffee table",
+      "text": "Je hebt alle eindes gevonden. Proficiat. Dan mag je nu mijn familie ontmoeten. Dit is Arthur. Hij kijkt altijd zo. Ook als hij blij is. En dit is Odiel. Odiel is een hond. We praten er niet over.",
       "motion": "in",
       "look": "warm",
       "next": "d02"
     },
     "d02": {
-      "prompt": "The cat sitting on a windowsill at sunset, looking back over his shoulder, warm backlight",
-      "text": "Ik oordeel over iedereen. Over de plant. Over de stofzuiger. Over de buren. Maar niet over jou.",
-      "motion": "left",
+      "prompt": "Close-up of the three animals leaning over an old treasure map on a wooden table, a golden piece of cat kibble drawn on the map, warm lamp light",
+      "text": "Toen vond Odiel een oude schatkaart. In de vuilbak, maar toch. Er stond een schat op: de Gouden Brok. Arthur zei nee. Odiel zei waf. Ik zei: pak jullie koffers.",
+      "motion": "in",
       "look": "warm",
-      "next": "d03"
+      "choice": {
+        "prompt": "Waar reizen de amigo's eerst naartoe?",
+        "options": [
+          {
+            "label": "Parijs",
+            "next": "d03a"
+          },
+          {
+            "label": "Egypte",
+            "next": "d03b"
+          }
+        ],
+        "default": 0
+      }
     },
-    "d03": {
-      "prompt": "The cat asleep on a cosy blanket on a sofa, two cups of tea on the table, fairy lights",
-      "text": "SCHRIJF HIER JE EIGEN BOODSCHAP. Bijvoorbeeld: Seppe heeft dit allemaal gemaakt, omdat hij je graag ziet. Ik ook. Een beetje. Vertel het niemand.",
+    "d03a": {
+      "prompt": "The three animals on a Paris café terrace at night, the Eiffel Tower sparkling in the background, the curly dog wearing a small beret surrounded by croissants, the tabby cat glaring at the tower",
+      "text": "Parijs. De stad van de liefde. Odiel at veertien croissants. Arthur keek boos naar de Eiffeltoren. De Eiffeltoren keek niet terug. Op de laatste croissant stond een pijltje. Richting Mexico.",
+      "motion": "left",
+      "next": "d04"
+    },
+    "d03b": {
+      "prompt": "The three animals in front of the pyramids at sunset, the Sphinx in the background, the tabby cat sitting in exactly the same pose as the Sphinx",
+      "text": "Egypte. Hier werden katten ooit als goden vereerd. Eindelijk een land met normen en waarden. De Sfinx leek verdacht veel op Arthur. Op een oude muur stond een tekening: drie dieren en een sombrero. Mexico.",
+      "motion": "right",
+      "next": "d04"
+    },
+    "d04": {
+      "prompt": "The three animals wearing tiny sombreros, standing in a row in a Mexican desert at golden hour between tall cacti, like the heroes of a western comedy",
+      "text": "Mexico. Drie amigo's. Drie sombrero's. Eén kat die eigenlijk liever thuis in de zetel lag. Dat was ik. Voor ons lag de tempel van de Gouden Brok. En zijn bewaker.",
+      "motion": "out",
+      "look": "warm",
+      "next": "d05"
+    },
+    "d05": {
+      "prompt": "A huge green iguana sitting on the steps of an ancient stone jungle temple, the three animals at the bottom of the steps looking up at it",
+      "text": "Een leguaan. Groot. Groen. Zeer ontevreden. Niemand mocht erlangs. Tijd voor een plan.",
+      "motion": "in",
+      "choice": {
+        "prompt": "Hoe raken de amigo's langs de leguaan?",
+        "options": [
+          {
+            "label": "Odiel leidt hem af",
+            "next": "d06a"
+          },
+          {
+            "label": "Arthur kijkt hem boos aan",
+            "next": "d06b"
+          }
+        ],
+        "default": 0
+      }
+    },
+    "d06a": {
+      "prompt": "The curly beige dog joyfully running in circles around the dizzy iguana on the temple steps, dust flying, the two cats sneaking past in the background",
+      "text": "Odiel rende rondjes. Veel rondjes. De leguaan keek mee tot hij omviel. Odiel ook. Maar wij waren binnen.",
+      "motion": "left",
+      "next": "d07"
+    },
+    "d06b": {
+      "prompt": "Close-up of the tabby cat staring intensely with his grumpy face, the big iguana backing away in fright on the temple steps",
+      "text": "Arthur keek. Gewoon keek. Drie seconden lang. De leguaan pakte zijn koffers en verhuisde naar Guatemala. Arthur heeft een gave.",
+      "motion": "in",
+      "next": "d07"
+    },
+    "d07": {
+      "prompt": "Inside a dark stone temple, a single glowing golden piece of cat kibble on a stone pedestal in a beam of sunlight, the three animals staring at it in awe",
+      "text": "En daar lag hij. De Gouden Brok. Eén brok. Voor drie. Iemand moest een beslissing nemen.",
+      "motion": "in",
+      "look": "warm",
+      "choice": {
+        "prompt": "Wat doe je met de Gouden Brok?",
+        "options": [
+          {
+            "label": "Delen met de amigo's",
+            "next": "d08a"
+          },
+          {
+            "label": "Stiekem zelf opeten",
+            "next": "d08b"
+          }
+        ],
+        "default": 0
+      }
+    },
+    "d08a": {
+      "prompt": "The three animals sitting close together in the temple, sharing a golden kibble broken into three pieces, warm golden light, happy faces",
+      "text": "We braken hem in drie. Hij smaakte naar kip. Gewone kip. Maar samen. Arthur glimlachte bijna. Odiel huilde. Van geluk. Of van de croissants.",
       "motion": "out",
       "look": "warm",
       "ending": {
-        "id": "L",
-        "title": "Voor altijd jullie kat"
-      }
+        "id": "A",
+        "title": "Drie amigo's, één brok"
+      },
+      "next": "d09"
+    },
+    "d08b": {
+      "prompt": "The grey cat alone with bulging cheeks and a guilty look, the tabby cat and the curly dog staring at him with deep disapproval",
+      "text": "Ik at hem op. In één hap. Hij smaakte naar gewone brok. Arthur keek. Odiel keek. Ik heb nog nooit zo lang in een hoek gezeten.",
+      "motion": "in",
+      "ending": {
+        "id": "B",
+        "title": "Eén kat, nul vrienden"
+      },
+      "next": "d09"
+    },
+    "d09": {
+      "prompt": "Back home in Belgium, the three animals asleep in one cosy pile on the sofa under a blanket, suitcases, a tiny sombrero and a beret on the floor, evening lamp light",
+      "text": "Thuis. Zetel. Dekentje. De grootste schat is gewoon familie. Zelfs als die familie een hond is. SCHRIJF HIER EVENTUEEL EEN EIGEN SLOTZIN.",
+      "motion": "out",
+      "look": "warm"
     }
   }
 }
