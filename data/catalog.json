@@ -255,6 +255,8 @@
       "year": 2027,
       "age": "16+",
       "match": 92,
+      "poster": "assets/covers/thrones.jpg",
+      "backdrop": "assets/covers/thrones-wide.jpg",
       "theme": "thrones",
       "status": "soon",
       "episodes": [
