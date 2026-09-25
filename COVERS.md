@@ -201,15 +201,15 @@ A real photograph, like a still from a live-action Regency-era period romance: a
 ```
 
 ## Purrstellar · `purrstellar`
-**Look:** cosmic sci-fi, deep space blacks, dusty amber
+**Look:** live-action sci-fi op een echte set, amber en diep zwart; cockpit met zwart gat, stoffige boerderij, stof in lijnen op de vloer, een gloeiend kattenluik
 
 **Poster (2:3):**
 ```
-The cat seen from behind, sitting in front of a huge window looking out at a glowing black hole and stars, dusty amber and deep black color grade, epic space sci-fi, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action science-fiction film shot on a practical spaceship set. The cat, a normal-sized house cat, sits upright on a worn pilot seat inside a cramped, realistic spacecraft cockpit full of switches, cables and scratched metal panels, gazing up in awe through a large front window. Outside the window an enormous black hole with a glowing golden ring of light fills the view, its warm light falling across his face and fur. Dark cockpit console in the calm lower third. Muted amber and deep black tones, realistic reflections on the glass.
 ```
 **Breed (16:9):**
 ```
-A vast cosmic landscape with a glowing black hole on the left, the cat on the right sitting on a dusty surface gazing up at it, amber and deep black sci-fi color grade, awe-inspiring scale.
+A real photograph, like a still from a live-action science-fiction film: an old dusty farmhouse room at dusk, a huge dust storm rolling over the cornfields visible through the window on the left. Fine dust has fallen on the wooden floor in strange straight lines, like a coded message. A tall bookshelf stands against the wall with a few books pushed out as if by an invisible hand. On the right side of the frame the cat, a normal-sized house cat, sits beside the back door and stares intently at the cat flap, which glows with a strange soft golden light from the other side. Warm amber dusk light, floating dust in the air, calmer darker area on the left.
 ```
 
 ## Harry Pawter en de Steen der Brokjes · `pawter`
