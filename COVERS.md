@@ -261,17 +261,15 @@ A real photograph, like a still from a live-action 1980s aviation action film: a
 ```
 
 ## Jurassic Purrk · `jurassic`
-**Look:** live-action 1990s adventure, jungle, rain and mist; rimpelingen in een glas water, reusachtige houten poorten met fakkels, een dinosaurussilhouet in de mist
+**Look:** live-action 1990s adventure op een echte set; Marcel op de schedel van een reuzenskelet in de bezoekershal, een broedlabo met een babydinosaurus die uit het ei kruipt (rimpelingen in water lukken AI slecht)
 
 **Poster (2:3):**
 ```
-Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action 1990s adventure film shot at night in the rain. On a muddy jungle path lies a gigantic three-toed dinosaur footprint, filled with rainwater. The cat, a normal-sized house cat, sits at the edge of the footprint, tiny compared to it, staring with wide eyes at the water in the print, whose surface trembles with perfect concentric ripples as if something enormous is approaching. Behind him in the dark jungle, subtle and half hidden in shadow and rain, the huge head of a predatory dinosaur like a tyrannosaurus, one eye glinting in a flashlight beam. Cold blue night light, rain, giant ferns, tense atmosphere, calm dark lower third with the mud and the water.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action 1990s adventure film shot on a practical set. A grand, abandoned visitor-center hall with tall windows, hanging vines and dusty light beams. In the middle stands a gigantic fossil skeleton of a tyrannosaurus. The cat, a normal-sized house cat, sits proudly on top of the dinosaur's huge skull, tiny compared to it, looking down at the camera like he conquered the beast. A torn cloth banner without any text slowly falls through the air behind him. Warm golden light beams through the windows, dust floating in the air, calm darker lower third with the floor and the skeleton's feet.
 ```
-_Alternatief: de rimpelingen in een glas water op het dashboard van een jeep. AI zet de kringen dan vaak buiten het glas; de voetafdruk werkt betrouwbaarder._
-
 **Breed (16:9):**
 ```
-A real photograph, like a still from a live-action 1990s adventure film: a misty tropical jungle at dawn, enormous old wooden gates with burning torches standing half open on the left, giant ferns and dripping leaves everywhere. Far behind the gates, the silhouette of a huge long-necked dinosaur is visible in the fog, and closer by among the ferns the half-hidden head of a predatory dinosaur. On the right side of the frame the cat, a normal-sized house cat, stands on a mossy fallen log in the foreground, one paw raised, looking back over his shoulder into the camera with wide orange eyes. Humid green light with warm torch glow, mist in the air, calmer area on the left.
+A real photograph, like a still from a live-action 1990s adventure film shot on a practical set: a warm laboratory hatchery with robotic arms, glass incubators and rows of speckled dinosaur eggs under orange heat lamps. On the left, one large egg is cracking open and a tiny baby dinosaur's snout and claw are poking out of the shell. On the right side of the frame the cat, a normal-sized house cat, sits on the lab table beside the incubator, leaning forward with curious wide orange eyes and one paw raised as if about to touch the egg. Warm orange heat-lamp glow with cool blue lab light, calmer darker area on the far left.
 ```
 
 ## Home Alone: Marcel Edition · `homealone`
