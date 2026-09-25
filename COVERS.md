@@ -112,15 +112,15 @@ A cluttered, brightly lit open-plan paper company office with beige walls, desks
 ```
 
 ## Katnonkels · `katten`
-**Look:** cosy old-fashioned Flemish living room, warm bright lamp light, cheerful comedy (niet donker of somber)
+**Look:** zonnige zomerkomedie zoals de filmposter van Nonkels: felblauwe lucht, witte villa, gazon met dierenhagen, zwembad, verzadigde kleuren
 
 **Poster (2:3):**
 ```
-A family portrait in a cosy, slightly old-fashioned Flemish living room: brown wooden furniture, patterned wallpaper, a lace doily on the side table, a framed picture of a cat on the wall. The cat sits proudly in the middle of a floral sofa, flanked by his two "uncles": a large potted plant on his left and an upright vacuum cleaner on his right, all three posed stiffly like a family photo. Warm, bright lamp light, cheerful comedy TV look, not dark, not moody, calm lower third.
+A sunny, colorful summer comedy movie poster: bright blue sky with fluffy white clouds, a modern white villa, a green lawn with topiary hedges trimmed into animal shapes (one shaped like a giraffe, one like a cat). In the middle ground, the cat's two "uncles" stand side by side on the lawn like a proud but awkward family lineup: a large potted plant and an upright vacuum cleaner. In the foreground the cat lies smugly on the wooden pool deck, front paws crossed, looking into the camera like he owns the place. The lower third is calm blue pool water. Saturated, cheerful summer colors, bright daylight, slightly cheesy comedy poster look.
 ```
 **Breed (16:9):**
 ```
-A cosy, slightly old-fashioned Flemish living room with patterned wallpaper, brown furniture and a lace doily, a potted plant and a vacuum cleaner standing close together on the left as if whispering, the cat on the right side of the frame sitting on the armrest of a floral sofa with a scheming look, a bag of cat treats visible on a high shelf above them. Warm, bright lamp light, cheerful comedy TV look, not dark, not moody.
+The garden of a modern white villa under a bright blue sky with fluffy clouds, a green lawn with topiary hedges trimmed into animal shapes, a blue swimming pool with a wooden deck across the front. In the middle of the lawn the potted plant and the upright vacuum cleaner stand side by side like two proud, awkward uncles. On the right side of the frame the cat lounges on a sun lounger under a parasol, looking into the camera with a smug expression. Saturated, cheerful summer colors, bright daylight, comedy movie poster look, calmer sky on the left.
 ```
 
 ## The Crown (van de kast) · `crown`
