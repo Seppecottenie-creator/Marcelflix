@@ -316,6 +316,8 @@
       "year": 2027,
       "age": "Alle leeftijden",
       "match": 99,
+      "poster": "assets/covers/catanic.jpg",
+      "backdrop": "assets/covers/catanic-wide.jpg",
       "theme": "catanic",
       "status": "soon",
       "episodes": [
