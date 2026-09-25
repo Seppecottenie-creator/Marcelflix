@@ -249,15 +249,15 @@ A real photograph, like a still from a tense live-action spy action film: a dark
 ```
 
 ## Top Gun: Meowerick · `topgun`
-**Look:** golden-hour aviation, orange sky, heat haze
+**Look:** live-action 1980s aviation action, golden hour, orange sky, heat haze; pilotenzonnebril, leren bomberjack, vliegdekschip, motor naast een opstijgende jet (geen badges of tekst)
 
 **Poster (2:3):**
 ```
-The cat wearing tiny aviator sunglasses, sitting proudly in front of an orange golden-hour sky with a jet silhouette far in the background, heat haze, 1980s action film look, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action 1980s aviation action film shot at golden hour. The cat, a normal-sized house cat, sits upright and cool on the deck of an aircraft carrier, wearing tiny gold-rimmed aviator sunglasses and a small brown leather flight jacket with a sheepskin collar, chin raised with total confidence. Behind him the dark silhouette of a fighter jet against a huge orange sunset sky, heat haze shimmering over the deck. Warm orange and gold backlight outlining his fur, calm darker lower third with the grey carrier deck. No patches, no insignia.
 ```
 **Breed (16:9):**
 ```
-An airfield at golden hour with a fighter jet silhouette on the left, the cat on the right wearing tiny aviator sunglasses looking cool into the distance, orange sky and heat haze, 1980s action film color grade.
+A real photograph, like a still from a live-action 1980s aviation action film: a runway at sunset under a blazing orange sky, a fighter jet taking off in the distance on the left with a heat haze trail. On the right side of the frame a classic black motorcycle is parked, and the cat, a normal-sized house cat wearing tiny gold-rimmed aviator sunglasses and a small brown leather flight jacket, sits on the motorcycle seat watching the jet with a cool, satisfied look. Warm orange backlight, long shadows, calmer sky on the left. No patches, no insignia.
 ```
 
 ## Jurassic Purrk · `jurassic`
