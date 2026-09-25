@@ -71,8 +71,11 @@ img { display: block; max-width: 100%; }
 
 /* ---------- hero ---------- */
 .hero { position: relative; min-height: min(92svh, 56.25vw + 200px); display: flex; align-items: flex-end; padding: 120px var(--gutter) clamp(40px, 8vw, 120px); overflow: hidden; }
-.hero .bd { position: absolute; inset: 0; background-size: cover; background-position: center 30%; transform: scale(1.05); animation: heroDrift 30s ease-in-out infinite alternate; }
+.hero .bd { position: absolute; inset: 0; background-image: var(--bd); background-size: cover; background-position: center 30%; transform: scale(1.05); animation: heroDrift 30s ease-in-out infinite alternate; }
 .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,11,15,.92) 0%, rgba(11,11,15,.55) 45%, rgba(11,11,15,0) 75%), linear-gradient(0deg, var(--bg) 0%, rgba(11,11,15,0) 40%); }
+@media (orientation: portrait) and (max-width: 700px) {
+  .hero .bd { background-image: var(--bd-tall, var(--bd)); background-position: center 15%; }
+}
 .hero .inner { position: relative; z-index: 2; max-width: 620px; }
 @keyframes heroDrift { from { transform: scale(1.05) translateX(0); } to { transform: scale(1.14) translateX(-2%); } }
 .badge-orig { display: flex; align-items: center; gap: 8px; font-size: 13px; letter-spacing: .3em; color: #ddd; font-weight: 700; margin-bottom: 12px; }

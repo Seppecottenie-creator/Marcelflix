@@ -43,6 +43,14 @@
     const l = s.logoLine || [s.title];
     return `<h1 class="slogo ${esc(s.theme)} ${extra}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</h1>`;
   }
+  // Brede achtergrond; op een staande gsm gebruikt de CSS de staande poster (--bd-tall).
+  function heroBg(s) {
+    // Absolute URL's: in een CSS-variabele zou een relatief pad t.o.v. css/ gelezen worden.
+    const abs = (u) => new URL(u, location.href).href;
+    const wide = abs(s.backdrop || s.poster);
+    return `--bd:url('${esc(wide)}');--bd-tall:url('${esc(s.poster ? abs(s.poster) : wide)}')`;
+  }
+
   function posterHtml(s) {
     if (s.poster) return `<img src="${esc(s.poster)}" alt="" loading="lazy"><div class="gposter gp-img">${slogo(s)}</div>`;
     return `<div class="gposter gp-${esc(s.theme)}"><div class="art"></div>${slogo(s)}</div>`;
@@ -130,7 +138,7 @@
     app.innerHTML = `${topbar("home")}
       <section class="hero">
         ${(f.backdrop || f.poster)
-          ? `<div class="bd" style="background-image:url('${esc(f.backdrop || f.poster)}')"></div>`
+          ? `<div class="bd" style="${heroBg(f)}"></div>`
           : `<div class="bd gp-${esc(f.theme)}"><div class="art" style="position:absolute;inset:0"></div></div>`}
         <div class="inner">
           <div class="badge-orig"><b>M</b> SERIE</div>
@@ -216,7 +224,7 @@
       <div class="detail">
         <button class="back-btn" id="back" aria-label="Terug">←</button>
         <section class="hero">
-          <div class="bd ${s.backdrop ? "" : "gp-" + esc(s.theme)}" ${s.backdrop ? `style="background-image:url('${esc(s.backdrop)}')"` : ""}>${s.backdrop ? "" : `<div class="art" style="position:absolute;inset:0"></div>`}</div>
+          <div class="bd ${s.backdrop ? "" : "gp-" + esc(s.theme)}" ${s.backdrop ? `style="${heroBg(s)}"` : ""}>${s.backdrop ? "" : `<div class="art" style="position:absolute;inset:0"></div>`}</div>
           <div class="inner">
             <div class="badge-orig"><b>M</b> ${s.status === "secret" ? "GEHEIME FILM" : s.type === "film" ? "FILM" : "SERIE"}</div>
             ${slogo(s)}
