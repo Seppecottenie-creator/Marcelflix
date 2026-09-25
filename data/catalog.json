@@ -471,6 +471,8 @@
       "year": 2027,
       "age": "12+",
       "match": 95,
+      "poster": "assets/covers/mission.jpg",
+      "backdrop": "assets/covers/mission-wide.jpg",
       "theme": "mission",
       "status": "soon",
       "episodes": [
