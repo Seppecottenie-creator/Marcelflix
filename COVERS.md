@@ -56,7 +56,7 @@ Tips:
 Plak deze zin achter **elke** prompt hieronder:
 
 ```
-Photorealistic cinematic film poster artwork, dramatic professional lighting, high detail, shallow depth of field. No text, no letters, no title, no logo, no watermark. The cat is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes, realistic cat anatomy.
+A real photograph, like a still from a live-action film or series shot on a full-frame cinema camera on a practical set. Natural light, realistic shadows and fur texture, subtle film grain. Not a painting, not digital art, not an illustration, not CGI. No text, no letters, no title, no logo, no watermark. The cat is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes, realistic cat anatomy.
 ```
 
 ---
@@ -148,15 +148,15 @@ A dark kitchen at night turned into a heist headquarters: a massive round steel 
 ```
 
 ## Game of Cushions · `thrones`
-**Look:** cold medieval fantasy, grey-blue light with warm candles, snow; een troon van zetelkussens, de verwarming valt uit
+**Look:** live-action period drama op een echte set, koude stenen hal, kaarslicht, een paar sneeuwvlokken; een troon van echte zetelkussens (vermijd "epic fantasy", dat geeft digitale kunst)
 
 **Poster (2:3):**
 ```
-An epic medieval fantasy poster: the cat sits proudly on top of a towering, jagged throne built entirely from stacked sofa cushions and pillows, arranged like a throne of blades. A cold stone hall behind him, snow drifting in through a tall arched window, candles flickering, a heavy fur blanket draped over the cushions. Cold grey-blue light with warm candle accents, serious and noble expression, epic fantasy drama look, calm dark lower third.
+A real photograph, shot on a full-frame cinema camera with a 50mm lens, like a still from a live-action HBO period drama filmed on a practical set. The real cat sits on top of a tall, jagged throne built from real stacked sofa cushions and pillows in velvet and linen, a real fur blanket draped over them. Behind him a cold stone hall with a tall arched window, a few snowflakes drifting in near the window, real candles on iron candelabras. Natural cold window light with warm candlelight, calm dark lower third.
 ```
 **Breed (16:9):**
 ```
-A huge cold medieval great hall that is also a living room: stone walls, long wooden tables with candles, fur blankets, frost on an old radiator, snow drifting in through tall arched windows, visible cold breath in the air. On the right side of the frame a towering, jagged throne built from stacked sofa cushions and pillows, with the cat sitting proudly on top looking down like a king. Cold grey-blue light with warm candle accents, epic fantasy drama look, calmer darker area on the left.
+A real photograph, like a still from a live-action HBO period drama filmed on a practical set: a cold medieval stone hall with long wooden tables, real candles, fur blankets, frost on an old radiator, a few snowflakes near a tall arched window, visible cold breath in the air. On the right side of the frame a tall, jagged throne of real stacked sofa cushions and pillows, the cat sitting proudly on top looking down like a king. Natural cold window light with warm candlelight, calmer darker area on the left.
 ```
 
 ---
