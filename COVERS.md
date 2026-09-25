@@ -32,9 +32,10 @@ Tips:
 
 1. Start **één gesprek** voor alle covers en plak eerst dit bericht, samen met je referentiefoto's:
 
-   > Dit is mijn kat Marcel, een Britse korthaar. Ik ga je vragen om een reeks filmposters te maken met exact deze kat in de hoofdrol. Houd zijn uiterlijk altijd identiek aan de foto's: ronde kop, dicht blauwgrijs vachtje, diep oranje ogen, dezelfde oorvorm. Zet nooit tekst, letters, titels of logo's in het beeld.
+   > Dit is mijn kat Marcel, een Britse korthaar. Ik ga je vragen om een reeks filmbeelden te maken met Marcel in de hoofdrol. Gebruik mijn foto's alleen als referentie voor zijn uiterlijk: ronde brede kop, korte stompe snuit, dicht blauwgrijs vachtje zonder strepen, kleine afgeronde oren, diep oranje ogen. Kopieer of knip de foto's nooit uit: bedenk telkens een nieuwe houding die bij de scène past, en belicht hem met het licht van die scène, zodat het één echte foto lijkt. Alle beelden zijn fotorealistisch, als stills uit een live-action film. Zet nooit tekst, letters, titels of logo's in het beeld, tenzij ik het uitdrukkelijk vraag.
 
 2. Vraag per titel eerst de **poster** en daarna de **brede versie**. Plak telkens de prompt hieronder.
+3. **Plakt Gemini de kat uit je foto in de scène** (zelfde houding, ander licht)? Stuur: "Gebruik mijn foto's alleen als referentie voor zijn uiterlijk, kopieer nooit de foto, zijn houding of de belichting. Laat hem in een nieuwe houding in deze scène ontstaan, belicht door het licht van de scène." Helpt dat niet: vraag eerst de scène zonder kat, en laat Marcel er daarna in zetten.
 3. Wijkt Marcel af? Upload de gezichtsfoto opnieuw met "zelfde kat als op deze foto, let op de kop en de ogen".
 4. **Geen tekst op de covers.** De site zet de titel zelf over de poster. Staat er toch tekst op, vraag dan "dezelfde afbeelding zonder tekst".
 
