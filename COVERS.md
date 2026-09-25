@@ -225,15 +225,15 @@ A real photograph, like a still from a live-action fantasy film shot on a practi
 ```
 
 ## Spider-Marcel · `spider`
-**Look:** urban superhero, red and blue city lights, dynamic angle
+**Look:** live-action superhero film, city at night, red and blue light, dramatic low angles; hoog zitten en oordelen, een echt spinnenweb (geen pak of logo)
 
 **Poster (2:3):**
 ```
-The cat perched high on top of a tall bookcase seen from a dramatic low angle, judging the world below, red and blue city lights through a window behind him, dynamic superhero film composition, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action superhero film, shot from a dramatic low angle. The cat, a normal-sized house cat, crouches heroically on the very edge of the top of a tall bookcase in a city apartment at night, looking down at the camera with a judging, superior expression. Behind him a large window shows a glittering city skyline at dusk. A real spider web glistens in the upper corner of the room, catching the light. Red and blue city light falls across his fur, dynamic superhero composition, calm darker lower third with the bookcase. No costume.
 ```
 **Breed (16:9):**
 ```
-A city skyline at dusk seen through a large window on the left, the cat on the right perched on the very top of a tall cabinet looking down heroically, red and blue light, dynamic low-angle superhero composition.
+A real photograph, like a still from a live-action superhero film: a city apartment at night, a huge window on the left showing skyscrapers with red and blue lights. On the right side of the frame the cat, a normal-sized house cat, perches on top of the tall kitchen cabinets right under the ceiling, one paw hanging over the edge, surveying the room below like a hero watching over his city. A real spider web stretches between the cabinet and the ceiling beside him, glittering in the city light. Dynamic low camera angle, red and blue light across his fur, calmer darker area on the left. No costume.
 ```
 
 ## Mission: Impawsible · `mission`
