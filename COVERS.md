@@ -273,15 +273,15 @@ A real photograph, like a still from a live-action 1990s adventure film shot on 
 ```
 
 ## Home Alone: Marcel Edition · `homealone`
-**Look:** cosy Christmas, warm red and gold, family comedy
+**Look:** live-action early-1990s Christmas family comedy in a real suburban house, warm red, green and gold; geschokt gezicht voor de kerstboom, een gang vol vallen voor de inbrekers (geen stofzuiger)
 
 **Poster (2:3):**
 ```
-The cat sitting alone in front of a decorated Christmas tree in a warm house, paws on his cheeks in mock shock, fairy lights and presents, warm red and gold family comedy lighting, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action early-1990s Christmas family comedy shot in a real suburban house. The cat, a normal-sized house cat, sits in front of a big decorated Christmas tree with presents and twinkling fairy lights, staring straight into the camera with wide eyes and his mouth open in an over-the-top shocked expression, as if he just realised he is home alone. Warm red, green and gold Christmas light, cosy wooden living room with a fireplace and stockings, calm lower third with the carpet and wrapped presents.
 ```
 **Breed (16:9):**
 ```
-A cosy living room decorated for Christmas, a vacuum cleaner at the front door on the left, the cat on the right standing guard on the stairs with a mischievous look, warm red and gold light.
+A real photograph, like a still from a live-action early-1990s Christmas family comedy: the front hall of a cosy suburban house decorated for Christmas at night, a Christmas tree glowing on the left. The hall is full of booby traps: toy cars and marbles scattered across the floor, a paint can hanging from a rope at the top of the stairs, Christmas ornaments on the steps and a string of fairy lights stretched low across the doorway. On the right side of the frame the cat, a normal-sized house cat, sits halfway up the wooden staircase, peeking through the banister with a mischievous, satisfied look, waiting for the intruders. Warm red and gold Christmas light with cold blue moonlight from the windows, calmer area on the left. No people.
 ```
 
 ---
