@@ -101,6 +101,8 @@
       "year": 2027,
       "age": "16+",
       "match": 97,
+      "poster": "assets/covers/breaking.jpg",
+      "backdrop": "assets/covers/breaking-wide.jpg",
       "theme": "breaking",
       "status": "soon",
       "episodes": [
