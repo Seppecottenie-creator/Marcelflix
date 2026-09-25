@@ -377,6 +377,8 @@
       "year": 2027,
       "age": "12+",
       "match": 97,
+      "poster": "assets/covers/purrstellar.jpg",
+      "backdrop": "assets/covers/purrstellar-wide.jpg",
       "theme": "purrstellar",
       "status": "soon",
       "episodes": [
