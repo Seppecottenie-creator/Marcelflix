@@ -148,15 +148,15 @@ A dark kitchen at night turned into a heist headquarters: a massive round steel 
 ```
 
 ## Game of Cushions · `thrones`
-**Look:** cold medieval fantasy, grey-blue light, candles, epic
+**Look:** cold medieval fantasy, grey-blue light with warm candles, snow; een troon van zetelkussens, de verwarming valt uit
 
 **Poster (2:3):**
 ```
-The cat sitting on a towering stack of sofa cushions like a throne, cold grey-blue light, candles and falling snow in the background, epic medieval fantasy atmosphere, calm lower third.
+An epic medieval fantasy poster: the cat sits proudly on top of a towering, jagged throne built entirely from stacked sofa cushions and pillows, arranged like a throne of blades. A cold stone hall behind him, snow drifting in through a tall arched window, candles flickering, a heavy fur blanket draped over the cushions. Cold grey-blue light with warm candle accents, serious and noble expression, epic fantasy drama look, calm dark lower third.
 ```
 **Breed (16:9):**
 ```
-An epic wide shot of a living room transformed into a cold medieval hall, a huge pile of cushions forming a throne on the right with the cat sitting on top, candles, cold breath in the air, grey-blue fantasy color grade.
+A huge cold medieval great hall that is also a living room: stone walls, long wooden tables with candles, fur blankets, frost on an old radiator, snow drifting in through tall arched windows, visible cold breath in the air. On the right side of the frame a towering, jagged throne built from stacked sofa cushions and pillows, with the cat sitting proudly on top looking down like a king. Cold grey-blue light with warm candle accents, epic fantasy drama look, calmer darker area on the left.
 ```
 
 ---
