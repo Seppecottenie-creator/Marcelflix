@@ -439,6 +439,8 @@
       "year": 2027,
       "age": "12+",
       "match": 93,
+      "poster": "assets/covers/spider.jpg",
+      "backdrop": "assets/covers/spider-wide.jpg",
       "theme": "spider",
       "status": "soon",
       "episodes": [
