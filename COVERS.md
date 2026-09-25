@@ -112,15 +112,15 @@ A cluttered, brightly lit open-plan paper company office with beige walls, desks
 ```
 
 ## Katnonkels · `katten`
-**Look:** warm cosy Flemish living room, soft lamp light, homely
+**Look:** cosy old-fashioned Flemish living room, warm bright lamp light, cheerful comedy (niet donker of somber)
 
 **Poster (2:3):**
 ```
-The cat sitting on a sofa between a large potted plant and an upright vacuum cleaner, the three of them posed like a family portrait, cosy living room with warm lamp light and patterned wallpaper, homely Flemish atmosphere, calm lower third.
+A family portrait in a cosy, slightly old-fashioned Flemish living room: brown wooden furniture, patterned wallpaper, a lace doily on the side table, a framed picture of a cat on the wall. The cat sits proudly in the middle of a floral sofa, flanked by his two "uncles": a large potted plant on his left and an upright vacuum cleaner on his right, all three posed stiffly like a family photo. Warm, bright lamp light, cheerful comedy TV look, not dark, not moody, calm lower third.
 ```
 **Breed (16:9):**
 ```
-A cosy living room with a plant and a vacuum cleaner in the left background, the cat on the right sitting on the armrest of a sofa looking like he is planning something, warm lamp light, homely and a little old-fashioned.
+A cosy, slightly old-fashioned Flemish living room with patterned wallpaper, brown furniture and a lace doily, a potted plant and a vacuum cleaner standing close together on the left as if whispering, the cat on the right side of the frame sitting on the armrest of a floral sofa with a scheming look, a bag of cat treats visible on a high shelf above them. Warm, bright lamp light, cheerful comedy TV look, not dark, not moody.
 ```
 
 ## The Crown (van de kast) · `crown`
