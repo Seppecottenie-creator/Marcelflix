@@ -237,15 +237,15 @@ A real photograph, like a still from a live-action superhero film: a city apartm
 ```
 
 ## Mission: Impawsible · `mission`
-**Look:** tense action, cool blue-grey, laser red
+**Look:** tense live-action spy action, cool blue-grey with red lasers; aan kabels hangen in een witte kluis, een zichzelf vernietigende boodschap die hij van de tafel duwt
 
 **Poster (2:3):**
 ```
-The cat hanging upside down on a thin rope in a dark room, red laser beams crossing around him, a cup on a table below, tense action thriller lighting in cool blue-grey, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a tense live-action spy action film shot on a practical set. The cat, a normal-sized house cat, wearing a small black harness, hangs horizontally from the ceiling on thin black cables, lowered into a pristine, brightly lit white high-security vault room, legs spread for balance, face calm and focused, just above a white pedestal with a single cat treat on it under a glass dome. Thin red laser beams cross the room below him. Cool white and blue-grey light with red laser accents, tense stillness, calm lower third with the white floor.
 ```
 **Breed (16:9):**
 ```
-A dark hallway full of red laser beams on the left, the cat on the right crouching low and focused, ready to jump through them, cool blue-grey action thriller color grade.
+A real photograph, like a still from a tense live-action spy action film: a dark room crossed by a grid of thin red laser beams on the left. On the right side of the frame the cat, a normal-sized house cat, sits on a table next to an old portable tape recorder that is smoking and sparking as it self-destructs; with one paw he casually pushes it off the edge of the table while looking straight into the camera, completely unimpressed. Cool blue-grey light, red laser glow and a small puff of smoke, calmer darker area on the left.
 ```
 
 ## Top Gun: Meowerick · `topgun`
