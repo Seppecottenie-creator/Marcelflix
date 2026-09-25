@@ -237,7 +237,30 @@
     };
     scrollTo(0, 0);
   }
-  function row(title, inner, cls = "") { return inner ? `<section class="row ${cls}"><h2>${title}</h2><div class="track">${inner}</div></section>` : ""; }
+  function row(title, inner, cls = "") {
+    return inner ? `<section class="row ${cls}"><h2>${title}</h2><div class="rail">
+      <button class="arrow prev" aria-label="Vorige" tabindex="-1">‹</button>
+      <div class="track">${inner}</div>
+      <button class="arrow next" aria-label="Volgende" tabindex="-1">›</button></div></section>` : "";
+  }
+  /* Pijlen links/rechts: enkel zichtbaar als er in die richting nog iets te zien is. */
+  function wireRows() {
+    app.querySelectorAll(".rail").forEach(rail => {
+      const track = rail.querySelector(".track"), prev = rail.querySelector(".prev"), next = rail.querySelector(".next");
+      const update = () => {
+        const max = track.scrollWidth - track.clientWidth;
+        prev.classList.toggle("off", track.scrollLeft <= 4);
+        next.classList.toggle("off", track.scrollLeft >= max - 4);
+      };
+      const step = (dir) => track.scrollBy({ left: dir * Math.max(200, track.clientWidth * 0.85), behavior: "smooth" });
+      prev.onclick = (e) => { e.stopPropagation(); step(-1); };
+      next.onclick = (e) => { e.stopPropagation(); step(1); };
+      track.addEventListener("scroll", update, { passive: true });
+      update();
+      setTimeout(update, 600); // na het laden van de posters
+    });
+  }
+  window.addEventListener("resize", () => app.querySelectorAll(".rail .track").forEach(t => t.dispatchEvent(new Event("scroll"))));
   function top10Card(s, n) {
     return `<button class="card" data-open="${esc(s.id)}" aria-label="Nummer ${n}: ${esc(s.title)}"><span class="num" aria-hidden="true">${n}</span><div class="pw">${posterHtml(s)}${ribbon(s)}</div></button>`;
   }
@@ -261,6 +284,7 @@
   }
 
   function wireCards() {
+    wireRows();
     app.querySelectorAll("[data-open]").forEach(b => b.onclick = () => go("#/serie/" + b.dataset.open));
     app.querySelectorAll("[data-play]").forEach(b => b.onclick = () => {
       const s = byId(b.dataset.play);
