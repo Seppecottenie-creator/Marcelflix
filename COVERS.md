@@ -177,15 +177,15 @@ A real photograph, like a still from a glamorous live-action 1960s spy film shot
 ```
 
 ## Catanic · `catanic`
-**Look:** romantic epic, sunset, cold blue sea
+**Look:** grand romantic epic on an ocean liner, golden sunset and deep blue sea; de boeg ("king of the world"), een blauw hartvormig juweel, een ijsberg in de verte
 
 **Poster (2:3):**
 ```
-The cat sitting at the front of a large ship's bow at sunset, wind in his fur, the endless ocean behind him, warm golden and cold blue tones, epic romantic drama, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a grand live-action romantic epic set on an ocean liner, shot on a practical set at golden hour. The cat stands proudly at the very tip of the ship's bow on the railing, chest out, head raised into the wind, fur blowing, like the king of the world. Around his neck a delicate chain with a large blue heart-shaped diamond pendant. Behind him a warm golden sunset over an endless ocean; below him the dark steel hull of the ship cutting through the waves. Warm golden and deep blue tones, calm dark lower third with the dark ship hull.
 ```
 **Breed (16:9):**
 ```
-The bow of a grand ocean liner at golden sunset, the cat on the right standing at the very front with the wind in his fur, vast ocean on the left, epic romantic color grade.
+A real photograph, like a still from a grand live-action romantic epic: the bow of a huge early-1900s ocean liner at golden sunset, polished wooden deck, white railings, ropes and a bell. Far away on the left horizon a pale iceberg glows in the last sunlight. On the right side of the frame the cat sits dreamily on a folded blanket on a wooden deck chair, the blue heart-shaped diamond pendant around his neck catching the light, gazing out over the sea with the wind in his fur. Warm golden and cold blue tones, calmer sky and sea on the left.
 ```
 
 ## Pride & Purrjudice · `pride`
