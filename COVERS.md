@@ -124,15 +124,15 @@ The garden of a modern white villa under a bright blue sky with fluffy clouds, a
 ```
 
 ## The Crown (van de kast) · `crown`
-**Look:** formal royal portrait, cool palace light, muted deep blue and gold, prestigious historical drama
+**Look:** formal royal portrait, palace throne room, muted deep blue, red and gold, prestigious historical drama (knipogen: voorouderportretten, rode loper, kroonjuwelen als kattenspeelgoed, theeservies, corgi's)
 
 **Poster (2:3):**
 ```
-A formal royal portrait: the cat sits majestically and perfectly upright on top of a tall antique wardrobe as if it were a throne, a small golden crown with red velvet resting on his head, a heavy dark blue velvet curtain with gold tassels behind him, a gilded picture frame on the wall. Cool, dignified palace light from a tall window, muted deep blue and gold color grade, serious and regal expression, prestigious historical drama look, calm dark lower third.
+A formal royal portrait: the cat sits majestically and perfectly upright on top of a tall antique wardrobe as if it were a throne, a small golden crown with red velvet on his head. Behind him a heavy dark blue velvet curtain with gold tassels and a large gilded oil painting of a grey cat ancestor in ermine robes. At the foot of the wardrobe a red velvet cushion with a golden ball of yarn and a jewelled feather wand as crown jewels, and a corgi looking up at him in awe. Cool, dignified palace light from a tall window, muted deep blue, red and gold color grade, serious and regal expression, prestigious historical drama look, calm dark lower third.
 ```
 **Breed (16:9):**
 ```
-A grand, stately room with tall windows, heavy blue velvet curtains, gilded frames and a crystal chandelier. On the right side of the frame the cat sits perfectly upright on top of a tall antique cabinet and looks down with royal disdain, wearing a small golden crown with red velvet. Cool palace light, muted deep blue and gold color grade, prestigious historical drama look, calmer darker area on the left.
+A grand palace throne room with tall windows, heavy blue velvet curtains and a crystal chandelier. The walls are lined with gilded oil-painting portraits of the cat's royal ancestors: grey cats in ermine robes and crowns. A red carpet runs across the polished floor towards a tall antique cabinet on the right side of the frame, where the cat sits perfectly upright on top, wearing a small golden crown with red velvet, looking down with royal disdain. At the foot of the cabinet: a red velvet cushion holding the "crown jewels" (a golden ball of yarn and a jewelled feather cat-toy wand as a scepter), a small table with a silver tea set, and two corgis sitting politely and looking up at him in awe. Cool palace light, muted deep blue, red and gold color grade, prestigious historical drama look, slightly calmer area on the left.
 ```
 
 ## La Casa de Brokjes · `heist`
