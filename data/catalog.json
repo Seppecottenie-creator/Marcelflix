@@ -595,6 +595,8 @@
       "year": 2026,
       "age": "Alle leeftijden",
       "match": 100,
+      "poster": "assets/covers/directors-cut.jpg",
+      "backdrop": "assets/covers/directors-cut-wide.jpg",
       "theme": "amigos",
       "status": "secret",
       "unlock": {
