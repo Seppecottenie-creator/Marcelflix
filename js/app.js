@@ -8,7 +8,7 @@
   /* ---------- opslag (per toestel) ---------- */
   const Store = {
     key: "marcelflix:v1",
-    d: { profile: null, endings: {}, cont: {}, watched: {}, remind: {} },
+    d: { profile: null, endings: {}, cont: {}, watched: {}, remind: {}, avatars: {} },
     load() { try { const x = JSON.parse(localStorage.getItem(this.key)); if (x) Object.assign(this.d, x); } catch (e) {} },
     save() { try { localStorage.setItem(this.key, JSON.stringify(this.d)); } catch (e) {} },
     k(s, e) { return s + "/" + e; },
@@ -61,7 +61,32 @@
     return `<div class="ribbon new"><span>NIEUWE AFLEVERING</span></div>`;
   }
   function currentProfile() { return CONFIG.profiles.find(p => p.id === Store.d.profile) || CONFIG.profiles[0]; }
+  /* Profieliconen: Marcel in zijn filmrollen (uitsnede uit de covers) en klassieke emoji's.
+     pos = waar zijn kop op de poster staat (x% y%). */
+  const AVATARS = [
+    { id: "rookie", pos: "51% 26%" }, { id: "bond", pos: "55% 25%" }, { id: "spider", pos: "61% 33%" },
+    { id: "pawter", pos: "55% 30%" }, { id: "topgun", pos: "51% 36%" }, { id: "crown", pos: "50% 28%" },
+    { id: "heist", pos: "35% 40%" }, { id: "stranger", pos: "54% 32%" }, { id: "breaking", pos: "51% 24%" },
+    { id: "office", pos: "47% 27%" }, { id: "thrones", pos: "66% 43%" }, { id: "catanic", pos: "62% 24%" },
+    { id: "pride", pos: "55% 47%" }, { id: "purrstellar", pos: "48% 41%" }, { id: "mission", pos: "50% 43%" },
+    { id: "homealone", pos: "54% 55%" }, { id: "katten", pos: "66% 55%" }
+  ].map(a => ({ ...a, kind: "cover" }))
+   .concat(["😊", "😺", "😼", "🐶", "🦊", "🐼", "🐯", "🦁", "🐸", "🦄", "🍿", "👑", "🕵️", "🚀", "🦖", "🌮", "🎄", "❤️"]
+     .map(e => ({ id: "emoji:" + e, kind: "emoji", emoji: e })));
+  function avatarChoice(p) {
+    const id = Store.d.avatars && Store.d.avatars[p.id];
+    const a = id && AVATARS.find(x => x.id === id);
+    if (!a) return null;
+    if (a.kind === "cover") { const s = byId(a.id); if (!s || !s.poster) return null; return { ...a, img: s.poster }; }
+    return a;
+  }
+  function avatarIcon(a, fallbackEmoji = "😊") {
+    if (a && a.kind === "cover") return `<span class="av-img" style="background-image:url('${esc(a.img)}');background-position:${esc(a.pos)}"></span>`;
+    return `<span class="face">${esc(a ? a.emoji : fallbackEmoji)}</span>`;
+  }
   function avatarHtml(p) {
+    const a = avatarChoice(p);
+    if (a) return avatarIcon(a);
     return p.avatar ? `<img src="${esc(p.avatar)}" alt="">` : `<span class="face">😊</span>`;
   }
 
@@ -86,22 +111,49 @@
     el.addEventListener("click", finish);
   }
 
-  function viewProfiles() {
-    app.innerHTML = `<div class="profiles">
-      <h1>Wie kijkt er?</h1>
+  function viewProfiles(manage = false) {
+    app.innerHTML = `<div class="profiles ${manage ? "managing" : ""}">
+      <h1>${manage ? "Profielen beheren" : "Wie kijkt er?"}</h1>
       <div class="profile-grid">${CONFIG.profiles.map(p => `
         <button class="profile" data-id="${esc(p.id)}">
-          <div class="av" style="background:${esc(p.color)}">${avatarHtml(p)}${p.locked ? `<span class="lock">🔒</span>` : ""}</div>
+          <div class="av" style="background:${esc(p.color)}">${avatarHtml(p)}${p.locked && !manage ? `<span class="lock">🔒</span>` : ""}${manage ? `<span class="edit" aria-hidden="true">✎</span>` : ""}</div>
           <span>${esc(p.name)}</span></button>`).join("")}
       </div>
-      <button class="manage" id="manage">PROFIELEN BEHEREN</button></div>`;
+      <button class="manage ${manage ? "done" : ""}" id="manage">${manage ? "KLAAR" : "PROFIELEN BEHEREN"}</button></div>`;
     app.querySelectorAll(".profile").forEach(b => b.onclick = () => {
       const p = CONFIG.profiles.find(x => x.id === b.dataset.id);
+      if (manage) { viewAvatarPicker(p); return; }
       if (p.locked) { toast(p.locked, 3500); return; }
       Store.d.profile = p.id; Store.save(); go("#/home");
       if (p.welcome) setTimeout(() => toast(p.welcome, 3200), 400);
     });
-    document.getElementById("manage").onclick = () => toast("Profielen worden beheerd door Marcel. Hij is niet bereikbaar.");
+    document.getElementById("manage").onclick = () => viewProfiles(!manage);
+  }
+
+  function viewAvatarPicker(p) {
+    const cur = Store.d.avatars[p.id] || "";
+    const covers = AVATARS.filter(a => a.kind === "cover").map(a => { const s = byId(a.id); return s && s.poster ? { ...a, img: s.poster, title: s.title } : null; }).filter(Boolean);
+    const emojis = AVATARS.filter(a => a.kind === "emoji");
+    const tile = (a, label) => `<button class="pick ${a.id === cur ? "on" : ""}" data-av="${esc(a.id)}" aria-label="${esc(label)}">
+        <span class="av" style="background:${esc(p.color)}">${avatarIcon(a)}</span></button>`;
+    app.innerHTML = `<div class="picker">
+      <div class="picker-head">
+        <button class="back-btn" id="pback" aria-label="Terug">←</button>
+        <div><h1>Kies een icoon</h1><p>voor <b>${esc(p.name)}</b></p></div>
+        <span class="av cur" style="background:${esc(p.color)}">${avatarHtml(p)}</span>
+      </div>
+      <h2>Marcel in zijn grootste rollen</h2>
+      <div class="pick-grid">${covers.map(a => tile(a, a.title)).join("")}</div>
+      <h2>Klassiekers</h2>
+      <div class="pick-grid">${emojis.map(a => tile(a, a.emoji)).join("")}</div>
+    </div>`;
+    scrollTo(0, 0);
+    document.getElementById("pback").onclick = () => viewProfiles(true);
+    app.querySelectorAll("[data-av]").forEach(b => b.onclick = () => {
+      Store.d.avatars[p.id] = b.dataset.av; Store.save();
+      toast("Nieuw icoon voor " + p.name + ". Marcel keurt het goed. Denken we.");
+      viewProfiles(true);
+    });
   }
 
   function topbar(active) {
@@ -134,6 +186,11 @@
     const secret = CATALOG.filter(s => s.status === "secret" && isUnlocked(s));
     const pub = vis.filter(s => s.status !== "secret");
     const hasG = (s, list) => s.genres.some(g => list.includes(g));
+    // Originals: series en films om en om
+    const ser = pub.filter(s => s.type === "series"), fil = pub.filter(s => s.type === "film");
+    const originals = [];
+    for (let i = 0; i < Math.max(ser.length, fil.length); i++) { if (ser[i]) originals.push(ser[i]); if (fil[i]) originals.push(fil[i]); }
+    const top10 = (CONFIG.top10 || pub.map(s => s.id)).map(byId).filter(s => s && pub.includes(s)).slice(0, 10);
 
     app.innerHTML = `${topbar("home")}
       <section class="hero">
@@ -152,23 +209,23 @@
         </div>
       </section>
       <div class="rows">
-        ${secret.length ? row("Speciaal voor jou 💘", secret.map(cardHtml).join("")) : ""}
+        ${secret.length ? row("Speciaal voor jou 🔓", secret.map(cardHtml).join("")) : ""}
         ${row("Verder kijken als " + esc(currentProfile().name),
           conts.map(c => `<button class="card wide" data-play="${esc(c.s.id)}" data-ep="${esc(c.ep.id)}">
               ${(c.ep.still || c.s.backdrop || c.s.poster)
                 ? `<img src="${esc(c.ep.still || c.s.backdrop || c.s.poster)}" alt="" loading="lazy">`
                 : `<span class="gposter gp-${esc(c.s.theme)}"><span class="art"></span></span>`}
               <div class="ctitle">${esc(c.s.title)} · A${c.ep.number}</div>
-              <div class="progress"><i style="width:${Math.min(92, 8 + c.v.step * 6)}%"></i></div></button>`).join("") +
-          `<button class="card wide" data-joke="slapen">
-              <span class="gposter gp-romance"><span class="art"></span></span>
-              <div class="ctitle">Marcel: Slapen · S14 A312</div>
-              <div class="progress"><i style="width:97%"></i></div></button>`)}
-        ${row(`<a href="#/series" class="rowlink">Marcelflix Originals: Series ›</a>`, pub.filter(s => s.type === "series").map(cardHtml).join(""))}
+              <div class="progress"><i style="width:${Math.min(92, 8 + c.v.step * 6)}%"></i></div></button>`).join(""))}
+        ${row("Marcelflix Originals", originals.map(cardHtml).join(""))}
         ${row(`<a href="#/films" class="rowlink">Films ›</a>`, pub.filter(s => s.type === "film").map(cardHtml).join(""))}
+        ${row(`<a href="#/series" class="rowlink">Series ›</a>`, pub.filter(s => s.type === "series").map(cardHtml).join(""))}
         ${row("Spannend, met een kat erin", pub.filter(s => hasG(s, ["Thriller", "Misdaad", "Mysterie", "Heist", "Spionage"])).map(cardHtml).join(""))}
+        ${row("Om hard te lachen", pub.filter(s => hasG(s, ["Komedie", "Mockumentary", "Vlaamse komedie", "Familie"])).map(cardHtml).join(""))}
+        ${row("Actie en avontuur", pub.filter(s => hasG(s, ["Actie", "Avontuur", "Superheld"])).map(cardHtml).join(""))}
         ${row("Voor een romantische avond", pub.filter(s => hasG(s, ["Romantiek", "Kostuumdrama"])).map(cardHtml).join(""))}
-        ${row("Omdat je keek naar: Marcel die naar de muur staart", pub.filter(s => hasG(s, ["Sci-fi", "Fantasy", "Superheld", "Historisch drama"])).reverse().map(cardHtml).join(""))}
+        ${row("Omdat je keek naar: Marcel die naar de muur staart", pub.filter(s => hasG(s, ["Sci-fi", "Fantasy", "Historisch drama"])).map(cardHtml).join(""))}
+        ${row("Top 10 van het moment", top10.map((s, i) => top10Card(s, i + 1)).join(""), "top10")}
       </div>
       <footer class="foot">Marcelflix · Een Marcel Productie<br>Geen enkele vaas werd beschadigd tijdens de opnames. Nou ja. Eén.<br>
         <a href="#" id="reset" style="color:#555">Voortgang wissen</a></footer>`;
@@ -181,6 +238,9 @@
     scrollTo(0, 0);
   }
   function row(title, inner, cls = "") { return inner ? `<section class="row ${cls}"><h2>${title}</h2><div class="track">${inner}</div></section>` : ""; }
+  function top10Card(s, n) {
+    return `<button class="card" data-open="${esc(s.id)}" aria-label="Nummer ${n}: ${esc(s.title)}"><span class="num" aria-hidden="true">${n}</span><div class="pw">${posterHtml(s)}${ribbon(s)}</div></button>`;
+  }
   function cardHtml(s) { return `<button class="card" data-open="${esc(s.id)}" aria-label="${esc(s.title)}"><span class="m">M</span>${posterHtml(s)}${s.type === "film" ? `<span class="type-tag">FILM</span>` : ""}${ribbon(s)}</button>`; }
 
   function viewBrowse(type, genre) {
@@ -210,7 +270,6 @@
       pending = { key: s.id + "/" + eid, mode: Store.d.cont[s.id + "/" + eid] ? "resume" : "fresh", at: performance.now() };
       go("#/kijk/" + s.id + "/" + eid);
     });
-    app.querySelectorAll("[data-joke]").forEach(b => b.onclick = () => toast("Deze aflevering duurt 16 uur per dag. Je zit er middenin.", 3500));
   }
 
   function viewSeries(id) {

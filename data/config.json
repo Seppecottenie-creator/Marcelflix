@@ -20,5 +20,18 @@
     "rate": "-10%",
     "pitch": "-5Hz",
     "name": "nl-BE-ArnaudNeural"
-  }
+  },
+  "_uitleg_top10": "Volgorde van de rij 'Top 10 van het moment' op home (id's uit data/catalog.json).",
+  "top10": [
+    "rookie",
+    "heist",
+    "catanic",
+    "stranger",
+    "bond",
+    "katten",
+    "pawter",
+    "topgun",
+    "crown",
+    "homealone"
+  ]
 }

@@ -54,6 +54,25 @@ img { display: block; max-width: 100%; }
 .profile:hover .av, .profile:focus-visible .av { border-color: var(--text); transform: scale(1.04); }
 .profile .lock { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.7); border-radius: 50%; width: 26px; height: 26px; display: grid; place-items: center; font-size: 13px; }
 .profiles .manage { margin-top: 48px; border: 1px solid var(--muted); color: var(--muted); padding: 8px 22px; letter-spacing: .15em; font-size: 13px; }
+.profiles .manage.done { background: var(--text); color: #000; border-color: var(--text); font-weight: 700; }
+.profiles.managing .av > :not(.edit) { filter: brightness(.45); }
+.profile .edit { position: absolute; inset: 0; display: grid; place-items: center; font-size: 34px; color: #fff; }
+.av-img { display: block; width: 100%; height: 100%; background-size: 260% auto; background-repeat: no-repeat; }
+.topbar .mini-av .av-img { background-size: 260% auto; }
+.picker { min-height: 100svh; padding: calc(24px + var(--safe-t)) var(--gutter) calc(40px + var(--safe-b)); max-width: 980px; margin: 0 auto; animation: fadeIn .4s; }
+.picker-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.picker-head .back-btn { position: static; flex: none; }
+.picker-head h1 { font-size: clamp(22px, 3vw, 32px); margin: 0; }
+.picker-head p { margin: 2px 0 0; color: var(--muted); }
+.picker-head .cur { margin-left: auto; width: 56px; height: 56px; border-radius: 6px; overflow: hidden; display: grid; place-items: center; flex: none; }
+.picker-head .cur .face { font-size: 30px; }
+.picker h2 { font-size: 16px; font-weight: 700; margin: 22px 0 10px; color: #ddd; }
+.pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 12px; }
+.pick { display: block; border-radius: 8px; border: 3px solid transparent; transition: border-color .15s, transform .15s; }
+.pick:hover, .pick:focus-visible { border-color: var(--muted); transform: scale(1.05); outline: none; }
+.pick.on { border-color: var(--text); }
+.pick .av { display: grid; place-items: center; aspect-ratio: 1; border-radius: 5px; overflow: hidden; }
+.pick .face { font-size: 36px; }
 
 /* ---------- header ---------- */
 .topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; gap: 24px; padding: calc(14px + var(--safe-t)) var(--gutter) 14px; background: linear-gradient(180deg, rgba(0,0,0,.85), rgba(0,0,0,0)); transition: background .3s; }
@@ -155,7 +174,7 @@ img { display: block; max-width: 100%; }
 .rows { position: relative; z-index: 3; margin-top: clamp(-80px, -6vw, -20px); padding-bottom: 80px; }
 .row { margin: 0 0 clamp(26px, 3.5vw, 44px); }
 .row h2 { font-size: clamp(17px, 1.8vw, 22px); font-weight: 700; margin: 0 var(--gutter) 10px; }
-.track { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px var(--gutter) 12px; scrollbar-width: none; }
+.track { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); padding: 6px var(--gutter) 12px; scrollbar-width: none; }
 .track::-webkit-scrollbar { display: none; }
 .card { flex: 0 0 clamp(120px, 16vw, 210px); scroll-snap-align: start; position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 2/3; background: var(--bg-3); transition: transform .25s; text-align: left; }
 .card:hover, .card:focus-visible { transform: scale(1.05); z-index: 2; outline: none; box-shadow: 0 10px 30px rgba(0,0,0,.6); }
@@ -169,9 +188,13 @@ img { display: block; max-width: 100%; }
 .card .progress { position: absolute; left: 8px; right: 8px; bottom: 8px; height: 3px; background: rgba(255,255,255,.3); border-radius: 2px; }
 .card .progress i { display: block; height: 100%; background: var(--red); border-radius: 2px; }
 .card .ctitle { position: absolute; left: 8px; bottom: 16px; font-weight: 700; font-size: 13px; text-shadow: 0 1px 6px #000; }
-.top10 .card { flex-basis: clamp(170px, 24vw, 300px); aspect-ratio: auto; background: none; display: flex; align-items: flex-end; overflow: visible; }
-.top10 .num { font-family: var(--logo); font-size: clamp(120px, 14vw, 200px); line-height: .8; color: var(--bg); -webkit-text-stroke: 3px #595959; margin-right: -14px; letter-spacing: -.05em; }
-.top10 .card .pw { width: 58%; aspect-ratio: 2/3; border-radius: var(--radius); overflow: hidden; position: relative; }
+.top10 .card { flex-basis: clamp(190px, 22vw, 290px); aspect-ratio: auto; background: none; display: flex; align-items: flex-end; overflow: visible; }
+.top10 .num { flex: none; font-family: var(--logo); font-size: clamp(110px, 12vw, 180px); line-height: .8; color: var(--bg); -webkit-text-stroke: 3px #595959; margin-right: -10px; letter-spacing: -.05em; }
+.top10 .card:nth-child(10) .num { letter-spacing: -.12em; }
+.top10 .card .pw { flex: 1; min-width: 0; aspect-ratio: 2/3; border-radius: var(--radius); overflow: hidden; position: relative; }
+.top10 .card .pw .slogo, .top10 .card .pw .slogo .l1, .top10 .card .pw .slogo .l2 { font-size: clamp(13px, 1.5vw, 20px) !important; }
+.top10 .card .pw .slogo .l2 { font-size: clamp(9px, 1vw, 12px) !important; }
+.top10 .card .pw .ribbon { font-size: 9px; }
 .top10 .card:hover { transform: scale(1.04); box-shadow: none; }
 
 /* generated CSS posters */
