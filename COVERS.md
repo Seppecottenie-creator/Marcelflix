@@ -289,13 +289,13 @@ A real photograph, like a still from a live-action early-1990s Christmas family 
 # Geheim
 
 ## Director's Cut · `directors-cut`
-**Look:** soft romantic, golden hour, dreamy haze (dezelfde als de aflevering)
+**Look:** intimate live-action romantic film, golden hour, dreamy haze, warm peach, rose and gold (dezelfde stijl als de aflevering); een brief met een hartvormig lakzegel, twee koppen thee
 
 **Poster (2:3):**
 ```
-The cat sitting on a windowsill at golden hour, soft dreamy haze, warm backlight glowing through his fur, a single red rose petal beside him, intimate romantic film still, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from an intimate live-action romantic film shot at golden hour. The cat, a normal-sized house cat, sits on a wide windowsill in soft golden evening light, warm backlight glowing through the edges of his fur, looking gently into the camera with soft, loving eyes. In front of his paws lies a cream-coloured envelope sealed with a red wax seal in the shape of a small heart, next to a single red rose. Dreamy haze, sheer curtains, warm peach and rose tones, calm softly blurred lower third with the windowsill. No readable text.
 ```
 **Breed (16:9):**
 ```
-A cosy living room at golden hour, two cups of tea on the table on the left, the cat on the right curled up on a blanket looking softly into the camera, dreamy haze, warm romantic color grade.
+A real photograph, like a still from an intimate live-action romantic film: a cosy living room at golden hour, sunlight streaming through the window, a soft knitted blanket on the sofa, two cups of tea steaming side by side on a small wooden table on the left, fairy lights glowing softly. On the right side of the frame the cat, a normal-sized house cat, lies curled up on the blanket, head resting on an opened handwritten letter, looking softly into the camera with half-closed, content eyes. Warm peach, rose and gold tones, dreamy haze, calmer area on the left. No readable text on the letter, no people.
 ```
