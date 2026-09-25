@@ -271,10 +271,10 @@
     },
     {
       "id": "bond",
-      "title": "Double-O-Marcel: Licence to Purr",
+      "title": "Marcel Bond: License to Purr",
       "logoLine": [
-        "DOUBLE-O-MARCEL",
-        "LICENCE TO PURR"
+        "MARCEL BOND",
+        "LICENSE TO PURR"
       ],
       "type": "film",
       "tagline": "Shaken. Not stirred. Wel geaaid.",
@@ -292,7 +292,7 @@
         {
           "id": "ep1",
           "number": 1,
-          "title": "Licence to Purr",
+          "title": "License to Purr",
           "duration": "± 8 min",
           "summary": "Binnenkort."
         }

@@ -13,7 +13,7 @@ Parodieën op wat we graag kijken. Enkel de sfeer overnemen: geen echte personag
 Alles staat in `data/catalog.json` (`type`: series of film, `status`: available / soon / secret).
 
 **Series:** The Rookie: Feline Division (pilot "De Zaak Vaas", speelbaar), Stranger Paws, Breaking Bowl, The Pawffice, Katnonkels (Nonkels), The Crown (van de kast), La Casa de Brokjes, Game of Cushions.
-**Films:** Double-O-Marcel: Licence to Purr, Catanic, Pride & Purrjudice, Purrstellar, Harry Pawter en de Steen der Brokjes, Spider-Marcel, Mission: Impawsible, Top Gun: Meowerick, Jurassic Purrk, Home Alone: Marcel Edition.
+**Films:** Marcel Bond: License to Purr, Catanic, Pride & Purrjudice, Purrstellar, Harry Pawter en de Steen der Brokjes, Spider-Marcel, Mission: Impawsible, Top Gun: Meowerick, Jurassic Purrk, Home Alone: Marcel Edition.
 **Geheim:** Director's Cut, ontgrendelt als alle 3 eindes van de pilot gevonden zijn.
 
 Profielen: "Ik" (voor haar) en "Marcel". Navigatie: Home, Series, Films (met genrefilter). Geen top 10.

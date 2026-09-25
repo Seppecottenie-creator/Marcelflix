@@ -164,16 +164,16 @@ A real photograph, like a still from a live-action period drama filmed on a prac
 
 # Films
 
-## Double-O-Marcel: Licence to Purr · `bond`
-**Look:** glamorous spy thriller, tuxedo black, gold highlights
+## Marcel Bond: License to Purr · `bond`
+**Look:** glamorous 1960s spy film on a practical set, black and gold, casino; de schurk is de rode laserstip (geen wapens)
 
 **Poster (2:3):**
 ```
-The cat sitting elegantly with a tiny black bow tie, a spotlight from above, a glamorous dark background with golden bokeh, 1960s spy thriller style, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a glamorous live-action 1960s spy film shot on a practical set. The cat sits upright and cool on a black leather armchair in a luxurious dark casino, wearing a tiny black tuxedo jacket with a black bow tie, head turned slightly, giving the camera a confident, unimpressed look. Next to him on a small table a martini glass with an olive and a stack of gold casino chips. A small red laser dot glows menacingly on the armrest beside his paw. Dramatic spotlight from above, deep black shadows, golden bokeh lights in the background, calm dark lower third. No guns.
 ```
 **Breed (16:9):**
 ```
-A luxurious dark casino-like room with golden bokeh lights, the cat on the right wearing a tiny black bow tie sitting next to a martini glass, cool confident look, glamorous spy thriller color grade.
+A real photograph, like a still from a glamorous live-action 1960s spy film shot on a practical set: a luxurious casino at night with a roulette wheel, green felt card tables, crystal chandeliers and golden bokeh lights. On the right side of the frame the cat, wearing a tiny black tuxedo jacket and bow tie, lies elegantly on the green felt of a card table between stacks of casino chips and a martini glass, watching a small red laser dot creeping across the felt towards him with narrowed eyes. Warm golden light with deep black shadows, calmer darker area on the left. No guns.
 ```
 
 ## Catanic · `catanic`
