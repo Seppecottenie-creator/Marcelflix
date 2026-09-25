@@ -136,15 +136,15 @@ A grand palace throne room with tall windows, heavy blue velvet curtains and a c
 ```
 
 ## La Casa de Brokjes · `heist`
-**Look:** heist thriller, red accents, high contrast
+**Look:** heist thriller, bold red and black, high contrast; rode overall, kluis vol snoepjes, brokjes die als biljetten neerregenen (geen maskers)
 
 **Poster (2:3):**
 ```
-The cat standing in front of an open refrigerator glowing in the dark kitchen, wearing a small red scarf like a bandana, looking over his shoulder at the camera, high-contrast heist thriller lighting with red accents, calm lower third.
+A dramatic heist thriller poster: the cat sits upright and confident, wearing a small red hooded jumpsuit, in front of a huge open round bank-vault door. Inside the vault are shelves stacked with bags of cat treats. Hundreds of pieces of dry cat kibble rain down through the air around him like banknotes in a heist. Bold red and black color scheme, dramatic spotlight from above, dark background, high-contrast heist thriller look, calm dark lower third. No masks.
 ```
 **Breed (16:9):**
 ```
-A dark kitchen at night lit only by the light of an open fridge, a hand-drawn plan on paper on the floor on the left, the cat on the right in a small red scarf looking determined, high-contrast heist thriller look with red accents.
+A dark kitchen at night turned into a heist headquarters: a massive round steel vault door built into the pantry stands open, revealing shelves full of cat treat bags glowing in warm light. A table on the left with a hand-drawn floor plan of the kitchen, arrows and pins, no readable words. Dry cat kibble rains down through the air like banknotes. On the right side of the frame the cat, wearing a small red hooded jumpsuit, looks back over his shoulder into the camera with a determined, sly expression. Bold red and black color scheme, dramatic high-contrast lighting with red accents, heist thriller look, calmer darker area on the left. No masks.
 ```
 
 ## Game of Cushions · `thrones`
