@@ -225,15 +225,15 @@ A real photograph, like a still from a live-action fantasy film shot on a practi
 ```
 
 ## Spider-Marcel · `spider`
-**Look:** live-action superhero film, city at night, red and blue light, dramatic low angles; hoog zitten en oordelen, een echt spinnenweb (geen pak of logo)
+**Look:** live-action superhero film, city at night, red and blue light, dramatic low angles; rood-blauw spinnenheldpakje met webpatroon (kap opgeschoven, gezicht zichtbaar, geen logo), hoog zitten en oordelen
 
 **Poster (2:3):**
 ```
-Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action superhero film, shot from a dramatic low angle. The cat, a normal-sized house cat, crouches heroically on the very edge of the top of a tall bookcase in a city apartment at night, looking down at the camera with a judging, superior expression. Behind him a large window shows a glittering city skyline at dusk. A real spider web glistens in the upper corner of the room, catching the light. Red and blue city light falls across his fur, dynamic superhero composition, calm darker lower third with the bookcase. No costume.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action superhero film, shot from a dramatic low angle. The cat, a normal-sized house cat, wears a snug, well-fitted red and blue spider-hero costume for cats with a fine black web pattern, a hood with two large white mesh eye shapes pushed up onto his head so his real face, round cheeks and deep orange eyes stay fully visible. He crouches heroically on the very edge of the top of a tall bookcase in a city apartment at night, looking down at the camera with a judging, superior expression. Behind him a large window shows a glittering city skyline at dusk. A real spider web glistens in the upper corner of the room. Red and blue city light falls across him, dynamic superhero composition, calm darker lower third with the bookcase. No logo or emblem on the costume.
 ```
 **Breed (16:9):**
 ```
-A real photograph, like a still from a live-action superhero film: a city apartment at night, a huge window on the left showing skyscrapers with red and blue lights. On the right side of the frame the cat, a normal-sized house cat, perches on top of the tall kitchen cabinets right under the ceiling, one paw hanging over the edge, surveying the room below like a hero watching over his city. A real spider web stretches between the cabinet and the ceiling beside him, glittering in the city light. Dynamic low camera angle, red and blue light across his fur, calmer darker area on the left. No costume.
+A real photograph, like a still from a live-action superhero film: a city apartment at night, a huge window on the left showing skyscrapers with red and blue lights. On the right side of the frame the cat, a normal-sized house cat in his red and blue spider-hero costume with a black web pattern and the hood pushed up so his real face stays visible, perches on top of the tall kitchen cabinets right under the ceiling, one paw hanging over the edge, surveying the room below like a hero watching over his city. A real spider web stretches between the cabinet and the ceiling beside him, glittering in the city light. Dynamic low camera angle, red and blue light, calmer darker area on the left. No logo or emblem on the costume.
 ```
 
 ## Mission: Impawsible · `mission`
