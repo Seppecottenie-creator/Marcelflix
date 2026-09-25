@@ -189,15 +189,15 @@ A real photograph, like a still from a grand live-action romantic epic: the bow 
 ```
 
 ## Pride & Purrjudice · `pride`
-**Look:** soft English countryside, period drama, pastel morning light
+**Look:** Regency-era period romance in a real English country house, soft pastel light, gentle haze; een zonnestraal op de zetel, een mistig veld bij zonsopgang
 
 **Poster (2:3):**
 ```
-The cat sitting on a windowsill of an old English country house, soft misty morning light over green fields behind him, a delicate lace curtain, pastel period drama palette, calm lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action Regency-era period romance filmed in a real English country house. An elegant drawing room with pale green walls, tall sash windows and gauzy curtains; outside a misty green countryside at dawn. The cat, a normal-sized house cat, lies gracefully on a cream velvet chaise longue by the window, bathed in a single soft beam of morning sunlight, head raised with a proud, slightly haughty expression. A small vase of wildflowers and an old leather-bound book on a side table. Soft, dreamy pastel light, gentle haze, calm lower third with the pale wooden floor and the hem of the chaise.
 ```
 **Breed (16:9):**
 ```
-A misty English meadow at dawn with an old manor house in the left background, the cat on the right walking through the tall grass looking proud, soft pastel period drama light.
+A real photograph, like a still from a live-action Regency-era period romance: a misty English meadow at dawn, tall dewy grass glowing in the first golden light, an old stone manor house faintly visible through the mist on the left. On the right side of the frame the cat, a normal-sized house cat, walks slowly through the tall wet grass towards the camera with a proud, determined gaze, dew on his fur. Soft pastel sunrise light, gentle haze, calmer misty area on the left.
 ```
 
 ## Purrstellar · `purrstellar`
