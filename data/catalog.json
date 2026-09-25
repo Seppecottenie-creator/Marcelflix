@@ -286,6 +286,8 @@
       "year": 2027,
       "age": "12+",
       "match": 98,
+      "poster": "assets/covers/bond.jpg",
+      "backdrop": "assets/covers/bond-wide.jpg",
       "theme": "bond",
       "status": "soon",
       "episodes": [
