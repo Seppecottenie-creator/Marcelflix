@@ -181,7 +181,7 @@ A real photograph, like a still from a glamorous live-action 1960s spy film shot
 
 **Poster (2:3):**
 ```
-Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a grand live-action romantic epic set on an ocean liner, shot on a practical set at golden hour. The cat stands proudly at the very tip of the ship's bow on the railing, chest out, head raised into the wind, fur blowing, like the king of the world. Around his neck a delicate chain with a large blue heart-shaped diamond pendant. Behind him a warm golden sunset over an endless ocean; below him the dark steel hull of the ship cutting through the waves. Warm golden and deep blue tones, calm dark lower third with the dark ship hull.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a grand live-action romantic epic, taken on the deck of a huge early-1900s ocean liner at golden hour. The camera stands on the deck just behind the bow, low and slightly to the side. The cat is a normal-sized house cat, small compared to the ship: he stands on the white railing at the very tip of the bow, seen from behind and in three-quarter profile, chest out, head raised into the wind, fur blowing, like the king of the world. A thick rope coil and a brass ship's bell next to him show his real size. Around his neck a delicate chain with a blue heart-shaped diamond pendant that catches the sunlight. Ahead of him a warm golden sunset over an endless ocean. The polished wooden deck fills the calm lower third.
 ```
 **Breed (16:9):**
 ```
