@@ -36,8 +36,8 @@ Tips:
 
 2. Vraag per titel eerst de **poster** en daarna de **brede versie**. Plak telkens de prompt hieronder.
 3. **Plakt Gemini de kat uit je foto in de scène** (zelfde houding, ander licht)? Stuur: "Gebruik mijn foto's alleen als referentie voor zijn uiterlijk, kopieer nooit de foto, zijn houding of de belichting. Laat hem in een nieuwe houding in deze scène ontstaan, belicht door het licht van de scène." Helpt dat niet: vraag eerst de scène zonder kat, en laat Marcel er daarna in zetten.
-3. Wijkt Marcel af? Upload de gezichtsfoto opnieuw met "zelfde kat als op deze foto, let op de kop en de ogen".
-4. **Geen tekst op de covers.** De site zet de titel zelf over de poster. Staat er toch tekst op, vraag dan "dezelfde afbeelding zonder tekst".
+4. Wijkt Marcel af? Upload de gezichtsfoto opnieuw met "zelfde kat als op deze foto, let op de kop en de ogen".
+5. **Geen tekst op de covers.** De site zet de titel zelf over de poster. Staat er toch tekst op, vraag dan "dezelfde afbeelding zonder tekst".
 
 ## Formaten en bestandsnamen
 
