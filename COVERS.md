@@ -149,15 +149,15 @@ A dark kitchen at night turned into a heist headquarters: a massive round steel 
 ```
 
 ## Game of Cushions · `thrones`
-**Look:** live-action period drama op een echte set, koude stenen hal, kaarslicht, een paar sneeuwvlokken; een troon van echte zetelkussens (vermijd "epic fantasy", dat geeft digitale kunst)
+**Look:** live-action period drama op een echte set, koude stenen hal, kaarslicht; een troon met een zitting van zetelkussens en een rugleuning van zwaarden (vermijd "epic fantasy", dat geeft digitale kunst)
 
 **Poster (2:3):**
 ```
-A real photograph, shot on a full-frame cinema camera with a 50mm lens, like a still from a live-action HBO period drama filmed on a practical set. The real cat sits on top of a tall, jagged throne built from real stacked sofa cushions and pillows in velvet and linen, a real fur blanket draped over them. Behind him a cold stone hall with a tall arched window, a few snowflakes drifting in near the window, real candles on iron candelabras. Natural cold window light with warm candlelight, calm dark lower third.
+Do not copy the pose or lighting from the reference photos: create a new pose that fits this scene. A real photograph, like a still from a live-action period drama filmed on a practical set. A tall throne whose seat is made of real stacked sofa cushions and pillows in velvet and linen, and whose back is a fan of dozens of real old metal swords rising up behind the cushions, like a throne of swords. The cat lies broad and smug on top of the cushions, his body turned three-quarters, head slightly tilted, front paws draped over the edge of the top cushion, looking down at the camera like a bored king. A real fur blanket hangs over the cushions. Behind him a cold stone hall with a tall arched window and real candles on iron candelabras. Lit by cold blue window light and warm candlelight, with real shadows in his fur and candlelight glinting on the scratched sword blades. Calm dark lower third.
 ```
 **Breed (16:9):**
 ```
-A real photograph, like a still from a live-action HBO period drama filmed on a practical set: a cold medieval stone hall with long wooden tables, real candles, fur blankets, frost on an old radiator, a few snowflakes near a tall arched window, visible cold breath in the air. On the right side of the frame a tall, jagged throne of real stacked sofa cushions and pillows, the cat sitting proudly on top looking down like a king. Natural cold window light with warm candlelight, calmer darker area on the left.
+A real photograph, like a still from a live-action period drama filmed on a practical set: a cold medieval stone hall with long wooden tables, real candles, fur blankets, frost on an old radiator, a few snowflakes near a tall arched window, visible cold breath in the air. On the right side of the frame a tall throne with a seat of real stacked sofa cushions and a back made of a fan of dozens of real old metal swords. The cat stands on top of the cushions in profile, one front paw raised, gazing out over the hall like a conqueror. Lit by cold window light and warm candlelight, with real shadows in his fur and light glinting on the sword blades. Calmer darker area on the left.
 ```
 
 ---
