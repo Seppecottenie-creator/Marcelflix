@@ -100,15 +100,15 @@ A kitchen floor in harsh yellow light, rows of perfectly arranged cat kibble on 
 ```
 
 ## The Pawffice · `office`
-**Look:** flat fluorescent office light, mockumentary, slightly washed-out colors
+**Look:** bright sitcom office, beige and light blue, even fluorescent light, awkward deadpan comedy (niet donker of somber)
 
 **Poster (2:3):**
 ```
-The cat sitting behind a small desk in a boring office, looking straight into the camera with a deadpan expression, a coffee mug next to him, flat fluorescent lighting, mockumentary documentary style, slightly washed-out colors, calm lower third.
+A bright, cheerful sitcom-style office: beige walls, light blue carpet, bright even fluorescent lighting, cluttered desks with paper stacks and a stapler. The cat sits proudly on top of his desk and gives the camera an awkward, deadpan side-glance, as if something embarrassing just happened. Next to him a white coffee mug that says WORLD'S BEST BOSS (this is the only text allowed). Light, warm, slightly cheesy TV comedy look, not dark, not moody, calm lower third.
 ```
 **Breed (16:9):**
 ```
-A dull open-plan office with desks and a copier, the cat on the right sitting on a swivel chair and staring directly into the camera like in a talking-head interview, flat fluorescent light, handheld documentary look.
+A cluttered, brightly lit open-plan paper company office with beige walls, desks, a copier and a water cooler, a potted plant and a vacuum cleaner standing among the desks like coworkers. The cat on the right side of the frame sits on a swivel chair and stares straight into the camera with a deadpan expression, like a mockumentary talking-head interview. Bright even fluorescent light, warm TV comedy look, not dark, not moody, calmer area on the left.
 ```
 
 ## Katnonkels · `katten`
