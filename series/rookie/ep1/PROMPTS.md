@@ -107,7 +107,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Doc Frieda intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.
 
-## [ ] s10b.jpg
+## [x] s10b.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Pieter (the small brown mouse with big ears). Under a fridge: the small catnip pillow has become a cosy nest where five tiny baby mice sleep curled up together. Pieter stands in front of it with his little arms spread, scared but brave. Marcel's big face peers in, softening. Soft warm light. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
