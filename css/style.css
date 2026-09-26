@@ -622,3 +622,72 @@ body.playing, html:has(body.playing) { overflow: hidden; }
 .gposter .slogo.breaking .l1, .gposter .slogo.breaking .l2 { font-size: 13cqi !important; }
 .gposter .slogo.spider { -webkit-text-stroke: 0; text-shadow: 2px 2px 0 #0a1a4d, 0 0 10px rgba(0,0,0,.6); }
 .gposter .slogo.spider .l1, .gposter .slogo.spider .l2 { font-size: 15cqi !important; }
+
+/* ===== speler: filmische schermen ===== */
+/* titelkaart */
+.tcard { background: #000; overflow: hidden; }
+.tcard .tbg { position: absolute; inset: -4%; background-size: cover; background-position: center; filter: blur(3px) brightness(.35) saturate(1.1); animation: tZoom 5s ease-out forwards; }
+@keyframes tZoom { from { transform: scale(1.12); } to { transform: scale(1); } }
+.tcard::before, .tcard::after { content: ""; position: absolute; left: 0; right: 0; height: 11vh; background: #000; z-index: 1; animation: bars 1.2s cubic-bezier(.2,.8,.2,1) both; }
+.tcard::before { top: 0; transform-origin: top; } .tcard::after { bottom: 0; transform-origin: bottom; }
+@keyframes bars { from { transform: scaleY(0); } }
+.tcard .tc { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+.tcard .orig { display: flex; align-items: center; gap: 8px; letter-spacing: .5em; color: #ddd; font-size: clamp(11px, 1.4vw, 14px); font-weight: 700; margin-bottom: 18px; animation: riseIn .8s ease .2s both; }
+.tcard .orig b { font-family: var(--logo); color: var(--red); font-size: 2.2em; letter-spacing: 0; line-height: .8; }
+.tcard .slogo { animation: tLogo 1.6s cubic-bezier(.2,.8,.2,1) .35s both; }
+@keyframes tLogo { from { opacity: 0; transform: scale(1.12); filter: blur(10px); } to { opacity: 1; transform: none; filter: none; } }
+.tcard .epn { margin-top: 22px; font-size: clamp(11px, 1.3vw, 14px); letter-spacing: .35em; text-transform: uppercase; color: #aaa; animation: riseIn .8s ease 1.2s both; }
+.tcard .ept { margin-top: 6px; font-family: "Playfair Display", serif; font-style: italic; font-size: clamp(20px, 3vw, 34px); color: #fff; animation: riseIn .8s ease 1.4s both; }
+.tcard.out { transition: opacity .9s, transform .9s; opacity: 0; transform: scale(1.04); }
+/* keuze */
+.player .layer img { transition: filter .8s ease; }
+.player.choosing .layer img { filter: blur(3px) brightness(.5) saturate(.9) !important; }
+.player.ending .layer img { filter: grayscale(1) brightness(.35) blur(2px) !important; transition: filter 1.4s ease; }
+.choice { top: 0; justify-content: flex-end; gap: clamp(12px, 2.4vh, 22px); background: radial-gradient(ellipse 90% 70% at 50% 100%, rgba(0,0,0,.85), rgba(0,0,0,.2) 70%, rgba(0,0,0,0)); padding-bottom: calc(clamp(24px, 6vh, 60px) + var(--safe-b)); animation: fadeIn .4s ease; }
+.choice .q { font-size: clamp(20px, 3.4vw, 40px); font-weight: 800; letter-spacing: -.01em; text-align: center; text-shadow: 0 4px 24px rgba(0,0,0,.9); animation: riseIn .6s cubic-bezier(.2,.8,.2,1) both; }
+.choice .timer { width: min(700px, 86%); height: 5px; background: rgba(255,255,255,.14); border-radius: 3px; }
+.choice .timer i { background: linear-gradient(90deg, #ff4d57, #e50914, #ff4d57); transform-origin: center; box-shadow: 0 0 12px rgba(229,9,20,.8); border-radius: 3px; }
+.choice.hurry .timer i { animation: hurry .5s ease-in-out infinite; }
+@keyframes hurry { 50% { opacity: .45; } }
+.choice .opts { width: min(980px, 100%); gap: clamp(10px, 2vw, 22px); }
+.choice .opt { position: relative; display: flex; align-items: center; gap: 14px; text-align: left; background: rgba(18,18,24,.55); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1.5px solid rgba(255,255,255,.28); border-radius: 12px; padding: clamp(14px, 2.4vh, 22px) clamp(14px, 2vw, 22px); box-shadow: 0 12px 30px rgba(0,0,0,.45); animation: riseIn .55s cubic-bezier(.2,.8,.2,1) var(--d, .15s) both; transition: transform .2s, border-color .2s, background .2s, box-shadow .2s, opacity .35s; }
+.choice .opt .k { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-size: 15px; font-weight: 800; border: 1.5px solid rgba(255,255,255,.6); color: #fff; }
+.choice .opt .lb { flex: 1; }
+.choice .opt:hover, .choice .opt:focus-visible { border-color: #fff; background: rgba(255,255,255,.14); transform: translateY(-3px); box-shadow: 0 0 0 1px #fff, 0 16px 40px rgba(0,0,0,.55), 0 0 40px rgba(255,255,255,.12); }
+.choice .opt:hover .k { background: #fff; color: #000; }
+.choice .opt.picked { background: #fff; color: #000; border-color: #fff; text-shadow: none; transform: scale(1.04); box-shadow: 0 0 60px rgba(255,255,255,.45); }
+.choice .opt.picked .k { background: var(--red); border-color: var(--red); color: #fff; }
+.choice .opt.gone { opacity: 0; transform: scale(.94); }
+.choice.out { transition: opacity .4s; opacity: 0; }
+@media (max-height: 460px) { .choice .opt { padding: 10px 14px; } .choice .opt .k { width: 28px; height: 28px; } }
+/* einde */
+.ecard { background: radial-gradient(ellipse at center, rgba(0,0,0,.35), rgba(0,0,0,.85)); }
+.ecard .eline { display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--red); font-weight: 800; letter-spacing: .5em; font-size: clamp(12px, 1.6vw, 16px); animation: riseIn .7s ease both; }
+.ecard .eline::before, .ecard .eline::after { content: ""; width: clamp(30px, 8vw, 90px); height: 1px; background: linear-gradient(90deg, transparent, var(--red)); }
+.ecard .eline::after { transform: scaleX(-1); }
+.ecard h2 { margin: 12px 0 18px; font-size: clamp(36px, 7vw, 86px); text-shadow: 0 6px 40px rgba(0,0,0,.9); }
+.ecard .enew { display: inline-block; padding: 8px 16px; border-radius: 999px; font-weight: 800; font-size: 14px; color: #1a1200; background: linear-gradient(90deg, #ffd66b, #ffb800); box-shadow: 0 0 30px rgba(255,190,40,.45); animation: tLogo .9s cubic-bezier(.2,.8,.2,1) .9s both; }
+.ecard .enew.old { background: rgba(255,255,255,.12); color: #ddd; box-shadow: none; }
+.ecard .edots { display: flex; gap: 10px; justify-content: center; margin-top: 22px; animation: fadeIn .6s ease 1.3s both; }
+.ecard .edots i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid rgba(255,255,255,.35); }
+.ecard .edots i.got { background: var(--red); border-color: var(--red); }
+.ecard .edots i.now { box-shadow: 0 0 0 4px rgba(229,9,20,.35); animation: pulseDot 1.2s ease-in-out infinite; }
+@keyframes pulseDot { 50% { box-shadow: 0 0 0 8px rgba(229,9,20,0); } }
+.ecard .ecount { color: #aaa; font-size: 13px; margin-top: 10px; animation: fadeIn .6s ease 1.4s both; }
+/* slotscherm */
+.final { background: #050507; }
+.final > * { position: relative; }
+.final .fbg { position: fixed; inset: -5%; background-size: cover; background-position: center; filter: blur(18px) brightness(.28) saturate(1.2); z-index: 0; }
+.final .fslogo { transform: scale(.55); margin: -20px 0 -26px; opacity: .95; }
+.final h2 { font-size: clamp(22px, 3.4vw, 36px); }
+.final .e { position: relative; width: clamp(130px, 22vw, 200px); padding: 0 0 12px; overflow: hidden; border-radius: 12px; background: rgba(20,20,26,.8); border: 1px solid rgba(255,255,255,.1); transition: transform .25s; }
+.final .e:hover { transform: translateY(-3px); }
+.final .e .eimg { aspect-ratio: 16 / 9; background-size: cover; background-position: center; margin-bottom: 10px; filter: blur(8px) brightness(.4) grayscale(1); display: grid; place-items: center; }
+.final .e > em { position: absolute; left: 0; right: 0; top: 0; aspect-ratio: 16 / 9; display: grid; place-items: center; font-style: normal; font-size: 26px; }
+.final .e.got .eimg { filter: none; }
+.final .e b { font-size: 26px; line-height: 1; }
+.final .e span { display: block; padding: 0 8px; }
+.final .e.got { border-color: rgba(229,9,20,.7); box-shadow: 0 0 30px rgba(229,9,20,.25); }
+.final .unlock { background: linear-gradient(100deg, #b8860b, #ffd66b 45%, #b8860b); color: #1a1200; background-size: 200% 100%; animation: pulse 1.6s infinite, shine 3s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .tcard .tbg, .tcard::before, .tcard::after, .tcard .slogo, .choice .opt, .ecard .enew { animation: none !important; } }
+@media (max-height: 460px) { .final { justify-content: flex-start; padding-top: 18px; gap: 10px; } .final .fslogo { display: none; } .final .e { width: clamp(120px, 18vw, 150px); } .final .e .eimg { margin-bottom: 6px; } .final .e b { font-size: 20px; } }

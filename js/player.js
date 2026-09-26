@@ -321,17 +321,24 @@
     }
 
     titleCard() {
-      return new Promise(res => {
+      return new Promise(async res => {
         const s = this.o.series, l = s.logoLine || [s.title];
-        const card = h(`<div class="endcard" style="background:#000">
-          <div><small>MARCELFLIX ORIGINAL</small>
-          <h1 class="slogo ${esc(s.theme)}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</h1>
-          <p>Aflevering ${esc(this.o.episodeNumber || 1)} · ${esc(this.ep.title)}</p></div></div>`);
+        let bg = "";
+        try { const a = await this.assets(this.ep.start); if (a && a.img) bg = a.img; } catch (e) {}
+        if (this.dead) return res();
+        const card = h(`<div class="endcard tcard">
+          ${bg ? `<div class="tbg" style="background-image:url('${esc(bg)}')"></div>` : ""}
+          <div class="tc">
+            <small class="orig"><b>M</b> ORIGINAL</small>
+            <h1 class="slogo ${esc(s.theme)}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</h1>
+            <div class="epn">Seizoen 1 · Aflevering ${esc(this.o.episodeNumber || 1)}</div>
+            <div class="ept">${esc(this.ep.title)}</div>
+          </div></div>`);
         this.el.appendChild(card);
         this.el.classList.add("modal");
         Sound.tadum();
-        const done = () => { card.style.transition = "opacity .8s"; card.style.opacity = "0"; this.later(() => { card.remove(); this.el.classList.remove("modal"); res(); }, 800); };
-        const t = this.later(done, 3600);
+        const done = () => { card.classList.add("out"); this.later(() => { card.remove(); this.el.classList.remove("modal"); res(); }, 900); };
+        const t = this.later(done, 4200);
         card.addEventListener("click", () => { clearTimeout(t); done(); }, { once: true });
       });
     }
@@ -496,8 +503,9 @@
       const el = h(`<div class="choice" role="dialog" aria-label="Keuze">
           <div class="q">${esc(ch.prompt || "Wat doe je?")}</div>
           <div class="timer"><i></i></div>
-          <div class="opts">${ch.options.map((o, i) => `<button class="opt" data-i="${i}">${esc(o.label)}</button>`).join("")}</div>
+          <div class="opts">${ch.options.map((o, i) => `<button class="opt" data-i="${i}" style="--d:${.15 + i * .1}s"><span class="k">${i + 1}</span><span class="lb">${esc(o.label)}</span></button>`).join("")}</div>
         </div>`);
+      this.el.classList.add("choosing");
       this.choiceEl = el;
       this.el.appendChild(el);
       this.el.classList.add("modal");
@@ -507,7 +515,8 @@
         if (chosen) return; chosen = true;
         Sound.pick();
         el.querySelectorAll(".opt").forEach((b, j) => b.classList.add(j === i ? "picked" : "gone"));
-        this.later(() => { el.remove(); this.choiceEl = null; this.el.classList.remove("modal"); this.play(ch.options[i].next); }, 750);
+        this.later(() => { el.classList.add("out"); this.el.classList.remove("choosing"); }, 650);
+        this.later(() => { el.remove(); this.choiceEl = null; this.el.classList.remove("modal"); this.play(ch.options[i].next); }, 1050);
       };
       el.querySelectorAll(".opt").forEach(b => b.addEventListener("click", e => { e.stopPropagation(); choose(+b.dataset.i); }));
       const tick = (now) => {
@@ -519,6 +528,7 @@
         bar.style.transform = `scaleX(${left / CHOICE_SECONDS})`;
         const sec = Math.ceil(left);
         if (sec < lastTick && sec <= 4 && sec > 0) Sound.tick();
+        el.classList.toggle("hurry", left <= 4);
         lastTick = sec;
         if (left <= 0) return choose(ch.default ?? 0);
         requestAnimationFrame(tick);
@@ -530,14 +540,20 @@
       this.setSub("");
       const e = sc.ending;
       const isNew = this.o.store.addEnding(this.o.series.id, this.o.episodeId, e.id);
+      const all = Object.values(this.ep.scenes).filter(x => x.ending).map(x => x.ending);
+      const found = this.o.store.endings(this.o.series.id, this.o.episodeId);
       Sound.ending();
-      const card = h(`<div class="endcard"><div>
-          <small>EINDE ${esc(e.id)}</small><h2>${esc(e.title)}</h2>
-          <p>${isNew ? "Nieuw einde ontdekt" : "Dit einde had je al gevonden"}</p></div></div>`);
+      this.el.classList.add("ending");
+      const card = h(`<div class="endcard ecard"><div>
+          <div class="eline"><span>EINDE ${esc(e.id)}</span></div>
+          <h2>${esc(e.title)}</h2>
+          <div class="enew ${isNew ? "" : "old"}">${isNew ? "✨ Nieuw einde ontdekt" : "Dit einde had je al gevonden"}</div>
+          <div class="edots" aria-label="${found.length} van ${all.length} eindes">${all.map(x => `<i class="${found.includes(x.id) ? "got" : ""} ${x.id === e.id ? "now" : ""}"></i>`).join("")}</div>
+          <p class="ecount">${found.length} van ${all.length} eindes gevonden</p></div></div>`);
       this.el.appendChild(card);
       this.el.classList.add("modal");
-      const go = () => { card.remove(); this.el.classList.remove("modal"); if (sc.next) this.play(sc.next); else this.finish(sc); };
-      const t = this.later(go, ENDCARD_MS);
+      const go = () => { card.remove(); this.el.classList.remove("modal", "ending"); if (sc.next) this.play(sc.next); else this.finish(sc); };
+      const t = this.later(go, ENDCARD_MS + 800);
       card.addEventListener("click", () => { clearTimeout(t); this.timers.delete(t); go(); }, { once: true });
     }
 
@@ -569,17 +585,22 @@
       this.o.store.clearContinue(this.o.series.id, this.o.episodeId);
       this.o.store.markWatched(this.o.series.id, this.o.episodeId);
       const found = this.o.store.endings(this.o.series.id, this.o.episodeId);
-      const endings = Object.values(this.ep.scenes).filter(s => s.ending).map(s => s.ending);
+      const endScenes = Object.entries(this.ep.scenes).filter(([, x]) => x.ending);
+      const endings = endScenes.map(([, x]) => x.ending);
+      const endImg = Object.fromEntries(endScenes.map(([id, x]) => [x.ending.id, this.imageUrls(id, x)[0]]));
+      const s = this.o.series, l = s.logoLine || [s.title];
       const total = this.ep.endingsTotal ?? endings.length;
       const unlocked = this.o.checkUnlock ? this.o.checkUnlock() : null;
       const teaserSeries = sc && sc.teaser && this.o.catalog ? this.o.catalog.find(x => x.id === sc.teaser) : null;
       const hasChoices = Object.values(this.ep.scenes).some(s => s.choice);
       const el = h(`<div class="final">
+          ${this.curImg ? `<div class="fbg" style="background-image:url('${esc(this.curImg)}')"></div>` : ""}
+          <div class="fslogo slogo ${esc(s.theme)}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</div>
           <h2>${total ? "Einde van de aflevering" : "Einde"}</h2>
           ${total ? `<div class="count">Je vond ${found.length} van de ${total} eindes</div>
           <div class="ends">${endings.map(e => {
             const got = found.includes(e.id);
-            return `<div class="e ${got ? "got" : ""}"><b>${esc(e.id)}</b><span>${got ? esc(e.title) : "???"}</span></div>`;
+            return `<div class="e ${got ? "got" : ""}"><div class="eimg" style="background-image:url('${esc(endImg[e.id])}')"></div>${got ? "" : "<em>🔒</em>"}<b>${esc(e.id)}</b><span>${got ? esc(e.title) : "???"}</span></div>`;
           }).join("")}</div>` : `<div class="count">Met liefde gemaakt. Met pootjes goedgekeurd.</div>`}
           ${unlocked ? `<button class="unlock" data-a="unlock">🔓 Geheime aflevering ontgrendeld: ${esc(unlocked.title)}</button>` :
             (total && found.length < total ? `<div class="teaser">Vind alle eindes om iets geheims te ontgrendelen…</div>` : "")}
