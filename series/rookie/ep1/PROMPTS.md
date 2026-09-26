@@ -131,7 +131,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, zing ik een serenade voor sergeant Jos en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.
 
-## [ ] s12.jpg
+## [x] s12.jpg
 
 ```
 Characters in this scene: the housefly; Roger (the big fluffy ginger tomcat with green eyes). Night. Close-up of a moonlit windowsill: the housefly sits next to a tiny rolled-up piece of paper tied with a thread. Through the glass, in the dark garden, the silhouette of Roger watches. Cold blue moonlight, ominous. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
