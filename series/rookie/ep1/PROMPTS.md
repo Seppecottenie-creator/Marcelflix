@@ -83,7 +83,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ En daar, aan de andere kant van het kattenluik, verschijnt een kop die ik al te goed ken. Rosse Roger, de kater van hiernaast. Groot, oranje en zo zelfvoldaan dat zelfs de dakgoot van hem walgt. Hij vraagt poeslief of er een probleem is, agent. Aan zijn snorharen hangt een klein, groen blaadje. Kattenkruid, misschien. Of gewoon gras. Mijn hart zegt het ene, mijn verstand het andere.
 
-## [ ] s09a.jpg
+## [x] s09a.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). At the cat flap, Marcel proudly presses his paw on Roger's paw as if arresting him. Roger looks amused. Behind Marcel, Doc Frieda cheers with tears of pride, while Sergeant Jos slowly pulls his head into his shell in disbelief. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
