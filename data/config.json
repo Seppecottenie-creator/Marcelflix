@@ -35,5 +35,14 @@
     "topgun",
     "crown",
     "homealone"
+  ],
+  "_uitleg_hero": "Titels die in de grote banner bovenaan de home om de beurt verschijnen (eerste = uitgelicht).",
+  "hero": [
+    "rookie",
+    "heist",
+    "catanic",
+    "stranger",
+    "bond",
+    "pawter"
   ]
 }

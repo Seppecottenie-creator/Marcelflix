@@ -211,6 +211,66 @@
     };
   }
 
+  /* ---------- hero-carrousel ---------- */
+  const HERO_MS = 9000;
+  let heroTimer = null;
+  function heroInfo(s, conts) {
+    const soon = s.status === "soon";
+    const reminded = Store.d.remind[s.id];
+    return `<div class="badge-orig"><b>M</b> ${s.type === "film" ? "FILM" : "SERIE"}</div>
+      ${slogo(s)}
+      <div class="meta"><span class="match">${s.match}% match</span><span>${s.year}</span><span class="age">${esc(s.age)}</span><span>${soon ? "Binnenkort" : "Nieuwe aflevering"}</span></div>
+      <p class="desc">${esc(soon ? (s.tagline || s.description) : s.description)}</p>
+      <div class="btns">
+        ${soon
+          ? `<button class="btn play" data-open="${esc(s.id)}"><span class="ico">ⓘ</span> Meer info</button>
+             <button class="btn info" data-remind="${esc(s.id)}">${reminded ? "✓ Melding aan" : "🔔 Herinner mij"}</button>`
+          : `<button class="btn play" data-play="${esc(s.id)}"><span class="ico">▶</span> ${conts.find(c => c.s.id === s.id) ? "Verder kijken" : "Afspelen"}</button>
+             <button class="btn info" data-open="${esc(s.id)}"><span class="ico">ⓘ</span> Meer info</button>`}
+        ${likeBtn(s)}
+      </div>`;
+  }
+  function wireHero(slides, conts) {
+    clearInterval(heroTimer);
+    const hero = document.getElementById("hero"); if (!hero) return;
+    const inner = document.getElementById("heroInner");
+    const bds = [...hero.querySelectorAll(".bd")], dots = [...hero.querySelectorAll(".hero-dots button")];
+    let cur = 0;
+    const wireInner = () => {
+      wireCards(); wireActions();
+      inner.querySelectorAll("[data-remind]").forEach(b => b.onclick = (e) => {
+        e.stopPropagation(); Store.d.remind[b.dataset.remind] = true; Store.save();
+        b.textContent = "✓ Melding aan"; toast("Genoteerd. Marcel stuurt een duif.");
+      });
+    };
+    const show = (i) => {
+      i = (i + slides.length) % slides.length; if (i === cur) return;
+      cur = i;
+      bds.forEach((b, j) => b.classList.toggle("on", j === i));
+      dots.forEach((d, j) => { d.classList.remove("on"); if (j === i) { void d.offsetWidth; d.classList.add("on"); } });
+      inner.classList.add("out");
+      setTimeout(() => { inner.innerHTML = heroInfo(slides[i], conts); inner.classList.remove("out"); wireInner(); }, 380);
+    };
+    const restart = () => { clearInterval(heroTimer); if (slides.length > 1) heroTimer = setInterval(() => { if (!document.hidden) show(cur + 1); }, HERO_MS); };
+    dots.forEach((d, j) => d.onclick = (e) => { e.stopPropagation(); show(j); restart(); });
+    // vegen op gsm
+    let x0 = null;
+    hero.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+    hero.addEventListener("touchend", e => {
+      if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 50) { show(cur + (dx < 0 ? 1 : -1)); restart(); }
+    }, { passive: true });
+    wireInner();
+    restart();
+  }
+  /* Rijen schuiven zacht binnen als ze in beeld komen */
+  function revealRows() {
+    const rows = app.querySelectorAll(".rows .row");
+    if (!("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+    rows.forEach(r => { r.classList.add("reveal"); io.observe(r); });
+  }
+
   function viewHome() {
     const f = byId(CONFIG.featured);
     const vis = visible();
@@ -226,23 +286,13 @@
     const originals = [];
     for (let i = 0; i < Math.max(ser.length, fil.length); i++) { if (ser[i]) originals.push(ser[i]); if (fil[i]) originals.push(fil[i]); }
     const top10 = (CONFIG.top10 || pub.map(s => s.id)).map(byId).filter(s => s && pub.includes(s)).slice(0, 10);
+    const slides = [f, ...(CONFIG.hero || []).map(byId).filter(s => s && s !== f && pub.includes(s) && (s.backdrop || s.poster))].slice(0, 6);
 
     app.innerHTML = `${topbar("home")}
-      <section class="hero">
-        ${(f.backdrop || f.poster)
-          ? `<div class="bd" style="${heroBg(f)}"></div>`
-          : `<div class="bd gp-${esc(f.theme)}"><div class="art" style="position:absolute;inset:0"></div></div>`}
-        <div class="inner">
-          <div class="badge-orig"><b>M</b> SERIE</div>
-          ${slogo(f)}
-          <div class="meta"><span class="match">${f.match}% match</span><span>${f.year}</span><span class="age">${esc(f.age)}</span><span>Nieuwe aflevering</span></div>
-          <p class="desc">${esc(f.description)}</p>
-          <div class="btns">
-            <button class="btn play" data-play="${esc(f.id)}"><span class="ico">▶</span> ${conts.find(c => c.s.id === f.id) ? "Verder kijken" : "Afspelen"}</button>
-            <button class="btn info" data-open="${esc(f.id)}"><span class="ico">ⓘ</span> Meer info</button>
-            ${likeBtn(f)}
-          </div>
-        </div>
+      <section class="hero" id="hero">
+        ${slides.map((x, i) => `<div class="bd ${i === 0 ? "on" : ""}" style="${heroBg(x)}"></div>`).join("")}
+        <div class="inner" id="heroInner">${heroInfo(f, conts)}</div>
+        ${slides.length > 1 ? `<div class="hero-dots">${slides.map((x, i) => `<button data-slide="${i}" aria-label="${esc(x.title)}" class="${i === 0 ? "on" : ""}"><i></i></button>`).join("")}</div>` : ""}
       </section>
       <div class="rows">
         ${secret.length ? row("Speciaal voor jou 🔓", secret.map(cardHtml).join("")) : ""}
@@ -269,6 +319,8 @@
     wireTopbar();
     wireCards();
     wireActions();
+    wireHero(slides, conts);
+    revealRows();
     document.getElementById("reset").onclick = (e) => {
       e.preventDefault();
       if (confirm("Alle voortgang en gevonden eindes wissen?")) { Store.d.endings = {}; Store.d.cont = {}; Store.d.watched = {}; Store.save(); viewHome(); toast("Gewist. Marcel is alles vergeten. Behalve zijn eten."); }
@@ -490,6 +542,7 @@
   /* ---------- router ---------- */
   function route() {
     window.onscroll = null;
+    clearInterval(heroTimer);
     const hsh = location.hash.replace(/^#\/?/, "");
     const [view, a, b] = hsh.split("/");
     if (view !== "kijk" && player) { player.exit(true); player = null; }
