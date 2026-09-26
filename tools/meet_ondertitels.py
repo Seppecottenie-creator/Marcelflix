@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Marcelflix: meet in elke mp3 waar de zinnen beginnen en bewaar dat als "cues" in episode.json,
+Marcelflix: meet in elke mp3 waar de zinnen beginnen en bewaar dat als "cues" in episode.json
+(plus de lengte als "dur", voor de tijdlijn in de speler),
 zodat de ondertitels exact meelopen met de stem (ook als die in een andere taal is).
 
 Eenmalig installeren:
@@ -71,6 +72,7 @@ def main():
         mp3 = ep / (sc.get("audio") or f"{sid}.mp3")
         if not mp3.exists(): print(f"  - {sid}: geen mp3"); continue
         c = cues_for(mp3, sc.get("narration") or sc["text"])
+        with av.open(str(mp3)) as ct: sc["dur"] = round(ct.duration / 1e6, 2)  # lengte, voor de tijdlijn
         if c: sc["cues"] = c; print(f"  ✓ {sid}: {c}")
         else: print(f"  ! {sid}: te weinig pauzes gevonden, ondertitels lopen op schatting")
     f.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

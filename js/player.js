@@ -6,6 +6,23 @@
   "use strict";
 
   const CHOICE_SECONDS = 10;
+  const TAIL = 0.9;              // korte adempauze na elke scène
+  const SUB_KEY = "marcelflix:subsize";
+  const SUB_SIZES = [["s", "Klein"], ["m", "Normaal"], ["l", "Groot"]];
+  const loadSubSize = () => { try { const v = localStorage.getItem(SUB_KEY); if (SUB_SIZES.some(([k]) => k === v)) return v; } catch (e) {} return "m"; };
+  const fmt = (t) => { t = Math.max(0, Math.round(t)); return Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0"); };
+  const svg = (d, extra = "") => `<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor"${extra}>${d}</svg>`;
+  const ICON = {
+    play: svg('<path d="M7 4.5v15l13-7.5z"/>'),
+    pause: svg('<rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/>'),
+    back: svg('<path d="M12 5V1.5L7 6l5 4.5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/><text x="12" y="16.3" font-size="7" font-weight="700" text-anchor="middle" font-family="Inter,sans-serif">10</text>'),
+    fwd: svg('<path d="M12 5V1.5L17 6l-5 4.5V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z"/><text x="12" y="16.3" font-size="7" font-weight="700" text-anchor="middle" font-family="Inter,sans-serif">10</text>'),
+    next: svg('<path d="M5 5v14l10-7zM16 5h3v14h-3z"/>'),
+    gear: svg('<path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.7a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.4L6.5 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.7h4l.4-2.7a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.4zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/>'),
+    vol: svg('<path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'),
+    muted: svg('<path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 9.5l5 5m0-5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'),
+    fs: svg('<path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
+  };
   const ENDCARD_MS = 4200;
   const h = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; };
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -93,6 +110,7 @@
       this.dead = false;
       this.paused = false;
       this.timers = new Set();
+      this.durs = {};
       this.build();
     }
 
@@ -103,43 +121,69 @@
           <div class="layer" data-l="0"><img alt=""></div>
           <div class="layer" data-l="1"><img alt=""></div>
           <div class="fx glow"></div><div class="fx redglow"></div><div class="fx scan"></div>
-          <div class="fx vignette"></div><div class="fx grain"></div>
           <div class="rec">CAM 02 · 10:11:04</div>
+          <div class="shade"></div>
           <div class="subs"></div>
-          <div class="bigpause" aria-hidden="true">❚❚</div>
+          <div class="bigpause" aria-hidden="true">${ICON.play}</div>
           <div class="pctl">
             <button class="pbtn" data-a="exit" aria-label="Terug">←</button>
             <div class="ttl"><b>${esc(s.title)}</b> · <span class="ept"></span></div>
-            <div class="sp"></div>
-            <button class="pbtn" data-a="mute" aria-label="Geluid aan/uit">🔊</button>
-            <button class="pbtn" data-a="pause" aria-label="Pauze">❚❚</button>
-            <button class="pbtn" data-a="skip" aria-label="Volgende scène">⏭</button>
-            <button class="pbtn" data-a="fs" aria-label="Volledig scherm">⛶</button>
           </div>
-          <div class="pbar"><i></i></div>
+          <div class="pbot">
+            <div class="tl" role="slider" aria-label="Tijdlijn" tabindex="0"><div class="rail2"><i class="fill"></i><i class="knob"></i></div></div>
+            <div class="row">
+              <button class="pbtn" data-a="pause" aria-label="Pauze">${ICON.pause}</button>
+              <button class="pbtn" data-a="back" aria-label="10 seconden terug">${ICON.back}</button>
+              <button class="pbtn" data-a="fwd" aria-label="10 seconden vooruit">${ICON.fwd}</button>
+              <span class="time">0:00 / 0:00</span>
+              <div class="sp"></div>
+              <button class="pbtn" data-a="settings" aria-label="Instellingen">${ICON.gear}</button>
+              <button class="pbtn" data-a="skip" aria-label="Volgende scène">${ICON.next}</button>
+              <button class="pbtn" data-a="mute" aria-label="Geluid aan/uit">${ICON.vol}</button>
+              <button class="pbtn" data-a="fs" aria-label="Volledig scherm">${ICON.fs}</button>
+            </div>
+            <div class="menu" hidden>
+              <b>Ondertitels</b>
+              <div class="sizes">${SUB_SIZES.map(([k, l]) => `<button data-size="${k}">${l}</button>`).join("")}</div>
+            </div>
+          </div>
         </div>`);
       this.layers = [...this.el.querySelectorAll(".layer")];
       this.front = 0;
       this.subs = this.el.querySelector(".subs");
-      this.bar = this.el.querySelector(".pbar i");
-      this.el.querySelector(".pctl").addEventListener("click", e => {
+      this.fill = this.el.querySelector(".tl .fill");
+      this.knob = this.el.querySelector(".tl .knob");
+      this.timeEl = this.el.querySelector(".pbot .time");
+      this.menu = this.el.querySelector(".menu");
+      this.setSubSize(loadSubSize());
+      const onBtn = e => {
         const b = e.target.closest("button"); if (!b) return;
         e.stopPropagation();
         const a = b.dataset.a;
+        if (b.dataset.size) this.setSubSize(b.dataset.size, true);
+        if (a !== "settings") this.menu.hidden = true;
         if (a === "exit") this.exit();
         if (a === "pause") this.togglePause();
+        if (a === "back") this.jump(-10);
+        if (a === "fwd") this.jump(10);
         if (a === "skip") this.skip();
-        if (a === "mute") { const m = !Sound.muted; Sound.setMuted(m); voice.muted = m; b.textContent = m ? "🔇" : "🔊"; }
+        if (a === "settings") this.menu.hidden = !this.menu.hidden;
+        if (a === "mute") { const m = !Sound.muted; Sound.setMuted(m); voice.muted = m; b.innerHTML = m ? ICON.muted : ICON.vol; }
         if (a === "fs") this.fullscreen(true);
         this.poke();
-      });
+      };
+      this.el.querySelector(".pctl").addEventListener("click", onBtn);
+      this.el.querySelector(".pbot").addEventListener("click", onBtn);
+      this.wireTimeline();
       this.el.addEventListener("click", e => {
-        if (e.target.closest(".choice, .final, .endcard, .pctl")) return;
+        if (e.target.closest(".choice, .final, .endcard, .pctl, .pbot")) return;
+        if (!this.menu.hidden) { this.menu.hidden = true; return; }
         if (this.el.classList.contains("idle")) this.poke(); else this.togglePause();
       });
       this.onKey = (e) => {
         if (e.key === " ") { e.preventDefault(); this.togglePause(); }
-        if (e.key === "ArrowRight") this.skip();
+        if (e.key === "ArrowRight") this.jump(10);
+        if (e.key === "ArrowLeft") this.jump(-10);
         if (e.key === "Escape" && !document.fullscreenElement) this.exit();
         if (this.choiceEl && (e.key === "1" || e.key === "2")) this.choiceEl.querySelectorAll(".opt")[+e.key - 1]?.click();
       };
@@ -152,7 +196,94 @@
     poke() {
       this.el.classList.remove("idle");
       clearTimeout(this.idleT);
-      this.idleT = setTimeout(() => { if (!this.paused) this.el.classList.add("idle"); }, 2800);
+      this.idleT = setTimeout(() => { if (!this.paused && this.menu.hidden && !this.dragging) this.el.classList.add("idle"); }, 2800);
+    }
+
+    /* ---------- ondertitelgrootte ---------- */
+    setSubSize(k, save) {
+      SUB_SIZES.forEach(([x]) => this.el.classList.toggle("subs-" + x, x === k));
+      this.el.querySelectorAll(".menu [data-size]").forEach(b => b.classList.toggle("on", b.dataset.size === k));
+      if (save) { try { localStorage.setItem(SUB_KEY, k); } catch (e) {} }
+    }
+
+    /* ---------- tijdlijn: het stuk tussen twee keuzes ---------- */
+    sceneLen(id) {
+      const sc = this.ep.scenes[id];
+      return (this.durs[id] || sc.dur || estimateDuration(splitSentences(sc.text))) + TAIL;
+    }
+    chapter() {
+      const hist = this.history; let i = hist.length - 1;
+      while (i > 0) {
+        const prev = this.ep.scenes[hist[i - 1]];
+        if (prev.next === hist[i] && !prev.choice && !prev.ending) i--; else break;
+      }
+      const ids = [hist[i]]; let sc = this.ep.scenes[hist[i]];
+      while (sc && !sc.choice && !sc.ending && sc.next && this.ep.scenes[sc.next] && ids.length < 60) { ids.push(sc.next); sc = this.ep.scenes[sc.next]; }
+      return { ids, histStart: i };
+    }
+    position() {
+      if (!this.chap || !this.clock) return { pos: 0, total: 0 };
+      let pos = 0, total = 0;
+      for (const id of this.chap.ids) {
+        const len = this.sceneLen(id);
+        if (id === this.cur) pos = total + Math.min(this.clock.elapsed, len);
+        total += len;
+      }
+      return { pos, total };
+    }
+    updateTimeline() {
+      const { pos, total } = this.position();
+      const f = total ? Math.min(1, pos / total) : 0;
+      this.fill.style.width = (f * 100) + "%";
+      this.knob.style.left = (f * 100) + "%";
+      this.timeEl.textContent = fmt(pos) + " / " + fmt(total);
+    }
+    seekTo(t) {
+      if (!this.chap || this.choiceEl || this.finalEl || this.el.querySelector(".endcard")) return;
+      const { ids, histStart } = this.chap;
+      let acc = 0, k = 0;
+      for (; k < ids.length; k++) { const len = this.sceneLen(ids[k]); if (t < acc + len || k === ids.length - 1) break; acc += len; }
+      const id = ids[k], off = Math.max(0, Math.min(t - acc, this.sceneLen(id) - TAIL - 0.2));
+      if (id === this.cur && this.clock && this.token) {
+        if (this.clock.useAudio) { voice.currentTime = off; if (!this.paused && voice.paused) voice.play().catch(() => {}); }
+        this.clock.elapsed = off;
+        this.clock.last = performance.now();
+        this.showImage(this.curImg, this.ep.scenes[id], this.clock.dur, off, true);
+      } else {
+        this.history = this.history.slice(0, histStart).concat(ids.slice(0, k));
+        voice.pause();
+        cancelAnimationFrame(this.raf);
+        this.play(id, off);
+      }
+      this.updateTimeline();
+    }
+    jump(delta) {
+      const { pos, total } = this.position(); if (!total) return;
+      this.seekTo(Math.max(0, Math.min(total - 0.3, pos + delta)));
+      this.poke();
+    }
+    wireTimeline() {
+      const tl = this.el.querySelector(".tl");
+      const frac = e => { const r = tl.getBoundingClientRect(); return Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)); };
+      const preview = f => { this.fill.style.width = (f * 100) + "%"; this.knob.style.left = (f * 100) + "%"; };
+      tl.addEventListener("pointerdown", e => {
+        e.stopPropagation(); this.dragging = true; tl.classList.add("drag");
+        try { tl.setPointerCapture(e.pointerId); } catch (err) {}
+        preview(frac(e));
+      });
+      tl.addEventListener("pointermove", e => { if (this.dragging) { preview(frac(e)); this.poke(); } });
+      const end = e => {
+        if (!this.dragging) return;
+        this.dragging = false; tl.classList.remove("drag");
+        this.seekTo(frac(e) * this.position().total);
+        this.poke();
+      };
+      tl.addEventListener("pointerup", end);
+      tl.addEventListener("pointercancel", () => { this.dragging = false; tl.classList.remove("drag"); });
+      tl.addEventListener("click", e => e.stopPropagation());
+      tl.addEventListener("keydown", e => {
+        if (e.key === "ArrowLeft" || e.key === "ArrowRight") { e.preventDefault(); e.stopPropagation(); this.jump(e.key === "ArrowLeft" ? -10 : 10); }
+      });
     }
 
     later(fn, ms) { const t = setTimeout(() => { this.timers.delete(t); if (!this.dead) fn(); }, ms); this.timers.add(t); return t; }
@@ -197,8 +328,9 @@
           <h1 class="slogo ${esc(s.theme)}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</h1>
           <p>Aflevering ${esc(this.o.episodeNumber || 1)} · ${esc(this.ep.title)}</p></div></div>`);
         this.el.appendChild(card);
+        this.el.classList.add("modal");
         Sound.tadum();
-        const done = () => { card.style.transition = "opacity .8s"; card.style.opacity = "0"; this.later(() => { card.remove(); res(); }, 800); };
+        const done = () => { card.style.transition = "opacity .8s"; card.style.opacity = "0"; this.later(() => { card.remove(); this.el.classList.remove("modal"); res(); }, 800); };
         const t = this.later(done, 3600);
         card.addEventListener("click", () => { clearTimeout(t); done(); }, { once: true });
       });
@@ -236,7 +368,8 @@
       [id, ...nexts].forEach(n => this.ep.scenes[n] && this.assets(n));
     }
 
-    showImage(src, sc, dur) {
+    showImage(src, sc, dur, offset = 0, instant = false) {
+      this.curImg = src;
       const nextIdx = 1 - this.front, layer = this.layers[nextIdx], img = layer.querySelector("img");
       layer.className = "layer";
       img.style.objectPosition = sc.focus || "50% 50%";
@@ -244,7 +377,8 @@
       void layer.offsetWidth;
       const motion = sc.motion === "none" ? "" : "kb-" + (sc.motion || "in");
       layer.style.setProperty("--dur", Math.max(6, dur + 2.5) + "s");
-      layer.className = "layer on " + motion;
+      layer.style.setProperty("--delay", (-offset) + "s");
+      layer.className = "layer on " + motion + (instant ? " instant" : "");
       this.layers[this.front].classList.remove("on");
       this.front = nextIdx;
       ["noir", "cctv", "warm", "stranger"].forEach(l => this.el.classList.toggle("look-" + l, sc.look === l));
@@ -258,11 +392,12 @@
       void this.subs.offsetWidth; if (text) this.subs.className = "subs fade";
     }
 
-    async play(id) {
+    async play(id, offset = 0) {
       const sc = this.ep.scenes[id];
       if (!sc) return this.finish();
       this.cur = id;
       this.history.push(id);
+      this.chap = this.chapter();
       this.o.store.setContinue(this.o.series.id, this.o.episodeId, id, this.history.length);
       const token = (this.token = {});
       const a = await this.assets(id);
@@ -283,7 +418,7 @@
           voice.src = a.audioUrl; voice.muted = Sound.muted; voice.load();
         });
         if (this.dead || token !== this.token) return;
-        if (useAudio) dur = voice.duration;
+        if (useAudio) { dur = voice.duration; this.durs[id] = dur; }
         // Stem in een andere taal ("narration"): ondertitels op het ritme van die zinnen
         const spoken = useAudio && sc.narration ? splitSentences(sc.narration) : null;
         if (spoken && spoken.length === sentences.length) {
@@ -292,23 +427,27 @@
         }
       }
 
-      this.showImage(a.img, sc, dur);
-      if (sc.sfx && Sound[sc.sfx]) Sound[sc.sfx]();
+      if (!useAudio) this.durs[id] = dur;
+      offset = Math.min(offset, Math.max(0, dur - 0.2));
+      this.showImage(a.img, sc, dur, offset, offset > 0);
+      if (sc.sfx && Sound[sc.sfx] && offset < 0.5) Sound[sc.sfx]();
       Sound.duck(true);
 
       if (useAudio) {
-        try { await voice.play(); } catch (e) { useAudio = false; }
+        if (offset) voice.currentTime = offset;
+        if (!this.paused) { try { await voice.play(); } catch (e) { useAudio = false; } }
+        if (this.dead || token !== this.token) return;
       }
       // "cues": gemeten starttijd (s) van elke zin in de mp3, voor exacte ondertitels
       const cues = Array.isArray(sc.cues) && sc.cues.length === sentences.length ? sc.cues : null;
       const startPerf = performance.now();
-      this.clock = { elapsed: 0, last: startPerf, useAudio, dur };
-      const tail = 0.9;
+      this.clock = { elapsed: offset, last: startPerf, useAudio, dur };
+      const tail = TAIL;
       const loop = (now) => {
         if (this.dead || token !== this.token) return;
         const c = this.clock;
         if (!this.paused) {
-          if (c.useAudio) c.elapsed = voice.ended ? Math.max(c.elapsed, c.dur) + (now - c.last) / 1000 : voice.currentTime;
+          if (c.useAudio) c.elapsed = voice.ended ? Math.max(c.elapsed, c.dur) + (now - c.last) / 1000 : Math.max(voice.currentTime, voice.paused ? c.elapsed : 0);
           else c.elapsed += (now - c.last) / 1000;
         }
         c.last = now;
@@ -317,7 +456,7 @@
         if (c.useAudio && cues) { while (idx + 1 < cues.length && c.elapsed >= cues[idx + 1]) idx++; }
         else for (let i = 0; i < weights.length; i++) { acc += weights[i] / total; if (p <= acc + 1e-6) { idx = i; break; } idx = i; }
         this.setSub(sentences[idx]);
-        this.bar.style.width = (p * 100) + "%";
+        if (!this.dragging) this.updateTimeline();
         if (c.elapsed >= c.dur + tail) { this.sceneDone(sc, token); return; }
         this.raf = requestAnimationFrame(loop);
       };
@@ -345,7 +484,7 @@
       if (this.finalEl) return;
       this.paused = !this.paused;
       this.el.classList.toggle("paused", this.paused);
-      this.el.querySelector('[data-a="pause"]').textContent = this.paused ? "▶" : "❚❚";
+      this.el.querySelector('[data-a="pause"]').innerHTML = this.paused ? ICON.play : ICON.pause;
       if (this.clock?.useAudio) { if (this.paused) voice.pause(); else voice.play().catch(() => {}); }
       if (this.paused) this.el.classList.remove("idle"); else this.poke();
     }
@@ -361,13 +500,14 @@
         </div>`);
       this.choiceEl = el;
       this.el.appendChild(el);
+      this.el.classList.add("modal");
       const bar = el.querySelector(".timer i");
       const t0 = performance.now(); let lastTick = CHOICE_SECONDS, pausedAt = 0, pausedTotal = 0, chosen = false;
       const choose = (i) => {
         if (chosen) return; chosen = true;
         Sound.pick();
         el.querySelectorAll(".opt").forEach((b, j) => b.classList.add(j === i ? "picked" : "gone"));
-        this.later(() => { el.remove(); this.choiceEl = null; this.play(ch.options[i].next); }, 750);
+        this.later(() => { el.remove(); this.choiceEl = null; this.el.classList.remove("modal"); this.play(ch.options[i].next); }, 750);
       };
       el.querySelectorAll(".opt").forEach(b => b.addEventListener("click", e => { e.stopPropagation(); choose(+b.dataset.i); }));
       const tick = (now) => {
@@ -395,7 +535,8 @@
           <small>EINDE ${esc(e.id)}</small><h2>${esc(e.title)}</h2>
           <p>${isNew ? "Nieuw einde ontdekt" : "Dit einde had je al gevonden"}</p></div></div>`);
       this.el.appendChild(card);
-      const go = () => { card.remove(); if (sc.next) this.play(sc.next); else this.finish(sc); };
+      this.el.classList.add("modal");
+      const go = () => { card.remove(); this.el.classList.remove("modal"); if (sc.next) this.play(sc.next); else this.finish(sc); };
       const t = this.later(go, ENDCARD_MS);
       card.addEventListener("click", () => { clearTimeout(t); this.timers.delete(t); go(); }, { once: true });
     }
@@ -420,12 +561,11 @@
       this.play(this.ep.start);
     }
 
-    closeFinal() { if (this.finalEl) { this.finalEl.remove(); this.finalEl = null; } }
+    closeFinal() { if (this.finalEl) { this.finalEl.remove(); this.finalEl = null; this.el.classList.remove("modal"); } }
 
     finish(sc) {
       cancelAnimationFrame(this.raf);
       this.setSub("");
-      this.bar.style.width = "100%";
       this.o.store.clearContinue(this.o.series.id, this.o.episodeId);
       this.o.store.markWatched(this.o.series.id, this.o.episodeId);
       const found = this.o.store.endings(this.o.series.id, this.o.episodeId);
@@ -461,6 +601,7 @@
       });
       this.finalEl = el;
       this.el.appendChild(el);
+      this.el.classList.add("modal");
     }
 
     exit(silent) {
