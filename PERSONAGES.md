@@ -3,6 +3,8 @@
 Knuffels, speelgoed en dieren die in verschillende series en films kunnen opduiken. **Er doen nooit mensen mee.**
 Neem van elk speeltje 1 à 2 foto's op een effen ondergrond bij daglicht, zonder handen in beeld.
 
+**Castfoto's (referentie voor elke scène):** `assets/cast/cast-huis.jpg` (Marcel, Happy Plants, Ketchup, Peperkoek, Teddy) en `assets/cast/cast-straat.jpg` (Gerrit de Duif, Rosse Roger, Marcel, Pieter de Muis, De Vlieg). Voeg ze in Gemini toe bij elke scène waarin die personages meespelen.
+
 ## Vaste cast
 
 | Personage | Wat | Rol / karakter | Waar al gebruikt |
