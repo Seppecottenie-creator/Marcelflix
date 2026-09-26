@@ -38,18 +38,18 @@ _Marcel zegt:_ De vensterbank is een plaats delict. Waar ooit het kussentje lag,
 ## [ ] s05a.jpg
 
 ```
-Characters: Marcel, Sliert. The dark gap behind an old white radiator. Sliert, the long red fabric string, lies coiled mysteriously in the shadows like an informant in a noir film. Marcel crouches low to talk to him. A single thin stripe of light falls across the scene. Moody, noir atmosphere. Same cast as the reference sheet. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
+Characters: Marcel, Gerrit de Duif. A window with its top pane tilted open. Outside on the gutter sits Gerrit de Duif, an old grey city pigeon with ruffled feathers and one squinting eye, like a shady informant in a noir film. Inside on the windowsill Marcel slides a breadcrumb towards him. Grey overcast light, moody noir atmosphere. Same cast as the reference sheet. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
 ```
 
-_Marcel zegt:_ Achter de radiator woont Sliert, een rode stoffen sliert die alles weet en niets rechtstreeks zegt. Je kan hem nooit echt vastpakken: telkens als je denkt dat je hem hebt, kronkelt hij weer weg. Ik vraag hem wat hij gezien heeft. Hij wikkelt zich twee keer rond mijn poot en fluistert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.
+_Marcel zegt:_ Op de dakgoot boven het raam woont Gerrit de Duif, een oude stadsduif die alles ziet en niets gratis vertelt. Hij heeft meer van deze straat gezien dan de brievenbus, en hij praat alleen in raadsels, het liefst in ruil voor een broodkruim. Ik schuif hem een kruimel toe door het kiepraam. Hij pikt, kijkt me met één oog aan en koert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.
 
 ## [ ] s06a.jpg
 
 ```
-Characters: Marcel, Sliert. Close-up of Marcel's thoughtful face, ears slightly flattened, eyes narrowed in concentration. Behind him, blurred, the red fabric string slithers away under a cabinet. A cat flap glows in cold moonlight in the background. Noir atmosphere. Same cast as the reference sheet. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
+Characters: Marcel, Gerrit de Duif. Close-up of Marcel's thoughtful face at the window, ears slightly flattened, eyes narrowed in concentration. Behind the glass, blurred, the pigeon flies away; a single grey feather lies on the windowsill. A back door with a cat flap is visible in the background. Noir atmosphere. Same cast as the reference sheet. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
 ```
 
-_Marcel zegt:_ Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik het kan vragen, is Sliert al verdwenen onder de kast, en blijft er alleen een rode draad achter. Letterlijk, deze keer.
+_Marcel zegt:_ Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik nog iets kan vragen, klapt Gerrit zijn vleugels open en is hij weg. Op de vensterbank blijft alleen een grijze veer achter. Informanten. Nooit een bedankje.
 
 ## [ ] s05b.jpg
 
