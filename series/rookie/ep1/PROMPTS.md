@@ -11,7 +11,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Het is zes uur 's ochtends en de woonkamer slaapt nog. Ik niet. Vandaag begin ik bij het korps, de enige politiedienst ter wereld die haar hoofdkwartier onder de zetel heeft. Ik heb mijn pootjes gewassen, mijn snorharen rechtgezet en drie keer oefenend streng gekeken naar de radiator. De radiator was onder de indruk. Ik ben Marcel. Agent Marcel. En ik ben er klaar voor.
 
-## [ ] s02.jpg
+## [x] s02.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Under a sofa, a tiny secret police headquarters: a desk made from a matchbox, a small desk lamp, a pinned-up map drawn on a paper napkin, dust bunnies in the corners. Sergeant Jos sits behind the desk with a stern, weary look and slowly pushes a small badge across it with one foot. Marcel peeks in from the side, eager. Warm lamplight in the dark space under the sofa. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
