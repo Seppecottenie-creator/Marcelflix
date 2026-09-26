@@ -57,9 +57,9 @@ Make a square character portrait of Pieter de Muis: a small brown mouse with big
 
 ### Stap 3b: namen koppelen (één keer)
 
-Gebruik voor The Rookie **niet** de huiscastfoto met de teddybeer en de bouwsteenplantjes: die zijn merkfiguren en dan weigert Gemini ("third-party content providers"). Gebruik `assets/cast/cast-rookie.jpg` (Ketchup, Marcel, Peperkoek) en `assets/cast/cast-straat.jpg`, en noem nooit een merk- of filmnaam.
+Gebruik voor The Rookie **niet** de huiscastfoto met de teddybeer en de bouwsteenplantjes: die zijn merkfiguren en dan weigert Gemini ("third-party content providers"). Gebruik `assets/cast/cast-rookie.jpg` (Ketchup, Marcel, Peperkoek) en `assets/cast/cast-straat.jpg`, en noem nooit een merk- of filmnaam. Op `cast-rookie.jpg` is het etiket van Ketchup leeggemaakt, want een rode fles met "Tomato Ketchup" lijkt op een bekend merk; beschrijf hem als "red plush sauce bottle with a blank white label".
 
-> In deze serie heten de personages zo. Op de eerste foto, van links naar rechts: Ketchup = de rode ketchupfles-knuffel, Marcel = de grijze kat, Peperkoek = het peperkoeken mannetje met het groene strikje. Op de tweede foto, van links naar rechts: Gerrit = de duif, Roger = de rosse kater, Marcel = de grijze kat, Pieter = de muis, en de vlieg. Als ik in een scène een naam gebruik, bedoel ik altijd exact dat personage van deze foto's. Antwoord enkel met "oké".
+> In deze serie heten de personages zo. Op de eerste foto, van links naar rechts: Ketchup = de rode sausfles-knuffel met het lege witte etiket, Marcel = de grijze kat, Peperkoek = het peperkoeken mannetje met het groene strikje. Op de tweede foto, van links naar rechts: Gerrit = de duif, Roger = de rosse kater, Marcel = de grijze kat, Pieter = de muis, en de vlieg. Als ik in een scène een naam gebruik, bedoel ik altijd exact dat personage van deze foto's. Antwoord enkel met "oké".
 
 ### Stap 4: de scènes
 Plak per scène de prompt uit `ep1/PROMPTS.md` (of uit de chat), telkens met de castfoto erbij. Sla elk beeld op als `s01.jpg`, `s02.jpg`, … in `series/rookie/ep1/`.
