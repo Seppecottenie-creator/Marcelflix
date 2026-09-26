@@ -59,7 +59,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Ik volg de pootafdrukjes, vergrootglas in de aanslag. Ze zijn klein, netjes en verdacht haastig, en ze leiden dwars door de keuken naar de donkere spleet onder de koelkast. Daar, tussen de stofwolken en een verloren erwt, zit de meest illegale kaasbar van het hele huis.
 
-## [ ] s06b.jpg
+## [x] s06b.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Pieter (the small brown mouse with big ears). Under a fridge, a tiny secret cheese bar built from bottle caps, matchboxes and a thimble, with small cheese cubes on the counter. Pieter stands nervously behind the counter, whiskers trembling. Marcel's huge face peers in through the gap, filling half the frame. Warm dim light. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
