@@ -51,7 +51,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik nog iets kan vragen, klapt Gerrit zijn vleugels open en is hij weg. Op de vensterbank blijft alleen een grijze veer achter. Informanten. Nooit een bedankje.
 
-## [ ] s05b.jpg
+## [x] s05b.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes). Low angle across a kitchen floor. Marcel follows a trail of tiny mouse footprints in the dust with a magnifying glass, nose close to the floor, towards the dark gap under a fridge. Warm kitchen light. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
