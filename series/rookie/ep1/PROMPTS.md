@@ -67,7 +67,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Achter de toog staat Pieter de Muis: eigenaar, barman en de grootste roddelaar van de keuken. Hij zweert dat hij van niets weet, maar zijn snorharen trillen als een wasmachine in de centrifuge. Hij zag vannacht een rosse staart bij het kattenluik, zegt hij snel. Een heel rosse staart. Kijk daar maar eens, agent. Ik noteer het, maar ik noteer ook dat hij mij niet één keer in de ogen kijkt.
 
-## [ ] s07.jpg
+## [x] s07.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the housefly; Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Action shot in the living room: Marcel leaps through the air after the housefly, paws outstretched, a cushion flying off the sofa and a lamp wobbling. The housefly is just out of reach. On the floor, Sergeant Jos slowly raises his head in alarm. Motion blur, dynamic, bright daylight. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
