@@ -27,7 +27,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Nog voor ik die badge goed en wel kan bewonderen, stormt Doc Frieda binnen, onze forensisch expert en het meest dramatische lid van het korps. Ze is een cavia, draagt een piepklein rond brilletje en piept als een alarmsysteem. Het kattenkruidkussentje is verdwenen, roept ze. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Sergeant Jos kijkt me aan en zegt maar één woord, heel langzaam: instappen.
 
-## [ ] s04.jpg
+## [x] s04.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). A sunny windowsill turned into a crime scene: an empty dent in the sun where a small pillow used to lie, tiny yellow police tape around it. Clues: one long orange cat hair, a trail of tiny mouse footprints in the dust, a small crumb of cheese. Doc Frieda peers at the orange hair through a magnifying glass, Marcel inspects the footprints with his nose close to the sill, Sergeant Jos watches calmly from the corner. A tiny blurred fly in the bright window. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
