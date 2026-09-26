@@ -72,6 +72,7 @@ Handig: een klein script dat uit `episode.json` per scène een `.txt` maakt en d
 
 ## Pilot: The Rookie: Feline Division — "De Zaak Kattenkruid"
 Herschreven (vloeiendere, langere zinnen; geen vaas of stofzuiger meer). 17 scènes, 3 keuzes, 3 eindes; de volledige tekst staat in `series/rookie/ep1/episode.json`.
+Personages uit het huis voor alle titels (o.a. Teddy de teddybeer, de Happy Plants geel en blauw): `PERSONAGES.md`.
 Terugkerende cast en het plan voor aflevering 2 en 3: `series/rookie/PERSONAGES.md` (Peperkoek, Ketchup, Gerrit de Duif, De Vlieg, Pieter de Muis, Rosse Roger). Er doen nooit mensen mee.
 
 ## Eerste opdracht voor Claude Code
