@@ -43,7 +43,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Op de dakgoot boven het raam woont Gerrit de Duif, een oude stadsduif die alles ziet en niets gratis vertelt. Hij heeft meer van deze straat gezien dan de brievenbus, en hij praat alleen in raadsels, het liefst in ruil voor een broodkruim. Ik schuif hem een kruimel toe door het kiepraam. Hij pikt, kijkt me met één oog aan en koert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.
 
-## [ ] s06a.jpg
+## [x] s06a.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Gerrit (the grey city pigeon with green and purple neck feathers). Close-up of Marcel's thoughtful face at the window, ears slightly flattened, eyes narrowed in concentration. Behind the glass, blurred, Gerrit flies away; a single grey feather lies on the windowsill. A back door with a cat flap is visible in the background. Noir atmosphere. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
