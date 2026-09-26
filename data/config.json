@@ -5,14 +5,16 @@
       "id": "ik",
       "name": "Ik",
       "color": "#e50914",
-      "avatar": ""
+      "avatar": "",
+      "defaultAvatar": "pride"
     },
     {
       "id": "marcel",
       "name": "Marcel",
       "color": "#8a8f98",
       "avatar": "",
-      "welcome": "Welkom terug, meneer Marcel. Uw zetel staat klaar."
+      "welcome": "Welkom terug, meneer Marcel. Uw zetel staat klaar.",
+      "defaultAvatar": "rookie"
     }
   ],
   "featured": "rookie",

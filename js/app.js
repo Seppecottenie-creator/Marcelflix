@@ -79,7 +79,7 @@
    .concat(["😊", "😺", "😼", "🐶", "🦊", "🐼", "🐯", "🦁", "🐸", "🦄", "🍿", "👑", "🕵️", "🚀", "🦖", "🌮", "🎄", "❤️"]
      .map(e => ({ id: "emoji:" + e, kind: "emoji", emoji: e })));
   function avatarChoice(p) {
-    const id = Store.d.avatars && Store.d.avatars[p.id];
+    const id = (Store.d.avatars && Store.d.avatars[p.id]) || p.defaultAvatar;
     const a = id && AVATARS.find(x => x.id === id);
     if (!a) return null;
     if (a.kind === "cover") { const s = byId(a.id); if (!s || !s.poster) return null; return { ...a, img: s.poster }; }
@@ -96,8 +96,8 @@
   }
 
   /* ---------- views ---------- */
-  function viewSplash() {
-    // Bewegende muur van covers (kleine versies in assets/covers/mini/), geheime titels niet
+  /* Bewegende muur van covers (kleine versies in assets/covers/mini/), geheime titels niet */
+  function wallHtml() {
     const minis = CATALOG.filter(s => s.status !== "secret" && s.poster)
       .map(s => "assets/covers/mini/" + s.poster.split("/").pop());
     const cols = Array.from({ length: 15 }, (_, c) => {
@@ -105,8 +105,12 @@
       const imgs = list.concat(list).map(u => `<img src="${esc(u)}" alt="" loading="eager" decoding="async">`).join("");
       return `<div class="col"><div class="strip" style="--d:${70 + (c % 4) * 12}s">${imgs}</div></div>`;
     }).join("");
+    return `<div class="wall" aria-hidden="true">${cols}</div>`;
+  }
+
+  function viewSplash() {
     app.innerHTML = `<div class="landing" id="landing">
-        <div class="wall" aria-hidden="true">${cols}</div>
+        ${wallHtml()}
         <div class="veil"></div>
         <div class="center">
           <h1 class="logo">MARCELFLIX</h1>
@@ -131,20 +135,32 @@
   }
 
   function viewProfiles(manage = false) {
+    const pencil = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM14 6l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`;
     app.innerHTML = `<div class="profiles ${manage ? "managing" : ""}">
-      <h1>${manage ? "Profielen beheren" : "Wie kijkt er?"}</h1>
-      <div class="profile-grid">${CONFIG.profiles.map(p => `
-        <button class="profile" data-id="${esc(p.id)}">
-          <div class="av" style="background:${esc(p.color)}">${avatarHtml(p)}${p.locked && !manage ? `<span class="lock">🔒</span>` : ""}${manage ? `<span class="edit" aria-hidden="true">✎</span>` : ""}</div>
-          <span>${esc(p.name)}</span></button>`).join("")}
-      </div>
-      <button class="manage ${manage ? "done" : ""}" id="manage">${manage ? "KLAAR" : "PROFIELEN BEHEREN"}</button></div>`;
+      <div class="landing-bg">${wallHtml()}<div class="veil"></div></div>
+      <div class="logo pr-logo">MARCELFLIX</div>
+      <div class="pr-inner">
+        <h1>${manage ? "Profielen beheren" : "Wie kijkt er?"}</h1>
+        <div class="profile-grid">${CONFIG.profiles.map((p, i) => `
+          <button class="profile" data-id="${esc(p.id)}" style="--pc:${esc(p.color)};--i:${i}">
+            <div class="av" style="background:${esc(p.color)}">${avatarHtml(p)}${p.locked && !manage ? `<span class="lock">🔒</span>` : ""}${manage ? `<span class="edit" aria-hidden="true">${pencil}</span>` : ""}</div>
+            <span class="nm">${esc(p.name)}</span></button>`).join("")}
+        </div>
+        <button class="manage ${manage ? "done" : ""}" id="manage">${manage ? "Klaar" : pencil + "Profielen beheren"}</button>
+      </div></div>`;
     app.querySelectorAll(".profile").forEach(b => b.onclick = () => {
       const p = CONFIG.profiles.find(x => x.id === b.dataset.id);
       if (manage) { viewAvatarPicker(p); return; }
       if (p.locked) { toast(p.locked, 3500); return; }
-      Store.d.profile = p.id; Store.save(); go("#/home");
-      if (p.welcome) setTimeout(() => toast(p.welcome, 3200), 400);
+      Store.d.profile = p.id; Store.save();
+      // Netflix-gevoel: gekozen profiel licht op en zoomt, de rest verdwijnt
+      const wrap = app.querySelector(".profiles");
+      if (wrap.classList.contains("leaving")) return;
+      b.classList.add("chosen"); wrap.classList.add("leaving");
+      setTimeout(() => {
+        go("#/home");
+        if (p.welcome) setTimeout(() => toast(p.welcome, 3200), 400);
+      }, matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 750);
     });
     document.getElementById("manage").onclick = () => viewProfiles(!manage);
   }

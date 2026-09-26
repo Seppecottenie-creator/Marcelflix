@@ -32,12 +32,12 @@ img { display: block; max-width: 100%; }
 .splash p { color: var(--muted); margin: 12px 0 32px; font-size: 15px; }
 /* startscherm */
 .landing { position: fixed; inset: 0; overflow: hidden; background: #000; display: grid; place-items: center; cursor: pointer; }
-.landing .wall { position: absolute; left: 50%; top: 50%; width: 175vmax; height: 175vmax; display: flex; gap: 1.1vmax; opacity: 0;
+.wall { position: absolute; left: 50%; top: 50%; width: 175vmax; height: 175vmax; display: flex; gap: 1.1vmax; opacity: 0;
   transform: translate(-50%, -50%) perspective(1400px) rotateX(20deg) rotateZ(-13deg); animation: wallIn 2.2s ease .15s forwards; }
-.landing .col { flex: 1; overflow: hidden; }
-.landing .strip { animation: colUp var(--d, 80s) linear infinite; will-change: transform; }
-.landing .col:nth-child(even) .strip { animation-direction: reverse; }
-.landing .strip img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: .5vmax; margin-bottom: 1.1vmax; background: #141418; }
+.wall .col { flex: 1; overflow: hidden; }
+.wall .strip { animation: colUp var(--d, 80s) linear infinite; will-change: transform; }
+.wall .col:nth-child(even) .strip { animation-direction: reverse; }
+.wall .strip img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: .5vmax; margin-bottom: 1.1vmax; background: #141418; }
 @keyframes colUp { to { transform: translateY(-50%); } }
 @keyframes wallIn { to { opacity: 1; } }
 .landing .veil { position: absolute; inset: 0; pointer-events: none;
@@ -72,20 +72,42 @@ img { display: block; max-width: 100%; }
 @keyframes beams { 0% { opacity: 0; transform: scaleX(.2); } 60% { opacity: 1; } 100% { opacity: 0; transform: scaleX(3); } }
 
 /* ---------- profiles ---------- */
-.profiles { min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px var(--gutter); animation: fadeIn .6s; }
-.profiles h1 { font-weight: 500; font-size: clamp(26px, 5vw, 48px); margin: 0 0 36px; }
-.profile-grid { display: flex; gap: clamp(16px, 3vw, 32px); flex-wrap: wrap; justify-content: center; }
-.profile { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--muted); width: clamp(90px, 22vw, 150px); transition: color .2s; }
-.profile .av { width: 100%; aspect-ratio: 1; border-radius: 8px; overflow: hidden; display: grid; place-items: center; border: 3px solid transparent; transition: border-color .2s, transform .2s; position: relative; }
+.profiles { position: fixed; inset: 0; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px var(--gutter); background: #000; }
+.landing-bg { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+.landing-bg .wall { opacity: 0; animation: bgIn 1.6s ease forwards; }
+.landing-bg .veil { position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,.8) 0%, rgba(0,0,0,.88) 50%, #000 100%); }
+@keyframes bgIn { to { opacity: .7; } }
+@media (max-height: 460px) { .profiles { padding: 56px var(--gutter) 16px; } .profiles h1 { font-size: 26px; margin-bottom: 16px; } .profiles .manage { margin-top: 18px; padding: 8px 18px; } .profile { gap: 8px; } }
+.pr-logo { position: fixed; top: calc(18px + var(--safe-t)); left: var(--gutter); font-size: clamp(26px, 3.2vw, 40px); font-weight: 400; z-index: 2; animation: fadeIn .8s; }
+.pr-inner { position: relative; display: flex; flex-direction: column; align-items: center; transition: opacity .5s, transform .5s; }
+.profiles h1 { font-weight: 500; font-size: clamp(28px, 5vw, 54px); margin: 0 0 clamp(26px, 5vh, 48px); letter-spacing: -.01em; text-shadow: 0 4px 30px rgba(0,0,0,.8); opacity: 0; animation: riseIn .7s cubic-bezier(.2,.8,.2,1) .05s forwards; }
+.profile-grid { display: flex; gap: clamp(18px, 4vw, 44px); flex-wrap: wrap; justify-content: center; }
+.profile { display: flex; flex-direction: column; align-items: center; gap: 14px; color: #9a9aa3; width: clamp(100px, min(36vw, 30vh), 200px); transition: color .25s; opacity: 0; animation: riseIn .7s cubic-bezier(.2,.8,.2,1) calc(.2s + var(--i) * .12s) forwards; }
+.profile .av { width: 100%; aspect-ratio: 1; border-radius: 10px; overflow: hidden; display: grid; place-items: center; position: relative;
+  box-shadow: 0 0 0 0 transparent, 0 18px 40px rgba(0,0,0,.65); transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.profile .av::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,0) 45%); opacity: 0; transition: opacity .35s; pointer-events: none; }
 .profile .av img { width: 100%; height: 100%; object-fit: cover; }
-.profile .av .face { font-size: 44px; }
-.profile:hover, .profile:focus-visible { color: var(--text); outline: none; }
-.profile:hover .av, .profile:focus-visible .av { border-color: var(--text); transform: scale(1.04); }
+.profile .av .face { font-size: clamp(48px, 10vw, 76px); }
+.profile .nm { font-size: clamp(15px, 1.8vw, 20px); font-weight: 500; }
+.profile:hover, .profile:focus-visible { color: #fff; outline: none; }
+.profile:hover .av, .profile:focus-visible .av { transform: translateY(-6px) scale(1.06); box-shadow: 0 0 0 3px #fff, 0 0 60px color-mix(in srgb, var(--pc) 70%, transparent), 0 24px 50px rgba(0,0,0,.7); }
+.profile:hover .av::after, .profile:focus-visible .av::after { opacity: 1; }
 .profile .lock { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.7); border-radius: 50%; width: 26px; height: 26px; display: grid; place-items: center; font-size: 13px; }
-.profiles .manage { margin-top: 48px; border: 1px solid var(--muted); color: var(--muted); padding: 8px 22px; letter-spacing: .15em; font-size: 13px; }
-.profiles .manage.done { background: var(--text); color: #000; border-color: var(--text); font-weight: 700; }
-.profiles.managing .av > :not(.edit) { filter: brightness(.45); }
-.profile .edit { position: absolute; inset: 0; display: grid; place-items: center; font-size: 34px; color: #fff; }
+.profiles .manage { margin-top: clamp(34px, 7vh, 60px); display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.35); color: #bbb; padding: 10px 22px; border-radius: 999px; letter-spacing: .06em; font-size: 14px; font-weight: 600;
+  background: rgba(255,255,255,.05); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); transition: all .25s; opacity: 0; animation: riseIn .7s ease .55s forwards; }
+.profiles .manage svg { width: 16px; height: 16px; }
+.profiles .manage:hover { color: #fff; border-color: #fff; background: rgba(255,255,255,.12); }
+.profiles .manage.done { background: #fff; color: #000; border-color: #fff; padding: 10px 34px; }
+.profiles.managing .av > :not(.edit) { filter: brightness(.4); }
+.profile .edit { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; }
+.profile .edit svg { width: 34%; height: 34%; filter: drop-shadow(0 2px 6px rgba(0,0,0,.6)); }
+.profiles.managing .profile .av { box-shadow: 0 0 0 2px rgba(255,255,255,.5), 0 18px 40px rgba(0,0,0,.65); }
+@keyframes riseIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+/* keuze gemaakt: gekozen profiel zoomt, rest verdwijnt */
+.profiles.leaving h1, .profiles.leaving .manage, .profiles.leaving .profile:not(.chosen), .profiles.leaving .pr-logo { transition: opacity .35s; opacity: 0 !important; animation: none; }
+.profiles.leaving .profile.chosen { animation: none; opacity: 1; color: #fff; }
+.profiles.leaving .profile.chosen .av { transform: scale(1.35); box-shadow: 0 0 0 3px #fff, 0 0 90px var(--pc), 0 30px 60px rgba(0,0,0,.7); transition: transform .7s cubic-bezier(.2,.8,.2,1), box-shadow .5s; }
+.profiles.leaving .landing-bg { transition: opacity .7s; opacity: 0; }
 .av-img { display: block; width: 100%; height: 100%; background-size: 260% auto; background-repeat: no-repeat; }
 .topbar .mini-av .av-img { background-size: 260% auto; }
 .picker { min-height: 100svh; padding: calc(24px + var(--safe-t)) var(--gutter) calc(40px + var(--safe-b)); max-width: 980px; margin: 0 auto; animation: fadeIn .4s; }
@@ -463,9 +485,11 @@ img { display: block; max-width: 100%; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero .bd, .player .layer img, .intro .logo span, .landing .strip, .landing .ring { animation: none !important; }
+  .hero .bd, .player .layer img, .intro .logo span, .wall .strip, .landing .ring { animation: none !important; }
   .landing .wall, .landing .logo, .landing .go { animation: none !important; opacity: 1; transform: none; }
   .landing .wall { transform: translate(-50%, -50%) perspective(1400px) rotateX(20deg) rotateZ(-13deg); }
+  .profiles h1, .profile, .profiles .manage, .landing-bg .wall { animation: none !important; opacity: 1; }
+  .landing-bg .wall { opacity: .7; }
   .intro .logo span { opacity: 1; transform: none; }
 }
 
