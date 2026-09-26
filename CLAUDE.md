@@ -70,30 +70,9 @@ edge-tts --voice nl-BE-ArnaudNeural --rate=-10% --pitch=-5Hz --file s01.txt --wr
 ```
 Handig: een klein script dat uit `episode.json` per scène een `.txt` maakt en daarna alle mp3's genereert.
 
-## Pilot: The Rookie: Feline Division — "De Zaak Vaas"
-17 scènes, 3 keuzes, 3 eindes. Marcel onderzoekt een gebroken vaas en ontdekt dat hij zelf de dader is.
-
-Stijlzin achter elke beeldprompt: *cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.*
-
-| ID | Beeldprompt | Vertelling (Marcel) | Volgende |
-|---|---|---|---|
-| s01 | Cat sits proudly on a white cabinet, tiny police badge and cap beside him, morning light | Mijn eerste dag bij het korps. Ik ben Marcel. Agent Marcel. Ze zeggen dat ik te jong ben. Ze zeggen veel. | s02 |
-| s02 | Close-up of a smartphone showing an alert, cat's face reflected in the screen | Tien uur twaalf. Een melding. Code rood in de woonkamer. Een vaas. Of wat ervan over is. | s03 |
-| s03 | Shattered vase on the floor, red and white flowers and water, police tape | De plaats delict. Scherven. Water. Bloemen die nooit meer rechtop zullen staan. Iemand gaat hiervoor boeten. | KEUZE: Ondervraag de plant → s04a / Onderzoek de scherven → s04b |
-| s04a | Cat stares at a pothos plant under an interrogation lamp | De plant. Altijd in de buurt. Altijd stil. Te stil. Ik vroeg waar ze was om tien uur. Ze zei niets. | s05a |
-| s05a | Pothos leaves trembling, one leaf pointing to the hallway | Na een uur brak ze. Met een blad wees ze naar de gang. Een grijze schim, fluisterde ze. Planten fluisteren niet. Toch hoorde ik het. | s06 |
-| s04b | Cat inspects a shard through a magnifying glass | Ik bekeek de scherven. Scherp, zoals mijn verstand. En toen zag ik het. | s05b |
-| s05b | Macro of one fluffy blue-grey hair on a wet shard | Een haar. Grijs. Dicht. Zacht. Heel zacht, eigenlijk. Dit zegt niets. Veel wezens zijn grijs. | s06 |
-| s06 | Vacuum cleaner in a dark closet, dramatic side light, like a suspect | Mijn instinct zei: de stofzuiger. Luid. Onvoorspelbaar. We hebben een verleden samen. | s07 |
-| s07 | Cat and vacuum cleaner face each other across a table, noir interrogation room | Zijn alibi? De stekker zat niet in het stopcontact. Handig. Veel te handig. | KEUZE: Arresteer de stofzuiger → s08a / Bekijk de camerabeelden → s08b |
-| s08a | Vacuum cleaner behind cardboard bars, cat standing guard, satisfied | Ik arresteerde hem. Geen vragen meer. Het korps applaudisseerde. Nu ja, niemand applaudisseerde. Maar in mijn hoofd wel. | s09a |
-| s09a | Cat receives a medal made of a cat treat, grey pawprint visible behind him | Zaak gesloten. Promotie. Maar soms, 's nachts, denk ik aan die pootafdruk. Niet lang. Ik slaap snel in. | EINDE A: Gerechtelijke dwaling → s12 |
-| s08b | Grainy security-camera footage, timestamp 10:11, blurry grey shape leaping | Er was een camera. Tien uur elf. Een wazige figuur. Grijs. Rond. Springt op de kast. | s09b |
-| s09b | Pixelated freeze-frame of two glowing orange eyes | Ik zoomde in. Twee oranje ogen. Ik ken die ogen. Ik zie ze elke dag in de spiegel. | s10 |
-| s10 | Cat looking shocked, dolly-zoom effect, dark room | Dit is duidelijk gemanipuleerd. AI. Deepfake. Een complot. Toch? | KEUZE: Beken → s11a / Wis het bewijs → s11b |
-| s11a | Cat curled in a woman's lap on a sofa, golden evening light, only her hands visible | Eerlijk duurt het langst. Ik bekende. Ze zuchtte. Ze aaide me toch. Ze vergeeft me altijd. [persoonlijke boodschap, nog in te vullen] | EINDE B: Eerlijk duurt het langst → s12 |
-| s11b | Cat lying triumphantly on a cabinet among flowers, staring into the camera (echte foto gebruiken) | De gsm viel. Van de tafel. Per ongeluk. Er is geen bewijs. Er is alleen Marcel. | EINDE C: Het perfecte misdrijf → s12 |
-| s12 | Dark hallway at night, clock showing 03:00, Christmas lights flickering red | Volgende week, op Marcelflix. Om drie uur 's nachts ren ik door de gang. Jullie denken dat ik gek ben. Ik zie iets wat jullie niet zien. | einde aflevering |
+## Pilot: The Rookie: Feline Division — "De Zaak Kattenkruid"
+Herschreven (vloeiendere, langere zinnen; geen vaas of stofzuiger meer). 17 scènes, 3 keuzes, 3 eindes; de volledige tekst staat in `series/rookie/ep1/episode.json`.
+Terugkerende cast en het plan voor aflevering 2 en 3: `series/rookie/PERSONAGES.md` (Peperkoek, Ketchup, Sliert, De Vlieg, Pieter de Muis, Rosse Roger). Er doen nooit mensen mee.
 
 ## Eerste opdracht voor Claude Code
 Bouw de volledige Marcelflix-site met de pilot als speelbare aflevering, eerst met placeholders voor beelden en audio. Andere series tonen als "Binnenkort". Voeg ook een script toe dat de `.txt`-bestanden en mp3's per scène genereert via edge-tts.

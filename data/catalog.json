@@ -8,7 +8,7 @@
         "FELINE DIVISION"
       ],
       "tagline": "New cop. Old soul. Zero patience.",
-      "description": "Agent Marcel begint aan zijn eerste dag bij het korps. Al na twaalf minuten staat hij voor zijn grootste zaak: een vaas, aan scherven, midden in de woonkamer. Jij beslist wie hij ondervraagt, wie hij arresteert en wat hij met de waarheid doet.",
+      "description": "Agent Marcel begint aan zijn eerste dag bij het korps, dat zijn hoofdkwartier onder de zetel heeft. Samen met sergeant Peperkoek, forensisch expert Ketchup en informant Sliert jaagt hij op de dader van de grootste diefstal die de woonkamer ooit zag. Jij beslist wie hij ondervraagt, wie hij arresteert en wat hij met de waarheid doet.",
       "genres": [
         "Politieserie",
         "Komedie",
@@ -21,7 +21,7 @@
       "backdrop": "assets/covers/rookie-wide.jpg",
       "theme": "rookie",
       "status": "available",
-      "cast": "Marcel, de plant, de stofzuiger",
+      "cast": "Marcel, Peperkoek, Ketchup, Sliert, Rosse Roger, Pieter de Muis, De Vlieg",
       "reviews": [
         {
           "who": "De Standaard van de Kattenbak",
@@ -30,11 +30,11 @@
         },
         {
           "who": "Het Nieuwsblad (van de buren)",
-          "text": "Ik heb gehuild. Om de vaas.",
+          "text": "Ik heb gehuild. Om het kussentje.",
           "stars": 5
         },
         {
-          "who": "De stofzuiger",
+          "who": "Rosse Roger (van hiernaast)",
           "text": "Onterecht. Laster. Ik zeg niets zonder mijn advocaat.",
           "stars": 1
         }
@@ -43,9 +43,9 @@
         {
           "id": "ep1",
           "number": 1,
-          "title": "De Zaak Vaas",
-          "duration": "± 5 min",
-          "summary": "Eerste dag, eerste melding, eerste verdachte. Of is de dader dichter bij huis dan gedacht?",
+          "title": "De Zaak Kattenkruid",
+          "duration": "± 6 min",
+          "summary": "Eerste dag, eerste melding: het kattenkruidkussentje is verdwenen. Was het Rosse Roger van hiernaast, Pieter de Muis of toch De Vlieg?",
           "still": "assets/covers/rookie-wide.jpg"
         }
       ],

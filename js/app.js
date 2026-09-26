@@ -234,7 +234,7 @@
         ${row("Omdat je keek naar: Marcel die naar de muur staart", pub.filter(s => hasG(s, ["Sci-fi", "Fantasy", "Historisch drama"])).map(cardHtml).join(""))}
         ${row("Top 10 van het moment", top10.map((s, i) => top10Card(s, i + 1)).join(""), "top10")}
       </div>
-      <footer class="foot">Marcelflix · Een Marcel Productie<br>Geen enkele vaas werd beschadigd tijdens de opnames. Nou ja. Eén.<br>
+      <footer class="foot">Marcelflix · Een Marcel Productie<br>Geen enkel kattenkruidkussentje werd beschadigd tijdens de opnames. Nou ja. Eén.<br>
         <a href="#" id="reset" style="color:#555">Voortgang wissen</a></footer>`;
     wireTopbar();
     wireCards();

@@ -1,140 +1,140 @@
-# Beeldprompts: The Rookie: Feline Division · De Zaak Vaas
+# Beeldprompts: The Rookie: Feline Division · De Zaak Kattenkruid
 
-Voeg bij elke prompt een referentiefoto van Marcel toe. Formaat 16:9 liggend, minstens 1920 x 1080.
+Voeg foto's toe van Marcel en van de speeltjes die in de scène voorkomen (Peperkoek, Ketchup, Sliert). Zie series/rookie/PERSONAGES.md. Formaat 16:9 liggend, minstens 1920 x 1080.
 Sla elk beeld op in deze map met de bestandsnaam hieronder (.jpg, .png of .webp).
 
 ## [ ] s01.jpg
 
 ```
-The cat sits proudly on a white cabinet, a tiny police badge and police cap beside him, morning light. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Marcel sits proudly on top of a white cabinet at sunrise, a tiny police cap and a small shiny badge beside him, the quiet living room below bathed in soft orange morning light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Mijn eerste dag bij het korps. Ik ben Marcel. Agent Marcel. Ze zeggen dat ik te jong ben. Ze zeggen veel.
+_Marcel zegt:_ Het is zes uur 's ochtends en de woonkamer slaapt nog. Ik niet. Vandaag begin ik bij het korps, de enige politiedienst ter wereld die haar hoofdkwartier onder de zetel heeft. Ik heb mijn pootjes gewassen, mijn snorharen rechtgezet en drie keer oefenend streng gekeken naar de radiator. De radiator was onder de indruk. Ik ben Marcel. Agent Marcel. En ik ben er klaar voor.
 
 ## [ ] s02.jpg
 
 ```
-Close-up of a smartphone on a table showing an alert, the cat's face reflected in the screen. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Under a sofa, a tiny secret police headquarters lit by a small desk lamp: a gingerbread man plush toy sits behind a desk made of a matchbox with a badge on it, Marcel peeking in from the side, dust and warm lamplight. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Tien uur twaalf. Een melding. Code rood in de woonkamer. Een vaas. Of wat ervan over is.
+_Marcel zegt:_ Onder de zetel wacht mijn nieuwe partner op mij: sergeant Peperkoek. Twintig jaar dienst, drie keer bijna opgegeten en nog altijd geen kruimel uit zijn humeur. Hij bekijkt me van kop tot staart en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, zoals alleen iemand van peperkoek kan zuchten, en schuift me een badge toe.
 
 ## [ ] s03.jpg
 
 ```
-Shattered flower vase on a floor, red and white flowers and water spread out, police tape around it. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+A ketchup bottle plush toy bursting dramatically into the tiny under-sofa headquarters, Marcel and the gingerbread man plush turning towards him in surprise, dramatic light from the side. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ De plaats delict. Scherven. Water. Bloemen die nooit meer rechtop zullen staan. Iemand gaat hiervoor boeten.
+_Marcel zegt:_ Nog voor ik die badge goed en wel kan bewonderen, stormt Ketchup binnen, onze forensisch expert en het meest dramatische lid van het korps. Hij is rood aangelopen, maar dat is hij eigenlijk altijd. Het kattenkruidkussentje is verdwenen, roept hij. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Peperkoek kijkt me aan en zegt maar één woord: instappen.
 
-## [ ] s04a.jpg
+## [ ] s04.jpg
 
 ```
-The cat stares intensely at a green pothos plant under a single interrogation lamp. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+A sunny windowsill with an empty dent where a small pillow used to lie, tiny police tape around it, Marcel inspecting the scene; clues visible: a long orange cat hair, a trail of tiny paw prints in the dust, a small crumb of cheese; the ketchup plush holding a magnifying glass. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ De plant. Altijd in de buurt. Altijd stil. Te stil. Ik vroeg waar ze was om tien uur. Ze zei niets.
+_Marcel zegt:_ De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Ketchup vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Peperkoek laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.
 
 ## [ ] s05a.jpg
 
 ```
-Extreme close-up of pothos leaves trembling, one leaf pointing towards the hallway. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+A long red fabric string toy coiled mysteriously in the shadows behind an old radiator, Marcel crouching low to talk to it, a thin stripe of light across the scene. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Na een uur brak ze. Met een blad wees ze naar de gang. Een grijze schim, fluisterde ze. Planten fluisteren niet. Toch hoorde ik het.
+_Marcel zegt:_ Achter de radiator woont Sliert, een rode stoffen sliert die alles weet en niets rechtstreeks zegt. Je kan hem nooit echt vastpakken: telkens als je denkt dat je hem hebt, kronkelt hij weer weg. Ik vraag hem wat hij gezien heeft. Hij wikkelt zich twee keer rond mijn poot en fluistert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.
 
-## [ ] s04b.jpg
+## [ ] s06a.jpg
 
 ```
-The cat sniffs a piece of broken vase through a magnifying glass. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Close-up of Marcel's thoughtful face, ears slightly flattened, the red string toy slithering away into the darkness under a cabinet, a moonlit cat flap blurred in the background. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Ik bekeek de scherven. Scherp, zoals mijn verstand. En toen zag ik het.
+_Marcel zegt:_ Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik het kan vragen, is Sliert al verdwenen onder de kast, en blijft er alleen een rode draad achter. Letterlijk, deze keer.
 
 ## [ ] s05b.jpg
 
 ```
-Macro shot of a single fluffy blue-grey hair stuck on a wet shard. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Marcel with a magnifying glass following a trail of tiny mouse footprints in the dust across a kitchen floor, towards the dark gap under a fridge. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Een haar. Grijs. Dicht. Zacht. Heel zacht, eigenlijk. Dit zegt niets. Veel wezens zijn grijs.
+_Marcel zegt:_ Ik volg de pootafdrukjes, vergrootglas in de aanslag. Ze zijn klein, netjes en verdacht haastig, en ze leiden dwars door de keuken naar de donkere spleet onder de koelkast. Daar, tussen de stofwolken en een verloren erwt, zit de meest illegale kaasbar van het hele huis.
 
-## [ ] s06.jpg
+## [ ] s06b.jpg
 
 ```
-A vacuum cleaner in a dark closet, dramatic side light, like a suspect in a lineup. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Under a fridge, a tiny speakeasy cheese bar built from bottle caps and matchboxes, a nervous little brown mouse behind the counter, Marcel's huge face peering in through the gap, warm dim light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Mijn instinct zei: de stofzuiger. Luid. Onvoorspelbaar. We hebben een verleden samen.
+_Marcel zegt:_ Achter de toog staat Pieter de Muis: eigenaar, barman en de grootste roddelaar van de keuken. Hij zweert dat hij van niets weet, maar zijn snorharen trillen als een wasmachine in de centrifuge. Hij zag vannacht een rosse staart bij het kattenluik, zegt hij snel. Een heel rosse staart. Kijk daar maar eens, agent. Ik noteer het, maar ik noteer ook dat hij mij niet één keer in de ogen kijkt.
 
 ## [ ] s07.jpg
 
 ```
-The cat and the vacuum cleaner face each other across a small table, noir interrogation room. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Marcel leaping through the living room in mid-air chasing a fly, a cushion flying off the sofa, the gingerbread man plush watching in shock, motion blur, dynamic action shot. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Zijn alibi? De stekker zat niet in het stopcontact. Handig. Veel te handig.
+_Marcel zegt:_ Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Peperkoek roept dat ik mijn focus moet houden, maar het is te laat: de achtervolging eindigt pas bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.
 
-## [ ] s08a.jpg
+## [ ] s08.jpg
 
 ```
-The vacuum cleaner behind tiny cardboard bars, the cat standing guard with a satisfied face. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+A big smug ginger tomcat pushing his head through a cat flap from outside, Marcel face to face with him on the inside, a small green leaf stuck in the ginger cat's whiskers, dramatic side light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Ik arresteerde hem. Geen vragen meer. Het korps applaudisseerde. Nu ja, niemand applaudisseerde. Maar in mijn hoofd wel.
+_Marcel zegt:_ En daar, aan de andere kant van het kattenluik, verschijnt een kop die ik al te goed ken. Rosse Roger, de kater van hiernaast. Groot, oranje en zo zelfvoldaan dat zelfs de dakgoot van hem walgt. Hij vraagt poeslief of er een probleem is, agent. Aan zijn snorharen hangt een klein, groen blaadje. Kattenkruid, misschien. Of gewoon gras. Mijn hart zegt het ene, mijn verstand het andere.
 
 ## [ ] s09a.jpg
 
 ```
-The cat receiving a golden medal made of a cat treat, a grey pawprint visible on the cabinet behind him. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Marcel proudly pressing his paw on the ginger tomcat's paw through the cat flap as if arresting him, the ketchup plush cheering behind him and the gingerbread man plush holding his head in disbelief. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Zaak gesloten. Promotie. Maar soms, 's nachts, denk ik aan die pootafdruk. Niet lang. Ik slaap snel in.
+_Marcel zegt:_ Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Ketchup barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.
 
-## [ ] s08b.jpg
+## [ ] s10a.jpg
 
 ```
-Grainy security-camera footage of a living room, timestamp 10:11, a blurry grey shape leaping. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+The ginger tomcat sitting smugly in his own sunny garden next to a hedgehog and a garden gnome as witnesses, Marcel watching from behind the window glass looking defeated. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Er was een camera. Tien uur elf. Een wazige figuur. Grijs. Rond. Springt op de kast.
+_Marcel zegt:_ Het blijkt dat Roger een alibi heeft. Hij heeft de hele nacht in zijn eigen tuin geslapen, wat bevestigd wordt door een egel, twee slakken en een zeer betrouwbare tuinkabouter. Het blaadje was gras. De buren zijn beledigd, het korps moet een excuusbrief schrijven en ik mag een week lang enkel nog het verkeer regelen op de gang. Het kussentje, trouwens, is nog altijd weg.
 
 ## [ ] s09b.jpg
 
 ```
-Zoomed, pixelated freeze-frame showing two glowing orange eyes. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Back on the sunny windowsill, the ketchup plush holding a tiny cheese crumb up to the light, Marcel leaning in to look at it through a magnifying glass. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Ik zoomde in. Twee oranje ogen. Ik ken die ogen. Ik zie ze elke dag in de spiegel.
+_Marcel zegt:_ Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Ketchup intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.
 
-## [ ] s10.jpg
+## [ ] s10b.jpg
 
 ```
-The cat looking shocked, dramatic dolly-zoom effect, dark room. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Under a fridge, a small catnip pillow turned into a cosy nest with five tiny baby mice sleeping on it, their father, a little brown mouse, standing protectively in front with his arms spread, Marcel's big face peering in, soft warm light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Dit is duidelijk gemanipuleerd. AI. Deepfake. Een complot. Toch?
+_Marcel zegt:_ Onder de koelkast vind ik het kussentje terug. Pieter de Muis staat ervoor met zijn armpjes gespreid, klein en bang en toch vastberaden. Achter hem, diep weggekropen in het kattenkruid, slapen vijf piepkleine muisjes. Ze hadden het koud, piept Pieter. Het was het zachtste ding in huis. Ik kijk naar het kussentje en naar de baby's, en ik voel iets wat ik nog niet ken. Ik denk dat het medelijden heet. Of honger. Het is nog te vroeg om dat te zeggen.
 
 ## [ ] s11a.jpg
 
 ```
-The cat curled in the lap of a woman on a sofa, soft golden evening light, only her hands visible stroking him. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Evening, Marcel lying calmly in front of the fridge like a guard, the baby mice asleep on the pillow in the gap behind him, the gingerbread man plush placing a tiny icing medal on Marcel's chest, the ketchup plush wiping a tear, warm golden light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Eerlijk duurt het langst. Ik bekende. Ze zuchtte. Ze aaide me toch. Ze vergeeft me altijd.
+_Marcel zegt:_ Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Peperkoek zegt niets, maar legt een klein medaillon van glazuur op mijn borst, en Ketchup moet zich omdraaien omdat er saus uit zijn ogen komt. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.
 
 ## [ ] s11b.jpg
 
 ```
-The cat lying triumphantly on top of a cabinet among flowers, staring into the camera (ECHTE FOTO: nog toe te voegen als s11b.jpg). cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Marcel rolling blissfully on his back on a small catnip pillow in the middle of the living room, eyes half closed, paws in the air, the ketchup plush and the gingerbread man plush staring at him in disbelief. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Het perfecte misdrijf. De gsm viel. Van de tafel. Per ongeluk. Er is geen bewijs. Er is alleen Marcel.
+_Marcel zegt:_ Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, verklaar ik mijn liefde aan Ketchup en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.
 
 ## [ ] s12.jpg
 
 ```
-Dark hallway at night, a digital clock showing 03:00, Christmas lights flickering red. cinematic still from a police TV drama, warm natural daylight, shallow depth of field, 16:9. The cat is the exact grey British Shorthair from the reference photo: round face, dense blue-grey fur, deep orange eyes.
+Night, a single fly sitting on a moonlit windowsill next to a tiny rolled-up piece of paper, the silhouette of a ginger tomcat in the dark garden behind the glass, cold blue light. a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.
 ```
 
-_Marcel zegt:_ Volgende week, op Marcelflix. Om drie uur 's nachts ren ik door de gang. Jullie denken dat ik gek ben. Ik zie iets wat jullie niet zien.
+_Marcel zegt:_ Die nacht, terwijl het hele korps slaapt, landt er iets op de vensterbank. Ze zoemt niet eens. Ze kijkt alleen naar binnen, met duizend ogen tegelijk, en laat een piepklein opgerold papiertje achter. Volgende week, op Marcelflix: De Vlieg heeft een plan. En deze keer is het persoonlijk.
