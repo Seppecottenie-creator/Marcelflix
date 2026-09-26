@@ -19,7 +19,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Onder de zetel wacht mijn nieuwe partner op mij: sergeant Peperkoek. Twintig jaar dienst, drie keer bijna opgegeten en nog altijd geen kruimel uit zijn humeur. Hij bekijkt me van kop tot staart en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, zoals alleen iemand van peperkoek kan zuchten, en schuift me een badge toe.
 
-## [ ] s03.jpg
+## [x] s03.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Peperkoek (the light-brown gingerbread man plush with the green bow tie); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo). The red bottle plush bursts dramatically into the tiny under-sofa headquarters, leaning forward in panic. Marcel and Peperkoek turn towards him in surprise. Dramatic side light, a little dust flying up. Same characters as in the two cast photos. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
