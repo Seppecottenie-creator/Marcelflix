@@ -97,11 +97,25 @@
 
   /* ---------- views ---------- */
   function viewSplash() {
-    app.innerHTML = `<div class="splash"><div>
-        <div class="logo">MARCELFLIX</div>
-        <p>Onbeperkt Marcel. Opzeggen kan niet.</p>
-        <button class="btn-start" id="start">▶ Starten</button></div></div>`;
-    document.getElementById("start").onclick = () => { MarcelPlayer.primeAudio(); viewIntro(); };
+    // Bewegende muur van covers (kleine versies in assets/covers/mini/), geheime titels niet
+    const minis = CATALOG.filter(s => s.status !== "secret" && s.poster)
+      .map(s => "assets/covers/mini/" + s.poster.split("/").pop());
+    const cols = Array.from({ length: 15 }, (_, c) => {
+      const list = Array.from({ length: 8 }, (_, i) => minis[(c * 5 + i * 7) % minis.length]);
+      const imgs = list.concat(list).map(u => `<img src="${esc(u)}" alt="" loading="eager" decoding="async">`).join("");
+      return `<div class="col"><div class="strip" style="--d:${70 + (c % 4) * 12}s">${imgs}</div></div>`;
+    }).join("");
+    app.innerHTML = `<div class="landing" id="landing">
+        <div class="wall" aria-hidden="true">${cols}</div>
+        <div class="veil"></div>
+        <div class="center">
+          <h1 class="logo">MARCELFLIX</h1>
+          <button class="go" id="start" aria-label="Starten"><span class="ring"></span><span class="ring r2"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></button>
+        </div>
+      </div>`;
+    const start = () => { MarcelPlayer.primeAudio(); viewIntro(); };
+    document.getElementById("landing").onclick = start;
   }
 
   function viewIntro() {
