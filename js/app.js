@@ -8,7 +8,7 @@
   /* ---------- opslag (per toestel) ---------- */
   const Store = {
     key: "marcelflix:v1",
-    d: { profile: null, endings: {}, cont: {}, watched: {}, remind: {}, avatars: {} },
+    d: { profile: null, endings: {}, cont: {}, watched: {}, remind: {}, avatars: {}, list: {}, likes: {} },
     load() { try { const x = JSON.parse(localStorage.getItem(this.key)); if (x) Object.assign(this.d, x); } catch (e) {} },
     save() { try { localStorage.setItem(this.key, JSON.stringify(this.d)); } catch (e) {} },
     k(s, e) { return s + "/" + e; },
@@ -20,7 +20,12 @@
     },
     setContinue(s, e, scene, step) { this.d.cont[this.k(s, e)] = { scene, step, at: Date.now() }; this.save(); },
     clearContinue(s, e) { delete this.d.cont[this.k(s, e)]; this.save(); },
-    markWatched(s, e) { this.d.watched[this.k(s, e)] = true; this.save(); }
+    markWatched(s, e) { this.d.watched[this.k(s, e)] = true; this.save(); },
+    /* Mijn lijst en likes, per profiel: { profielId: { titelId: tijdstip } } */
+    _bag(kind) { const p = this.d.profile || "_"; this.d[kind] = this.d[kind] || {}; return (this.d[kind][p] = this.d[kind][p] || {}); },
+    has(kind, id) { return !!this._bag(kind)[id]; },
+    toggle(kind, id) { const b = this._bag(kind); if (b[id]) delete b[id]; else b[id] = Date.now(); this.save(); return !!b[id]; },
+    ids(kind) { const b = this._bag(kind); return Object.keys(b).sort((x, y) => b[y] - b[x]); }
   };
 
   /* ---------- helpers ---------- */
@@ -205,6 +210,7 @@
           <div class="btns">
             <button class="btn play" data-play="${esc(f.id)}"><span class="ico">▶</span> ${conts.find(c => c.s.id === f.id) ? "Verder kijken" : "Afspelen"}</button>
             <button class="btn info" data-open="${esc(f.id)}"><span class="ico">ⓘ</span> Meer info</button>
+            ${likeBtn(f)}
           </div>
         </div>
       </section>
@@ -217,6 +223,7 @@
                 : `<span class="gposter gp-${esc(c.s.theme)}"><span class="art"></span></span>`}
               <div class="ctitle">${esc(c.s.title)} · A${c.ep.number}</div>
               <div class="progress"><i style="width:${Math.min(92, 8 + c.v.step * 6)}%"></i></div></button>`).join(""))}
+        ${row("Mijn lijst", Store.ids("list").map(byId).filter(s => s && vis.includes(s)).map(cardHtml).join(""))}
         ${row("Marcelflix Originals", originals.map(cardHtml).join(""))}
         ${row(`<a href="#/films" class="rowlink">Films ›</a>`, pub.filter(s => s.type === "film").map(cardHtml).join(""))}
         ${row(`<a href="#/series" class="rowlink">Series ›</a>`, pub.filter(s => s.type === "series").map(cardHtml).join(""))}
@@ -231,6 +238,7 @@
         <a href="#" id="reset" style="color:#555">Voortgang wissen</a></footer>`;
     wireTopbar();
     wireCards();
+    wireActions();
     document.getElementById("reset").onclick = (e) => {
       e.preventDefault();
       if (confirm("Alle voortgang en gevonden eindes wissen?")) { Store.d.endings = {}; Store.d.cont = {}; Store.d.watched = {}; Store.save(); viewHome(); toast("Gewist. Marcel is alles vergeten. Behalve zijn eten."); }
@@ -261,10 +269,39 @@
     });
   }
   window.addEventListener("resize", () => app.querySelectorAll(".rail .track").forEach(t => t.dispatchEvent(new Event("scroll"))));
+  function listBtn(s) {
+    const on = Store.has("list", s.id);
+    return `<button class="btn info act-list ${on ? "on" : ""}" data-list="${esc(s.id)}" aria-pressed="${on}"><span class="ico">${on ? "✓" : "＋"}</span> Mijn lijst</button>`;
+  }
+  function likeBtn(s) {
+    const on = Store.has("likes", s.id);
+    return `<button class="round-act act-like ${on ? "on" : ""}" data-like="${esc(s.id)}" aria-pressed="${on}" aria-label="Vind ik leuk" title="Vind ik leuk">👍</button>`;
+  }
+  function wireActions(onChange) {
+    app.querySelectorAll("[data-list]").forEach(b => b.onclick = (e) => {
+      e.stopPropagation();
+      const s = byId(b.dataset.list), on = Store.toggle("list", s.id);
+      app.querySelectorAll(`[data-list="${s.id}"]`).forEach(x => { x.outerHTML = listBtn(s); });
+      wireActions(onChange);
+      toast(on ? `${s.title} staat in je lijst.` : `Uit je lijst gehaald. Marcel doet alsof hij het niet zag.`);
+      if (onChange) onChange();
+    });
+    app.querySelectorAll("[data-like]").forEach(b => b.onclick = (e) => {
+      e.stopPropagation();
+      const s = byId(b.dataset.like), on = Store.toggle("likes", s.id);
+      app.querySelectorAll(`[data-like="${s.id}"]`).forEach(x => { x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); });
+      if (on) { pop(b); toast(`Je vindt ${s.title} leuk. Genoteerd voor een vervolg.`); }
+      else toast("Like weggehaald.");
+    });
+  }
+  function pop(el) { el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop"); }
   function top10Card(s, n) {
     return `<button class="card" data-open="${esc(s.id)}" aria-label="Nummer ${n}: ${esc(s.title)}"><span class="num" aria-hidden="true">${n}</span><div class="pw">${posterHtml(s)}${ribbon(s)}</div></button>`;
   }
-  function cardHtml(s) { return `<button class="card" data-open="${esc(s.id)}" aria-label="${esc(s.title)}"><span class="m">M</span>${posterHtml(s)}${s.type === "film" ? `<span class="type-tag">FILM</span>` : ""}${ribbon(s)}</button>`; }
+  function cardHtml(s) {
+    const marks = (Store.has("likes", s.id) ? "👍" : "") + (Store.has("list", s.id) ? "✓" : "");
+    return `<button class="card" data-open="${esc(s.id)}" aria-label="${esc(s.title)}"><span class="m">M</span>${posterHtml(s)}${s.type === "film" ? `<span class="type-tag">FILM</span>` : ""}${marks ? `<span class="marks">${marks}</span>` : ""}${ribbon(s)}</button>`;
+  }
 
   function viewBrowse(type, genre) {
     const list = visible().filter(s => s.type === type);
@@ -317,7 +354,8 @@
             <div class="btns">
               ${soon ? `<button class="btn play" id="remind">${reminded ? "✓ Je krijgt een melding" : "🔔 Herinner mij"}</button>`
                 : `<button class="btn play" data-play="${esc(s.id)}"><span class="ico">▶</span> ${Store.d.cont[s.id + "/" + ep0.id] ? "Verder kijken" : "Afspelen"}</button>`}
-              <button class="btn info" id="mylist">＋ Mijn lijst</button>
+              ${listBtn(s)}
+              ${likeBtn(s)}
             </div>
           </div>
         </section>
@@ -346,10 +384,45 @@
       <footer class="foot">Marcelflix · Een Marcel Productie</footer>`;
     wireTopbar(); wireCards();
     document.getElementById("back").onclick = () => history.length > 1 ? history.back() : go("#/home");
-    document.getElementById("mylist").onclick = (e) => { e.currentTarget.textContent = "✓ In je lijst"; toast("Toegevoegd. Marcel staat trouwens standaard in je lijst."); };
+    wireActions();
     const rm = document.getElementById("remind");
     if (rm) rm.onclick = () => { Store.d.remind[s.id] = true; Store.save(); rm.textContent = "✓ Je krijgt een melding"; toast("Genoteerd. Marcel stuurt een duif."); };
     app.querySelectorAll("[data-soonep]").forEach(b => b.onclick = () => toast(s.type === "film" ? "Deze film wordt nog gedraaid. Marcel weigert te werken voor minder dan drie snoepjes per scène." : "Deze aflevering wordt nog opgenomen. Marcel is in onderhandeling over zijn gage (brokjes)."));
+    scrollTo(0, 0);
+  }
+
+  /* Verborgen overzicht (#/smaak): wat werd geliket, in de lijst gezet en bekeken, per profiel. */
+  function viewTaste() {
+    const d = Store.d, fmt = (t) => new Date(t).toLocaleString("nl-BE", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+    const title = (id) => (byId(id) || { title: id }).title;
+    const lines = [];
+    const blocks = CONFIG.profiles.map(p => {
+      const likes = Object.entries((d.likes || {})[p.id] || {}).sort((a, b) => b[1] - a[1]);
+      const list = Object.entries((d.list || {})[p.id] || {}).sort((a, b) => b[1] - a[1]);
+      lines.push(`${p.name}: leuk = ${likes.map(([id]) => title(id)).join(", ") || "niets"}; lijst = ${list.map(([id]) => title(id)).join(", ") || "niets"}`);
+      const li = (arr) => arr.length ? `<ul>${arr.map(([id, t]) => `<li><b>${esc(title(id))}</b> <span>${fmt(t)}</span></li>`).join("")}</ul>` : `<p class="none">Nog niets.</p>`;
+      return `<div class="taste-card"><h2><span class="av" style="background:${esc(p.color)}">${avatarHtml(p)}</span>${esc(p.name)}</h2>
+        <h3>👍 Vind ik leuk</h3>${li(likes)}<h3>＋ Mijn lijst</h3>${li(list)}</div>`;
+    }).join("");
+    const watched = Object.keys(d.watched || {}).map(k => title(k.split("/")[0]));
+    const endings = Object.entries(d.endings || {}).map(([k, v]) => `${title(k.split("/")[0])}: ${v.join(", ")}`);
+    const reminded = Object.keys(d.remind || {}).map(title);
+    lines.push(`Uitgekeken: ${watched.join(", ") || "niets"}`, `Gevonden eindes: ${endings.join("; ") || "geen"}`, `Herinner mij: ${reminded.join(", ") || "niets"}`);
+    app.innerHTML = `${topbar()}
+      <section class="browse taste">
+        <h1>Smaakrapport</h1>
+        <p class="sub">Wat er op dit toestel geliket, bewaard en bekeken werd. Handig om te weten welke vervolgen Marcel moet draaien.</p>
+        <div class="taste-grid">${blocks}</div>
+        <div class="taste-card"><h3>▶ Uitgekeken</h3><p>${esc(watched.join(", ") || "Nog niets.")}</p>
+          <h3>🏁 Gevonden eindes</h3><p>${esc(endings.join(" · ") || "Nog geen.")}</p>
+          <h3>🔔 "Herinner mij" gevraagd voor</h3><p>${esc(reminded.join(", ") || "Nog niets.")}</p></div>
+        <button class="btn play" id="copy">Kopieer als tekst</button>
+      </section>`;
+    wireTopbar();
+    document.getElementById("copy").onclick = () => {
+      const txt = "Marcelflix smaakrapport\n" + lines.join("\n");
+      (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast("Gekopieerd. Plak het in een berichtje."), () => prompt("Kopieer deze tekst:", txt));
+    };
     scrollTo(0, 0);
   }
 
@@ -399,6 +472,7 @@
     if (view === "series") return viewBrowse("series", a && decodeURIComponent(a));
     if (view === "films") return viewBrowse("film", a && decodeURIComponent(a));
     if (view === "kijk") return viewWatch(a, b);
+    if (view === "smaak") return viewTaste();
     go("#/home");
   }
 

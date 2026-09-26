@@ -17,7 +17,8 @@ Alles staat in `data/catalog.json` (`type`: series of film, `status`: available 
 **Geheim:** Director's Cut "De Drie Amigos" (`directors-cut`), ontgrendelt als alle 3 eindes van de pilot gevonden zijn. Geen romantiek: een gek avontuur door verschillende landen met Marcel en de dieren van de ouders, Arthur (Europese korthaar, bruin gestreept, witte kin, altijd nors) en Odiel (grote beige krulhond, vrolijk). Aflevering "De Jacht op de Gouden Brok": Parijs of Egypte, Mexico, jungletempel; 3 keuzes, 2 eindes.
 
 Profielen: "Ik" (voor haar) en "Marcel"; via "Profielen beheren" kies je per profiel een icoon (uitsnedes van Marcel uit de covers of emoji's, bewaard in localStorage). Navigatie: Home, Series, Films (met genrefilter).
-Home-rijen: Verder kijken, Marcelflix Originals, Films, Series, genre-rijen, Top 10 van het moment (volgorde in `data/config.json` → `top10`).
+"Mijn lijst" en "Vind ik leuk" (👍) per titel en per profiel in localStorage; verborgen overzicht op `#/smaak` (niet gelinkt) met likes, lijst, uitgekeken titels en eindes + knop om als tekst te kopiëren.
+Home-rijen: Verder kijken, Mijn lijst, Marcelflix Originals, Films, Series, genre-rijen, Top 10 van het moment (volgorde in `data/config.json` → `top10`).
 
 ## Wat er gebouwd moet worden
 1. **Intro**: korte logo-animatie "MARCELFLIX" met geluid.
