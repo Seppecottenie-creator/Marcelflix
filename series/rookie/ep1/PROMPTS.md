@@ -91,7 +91,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Doc Frieda barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.
 
-## [ ] s10a.jpg
+## [x] s10a.jpg
 
 ```
 Characters in this scene: Roger (the big fluffy ginger tomcat with green eyes); Marcel (the grey British Shorthair cat with orange eyes). A sunny back garden. Roger sits smugly on the lawn next to his witnesses: a hedgehog, two snails and a garden gnome. Behind the window glass in the foreground, Marcel watches, ears down, defeated. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
