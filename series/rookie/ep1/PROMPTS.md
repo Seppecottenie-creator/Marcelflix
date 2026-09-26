@@ -75,7 +75,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Sergeant Jos begint te roepen dat ik mijn focus moet houden, maar tegen dat hij zijn zin af heeft, eindigt de achtervolging al bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.
 
-## [ ] s08.jpg
+## [x] s08.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes). A cat flap in a back door. On the outside, Roger, with a smug face, pushes his head through the flap. On the inside, Marcel faces him, nose to nose, suspicious. A small green leaf is stuck in Roger's whiskers. Dramatic side light, tense stand-off. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
