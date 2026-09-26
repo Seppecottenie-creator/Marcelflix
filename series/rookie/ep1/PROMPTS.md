@@ -19,7 +19,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Onder de zetel wacht mijn nieuwe partner op mij: sergeant Jos, een schildpad van tachtig jaar, waarvan zestig in dienst. Hij heeft alles gezien, alles overleefd en alles in zijn eigen tempo gedaan. Hij bekijkt me van kop tot staart, wat bij hem een kwartier duurt, en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, heel lang en heel traag, en schuift me een badge toe.
 
-## [ ] s03.jpg
+## [x] s03.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). The same tiny headquarters under the sofa. Doc Frieda bursts in dramatically, squeaking in panic, her glasses askew. Marcel and Sergeant Jos turn towards her in surprise. Dramatic side light, a little dust flying up. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
