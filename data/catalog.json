@@ -8,7 +8,7 @@
         "FELINE DIVISION"
       ],
       "tagline": "New cop. Old soul. Zero patience.",
-      "description": "Agent Marcel begint aan zijn eerste dag bij het korps, dat zijn hoofdkwartier onder de zetel heeft. Samen met sergeant Jos, een schildpad met zestig jaar dienst, en forensisch expert Doc Frieda, de meest dramatische cavia van het land, jaagt hij op de dader van de grootste diefstal die de woonkamer ooit zag. Jij beslist wie hij ondervraagt, wie hij arresteert en wat hij met de waarheid doet.",
+      "description": "Agent Marcel begint aan zijn eerste dag bij het korps, dat zijn hoofdkwartier onder de zetel heeft. Samen met sergeant Walter, een schildpad met zestig jaar dienst, en forensisch expert Doc Frieda, de meest dramatische cavia van het land, jaagt hij op de dader van de grootste diefstal die de woonkamer ooit zag. Jij beslist wie hij ondervraagt, wie hij arresteert en wat hij met de waarheid doet.",
       "genres": [
         "Politieserie",
         "Komedie",
@@ -21,7 +21,7 @@
       "backdrop": "assets/covers/rookie-wide.jpg",
       "theme": "rookie",
       "status": "available",
-      "cast": "Marcel, Sergeant Jos, Doc Frieda, Gerrit de Duif, Rosse Roger, Pieter de Muis, De Vlieg",
+      "cast": "Marcel, Sergeant Walter, Doc Frieda, Gus de Duif, Rosse Roger, Pip de Muis, De Vlieg",
       "reviews": [
         {
           "who": "De Standaard van de Kattenbak",
@@ -45,7 +45,7 @@
           "number": 1,
           "title": "De Zaak Kattenkruid",
           "duration": "± 6 min",
-          "summary": "Eerste dag, eerste melding: het kattenkruidkussentje is verdwenen. Was het Rosse Roger van hiernaast, Pieter de Muis of toch De Vlieg?",
+          "summary": "Eerste dag, eerste melding: het kattenkruidkussentje is verdwenen. Was het Rosse Roger van hiernaast, Pip de Muis of toch De Vlieg?",
           "still": "assets/covers/rookie-wide.jpg"
         }
       ],

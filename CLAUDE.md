@@ -73,7 +73,7 @@ Handig: een klein script dat uit `episode.json` per scène een `.txt` maakt en d
 ## Pilot: The Rookie: Feline Division — "De Zaak Kattenkruid"
 Herschreven (vloeiendere, langere zinnen; geen vaas of stofzuiger meer). 17 scènes, 3 keuzes, 3 eindes; de volledige tekst staat in `series/rookie/ep1/episode.json`.
 Enkel Marcel is echt; alle andere personages zijn verzonnen dieren (geen speelgoed uit huis, geen mensen): `PERSONAGES.md`.
-Terugkerende cast en het plan voor aflevering 2 en 3: `series/rookie/PERSONAGES.md` (Sergeant Jos de schildpad, Doc Frieda de cavia, Gerrit de Duif, De Vlieg, Pieter de Muis, Rosse Roger). Er doen nooit mensen mee.
+Terugkerende cast en het plan voor aflevering 2 en 3: `series/rookie/PERSONAGES.md` (Sergeant Walter de schildpad, Doc Frieda de cavia, Gus de Duif, De Vlieg, Pip de Muis, Rosse Roger). Er doen nooit mensen mee.
 
 ## Eerste opdracht voor Claude Code
 Bouw de volledige Marcelflix-site met de pilot als speelbare aflevering, eerst met placeholders voor beelden en audio. Andere series tonen als "Binnenkort". Voeg ook een script toe dat de `.txt`-bestanden en mp3's per scène genereert via edge-tts.

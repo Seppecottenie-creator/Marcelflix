@@ -1,107 +1,108 @@
-# Stem: De Zaak Kattenkruid
+# Stem: De Zaak Kattenkruid (Engelse vertelstem, Nederlandse ondertitels)
 
-Plak per scène de tekst in ElevenLabs (of een andere stemdienst), download de mp3 en bewaar hem als `<scène-ID>.mp3` in deze map.
+Plak per scène de Engelse tekst in ElevenLabs, download de mp3 en bewaar hem als `<scène-ID>.mp3` in deze map.
+De ondertitels op de site blijven Nederlands en lopen mee op het ritme van de Engelse zinnen.
 
-Totaal: 6539 tekens.
+Totaal: 6363 tekens.
 
-## s01.mp3 (372 tekens)
-
-```
-Het is zes uur 's ochtends en de woonkamer slaapt nog. Ik niet. Vandaag begin ik bij het korps, de enige politiedienst ter wereld die haar hoofdkwartier onder de zetel heeft. Ik heb mijn pootjes gewassen, mijn snorharen rechtgezet en drie keer oefenend streng gekeken naar de radiator. De radiator was onder de indruk. Ik ben Marcel. Agent Marcel. En ik ben er klaar voor.
-```
-
-## s02.mp3 (462 tekens)
+## s01.mp3 (349 tekens)
 
 ```
-Onder de zetel wacht mijn nieuwe partner op mij: sergeant Jos, een schildpad van tachtig jaar, waarvan zestig in dienst. Hij heeft alles gezien, alles overleefd en alles in zijn eigen tempo gedaan. Hij bekijkt me van kop tot staart, wat bij hem een kwartier duurt, en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, heel lang en heel traag, en schuift me een badge toe.
+It's six in the morning, and the living room is still asleep. I'm not. Today I join the force: the only police department in the world with its headquarters under the couch. I've washed my paws, straightened my whiskers, and practised my stern look on the radiator three times. The radiator was impressed. I'm Marcel. Officer Marcel. And I am ready.
 ```
 
-## s03.mp3 (422 tekens)
+## s02.mp3 (483 tekens)
 
 ```
-Nog voor ik die badge goed en wel kan bewonderen, stormt Doc Frieda binnen, onze forensisch expert en het meest dramatische lid van het korps. Ze is een cavia, draagt een piepklein rond brilletje en piept als een alarmsysteem. Het kattenkruidkussentje is verdwenen, roept ze. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Sergeant Jos kijkt me aan en zegt maar één woord, heel langzaam: instappen.
+Under the couch, my new partner is waiting for me: Sergeant Walter, a tortoise of eighty years, sixty of them on the force. He has seen everything, survived everything, and done everything at his own pace. He looks me over from head to tail, which for him takes about fifteen minutes, and says I'm too young, too fluffy, and far too sure of myself. I tell him those are exactly the three qualities of a legend. He sighs, very long and very slowly, and slides a badge across the desk.
 ```
 
-## s04.mp3 (448 tekens)
+## s03.mp3 (404 tekens)
 
 ```
-De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Doc Frieda vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Sergeant Jos laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.
+Before I can even admire that badge properly, Doc Frieda bursts in, our forensic expert and the most dramatic member of the force. She's a guinea pig, she wears tiny round glasses, and she squeaks like a burglar alarm. The catnip pillow is gone, she cries. The pillow from the windowsill. The most sacred object in this house. Sergeant Walter looks at me and says just two words, very slowly: let's roll.
 ```
 
-## s05a.mp3 (414 tekens)
+## s04.mp3 (435 tekens)
 
 ```
-Op de dakgoot boven het raam woont Gerrit de Duif, een oude stadsduif die alles ziet en niets gratis vertelt. Hij heeft meer van deze straat gezien dan de brievenbus, en hij praat alleen in raadsels, het liefst in ruil voor een broodkruim. Ik schuif hem een kruimel toe door het kiepraam. Hij pikt, kijkt me met één oog aan en koert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.
+The windowsill is a crime scene. Where the pillow once lay, there's only an empty dent in the sunlight, and around it lies more evidence than I ever dared hope for on my first day. Doc Frieda finds a long, orange hair. I find a trail of tiny footprints in the dust. And somewhere above us, something buzzes, very softly, as if it's laughing at us. Sergeant Walter leaves the choice to me. A good officer, he says, knows where to begin.
 ```
 
-## s06a.mp3 (358 tekens)
+## s05a.mp3 (413 tekens)
 
 ```
-Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik nog iets kan vragen, klapt Gerrit zijn vleugels open en is hij weg. Op de vensterbank blijft alleen een grijze veer achter. Informanten. Nooit een bedankje.
+On the gutter above the window lives Gus the Pigeon, an old city pigeon who sees everything and tells nothing for free. He has seen more of this street than the mailbox, and he only speaks in riddles, preferably in exchange for a breadcrumb. I slide him a crumb through the tilted window. He pecks, eyes me with one eye, and coos that last night a fire came through the cat flap, when the moon was at its highest.
 ```
 
-## s05b.mp3 (270 tekens)
+## s06a.mp3 (340 tekens)
 
 ```
-Ik volg de pootafdrukjes, vergrootglas in de aanslag. Ze zijn klein, netjes en verdacht haastig, en ze leiden dwars door de keuken naar de donkere spleet onder de koelkast. Daar, tussen de stofwolken en een verloren erwt, zit de meest illegale kaasbar van het hele huis.
+A fire through the cat flap. I think so hard that my ears go flat. Orange hair, a fire, the cat flap: there's only one creature on this street that is all of those things at once. Before I can ask anything else, Gus spreads his wings, and he's gone. All that's left on the windowsill is a single grey feather. Informants. Never a thank-you.
 ```
 
-## s06b.mp3 (391 tekens)
+## s05b.mp3 (283 tekens)
 
 ```
-Achter de toog staat Pieter de Muis: eigenaar, barman en de grootste roddelaar van de keuken. Hij zweert dat hij van niets weet, maar zijn snorharen trillen als een wasmachine in de centrifuge. Hij zag vannacht een rosse staart bij het kattenluik, zegt hij snel. Een heel rosse staart. Kijk daar maar eens, agent. Ik noteer het, maar ik noteer ook dat hij mij niet één keer in de ogen kijkt.
+I follow the tiny footprints, magnifying glass at the ready. They're small, neat, and suspiciously hurried, and they lead straight across the kitchen to the dark gap under the fridge. There, between the dust bunnies and a lost pea, is the most illegal cheese bar in the entire house.
 ```
 
-## s07.mp3 (431 tekens)
+## s06b.mp3 (395 tekens)
 
 ```
-Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Sergeant Jos begint te roepen dat ik mijn focus moet houden, maar tegen dat hij zijn zin af heeft, eindigt de achtervolging al bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.
+Behind the counter stands Pip the Mouse: owner, bartender, and the biggest gossip in the kitchen. He swears he knows nothing, but his whiskers are shaking like a washing machine on spin cycle. Last night he saw a ginger tail by the cat flap, he says quickly. A very ginger tail. You should look there, officer. I write it down, but I also write down that he doesn't look me in the eye even once.
 ```
 
-## s08.mp3 (385 tekens)
+## s07.mp3 (421 tekens)
 
 ```
-En daar, aan de andere kant van het kattenluik, verschijnt een kop die ik al te goed ken. Rosse Roger, de kater van hiernaast. Groot, oranje en zo zelfvoldaan dat zelfs de dakgoot van hem walgt. Hij vraagt poeslief of er een probleem is, agent. Aan zijn snorharen hangt een klein, groen blaadje. Kattenkruid, misschien. Of gewoon gras. Mijn hart zegt het ene, mijn verstand het andere.
+Then I hear it again: that buzzing. The Fly. Public enemy number one, escaped twelve times and caught zero times. She lands right on my nose and is gone before I can blink. I jump, I miss, I hit the lamp, and I miss again. Sergeant Walter starts shouting that I need to keep my focus, but by the time he finishes his sentence, the chase has already ended at the cat flap, where The Fly zips out through a crack, laughing.
 ```
 
-## s09a.mp3 (257 tekens)
+## s08.mp3 (378 tekens)
 
 ```
-Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Doc Frieda barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.
+And there, on the other side of the cat flap, appears a face I know all too well. Ginger Roger, the tomcat from next door. Big, orange, and so pleased with himself that even the gutter is disgusted. He asks, sweet as pie, if there's a problem, officer. A small green leaf is hanging from his whiskers. Catnip, maybe. Or just grass. My heart says one thing, my head says another.
 ```
 
-## s10a.mp3 (373 tekens)
+## s09a.mp3 (239 tekens)
 
 ```
-Het blijkt dat Roger een alibi heeft. Hij heeft de hele nacht in zijn eigen tuin geslapen, wat bevestigd wordt door een egel, twee slakken en een zeer betrouwbare tuinkabouter. Het blaadje was gras. De buren zijn beledigd, het korps moet een excuusbrief schrijven en ik mag een week lang enkel nog het verkeer regelen op de gang. Het kussentje, trouwens, is nog altijd weg.
+I don't hesitate for a second. I press my paw on his and say the words I've been dreaming of for months: Roger, you are under arrest. Doc Frieda bursts into tears of pride. Roger looks at my paw, then at me, and very slowly begins to grin.
 ```
 
-## s09b.mp3 (384 tekens)
+## s10a.mp3 (338 tekens)
 
 ```
-Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Doc Frieda intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.
+It turns out Roger has an alibi. He slept in his own garden all night, as confirmed by a hedgehog, two snails, and a very reliable garden gnome. The leaf was grass. The neighbours are offended, the force has to write a letter of apology, and I'm stuck directing traffic in the hallway for a week. The pillow, by the way, is still missing.
 ```
 
-## s10b.mp3 (451 tekens)
+## s09b.mp3 (355 tekens)
 
 ```
-Onder de koelkast vind ik het kussentje terug. Pieter de Muis staat ervoor met zijn armpjes gespreid, klein en bang en toch vastberaden. Achter hem, diep weggekropen in het kattenkruid, slapen vijf piepkleine muisjes. Ze hadden het koud, piept Pieter. Het was het zachtste ding in huis. Ik kijk naar het kussentje en naar de baby's, en ik voel iets wat ik nog niet ken. Ik denk dat het medelijden heet. Of honger. Het is nog te vroeg om dat te zeggen.
+I let Roger go. A leaf in your whiskers is not a confession. Back on the windowsill, Doc Frieda has found something everyone else overlooked: a minuscule crumb of cheese, right where the pillow used to be. Cheese. Under the fridge. Trembling whiskers. Suddenly everything falls into place in my head, with the same sound as a tin of cat food popping open.
 ```
 
-## s11a.mp3 (449 tekens)
+## s10b.mp3 (440 tekens)
 
 ```
-Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Sergeant Jos zegt niets, maar schuift heel traag een medaillon van een flessendopje naar me toe, en Doc Frieda moet haar brilletje afzetten omdat het helemaal beslagen is van de tranen. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.
+Under the fridge, I find the pillow. Pip the Mouse stands in front of it with his little arms spread wide, small and scared and still determined. Behind him, curled up deep in the catnip, five tiny baby mice are sleeping. They were cold, Pip squeaks. It was the softest thing in the house. I look at the pillow and at the babies, and I feel something I don't recognise yet. I think it's called compassion. Or hunger. It's too early to tell.
 ```
 
-## s11b.mp3 (385 tekens)
+## s11a.mp3 (439 tekens)
 
 ```
-Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, zing ik een serenade voor sergeant Jos en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.
+I leave the pillow where it is. Some cases you solve with an arrest, others with a nap and a little understanding. Sergeant Walter says nothing, but very slowly slides a bottle-cap medal towards me, and Doc Frieda has to take off her tiny glasses because they're completely fogged up with tears. That night I sleep in front of the fridge, guarding five little mice who will never thank me. It was, without a doubt, the best first day ever.
 ```
 
-## s12.mp3 (287 tekens)
+## s11b.mp3 (369 tekens)
 
 ```
-Die nacht, terwijl het hele korps slaapt, landt er iets op de vensterbank. Ze zoemt niet eens. Ze kijkt alleen naar binnen, met duizend ogen tegelijk, en laat een piepklein opgerold papiertje achter. Volgende week, op Marcelflix: De Vlieg heeft een plan. En deze keer is het persoonlijk.
+I take the pillow with me, for the record and as evidence. That was a mistake. After ten seconds of catnip, I'm lying on my back in the middle of the living room, singing a serenade to Sergeant Walter and trying to arrest The Fly for a spot on the ceiling. The official report later contains just one sentence: Officer Marcel was unable to answer any further questions.
+```
+
+## s12.mp3 (282 tekens)
+
+```
+That night, while the whole force is asleep, something lands on the windowsill. She doesn't even buzz. She just looks inside, with a thousand eyes at once, and leaves behind a tiny rolled-up piece of paper. Next week, on Marcelflix: The Fly has a plan. And this time, it's personal.
 ```

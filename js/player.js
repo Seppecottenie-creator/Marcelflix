@@ -270,8 +270,8 @@
       this.preload(id);
 
       const sentences = splitSentences(sc.text);
-      const weights = sentences.map(s => s.length + 12);
-      const total = weights.reduce((x, y) => x + y, 0);
+      let weights = sentences.map(s => s.length + 12);
+      let total = weights.reduce((x, y) => x + y, 0);
       let dur = estimateDuration(sentences), useAudio = false;
 
       if (a.audioUrl) {
@@ -284,6 +284,12 @@
         });
         if (this.dead || token !== this.token) return;
         if (useAudio) dur = voice.duration;
+        // Stem in een andere taal ("narration"): ondertitels op het ritme van die zinnen
+        const spoken = useAudio && sc.narration ? splitSentences(sc.narration) : null;
+        if (spoken && spoken.length === sentences.length) {
+          weights = spoken.map(s => s.length + 12);
+          total = weights.reduce((x, y) => x + y, 0);
+        }
       }
 
       this.showImage(a.img, sc, dur);

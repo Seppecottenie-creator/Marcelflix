@@ -53,7 +53,7 @@ async def main():
     d = load_voice_defaults()
     ap = argparse.ArgumentParser(description="Genereer vertelstem per scène")
     ap.add_argument("episode", nargs="?", help="map van de aflevering, bv. series/rookie/ep1")
-    ap.add_argument("--voice", default=d.get("name", "nl-BE-ArnaudNeural"))
+    ap.add_argument("--voice", default=None, help="standaard: narrationVoice uit episode.json, anders data/config.json")
     ap.add_argument("--rate", default=d.get("rate", "-10%"))
     ap.add_argument("--pitch", default=d.get("pitch", "-5Hz"))
     ap.add_argument("--scene", help="alleen deze scène")
@@ -71,6 +71,7 @@ async def main():
     data = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
     scenes = data["scenes"]
     ids = [a.scene] if a.scene else list(scenes.keys())
+    a.voice = a.voice or data.get("narrationVoice") or d.get("name", "nl-BE-ArnaudNeural")
 
     print(f"Stem: {a.voice}  snelheid {a.rate}  toonhoogte {a.pitch}")
     made = skipped = 0
@@ -83,7 +84,7 @@ async def main():
         if out.exists() and not a.force:
             skipped += 1
             continue
-        text = sc["text"]
+        text = sc.get("narration") or sc["text"]  # "narration" = gesproken tekst als die afwijkt van de ondertitels
         # tekst ook bewaren, handig om te vergelijken of zelf in te spreken
         (ep_dir / f"{sid}.txt").write_text(text, encoding="utf-8")
         print(f"  ▶ {sid}: {text[:60]}{'…' if len(text) > 60 else ''}")

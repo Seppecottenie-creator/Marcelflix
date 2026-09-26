@@ -68,6 +68,7 @@ Zelf ingesproken? Zet gewoon je eigen `s01.mp3` in de map.
 "s03": {
   "prompt": "beeldbeschrijving (Engels)",
   "text": "Wat Marcel zegt. Zin per zin ondertiteld.",
+  "narration": "Optioneel: gesproken tekst in een andere taal (evenveel zinnen als text).",
   "motion": "in | out | left | right | zoom | none",
   "look": "noir | cctv | warm | stranger",
   "focus": "50% 35%",
