@@ -386,20 +386,57 @@
   }
 
   function viewBrowse(type, genre) {
+    const isFilm = type === "film";
     const list = visible().filter(s => s.type === type);
     const genres = [...new Set(list.flatMap(s => s.genres))].sort((a, b) => a.localeCompare(b, "nl"));
-    const shown = genre ? list.filter(s => s.genres.includes(genre)) : list;
-    const base = type === "film" ? "#/films" : "#/series";
+    const base = isFilm ? "#/films" : "#/series";
+    const top = CONFIG.top10 || [];
+    const rank = (s) => { const i = top.indexOf(s.id); return i < 0 ? 99 : i; };
+    const slides = list.filter(s => s.status !== "secret" && (s.backdrop || s.poster)).sort((a, b) => rank(a) - rank(b)).slice(0, 5);
+    let g = genre || "", sort = "pop";
     app.innerHTML = `${topbar(type)}
+      ${slides.length ? `<section class="hero bhero" id="hero">
+        ${slides.map((x, i) => `<div class="bd ${i === 0 ? "on" : ""}" style="${heroBg(x)}"></div>`).join("")}
+        <div class="inner" id="heroInner">${heroInfo(slides[0], [])}</div>
+        ${slides.length > 1 ? `<div class="hero-dots">${slides.map((x, i) => `<button data-slide="${i}" aria-label="${esc(x.title)}" class="${i === 0 ? "on" : ""}"><i></i></button>`).join("")}</div>` : ""}
+      </section>` : ""}
       <section class="browse">
-        <h1>${type === "film" ? "Films" : "Series"}</h1>
-        <div class="chips"><a class="chip ${genre ? "" : "on"}" href="${base}">Alle</a>${genres.map(g =>
-          `<a class="chip ${g === genre ? "on" : ""}" href="${base}/${encodeURIComponent(g)}">${esc(g)}</a>`).join("")}</div>
-        <div class="grid">${shown.map(cardHtml).join("")}</div>
+        <div class="bhead">
+          <h1>${isFilm ? "Films" : "Series"} <span id="bcount"></span></h1>
+          <div class="seg" role="group" aria-label="Sorteren">
+            <button data-sort="pop" class="on">Populair</button><button data-sort="new">Nieuwste</button><button data-sort="az">A–Z</button>
+          </div>
+        </div>
+        <div class="gbar" id="gbar"><div class="gchips">
+          <button class="gchip" data-g="">Alle</button>${genres.map(x => `<button class="gchip" data-g="${esc(x)}">${esc(x)}</button>`).join("")}
+        </div></div>
+        <div class="grid" id="grid"></div>
       </section>
-      <footer class="foot">Marcelflix · ${list.length} ${type === "film" ? "films" : "series"} · Allemaal met Marcel</footer>`;
-    wireTopbar(); wireCards();
-    if (!genre) scrollTo(0, 0);
+      <footer class="foot">Marcelflix · ${list.length} ${isFilm ? "films" : "series"} · Allemaal met Marcel</footer>`;
+    wireTopbar();
+    const grid = document.getElementById("grid");
+    const render = () => {
+      let shown = g ? list.filter(s => s.genres.includes(g)) : list.slice();
+      if (sort === "pop") shown.sort((a, b) => rank(a) - rank(b) || b.match - a.match);
+      if (sort === "new") shown.sort((a, b) => b.year - a.year || b.match - a.match);
+      if (sort === "az") shown.sort((a, b) => a.title.localeCompare(b.title, "nl"));
+      grid.innerHTML = shown.map((s, i) => cardHtml(s).replace('<button class="card"', `<button class="card" style="--i:${i}"`)
+        .replace("</button>", rank(s) < 10 ? `<span class="topbadge" aria-label="Top 10">TOP<b>10</b></span></button>` : "</button>")).join("");
+      document.getElementById("bcount").textContent = shown.length + (shown.length === 1 ? " titel" : " titels");
+      app.querySelectorAll("[data-g]").forEach(b => b.classList.toggle("on", b.dataset.g === g));
+      app.querySelectorAll("[data-sort]").forEach(b => b.classList.toggle("on", b.dataset.sort === sort));
+      wireCards();
+    };
+    app.querySelectorAll("[data-g]").forEach(b => b.onclick = () => {
+      g = b.dataset.g; render();
+      // adres bijwerken zonder de pagina (en de banner) opnieuw op te bouwen
+      history.replaceState(null, "", g ? `${base}/${encodeURIComponent(g)}` : base);
+    });
+    app.querySelectorAll("[data-sort]").forEach(b => b.onclick = () => { sort = b.dataset.sort; render(); });
+    render();
+    wireHero(slides, []);
+    const on = app.querySelector(".gchip.on"); if (on) on.scrollIntoView({ inline: "center", block: "nearest" });
+    scrollTo(0, 0);
   }
 
   function wireCards() {
