@@ -115,7 +115,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Onder de koelkast vind ik het kussentje terug. Pieter de Muis staat ervoor met zijn armpjes gespreid, klein en bang en toch vastberaden. Achter hem, diep weggekropen in het kattenkruid, slapen vijf piepkleine muisjes. Ze hadden het koud, piept Pieter. Het was het zachtste ding in huis. Ik kijk naar het kussentje en naar de baby's, en ik voel iets wat ik nog niet ken. Ik denk dat het medelijden heet. Of honger. Het is nog te vroeg om dat te zeggen.
 
-## [ ] s11a.jpg
+## [x] s11a.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Evening in the kitchen. Marcel lies calmly in front of the fridge like a guard, with the baby mice asleep on the pillow in the gap behind him. Sergeant Jos slowly pushes a tiny medal made from a bottle cap towards Marcel. Doc Frieda has taken off her little glasses to wipe away her tears. Warm golden evening light. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
