@@ -35,7 +35,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Doc Frieda vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Sergeant Jos laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.
 
-## [ ] s05a.jpg
+## [x] s05a.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Gerrit (the grey city pigeon with green and purple neck feathers). A window with its top pane tilted open. Outside on the gutter sits Gerrit, like a shady informant in a noir film. Inside on the windowsill Marcel slides a breadcrumb towards him. Grey overcast light, moody noir atmosphere. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
