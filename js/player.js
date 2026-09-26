@@ -299,6 +299,8 @@
       if (useAudio) {
         try { await voice.play(); } catch (e) { useAudio = false; }
       }
+      // "cues": gemeten starttijd (s) van elke zin in de mp3, voor exacte ondertitels
+      const cues = Array.isArray(sc.cues) && sc.cues.length === sentences.length ? sc.cues : null;
       const startPerf = performance.now();
       this.clock = { elapsed: 0, last: startPerf, useAudio, dur };
       const tail = 0.9;
@@ -312,7 +314,8 @@
         c.last = now;
         const p = Math.min(1, c.elapsed / c.dur);
         let acc = 0, idx = 0;
-        for (let i = 0; i < weights.length; i++) { acc += weights[i] / total; if (p <= acc + 1e-6) { idx = i; break; } idx = i; }
+        if (c.useAudio && cues) { while (idx + 1 < cues.length && c.elapsed >= cues[idx + 1]) idx++; }
+        else for (let i = 0; i < weights.length; i++) { acc += weights[i] / total; if (p <= acc + 1e-6) { idx = i; break; } idx = i; }
         this.setSub(sentences[idx]);
         this.bar.style.width = (p * 100) + "%";
         if (c.elapsed >= c.dur + tail) { this.sceneDone(sc, token); return; }

@@ -14,7 +14,17 @@
       "narration": "It's six in the morning, and the living room is still asleep. I'm not. Today I join the force: the only police department in the world with its headquarters under the couch. I've washed my paws, straightened my whiskers, and practised my stern look on the radiator three times. The radiator was impressed. I'm Marcel. Officer Marcel. And I am ready.",
       "motion": "in",
       "look": "warm",
-      "next": "s02"
+      "next": "s02",
+      "cues": [
+        0.0,
+        4.23,
+        5.97,
+        12.65,
+        20.53,
+        22.35,
+        23.48,
+        24.78
+      ]
     },
     "s02": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Under a sofa, a tiny secret police headquarters: a desk made from a matchbox, a small desk lamp, a pinned-up map drawn on a paper napkin, dust bunnies in the corners. Sergeant Walter sits behind the desk with a stern, weary look and slowly pushes a small badge across it with one foot. Marcel peeks in from the side, eager. Warm lamplight in the dark space under the sofa.",
@@ -22,7 +32,14 @@
       "narration": "Under the couch, my new partner is waiting for me: Sergeant Walter, a tortoise of eighty years, sixty of them on the force. He has seen everything, survived everything, and done everything at his own pace. He looks me over from head to tail, which for him takes about fifteen minutes, and says I'm too young, too fluffy, and far too sure of myself. I tell him those are exactly the three qualities of a legend. He sighs, very long and very slowly, and slides a badge across the desk.",
       "motion": "left",
       "look": "warm",
-      "next": "s03"
+      "next": "s03",
+      "cues": [
+        0.0,
+        9.87,
+        16.73,
+        27.11,
+        31.46
+      ]
     },
     "s03": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). The same tiny headquarters under the sofa. Doc Frieda bursts in dramatically, squeaking in panic, her glasses askew. Marcel and Sergeant Walter turn towards her in surprise. Dramatic side light, a little dust flying up.",
@@ -30,7 +47,15 @@
       "narration": "Before I can even admire that badge properly, Doc Frieda bursts in, our forensic expert and the most dramatic member of the force. She's a guinea pig, she wears tiny round glasses, and she squeaks like a burglar alarm. The catnip pillow is gone, she cries. The pillow from the windowsill. The most sacred object in this house. Sergeant Walter looks at me and says just two words, very slowly: let's roll.",
       "motion": "in",
       "sfx": "sting",
-      "next": "s04"
+      "next": "s04",
+      "cues": [
+        0.0,
+        10.03,
+        16.3,
+        17.74,
+        20.6,
+        23.64
+      ]
     },
     "s04": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). A sunny windowsill turned into a crime scene: an empty dent in the sun where a small pillow used to lie, tiny yellow police tape around it. Clues: one long orange cat hair, a trail of tiny mouse footprints in the dust, a small crumb of cheese. Doc Frieda peers at the orange hair through a magnifying glass, Marcel inspects the footprints with his nose close to the sill, Sergeant Walter watches calmly from the corner. A tiny blurred fly in the bright window.",
@@ -50,7 +75,16 @@
           }
         ],
         "default": 0
-      }
+      },
+      "cues": [
+        0.0,
+        3.16,
+        14.37,
+        18.27,
+        21.55,
+        28.66,
+        31.73
+      ]
     },
     "s05a": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Gus (the grey city pigeon with green and purple neck feathers). A window with its top pane tilted open. Outside on the gutter sits Gus, like a shady informant in a noir film. Inside on the windowsill Marcel slides a breadcrumb towards him. Grey overcast light, moody noir atmosphere.",
@@ -58,7 +92,13 @@
       "narration": "On the gutter above the window lives Gus the Pigeon, an old city pigeon who sees everything and tells nothing for free. He has seen more of this street than the mailbox, and he only speaks in riddles, preferably in exchange for a breadcrumb. I slide him a crumb through the tilted window. He pecks, eyes me with one eye, and coos that last night a fire came through the cat flap, when the moon was at its highest.",
       "motion": "in",
       "look": "noir",
-      "next": "s06a"
+      "next": "s06a",
+      "cues": [
+        0.0,
+        8.06,
+        15.7,
+        20.61
+      ]
     },
     "s06a": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Gus (the grey city pigeon with green and purple neck feathers). Close-up of Marcel's thoughtful face at the window, ears slightly flattened, eyes narrowed in concentration. Behind the glass, blurred, Gus flies away; a single grey feather lies on the windowsill. A back door with a cat flap is visible in the background. Noir atmosphere.",
@@ -66,14 +106,28 @@
       "narration": "A fire through the cat flap. I think so hard that my ears go flat. Orange hair, a fire, the cat flap: there's only one creature on this street that is all of those things at once. Before I can ask anything else, Gus spreads his wings, and he's gone. All that's left on the windowsill is a single grey feather. Informants. Never a thank-you.",
       "motion": "right",
       "look": "noir",
-      "next": "s07"
+      "next": "s07",
+      "cues": [
+        0.0,
+        2.38,
+        5.49,
+        15.46,
+        21.21,
+        24.68,
+        26.52
+      ]
     },
     "s05b": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes). Low angle across a kitchen floor. Marcel follows a trail of tiny mouse footprints in the dust with a magnifying glass, nose close to the floor, towards the dark gap under a fridge. Warm kitchen light.",
       "text": "Ik volg de pootafdrukjes, vergrootglas in de aanslag. Ze zijn klein, netjes en verdacht haastig, en ze leiden dwars door de keuken naar de donkere spleet onder de koelkast. Daar, tussen de stofwolken en een verloren erwt, zit de meest illegale kaasbar van het hele huis.",
       "narration": "I follow the tiny footprints, magnifying glass at the ready. They're small, neat, and suspiciously hurried, and they lead straight across the kitchen to the dark gap under the fridge. There, between the dust bunnies and a lost pea, is the most illegal cheese bar in the entire house.",
       "motion": "left",
-      "next": "s06b"
+      "next": "s06b",
+      "cues": [
+        0.0,
+        4.64,
+        13.99
+      ]
     },
     "s06b": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Pip (the small brown mouse with big ears). Under a fridge, a tiny secret cheese bar built from bottle caps, matchboxes and a thimble, with small cheese cubes on the counter. Pip stands nervously behind the counter, whiskers trembling. Marcel's huge face peers in through the gap, filling half the frame. Warm dim light.",
@@ -81,14 +135,30 @@
       "narration": "Behind the counter stands Pip the Mouse: owner, bartender, and the biggest gossip in the kitchen. He swears he knows nothing, but his whiskers are shaking like a washing machine on spin cycle. Last night he saw a ginger tail by the cat flap, he says quickly. A very ginger tail. You should look there, officer. I write it down, but I also write down that he doesn't look me in the eye even once.",
       "motion": "in",
       "look": "warm",
-      "next": "s07"
+      "next": "s07",
+      "cues": [
+        0.0,
+        7.48,
+        13.86,
+        19.01,
+        21.66,
+        23.94
+      ]
     },
     "s07": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the housefly; Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Action shot in the living room: Marcel leaps through the air after the housefly, paws outstretched, a cushion flying off the sofa and a lamp wobbling. The housefly is just out of reach. On the floor, Sergeant Walter slowly raises his head in alarm. Motion blur, dynamic, bright daylight.",
       "text": "Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Sergeant Walter begint te roepen dat ik mijn focus moet houden, maar tegen dat hij zijn zin af heeft, eindigt de achtervolging al bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.",
       "narration": "Then I hear it again: that buzzing. The Fly. Public enemy number one, escaped twelve times and caught zero times. She lands right on my nose and is gone before I can blink. I jump, I miss, I hit the lamp, and I miss again. Sergeant Walter starts shouting that I need to keep my focus, but by the time he finishes his sentence, the chase has already ended at the cat flap, where The Fly zips out through a crack, laughing.",
       "motion": "zoom",
-      "next": "s08"
+      "next": "s08",
+      "cues": [
+        0.0,
+        2.79,
+        4.45,
+        9.22,
+        13.31,
+        17.32
+      ]
     },
     "s08": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes). A cat flap in a back door. On the outside, Roger, with a smug face, pushes his head through the flap. On the inside, Marcel faces him, nose to nose, suspicious. A small green leaf is stuck in Roger's whiskers. Dramatic side light, tense stand-off.",
@@ -109,14 +179,30 @@
           }
         ],
         "default": 0
-      }
+      },
+      "cues": [
+        0.0,
+        6.38,
+        9.91,
+        16.62,
+        20.98,
+        24.27,
+        26.07,
+        27.95
+      ]
     },
     "s09a": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). At the cat flap, Marcel proudly presses his paw on Roger's paw as if arresting him. Roger looks amused. Behind Marcel, Doc Frieda cheers with tears of pride, while Sergeant Walter slowly pulls his head into his shell in disbelief.",
       "text": "Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Doc Frieda barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.",
       "narration": "I don't hesitate for a second. I press my paw on his and say the words I've been dreaming of for months: Roger, you are under arrest. Doc Frieda bursts into tears of pride. Roger looks at my paw, then at me, and very slowly begins to grin.",
       "motion": "in",
-      "next": "s10a"
+      "next": "s10a",
+      "cues": [
+        0.0,
+        2.21,
+        9.38,
+        12.15
+      ]
     },
     "s10a": {
       "prompt": "Characters in this scene: Roger (the big fluffy ginger tomcat with green eyes); Marcel (the grey British Shorthair cat with orange eyes). A sunny back garden. Roger sits smugly on the lawn next to his witnesses: a hedgehog, two snails and a garden gnome. Behind the window glass in the foreground, Marcel watches, ears down, defeated.",
@@ -127,14 +213,30 @@
         "id": "A",
         "title": "Burenruzie"
       },
-      "next": "s12"
+      "next": "s12",
+      "cues": [
+        0.0,
+        4.0,
+        9.92,
+        12.93,
+        23.49
+      ]
     },
     "s09b": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Back on the sunny windowsill. Doc Frieda holds up a tiny crumb of cheese in her paws, Marcel leans in to look at it through a magnifying glass, eyes wide as he realises the truth. Bright, warm light.",
       "text": "Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Doc Frieda intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.",
       "narration": "I let Roger go. A leaf in your whiskers is not a confession. Back on the windowsill, Doc Frieda has found something everyone else overlooked: a minuscule crumb of cheese, right where the pillow used to be. Cheese. Under the fridge. Trembling whiskers. Suddenly everything falls into place in my head, with the same sound as a tin of cat food popping open.",
       "motion": "in",
-      "next": "s10b"
+      "next": "s10b",
+      "cues": [
+        0.0,
+        2.38,
+        6.14,
+        15.9,
+        17.03,
+        18.55,
+        20.62
+      ]
     },
     "s10b": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Pip (the small brown mouse with big ears). Under a fridge: the small catnip pillow has become a cosy nest where five tiny baby mice sleep curled up together. Pip stands in front of it with his little arms spread, scared but brave. Marcel's big face peers in, softening. Soft warm light.",
@@ -155,7 +257,18 @@
           }
         ],
         "default": 0
-      }
+      },
+      "cues": [
+        0.0,
+        3.15,
+        11.31,
+        18.08,
+        20.49,
+        23.84,
+        29.69,
+        31.77,
+        33.28
+      ]
     },
     "s11a": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Evening in the kitchen. Marcel lies calmly in front of the fridge like a guard, with the baby mice asleep on the pillow in the gap behind him. Sergeant Walter slowly pushes a tiny medal made from a bottle cap towards Marcel. Doc Frieda has taken off her little glasses to wipe away her tears. Warm golden evening light.",
@@ -167,7 +280,14 @@
         "id": "B",
         "title": "Een hart van kattenkruid"
       },
-      "next": "s12"
+      "next": "s12",
+      "cues": [
+        0.0,
+        2.56,
+        8.78,
+        20.92,
+        27.58
+      ]
     },
     "s11b": {
       "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Walter (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). The middle of the living room. Marcel rolls blissfully on his back on a small catnip pillow, paws in the air, eyes half closed, a silly happy face. Doc Frieda and Sergeant Walter sit next to him, staring in disbelief. Bright daylight, comedic.",
@@ -178,14 +298,27 @@
         "id": "C",
         "title": "Onder invloed"
       },
-      "next": "s12"
+      "next": "s12",
+      "cues": [
+        0.0,
+        4.51,
+        6.57,
+        19.34
+      ]
     },
     "s12": {
       "prompt": "Characters in this scene: the housefly; Roger (the big fluffy ginger tomcat with green eyes). Night. Close-up of a moonlit windowsill: the housefly sits next to a tiny rolled-up piece of paper tied with a thread. Through the glass, in the dark garden, the silhouette of Roger watches. Cold blue moonlight, ominous.",
       "text": "Die nacht, terwijl het hele korps slaapt, landt er iets op de vensterbank. Ze zoemt niet eens. Ze kijkt alleen naar binnen, met duizend ogen tegelijk, en laat een piepklein opgerold papiertje achter. Volgende week, op Marcelflix: De Vlieg heeft een plan. En deze keer is het persoonlijk.",
       "narration": "That night, while the whole force is asleep, something lands on the windowsill. She doesn't even buzz. She just looks inside, with a thousand eyes at once, and leaves behind a tiny rolled-up piece of paper. Next week, on Marcelflix: The Fly has a plan. And this time, it's personal.",
       "motion": "in",
-      "look": "noir"
+      "look": "noir",
+      "cues": [
+        0.0,
+        6.81,
+        8.93,
+        17.01,
+        21.42
+      ]
     }
   }
 }
