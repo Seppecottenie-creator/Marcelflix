@@ -123,7 +123,7 @@ Characters in this scene: Marcel (the grey British Shorthair cat with orange eye
 
 _Marcel zegt:_ Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Sergeant Jos zegt niets, maar schuift heel traag een medaillon van een flessendopje naar me toe, en Doc Frieda moet haar brilletje afzetten omdat het helemaal beslagen is van de tranen. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.
 
-## [ ] s11b.jpg
+## [x] s11b.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). The middle of the living room. Marcel rolls blissfully on his back on a small catnip pillow, paws in the air, eyes half closed, a silly happy face. Doc Frieda and Sergeant Jos sit next to him, staring in disbelief. Bright daylight, comedic. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
