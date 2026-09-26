@@ -2,141 +2,168 @@
   "title": "De Zaak Kattenkruid",
   "series": "The Rookie: Feline Division",
   "start": "s01",
-  "style": "a real photograph, like a still from a live-action police TV drama shot in a real cosy Belgian home at cat height, warm natural light, shallow depth of field, 16:9. Marcel is the exact grey British Shorthair from the reference photos: round face, dense blue-grey fur, deep orange eyes. The toys are real plush toys of normal size, photographed like actors. No people.",
-  "refNote": "Voeg foto's toe van Marcel en van de speeltjes die in de scène voorkomen (Peperkoek, Ketchup, Sliert). Zie series/rookie/PERSONAGES.md.",
+  "style": "Same cast as the reference sheet. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.",
+  "refNote": "Werk in het Gemini-gesprek waarin je de cast voorstelde (zie series/rookie/PERSONAGES.md) en voeg bij elke scène de castfoto (moodboard) toe.",
   "endingsTotal": 3,
   "scenes": {
     "s01": {
-      "prompt": "Marcel sits proudly on top of a white cabinet at sunrise, a tiny police cap and a small shiny badge beside him, the quiet living room below bathed in soft orange morning light",
+      "prompt": "Characters: Marcel. Sunrise in a quiet living room. Marcel sits proudly on top of a white cabinet, chest out, looking out over the room like a new recruit on his first day. Beside him a tiny navy police cap and a small shiny silver badge. Soft orange morning light through the window, dust glittering in the air.",
       "text": "Het is zes uur 's ochtends en de woonkamer slaapt nog. Ik niet. Vandaag begin ik bij het korps, de enige politiedienst ter wereld die haar hoofdkwartier onder de zetel heeft. Ik heb mijn pootjes gewassen, mijn snorharen rechtgezet en drie keer oefenend streng gekeken naar de radiator. De radiator was onder de indruk. Ik ben Marcel. Agent Marcel. En ik ben er klaar voor.",
       "motion": "in",
       "look": "warm",
       "next": "s02"
     },
     "s02": {
-      "prompt": "Under a sofa, a tiny secret police headquarters lit by a small desk lamp: a gingerbread man plush toy sits behind a desk made of a matchbox with a badge on it, Marcel peeking in from the side, dust and warm lamplight",
+      "prompt": "Characters: Marcel, Peperkoek. Under a sofa, a tiny secret police headquarters: a desk made from a matchbox, a small desk lamp, a pinned-up map drawn on a paper napkin, dust bunnies in the corners. Sergeant Peperkoek, the gingerbread man plush, sits behind the desk with a stern face and slides a small badge across it. Marcel peeks in from the side, eager. Warm lamplight in the dark space under the sofa.",
       "text": "Onder de zetel wacht mijn nieuwe partner op mij: sergeant Peperkoek. Twintig jaar dienst, drie keer bijna opgegeten en nog altijd geen kruimel uit zijn humeur. Hij bekijkt me van kop tot staart en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, zoals alleen iemand van peperkoek kan zuchten, en schuift me een badge toe.",
       "motion": "left",
       "look": "warm",
       "next": "s03"
     },
     "s03": {
-      "prompt": "A ketchup bottle plush toy bursting dramatically into the tiny under-sofa headquarters, Marcel and the gingerbread man plush turning towards him in surprise, dramatic light from the side",
+      "prompt": "Characters: Marcel, Peperkoek, Ketchup. The ketchup bottle plush bursts dramatically into the tiny under-sofa headquarters, leaning forward in panic. Marcel and Peperkoek turn towards him in surprise. Dramatic side light, a little dust flying up.",
       "text": "Nog voor ik die badge goed en wel kan bewonderen, stormt Ketchup binnen, onze forensisch expert en het meest dramatische lid van het korps. Hij is rood aangelopen, maar dat is hij eigenlijk altijd. Het kattenkruidkussentje is verdwenen, roept hij. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Peperkoek kijkt me aan en zegt maar één woord: instappen.",
       "motion": "in",
       "sfx": "sting",
       "next": "s04"
     },
     "s04": {
-      "prompt": "A sunny windowsill with an empty dent where a small pillow used to lie, tiny police tape around it, Marcel inspecting the scene; clues visible: a long orange cat hair, a trail of tiny paw prints in the dust, a small crumb of cheese; the ketchup plush holding a magnifying glass",
+      "prompt": "Characters: Marcel, Ketchup, Peperkoek. A sunny windowsill turned into a crime scene: an empty dent in the sun where a small pillow used to lie, tiny yellow police tape around it. Clues: one long orange cat hair, a trail of tiny mouse footprints in the dust, a small crumb of cheese. Ketchup holds a magnifying glass over the orange hair, Marcel inspects the footprints, Peperkoek watches with his arms crossed. A tiny blurred fly in the bright window.",
       "text": "De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Ketchup vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Peperkoek laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.",
       "motion": "out",
       "choice": {
         "prompt": "Waar begin je het onderzoek?",
         "options": [
-          { "label": "Ondervraag informant Sliert", "next": "s05a" },
-          { "label": "Volg de kleine pootafdrukjes", "next": "s05b" }
+          {
+            "label": "Ondervraag informant Sliert",
+            "next": "s05a"
+          },
+          {
+            "label": "Volg de kleine pootafdrukjes",
+            "next": "s05b"
+          }
         ],
         "default": 0
       }
     },
     "s05a": {
-      "prompt": "A long red fabric string toy coiled mysteriously in the shadows behind an old radiator, Marcel crouching low to talk to it, a thin stripe of light across the scene",
+      "prompt": "Characters: Marcel, Sliert. The dark gap behind an old white radiator. Sliert, the long red fabric string, lies coiled mysteriously in the shadows like an informant in a noir film. Marcel crouches low to talk to him. A single thin stripe of light falls across the scene. Moody, noir atmosphere.",
       "text": "Achter de radiator woont Sliert, een rode stoffen sliert die alles weet en niets rechtstreeks zegt. Je kan hem nooit echt vastpakken: telkens als je denkt dat je hem hebt, kronkelt hij weer weg. Ik vraag hem wat hij gezien heeft. Hij wikkelt zich twee keer rond mijn poot en fluistert dat er vannacht een vuur door het kattenluik kwam, toen de maan het hoogst stond.",
       "motion": "in",
       "look": "noir",
       "next": "s06a"
     },
     "s06a": {
-      "prompt": "Close-up of Marcel's thoughtful face, ears slightly flattened, the red string toy slithering away into the darkness under a cabinet, a moonlit cat flap blurred in the background",
+      "prompt": "Characters: Marcel, Sliert. Close-up of Marcel's thoughtful face, ears slightly flattened, eyes narrowed in concentration. Behind him, blurred, the red fabric string slithers away under a cabinet. A cat flap glows in cold moonlight in the background. Noir atmosphere.",
       "text": "Een vuur door het kattenluik. Ik denk na, zo hard dat mijn oren ervan plat gaan liggen. Oranje haar, een vuur, het kattenluik: er is maar één wezen in deze straat dat al die dingen tegelijk is. Voor ik het kan vragen, is Sliert al verdwenen onder de kast, en blijft er alleen een rode draad achter. Letterlijk, deze keer.",
       "motion": "right",
       "look": "noir",
       "next": "s07"
     },
     "s05b": {
-      "prompt": "Marcel with a magnifying glass following a trail of tiny mouse footprints in the dust across a kitchen floor, towards the dark gap under a fridge",
+      "prompt": "Characters: Marcel. Low angle across a kitchen floor. Marcel follows a trail of tiny mouse footprints in the dust with a magnifying glass, nose close to the floor, towards the dark gap under a fridge. Warm kitchen light.",
       "text": "Ik volg de pootafdrukjes, vergrootglas in de aanslag. Ze zijn klein, netjes en verdacht haastig, en ze leiden dwars door de keuken naar de donkere spleet onder de koelkast. Daar, tussen de stofwolken en een verloren erwt, zit de meest illegale kaasbar van het hele huis.",
       "motion": "left",
       "next": "s06b"
     },
     "s06b": {
-      "prompt": "Under a fridge, a tiny speakeasy cheese bar built from bottle caps and matchboxes, a nervous little brown mouse behind the counter, Marcel's huge face peering in through the gap, warm dim light",
+      "prompt": "Characters: Marcel, Pieter de Muis. Under a fridge, a tiny secret cheese bar built from bottle caps, matchboxes and a thimble, with small cheese cubes on the counter. Pieter de Muis, a small brown mouse with big ears, stands nervously behind the counter, whiskers trembling. Marcel's huge face peers in through the gap, filling half the frame. Warm dim light.",
       "text": "Achter de toog staat Pieter de Muis: eigenaar, barman en de grootste roddelaar van de keuken. Hij zweert dat hij van niets weet, maar zijn snorharen trillen als een wasmachine in de centrifuge. Hij zag vannacht een rosse staart bij het kattenluik, zegt hij snel. Een heel rosse staart. Kijk daar maar eens, agent. Ik noteer het, maar ik noteer ook dat hij mij niet één keer in de ogen kijkt.",
       "motion": "in",
       "look": "warm",
       "next": "s07"
     },
     "s07": {
-      "prompt": "Marcel leaping through the living room in mid-air chasing a fly, a cushion flying off the sofa, the gingerbread man plush watching in shock, motion blur, dynamic action shot",
+      "prompt": "Characters: Marcel, De Vlieg, Peperkoek. Action shot in the living room: Marcel leaps through the air after a fly, paws outstretched, a cushion flying off the sofa and a lamp wobbling. De Vlieg, a common housefly, is just out of reach. Peperkoek watches from the sofa in shock. Motion blur, dynamic, bright daylight.",
       "text": "Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Peperkoek roept dat ik mijn focus moet houden, maar het is te laat: de achtervolging eindigt pas bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.",
       "motion": "zoom",
       "next": "s08"
     },
     "s08": {
-      "prompt": "A big smug ginger tomcat pushing his head through a cat flap from outside, Marcel face to face with him on the inside, a small green leaf stuck in the ginger cat's whiskers, dramatic side light",
+      "prompt": "Characters: Marcel, Rosse Roger. A cat flap in a back door. On the outside, Rosse Roger, a big fluffy ginger tomcat with a smug face, pushes his head through the flap. On the inside, Marcel faces him, nose to nose, suspicious. A small green leaf is stuck in Roger's whiskers. Dramatic side light, tense stand-off.",
       "text": "En daar, aan de andere kant van het kattenluik, verschijnt een kop die ik al te goed ken. Rosse Roger, de kater van hiernaast. Groot, oranje en zo zelfvoldaan dat zelfs de dakgoot van hem walgt. Hij vraagt poeslief of er een probleem is, agent. Aan zijn snorharen hangt een klein, groen blaadje. Kattenkruid, misschien. Of gewoon gras. Mijn hart zegt het ene, mijn verstand het andere.",
       "motion": "in",
       "sfx": "sting",
       "choice": {
         "prompt": "Wat doe je met Rosse Roger?",
         "options": [
-          { "label": "Arresteer Rosse Roger", "next": "s09a" },
-          { "label": "Laat hem gaan en zoek verder", "next": "s09b" }
+          {
+            "label": "Arresteer Rosse Roger",
+            "next": "s09a"
+          },
+          {
+            "label": "Laat hem gaan en zoek verder",
+            "next": "s09b"
+          }
         ],
         "default": 0
       }
     },
     "s09a": {
-      "prompt": "Marcel proudly pressing his paw on the ginger tomcat's paw through the cat flap as if arresting him, the ketchup plush cheering behind him and the gingerbread man plush holding his head in disbelief",
+      "prompt": "Characters: Marcel, Rosse Roger, Ketchup, Peperkoek. At the cat flap, Marcel proudly presses his paw on Roger's paw as if arresting him. Roger looks amused. Behind Marcel, Ketchup cheers with joy while Peperkoek holds his head in disbelief.",
       "text": "Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Ketchup barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.",
       "motion": "in",
       "next": "s10a"
     },
     "s10a": {
-      "prompt": "The ginger tomcat sitting smugly in his own sunny garden next to a hedgehog and a garden gnome as witnesses, Marcel watching from behind the window glass looking defeated",
+      "prompt": "Characters: Rosse Roger, Marcel. A sunny back garden. Rosse Roger sits smugly on the lawn next to his witnesses: a hedgehog, two snails and a garden gnome. Behind the window glass in the foreground, Marcel watches, ears down, defeated.",
       "text": "Het blijkt dat Roger een alibi heeft. Hij heeft de hele nacht in zijn eigen tuin geslapen, wat bevestigd wordt door een egel, twee slakken en een zeer betrouwbare tuinkabouter. Het blaadje was gras. De buren zijn beledigd, het korps moet een excuusbrief schrijven en ik mag een week lang enkel nog het verkeer regelen op de gang. Het kussentje, trouwens, is nog altijd weg.",
       "motion": "out",
-      "ending": { "id": "A", "title": "Burenruzie" },
+      "ending": {
+        "id": "A",
+        "title": "Burenruzie"
+      },
       "next": "s12"
     },
     "s09b": {
-      "prompt": "Back on the sunny windowsill, the ketchup plush holding a tiny cheese crumb up to the light, Marcel leaning in to look at it through a magnifying glass",
+      "prompt": "Characters: Marcel, Ketchup. Back on the sunny windowsill. Ketchup holds up a tiny crumb of cheese to the light, Marcel leans in to look at it through a magnifying glass, eyes wide as he realises the truth. Bright, warm light.",
       "text": "Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Ketchup intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.",
       "motion": "in",
       "next": "s10b"
     },
     "s10b": {
-      "prompt": "Under a fridge, a small catnip pillow turned into a cosy nest with five tiny baby mice sleeping on it, their father, a little brown mouse, standing protectively in front with his arms spread, Marcel's big face peering in, soft warm light",
+      "prompt": "Characters: Marcel, Pieter de Muis. Under a fridge: the small catnip pillow has become a cosy nest where five tiny baby mice sleep curled up together. Pieter de Muis stands in front of it with his little arms spread, scared but brave. Marcel's big face peers in, softening. Soft warm light.",
       "text": "Onder de koelkast vind ik het kussentje terug. Pieter de Muis staat ervoor met zijn armpjes gespreid, klein en bang en toch vastberaden. Achter hem, diep weggekropen in het kattenkruid, slapen vijf piepkleine muisjes. Ze hadden het koud, piept Pieter. Het was het zachtste ding in huis. Ik kijk naar het kussentje en naar de baby's, en ik voel iets wat ik nog niet ken. Ik denk dat het medelijden heet. Of honger. Het is nog te vroeg om dat te zeggen.",
       "motion": "in",
       "look": "warm",
       "choice": {
         "prompt": "Wat doe je met het kussentje?",
         "options": [
-          { "label": "Laat het bij de muisjes", "next": "s11a" },
-          { "label": "Neem het kussentje mee", "next": "s11b" }
+          {
+            "label": "Laat het bij de muisjes",
+            "next": "s11a"
+          },
+          {
+            "label": "Neem het kussentje mee",
+            "next": "s11b"
+          }
         ],
         "default": 0
       }
     },
     "s11a": {
-      "prompt": "Evening, Marcel lying calmly in front of the fridge like a guard, the baby mice asleep on the pillow in the gap behind him, the gingerbread man plush placing a tiny icing medal on Marcel's chest, the ketchup plush wiping a tear, warm golden light",
+      "prompt": "Characters: Marcel, Peperkoek, Ketchup. Evening in the kitchen. Marcel lies calmly in front of the fridge like a guard, with the baby mice asleep on the pillow in the gap behind him. Peperkoek places a tiny medal made of white icing on Marcel's chest. Ketchup turns away, wiping a tear. Warm golden evening light.",
       "text": "Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Peperkoek zegt niets, maar legt een klein medaillon van glazuur op mijn borst, en Ketchup moet zich omdraaien omdat er saus uit zijn ogen komt. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.",
       "motion": "out",
       "look": "warm",
-      "ending": { "id": "B", "title": "Een hart van kattenkruid" },
+      "ending": {
+        "id": "B",
+        "title": "Een hart van kattenkruid"
+      },
       "next": "s12"
     },
     "s11b": {
-      "prompt": "Marcel rolling blissfully on his back on a small catnip pillow in the middle of the living room, eyes half closed, paws in the air, the ketchup plush and the gingerbread man plush staring at him in disbelief",
+      "prompt": "Characters: Marcel, Ketchup, Peperkoek. The middle of the living room. Marcel rolls blissfully on his back on a small catnip pillow, paws in the air, eyes half closed, a silly happy face. Ketchup and Peperkoek stand next to him, staring in disbelief. Bright daylight, comedic.",
       "text": "Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, verklaar ik mijn liefde aan Ketchup en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.",
       "motion": "zoom",
-      "ending": { "id": "C", "title": "Onder invloed" },
+      "ending": {
+        "id": "C",
+        "title": "Onder invloed"
+      },
       "next": "s12"
     },
     "s12": {
-      "prompt": "Night, a single fly sitting on a moonlit windowsill next to a tiny rolled-up piece of paper, the silhouette of a ginger tomcat in the dark garden behind the glass, cold blue light",
+      "prompt": "Characters: De Vlieg, Rosse Roger. Night. Close-up of a moonlit windowsill: De Vlieg, the housefly, sits next to a tiny rolled-up piece of paper tied with a thread. Through the glass, in the dark garden, the silhouette of Rosse Roger watches. Cold blue moonlight, ominous.",
       "text": "Die nacht, terwijl het hele korps slaapt, landt er iets op de vensterbank. Ze zoemt niet eens. Ze kijkt alleen naar binnen, met duizend ogen tegelijk, en laat een piepklein opgerold papiertje achter. Volgende week, op Marcelflix: De Vlieg heeft een plan. En deze keer is het persoonlijk.",
       "motion": "in",
       "look": "noir"
