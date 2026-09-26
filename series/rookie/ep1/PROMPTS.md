@@ -99,7 +99,7 @@ Characters in this scene: Roger (the big fluffy ginger tomcat with green eyes); 
 
 _Marcel zegt:_ Het blijkt dat Roger een alibi heeft. Hij heeft de hele nacht in zijn eigen tuin geslapen, wat bevestigd wordt door een egel, twee slakken en een zeer betrouwbare tuinkabouter. Het blaadje was gras. De buren zijn beledigd, het korps moet een excuusbrief schrijven en ik mag een week lang enkel nog het verkeer regelen op de gang. Het kussentje, trouwens, is nog altijd weg.
 
-## [ ] s09b.jpg
+## [x] s09b.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Back on the sunny windowsill. Doc Frieda holds up a tiny crumb of cheese in her paws, Marcel leans in to look at it through a magnifying glass, eyes wide as he realises the truth. Bright, warm light. Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.
