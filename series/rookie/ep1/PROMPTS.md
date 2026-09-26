@@ -3,7 +3,7 @@
 Werk in het Gemini-gesprek waarin je de cast voorstelde (zie series/rookie/PERSONAGES.md) en voeg bij elke scène de castfoto (moodboard) toe. Formaat 16:9 liggend, minstens 1920 x 1080.
 Sla elk beeld op in deze map met de bestandsnaam hieronder (.jpg, .png of .webp).
 
-## [ ] s01.jpg
+## [x] s01.jpg
 
 ```
 Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes). Sunrise in a quiet living room. Marcel sits proudly on top of a white cabinet, chest out, looking out over the room like a new recruit on his first day. Beside him a tiny navy police cap and a small shiny silver badge. Soft orange morning light through the window, dust glittering in the air. Same characters as in the two cast photos. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.
