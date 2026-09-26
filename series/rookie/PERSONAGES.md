@@ -55,5 +55,9 @@ Make a square character portrait of Rosse Roger: a big fluffy ginger tomcat with
 Make a square character portrait of Pieter de Muis: a small brown mouse with big round ears, shiny black eyes and trembling whiskers, standing on his hind legs next to a bottle cap. Real macro photograph, warm light. No people, no text.
 ```
 
+### Stap 3b: namen koppelen (één keer, na de castfoto's)
+
+> In deze serie heten de personages zo. Op de eerste castfoto (huis), van links naar rechts: de twee plantjes van bouwsteentjes (die spelen hier niet mee), Ketchup = de rode ketchupfles-knuffel, Marcel = de grijze kat in het midden, Peperkoek = het peperkoeken mannetje met het groene strikje, en de bruine teddybeer (speelt hier niet mee). Op de tweede castfoto (straat), van links naar rechts: Gerrit = de duif, Roger = de rosse kater, Marcel = de grijze kat, Pieter = de muis, en de vlieg. Als ik in een scène een naam gebruik, bedoel ik altijd exact dat personage van de castfoto's. Antwoord enkel met "oké".
+
 ### Stap 4: de scènes
 Plak per scène de prompt uit `ep1/PROMPTS.md` (of uit de chat), telkens met de castfoto erbij. Sla elk beeld op als `s01.jpg`, `s02.jpg`, … in `series/rookie/ep1/`.
