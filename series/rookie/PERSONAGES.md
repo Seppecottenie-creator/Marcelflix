@@ -1,65 +1,30 @@
 # The Rookie: Feline Division · personages
 
-Terugkerende cast. Niet iedereen zit in elke aflevering. **Er doen nooit mensen mee.**
+Alle personages behalve Marcel zijn **verzonnen dieren** (geen speelgoed uit huis, geen mensen).
 
 ## Het korps (hoofdkwartier onder de zetel)
 
-| Personage | Wat/wie | Karakter | Referentie voor beelden |
+| Personage | Wat | Karakter | Beschrijving voor prompts |
 |---|---|---|---|
-| **Agent Marcel** | grijze Britse korthaar | Verteller. Jong, pluizig, veel te zelfzeker, stiekem een goed hart. Denkt dat hij een legende is. | foto's van Marcel |
-| **Sergeant Peperkoek** | peperkoeken-mannetje-knuffel | Zijn partner en mentor. Twintig jaar dienst, drie keer bijna opgegeten. Kalm, droog, zegt weinig, zucht veel. | foto van de knuffel (volgt) |
-| **Ketchup** | ketchupfles-knuffel | Forensisch expert. Het meest dramatische lid van het korps: altijd rood aangelopen, huilt saus bij emotionele momenten. | foto van de knuffel (volgt) |
+| **Agent Marcel** | grijze Britse korthaar | Verteller. Jong, pluizig, veel te zelfzeker, stiekem een goed hart. | `Marcel (the grey British Shorthair cat with orange eyes)` |
+| **Sergeant Jos** | oude schildpad | Mentor. Tachtig jaar, waarvan zestig in dienst. Kalm, droog, alles in zijn eigen tempo, zucht lang. | `Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell)` |
+| **Doc Frieda** | cavia met rond brilletje | Forensisch expert. Het meest dramatische lid van het korps: piept als een alarm, huilt bij elke emotie. | `Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses)` |
 
 ## De straat
 
-| Personage | Wat/wie | Karakter |
-|---|---|---|
-| **Gerrit de Duif** | oude grijze stadsduif | Informant. Woont op de dakgoot boven het raam, ziet alles, praat alleen in raadsels en enkel voor een broodkruim. Vliegt weg zonder bedankje. |
-| **De Vlieg** | een vlieg | Staatsvijand nummer één. Twaalf keer ontsnapt, nul keer gevangen. Zoemt spottend. Groeit uit tot de grote tegenstander van het seizoen. |
-| **Pieter de Muis** | bruine muis | Baas van een illegale kaasbar onder de koelkast, roddelaar, bang maar met een groot hart. Vader van vijf muisjes. |
-| **Rosse Roger** | rosse kater van hiernaast | Groot, oranje, zelfvoldaan. Marcels rivaal aan de andere kant van het kattenluik. Soms verdacht, zelden schuldig. |
-| **De egel, twee slakken en de tuinkabouter** | tuin van Roger | "Zeer betrouwbare" getuigen. |
+| Personage | Wat | Karakter | Beschrijving voor prompts |
+|---|---|---|---|
+| **Gerrit de Duif** | oude stadsduif | Informant op de dakgoot. Praat in raadsels, alleen voor een broodkruim. | `Gerrit (the grey city pigeon with green and purple neck feathers)` |
+| **De Vlieg** | huisvlieg | Staatsvijand nummer één. Twaalf keer ontsnapt, nul keer gevangen. | `the housefly` |
+| **Pieter de Muis** | bruine muis | Baas van een illegale kaasbar onder de koelkast. Vader van vijf muisjes. | `Pieter (the small brown mouse with big ears)` |
+| **Rosse Roger** | rosse kater van hiernaast | Groot, zelfvoldaan, Marcels rivaal. | `Roger (the big fluffy ginger tomcat with green eyes)` |
 
 ## Seizoen 1 (plan)
+1. **De Zaak Kattenkruid** · Het kattenkruidkussentje is verdwenen. Eindes: *Burenruzie*, *Een hart van kattenkruid*, *Onder invloed*.
+2. **Operatie Vlieg** · De Vlieg daagt het korps uit; Gerrit de Duif als dubbelagent.
+3. **Undercover bij de buren** · Marcel undercover in de tuin van Rosse Roger.
 
-1. **De Zaak Kattenkruid** · Marcels eerste dag. Het kattenkruidkussentje is verdwenen. Verdachten: Rosse Roger, Pieter de Muis, De Vlieg. Eindes: *Burenruzie*, *Een hart van kattenkruid*, *Onder invloed*.
-2. **Operatie Vlieg** · De Vlieg laat een briefje achter en daagt het korps uit. Een kat-en-vliegspel door het hele huis, met Gerrit de Duif als dubbelagent.
-3. **Undercover bij de buren** · Marcel moet undercover in de tuin van Rosse Roger om het plan van De Vlieg te stoppen. Samenwerken met je rivaal, of niet.
-
-## Beelden maken: eerst de cast, dan de scènes
-
-### Stap 1: foto's nemen
-- **Marcel:** 2 à 3 foto's (gezicht van voren, van opzij, hele lichaam).
-- **Peperkoek en Ketchup:** per knuffel 1 à 2 foto's, liefst op een effen achtergrond (tafel, vloer) bij daglicht, geen mensen of handen in beeld.
-- Gerrit de Duif, Rosse Roger, Pieter de Muis en De Vlieg bestaan niet echt: die laat Gemini in stap 3 ontwerpen.
-
-### Stap 2: voorstellingsbericht (nieuw Gemini-gesprek, met alle foto's)
-
-> Ik ga je vragen om scènes te maken voor een interactieve politieserie met speelgoed en dieren. Gebruik mijn foto's alleen als referentie voor het uiterlijk van de personages, kopieer of knip de foto's nooit uit. De vaste cast: 1) Marcel: grijze Britse korthaar, ronde brede kop, bolle wangen, dicht blauwgrijs vachtje zonder strepen, kleine oren, diep oranje ogen. Hij is een jonge politieagent. 2) Sergeant Peperkoek: de peperkoeken-mannetje-knuffel van de foto, zijn mentor. 3) Ketchup: de ketchupfles-knuffel van de foto, forensisch expert, heel dramatisch. 4) Gerrit de Duif: een stevige oude grijze stadsduif met glanzende groen-paarse halsveren, de informant. De knuffels blijven altijd zachte knuffels met naden, nooit echt eten, en hebben geen armen of benen tenzij ze die op de foto hebben. Alles is fotorealistisch, als stills uit een live-action politieserie, gefilmd op kathoogte in een echte, gezellige Belgische woning. Nooit mensen in beeld. Zet nooit tekst, letters, titels of logo's in het beeld. Antwoord nu enkel met "oké".
-
-### Stap 3: de castfoto (het moodboard)
-
-```
-Make a wide landscape image in 16:9 format: a cast photo for a police TV series, like a promotional group shot. From left to right, all standing side by side on a wooden floor in front of a plain dark grey backdrop, each clearly visible and not overlapping: Gerrit de Duif, a sturdy old grey city pigeon with glossy green and purple neck feathers, Ketchup, the soft red plush ketchup bottle standing on its striped cap with a cute kawaii face, Marcel the grey British Shorthair sitting upright in the middle with a tiny navy police cap, Sergeant Peperkoek, the light-brown gingerbread man plush with a green bow tie and two red buttons, and then three new characters: Rosse Roger, a big fluffy ginger tomcat with green eyes and a smug face; Pieter de Muis, a small brown mouse with big ears standing on his hind legs; and De Vlieg, a common housefly sitting on a small wooden block so she is visible. Even soft studio light, sharp focus on everyone. A real photograph, not digital art. No people, no text, no letters.
-```
-
-Bewaar dit beeld als **`series/rookie/cast.jpg`** en voeg het bij elke scène toe als referentie. Lijkt een personage niet, vraag dan: "Maak de castfoto opnieuw, maar houd [naam] exact zoals op mijn foto."
-
-Is de castfoto te druk, maak dan een apart portret voor de nieuwe personages:
-
-```
-Make a square character portrait of Rosse Roger: a big fluffy ginger tomcat with green eyes, a white chest and a smug, self-satisfied face, sitting on a garden wall. Real photograph, soft daylight. No people, no text.
-```
-
-```
-Make a square character portrait of Pieter de Muis: a small brown mouse with big round ears, shiny black eyes and trembling whiskers, standing on his hind legs next to a bottle cap. Real macro photograph, warm light. No people, no text.
-```
-
-### Stap 3b: namen koppelen (één keer)
-
-Gebruik voor The Rookie **niet** de huiscastfoto met de teddybeer en de bouwsteenplantjes: die zijn merkfiguren en dan weigert Gemini ("third-party content providers"). Gebruik `assets/cast/cast-rookie.jpg` (Ketchup, Marcel, Peperkoek) en `assets/cast/cast-straat.jpg`, en noem nooit een merk- of filmnaam. In beeldprompts heet Ketchup "the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo)"; de speeltjes blijven altijd precies zoals op de foto.
-
-> In deze serie heten de personages zo. Op de eerste foto, van links naar rechts: de rode flesknuffel met het schattige gezichtje, Marcel = de grijze kat, Peperkoek = het peperkoeken mannetje met het groene strikje. Op de tweede foto, van links naar rechts: Gerrit = de duif, Roger = de rosse kater, Marcel = de grijze kat, Pieter = de muis, en de vlieg. Als ik in een scène een naam gebruik, bedoel ik altijd exact dat personage van deze foto's. Antwoord enkel met "oké".
-
-### Stap 4: de scènes
-Plak per scène de prompt uit `ep1/PROMPTS.md` (of uit de chat), telkens met de castfoto erbij. Sla elk beeld op als `s01.jpg`, `s02.jpg`, … in `series/rookie/ep1/`.
+## Beelden maken
+1. **Voorstelling** in een nieuw gesprek (ChatGPT of Gemini), met 2 à 3 foto's van Marcel.
+2. **Castfoto** laten maken met alle personages; bewaren als `assets/cast/cast-rookie.jpg`.
+3. **Scènes** één voor één uit `ep1/PROMPTS.md`, telkens met de castfoto erbij.

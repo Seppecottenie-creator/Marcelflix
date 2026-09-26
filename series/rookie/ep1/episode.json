@@ -2,8 +2,8 @@
   "title": "De Zaak Kattenkruid",
   "series": "The Rookie: Feline Division",
   "start": "s01",
-  "style": "Same characters as in the two cast photos. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. The toys are soft plush toys with stitched seams, not real food. Not a painting, not digital art, not CGI. No people, no text, no letters.",
-  "refNote": "Werk in het Gemini-gesprek waarin je de cast voorstelde (zie series/rookie/PERSONAGES.md) en voeg bij elke scène de castfoto (moodboard) toe.",
+  "style": "Same characters as in the cast photo. A real photograph, like a still from a live-action police TV drama shot at cat height in a real cosy Belgian home, natural light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size. Not a painting, not digital art, not CGI. No people, no text, no letters.",
+  "refNote": "Werk in het gesprek waarin je de cast voorstelde (zie series/rookie/PERSONAGES.md) en voeg de castfoto toe.",
   "endingsTotal": 3,
   "scenes": {
     "s01": {
@@ -14,22 +14,22 @@
       "next": "s02"
     },
     "s02": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Peperkoek (the light-brown gingerbread man plush with the green bow tie). Under a sofa, a tiny secret police headquarters: a desk made from a matchbox, a small desk lamp, a pinned-up map drawn on a paper napkin, dust bunnies in the corners. Peperkoek sits behind the desk with a stern face and slides a small badge across it. Marcel peeks in from the side, eager. Warm lamplight in the dark space under the sofa.",
-      "text": "Onder de zetel wacht mijn nieuwe partner op mij: sergeant Peperkoek. Twintig jaar dienst, drie keer bijna opgegeten en nog altijd geen kruimel uit zijn humeur. Hij bekijkt me van kop tot staart en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, zoals alleen iemand van peperkoek kan zuchten, en schuift me een badge toe.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Under a sofa, a tiny secret police headquarters: a desk made from a matchbox, a small desk lamp, a pinned-up map drawn on a paper napkin, dust bunnies in the corners. Sergeant Jos sits behind the desk with a stern, weary look and slowly pushes a small badge across it with one foot. Marcel peeks in from the side, eager. Warm lamplight in the dark space under the sofa.",
+      "text": "Onder de zetel wacht mijn nieuwe partner op mij: sergeant Jos, een schildpad van tachtig jaar, waarvan zestig in dienst. Hij heeft alles gezien, alles overleefd en alles in zijn eigen tempo gedaan. Hij bekijkt me van kop tot staart, wat bij hem een kwartier duurt, en zegt dat ik te jong ben, te pluizig en veel te zelfzeker. Ik antwoord dat dat precies de drie eigenschappen van een legende zijn. Hij zucht, heel lang en heel traag, en schuift me een badge toe.",
       "motion": "left",
       "look": "warm",
       "next": "s03"
     },
     "s03": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Peperkoek (the light-brown gingerbread man plush with the green bow tie); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo). The red bottle plush bursts dramatically into the tiny under-sofa headquarters, leaning forward in panic. Marcel and Peperkoek turn towards him in surprise. Dramatic side light, a little dust flying up.",
-      "text": "Nog voor ik die badge goed en wel kan bewonderen, stormt Ketchup binnen, onze forensisch expert en het meest dramatische lid van het korps. Hij is rood aangelopen, maar dat is hij eigenlijk altijd. Het kattenkruidkussentje is verdwenen, roept hij. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Peperkoek kijkt me aan en zegt maar één woord: instappen.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). The same tiny headquarters under the sofa. Doc Frieda bursts in dramatically, squeaking in panic, her glasses askew. Marcel and Sergeant Jos turn towards her in surprise. Dramatic side light, a little dust flying up.",
+      "text": "Nog voor ik die badge goed en wel kan bewonderen, stormt Doc Frieda binnen, onze forensisch expert en het meest dramatische lid van het korps. Ze is een cavia, draagt een piepklein rond brilletje en piept als een alarmsysteem. Het kattenkruidkussentje is verdwenen, roept ze. Het kussentje van de vensterbank. Het heiligste voorwerp van dit huis. Sergeant Jos kijkt me aan en zegt maar één woord, heel langzaam: instappen.",
       "motion": "in",
       "sfx": "sting",
       "next": "s04"
     },
     "s04": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo); Peperkoek (the light-brown gingerbread man plush with the green bow tie). A sunny windowsill turned into a crime scene: an empty dent in the sun where a small pillow used to lie, tiny yellow police tape around it. Clues: one long orange cat hair, a trail of tiny mouse footprints in the dust, a small crumb of cheese. The red bottle plush holds a magnifying glass over the orange hair, Marcel inspects the footprints, Peperkoek watches with his arms crossed. A tiny blurred fly in the bright window.",
-      "text": "De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Ketchup vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Peperkoek laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). A sunny windowsill turned into a crime scene: an empty dent in the sun where a small pillow used to lie, tiny yellow police tape around it. Clues: one long orange cat hair, a trail of tiny mouse footprints in the dust, a small crumb of cheese. Doc Frieda peers at the orange hair through a magnifying glass, Marcel inspects the footprints with his nose close to the sill, Sergeant Jos watches calmly from the corner. A tiny blurred fly in the bright window.",
+      "text": "De vensterbank is een plaats delict. Waar ooit het kussentje lag, zie ik nu alleen nog een lege afdruk in de zon, en rond die afdruk ligt meer bewijs dan ik op mijn eerste dag had durven hopen. Doc Frieda vindt een lange, oranje haar. Ik vind een spoor van piepkleine pootjes in het stof. En ergens boven ons zoemt iets, heel zacht, alsof het ons uitlacht. Sergeant Jos laat de keuze aan mij. Een goede agent, zegt hij, weet waar hij moet beginnen.",
       "motion": "out",
       "choice": {
         "prompt": "Waar begin je het onderzoek?",
@@ -74,8 +74,8 @@
       "next": "s07"
     },
     "s07": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the housefly; Peperkoek (the light-brown gingerbread man plush with the green bow tie). Action shot in the living room: Marcel leaps through the air after the housefly, paws outstretched, a cushion flying off the sofa and a lamp wobbling. The housefly is just out of reach. Peperkoek watches from the sofa in shock. Motion blur, dynamic, bright daylight.",
-      "text": "Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Peperkoek roept dat ik mijn focus moet houden, maar het is te laat: de achtervolging eindigt pas bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the housefly; Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). Action shot in the living room: Marcel leaps through the air after the housefly, paws outstretched, a cushion flying off the sofa and a lamp wobbling. The housefly is just out of reach. On the floor, Sergeant Jos slowly raises his head in alarm. Motion blur, dynamic, bright daylight.",
+      "text": "Dan hoor ik het weer: dat zoemen. De Vlieg. Staatsvijand nummer één, twaalf keer ontsnapt en nul keer gevangen. Ze landt pal op mijn neus en is weg voor ik kan knipperen. Ik spring, ik mis, ik raak de lamp, en ik mis opnieuw. Sergeant Jos begint te roepen dat ik mijn focus moet houden, maar tegen dat hij zijn zin af heeft, eindigt de achtervolging al bij het kattenluik, waar De Vlieg lachend door een spleetje naar buiten zoeft.",
       "motion": "zoom",
       "next": "s08"
     },
@@ -100,8 +100,8 @@
       }
     },
     "s09a": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo); Peperkoek (the light-brown gingerbread man plush with the green bow tie). At the cat flap, Marcel proudly presses his paw on Roger's paw as if arresting him. Roger looks amused. Behind Marcel, the red bottle plush cheers with joy while Peperkoek holds his head in disbelief.",
-      "text": "Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Ketchup barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Roger (the big fluffy ginger tomcat with green eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). At the cat flap, Marcel proudly presses his paw on Roger's paw as if arresting him. Roger looks amused. Behind Marcel, Doc Frieda cheers with tears of pride, while Sergeant Jos slowly pulls his head into his shell in disbelief.",
+      "text": "Ik aarzel geen seconde. Ik druk mijn poot op de zijne en zeg de woorden waarvan ik al maanden droom: Roger, je staat onder arrest. Doc Frieda barst in tranen uit van trots. Roger kijkt eerst naar mijn poot, dan naar mij, en begint heel langzaam te grijnzen.",
       "motion": "in",
       "next": "s10a"
     },
@@ -116,8 +116,8 @@
       "next": "s12"
     },
     "s09b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo). Back on the sunny windowsill. The red bottle plush holds up a tiny crumb of cheese to the light, Marcel leans in to look at it through a magnifying glass, eyes wide as he realises the truth. Bright, warm light.",
-      "text": "Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Ketchup intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Back on the sunny windowsill. Doc Frieda holds up a tiny crumb of cheese in her paws, Marcel leans in to look at it through a magnifying glass, eyes wide as he realises the truth. Bright, warm light.",
+      "text": "Ik laat Roger gaan. Een blaadje aan je snor is nog geen bekentenis. Terug op de vensterbank heeft Doc Frieda intussen iets gevonden dat iedereen over het hoofd zag: een minuscuul kruimeltje kaas, precies op de plek van het kussentje. Kaas. Onder de koelkast. Trillende snorharen. Plots valt alles in mijn hoofd op zijn plaats, met hetzelfde geluid als een blikje brokjes dat opengaat.",
       "motion": "in",
       "next": "s10b"
     },
@@ -142,8 +142,8 @@
       }
     },
     "s11a": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Peperkoek (the light-brown gingerbread man plush with the green bow tie); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo). Evening in the kitchen. Marcel lies calmly in front of the fridge like a guard, with the baby mice asleep on the pillow in the gap behind him. Peperkoek places a tiny medal made of white icing on Marcel's chest. The red bottle plush turns away, wiping a tear. Warm golden evening light.",
-      "text": "Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Peperkoek zegt niets, maar legt een klein medaillon van glazuur op mijn borst, en Ketchup moet zich omdraaien omdat er saus uit zijn ogen komt. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses). Evening in the kitchen. Marcel lies calmly in front of the fridge like a guard, with the baby mice asleep on the pillow in the gap behind him. Sergeant Jos slowly pushes a tiny medal made from a bottle cap towards Marcel. Doc Frieda has taken off her little glasses to wipe away her tears. Warm golden evening light.",
+      "text": "Ik laat het kussentje liggen. Sommige zaken los je op met een arrestatie, andere met een dutje en een beetje begrip. Sergeant Jos zegt niets, maar schuift heel traag een medaillon van een flessendopje naar me toe, en Doc Frieda moet haar brilletje afzetten omdat het helemaal beslagen is van de tranen. Die nacht slaap ik voor de koelkast, als bewaker van vijf muisjes die me nooit zullen bedanken. Het was, zonder twijfel, de beste eerste dag ooit.",
       "motion": "out",
       "look": "warm",
       "ending": {
@@ -153,8 +153,8 @@
       "next": "s12"
     },
     "s11b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); the red bottle plush (the red plush bottle toy with the cute face, exactly as in the reference photo); Peperkoek (the light-brown gingerbread man plush with the green bow tie). The middle of the living room. Marcel rolls blissfully on his back on a small catnip pillow, paws in the air, eyes half closed, a silly happy face. The red bottle plush and Peperkoek stand next to him, staring in disbelief. Bright daylight, comedic.",
-      "text": "Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, verklaar ik mijn liefde aan Ketchup en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.",
+      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes); Doc Frieda (a fluffy tricolour guinea pig, white, ginger and black, wearing tiny round wire glasses); Sergeant Jos (a wise old tortoise with a wrinkled face and a worn, slightly mossy shell). The middle of the living room. Marcel rolls blissfully on his back on a small catnip pillow, paws in the air, eyes half closed, a silly happy face. Doc Frieda and Sergeant Jos sit next to him, staring in disbelief. Bright daylight, comedic.",
+      "text": "Ik neem het kussentje mee, voor de goede orde en als bewijsstuk. Dat was een fout. Na tien seconden kattenkruid lig ik op mijn rug in het midden van de woonkamer, zing ik een serenade voor sergeant Jos en probeer ik De Vlieg te arresteren voor een vlek op het plafond. In het officiële rapport staat later maar één zin: agent Marcel was niet in staat om verdere vragen te beantwoorden.",
       "motion": "zoom",
       "ending": {
         "id": "C",
