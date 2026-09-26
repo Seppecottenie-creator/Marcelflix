@@ -420,19 +420,25 @@
     if (!s || !isUnlocked(s)) { toast("Deze titel bestaat niet. Of toch nog niet."); go("#/home"); return; }
     const soon = s.status === "soon";
     const ep0 = s.episodes[0];
-    const found = ep0 ? Store.endings(s.id, ep0.id) : [];
     const reminded = Store.d.remind[s.id];
+    const isFilm = s.type === "film";
+    const pub = visible().filter(x => x.status !== "secret" && x.id !== s.id);
+    const similar = pub.map(x => ({ x, n: x.genres.filter(g => s.genres.includes(g)).length + (x.type === s.type ? .5 : 0) }))
+      .sort((a, b) => b.n - a.n).slice(0, 12).map(o => o.x);
+    const secretFor = CATALOG.find(x => x.status === "secret" && x.unlock && x.unlock.series === s.id);
+    const castList = (s.cast || "Marcel").split(",").map(c => c.trim()).filter(Boolean);
+    const stars = (n) => `<span class="stars" aria-label="${n} van 5 sterren">${"★".repeat(n)}<i>${"★".repeat(5 - n)}</i></span>`;
     app.innerHTML = `${topbar()}
       <div class="detail">
         <button class="back-btn" id="back" aria-label="Terug">←</button>
-        <section class="hero">
-          <div class="bd ${s.backdrop ? "" : "gp-" + esc(s.theme)}" ${s.backdrop ? `style="${heroBg(s)}"` : ""}>${s.backdrop ? "" : `<div class="art" style="position:absolute;inset:0"></div>`}</div>
+        <section class="hero dhero">
+          <div class="bd on ${s.backdrop ? "" : "gp-" + esc(s.theme)}" ${s.backdrop ? `style="${heroBg(s)}"` : ""}>${s.backdrop ? "" : `<div class="art" style="position:absolute;inset:0"></div>`}</div>
           <div class="inner">
-            <div class="badge-orig"><b>M</b> ${s.status === "secret" ? "GEHEIME FILM" : s.type === "film" ? "FILM" : "SERIE"}</div>
+            <div class="badge-orig"><b>M</b> ${s.status === "secret" ? "GEHEIME FILM" : isFilm ? "FILM" : "SERIE"}</div>
             ${slogo(s)}
             <div class="meta"><span class="match">${s.match}% match</span><span>${s.year}</span><span class="age">${esc(s.age)}</span>
-              <span>${s.type === "film" ? "Film · " + esc(ep0.duration || "") : soon ? "Binnenkort" : s.episodes.length + " aflevering" + (s.episodes.length > 1 ? "en" : "")}</span>${s.type === "film" && soon ? "<span>Binnenkort</span>" : ""}<span class="hd">HD</span><span class="hd">MIAUW 5.1</span></div>
-            <p class="desc" style="font-style:italic;margin-bottom:10px">${esc(s.tagline)}</p>
+              <span>${isFilm ? "Film · " + esc(ep0.duration || "") : soon ? "Binnenkort" : s.episodes.length + " aflevering" + (s.episodes.length > 1 ? "en" : "")}</span>${isFilm && soon ? "<span>Binnenkort</span>" : ""}<span class="hd">HD</span><span class="hd">MIAUW 5.1</span></div>
+            <p class="tagline">${esc(s.tagline)}</p>
             <div class="btns">
               ${soon ? `<button class="btn play" id="remind">${reminded ? "✓ Je krijgt een melding" : "🔔 Herinner mij"}</button>`
                 : `<button class="btn play" data-play="${esc(s.id)}"><span class="ico">▶</span> ${Store.d.cont[s.id + "/" + ep0.id] ? "Verder kijken" : "Afspelen"}</button>`}
@@ -442,26 +448,38 @@
           </div>
         </section>
         <div class="detail-body">
-          <div>
-            <p class="desc" style="line-height:1.55;font-size:16px;margin-top:0">${esc(s.description)}</p>
-            ${!soon && found.length ? `<div class="facts"><b>Gevonden eindes</b></div><div class="endings">${found.map(e => `<span class="end-chip got">Einde ${esc(e)}</span>`).join("")}</div>` : ""}
-            <h3 style="margin-top:26px">${s.type === "film" ? "Film" : "Afleveringen"}</h3>
-            ${s.episodes.map(e => `<button class="ep" ${soon ? "data-soonep" : `data-play="${esc(s.id)}" data-ep="${esc(e.id)}"`}>
+          <div class="dmain">
+            <p class="dlong">${esc(s.description)}</p>
+            ${!soon && ep0 ? `<div class="ends-card" id="endsCard" hidden></div>` : ""}
+            <h3 class="sec">${isFilm ? "De film" : "Afleveringen"}${!isFilm ? `<span>${soon ? "Seizoen 1 · in productie" : "Seizoen 1"}</span>` : ""}</h3>
+            <div class="eps">
+            ${s.episodes.map(e => {
+              const c = Store.d.cont[s.id + "/" + e.id], w = Store.d.watched[s.id + "/" + e.id];
+              return `<button class="ep ${soon ? "locked" : ""}" ${soon ? "data-soonep" : `data-play="${esc(s.id)}" data-ep="${esc(e.id)}"`}>
                 <span class="n">${e.number}</span>
-                <span class="still">${e.still ? `<img src="${esc(e.still)}" alt="" loading="lazy">` : `<span class="gposter gp-${esc(s.theme)}" style="padding:0"><span class="art"></span></span>`}<span class="pl">${soon ? "🔒" : "▶"}</span></span>
+                <span class="still">${e.still ? `<img src="${esc(e.still)}" alt="" loading="lazy">` : (s.backdrop ? `<img src="${esc(s.backdrop)}" alt="" loading="lazy">` : `<span class="gposter gp-${esc(s.theme)}" style="padding:0"><span class="art"></span></span>`)}
+                  <span class="pl">${soon ? "🔒" : `<svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>`}</span>
+                  ${c ? `<span class="eprog"><i style="width:${Math.min(92, 8 + c.step * 6)}%"></i></span>` : ""}
+                  ${w && !c ? `<span class="seen">✓ Bekeken</span>` : ""}</span>
                 <span class="txt"><h4>${esc(e.title)} <span>${esc(e.duration || "")}</span></h4><p>${esc(e.summary || "")}</p></span>
-              </button>`).join("")}
-          </div>
-          <div>
-            <div class="facts">
-              ${s.cast ? `<div><b>Cast:</b> ${esc(s.cast)}</div>` : `<div><b>Cast:</b> Marcel</div>`}
-              <div><b>Genres:</b> ${s.genres.map(esc).join(", ")}</div>
-              <div><b>Deze serie is:</b> ${soon ? "Veelbelovend, Mysterieus" : "Interactief, Oordelend, Pluizig"}</div>
+              </button>`; }).join("")}
             </div>
-            ${(s.reviews || []).length ? `<h3 style="margin-top:22px">Wat critici zeggen</h3>${s.reviews.map(r => `
-              <div class="review"><div class="stars">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</div><q>${esc(r.text)}</q><small>— ${esc(r.who)}</small></div>`).join("")}` : ""}
           </div>
+          <aside class="dside">
+            <div class="facts">
+              <div class="fl">Cast</div>
+              <div class="chips">${castList.map(c => `<span class="chip ${c === "Marcel" ? "star" : ""}">${c === "Marcel" ? "⭐ " : ""}${esc(c)}</span>`).join("")}</div>
+              <div class="fl">Genres</div>
+              <div class="chips">${s.genres.map(g => `<span class="chip">${esc(g)}</span>`).join("")}</div>
+              <div class="fl">${isFilm ? "Deze film is" : "Deze serie is"}</div>
+              <div class="mood">${soon ? "Veelbelovend · Mysterieus" : "Interactief · Oordelend · Pluizig"}</div>
+            </div>
+          </aside>
         </div>
+        ${(s.reviews || []).length ? `<section class="dsec"><h3 class="sec">Wat critici zeggen</h3>
+          <div class="reviews">${s.reviews.map(r => `
+            <figure class="review">${stars(r.stars)}<blockquote>${esc(r.text)}</blockquote><figcaption>${esc(r.who)}</figcaption></figure>`).join("")}</div></section>` : ""}
+        ${similar.length ? `<section class="dsec"><h3 class="sec">Meer zoals dit</h3><div class="similar">${similar.map(cardHtml).join("")}</div></section>` : ""}
       </div>
       <footer class="foot">Marcelflix · Een Marcel Productie</footer>`;
     wireTopbar(); wireCards();
@@ -469,7 +487,23 @@
     wireActions();
     const rm = document.getElementById("remind");
     if (rm) rm.onclick = () => { Store.d.remind[s.id] = true; Store.save(); rm.textContent = "✓ Je krijgt een melding"; toast("Genoteerd. Marcel stuurt een duif."); };
-    app.querySelectorAll("[data-soonep]").forEach(b => b.onclick = () => toast(s.type === "film" ? "Deze film wordt nog gedraaid. Marcel weigert te werken voor minder dan drie snoepjes per scène." : "Deze aflevering wordt nog opgenomen. Marcel is in onderhandeling over zijn gage (brokjes)."));
+    app.querySelectorAll("[data-soonep]").forEach(b => b.onclick = () => toast(isFilm ? "Deze film wordt nog gedraaid. Marcel weigert te werken voor minder dan drie snoepjes per scène." : "Deze aflevering wordt nog opgenomen. Marcel is in onderhandeling over zijn gage (brokjes)."));
+    // Eindes: lees ze uit episode.json en toon wat al gevonden is
+    const ec = document.getElementById("endsCard");
+    if (ec) fetch(`series/${s.id}/${ep0.id}/episode.json`).then(r => r.ok ? r.json() : null).then(ep => {
+      if (!ep || !document.body.contains(ec)) return;
+      const ends = Object.values(ep.scenes).filter(x => x.ending).map(x => x.ending);
+      if (!ends.length) return;
+      const found = Store.endings(s.id, ep0.id);
+      const got = ends.filter(e => found.includes(e.id)).length;
+      ec.innerHTML = `<div class="eh"><span class="trophy">🏆</span><div><b>${got} van ${ends.length} eindes ontdekt</b>
+          <small>${got === ends.length ? (secretFor ? "Alles gevonden. Er is iets ontgrendeld… 🔓" : "Alles gevonden. Marcel is trots.") : (secretFor ? "Vind ze allemaal. Er wacht een geheim. 🔒" : "Elke keuze leidt ergens anders heen.")}</small></div></div>
+        <div class="ebar"><i style="width:${Math.round(got / ends.length * 100)}%"></i></div>
+        <div class="elist">${ends.map(e => found.includes(e.id)
+          ? `<span class="end-chip got"><b>${esc(e.id)}</b> ${esc(e.title)}</span>`
+          : `<span class="end-chip"><b>${esc(e.id)}</b> ???</span>`).join("")}</div>`;
+      ec.hidden = false;
+    }).catch(() => {});
     scrollTo(0, 0);
   }
 
