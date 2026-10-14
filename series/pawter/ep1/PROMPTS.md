@@ -301,7 +301,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Maar toen dacht ik aan Hazel, die me haar flesje gaf. Aan Bruno, snurkend op een schaakbord. Een volle buik is nog geen gelukkig hart.
 
-## [ ] p17b.jpg
+## [x] p17b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). Marcel sprints across the giant chessboard with the glowing red stone in his mouth, Corvus swooping right behind him, dynamic motion blur. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
