@@ -582,7 +582,9 @@
   function viewWatch(sid, eid, gate) {
     const s = byId(sid);
     const ep = s && s.episodes.find(e => e.id === eid);
-    if (!s || !ep || s.status === "soon" || !isUnlocked(s)) { go("#/home"); return; }
+    // Verborgen testlink voor titels die nog "soon" zijn: #/kijk/<id>/<afl>/test
+    const preview = location.hash.endsWith("/test");
+    if (!s || !ep || (s.status === "soon" && !preview) || !isUnlocked(s)) { go("#/home"); return; }
     if (player) { player.exit(true); player = null; }
     const startPlayer = () => {
       const cont = Store.d.cont[sid + "/" + eid];
