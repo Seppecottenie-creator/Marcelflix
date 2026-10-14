@@ -103,7 +103,7 @@ Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy
 
 _Marcel zegt:_ Midden in de zaal lag een oude, versleten hoed op een kruk. Professor Otto zette hem op mijn kop, en de hoed begon te praten, met een stem als een krakende kast. Hmm, zei hij. Veel moed, nog meer honger, en een verrassend talent om overal te slapen.
 
-## [ ] p06b.jpg
+## [x] p06b.jpg
 
 ```
 A long table at the side of the hall where a row of different animal students, cats, a badger and a sheep, sleep with their heads on the table, while the animals at the other tables cheer. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
