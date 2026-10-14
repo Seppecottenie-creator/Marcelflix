@@ -95,7 +95,7 @@ _Marcel zegt:_ Ik wist meteen: dit worden mijn vrienden. Of mijn fans.
 
 # Scène p06
 
-## [ ] p06a.jpg
+## [x] p06a.jpg
 
 ```
 Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). In the centre of the candlelit hall, Professor Otto lowers the Hat onto Marcel's head with his talons; the Hat is far too big and slides down over one eye, its crease bent like a speaking mouth. Animal students watch from the long tables. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
