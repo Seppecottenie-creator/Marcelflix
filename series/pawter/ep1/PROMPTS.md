@@ -167,7 +167,7 @@ _Marcel zegt:_ Ik zag er niet mezelf in, maar wat ik het allerliefste wilde: een
 
 # Scène p10
 
-## [ ] p10a.jpg
+## [x] p10a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa). A heavy old wooden door creaks open. Marcel, Hazel holding a tiny candle, and Bruno peek into a dark stone room where the giant hamster sits on a wooden trapdoor in the floor, cheeks bulging, staring at them. The giant hamster is truly as big as a sofa. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
