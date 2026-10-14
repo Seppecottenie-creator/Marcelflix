@@ -5,7 +5,7 @@ Sla elk beeld op in deze map met de bestandsnaam hieronder (.jpg, .png of .webp)
 
 # Scène p01
 
-## [ ] p01a.jpg
+## [x] p01a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A cosy living room in the evening. Marcel sits on a wooden dining table and pushes a glass towards the edge with one paw, looking completely innocent. Warm lamplight. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
