@@ -239,7 +239,7 @@ _Marcel zegt:_ Maar één ervan was de sleutel naar de volgende deur, zei Hazel:
 
 # Scène p14
 
-## [ ] p14a.jpg
+## [x] p14a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vast dark hall with a giant chessboard floor and huge stone cat statues as chess pieces. Marcel stands proudly on a square, chin up like a king; Hazel and Bruno stand on other squares, the stone pieces towering around them. Dramatic torchlight. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
