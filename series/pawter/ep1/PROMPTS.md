@@ -211,7 +211,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ We renden naar Professor Otto, helemaal boven in de toren. Hij sliep.
 
-## [ ] p12b.jpg
+## [x] p12b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A round tower study full of old books and brass instruments. Professor Otto sleeps on his wooden perch, eyes closed, while below him Marcel calls up, Hazel knocks on the perch and Bruno barks; a little dust falls from the ceiling. Comedic. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
