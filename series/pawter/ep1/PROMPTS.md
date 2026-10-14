@@ -337,7 +337,7 @@ _Marcel zegt:_ Bruno had taart op zijn neus, Hazel las een boek over mij, en ik 
 
 # Scène p19
 
-## [ ] p19a.jpg
+## [x] p19a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel asleep on a sunny living-room windowsill at home, peaceful, his tiny glasses on his nose. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
