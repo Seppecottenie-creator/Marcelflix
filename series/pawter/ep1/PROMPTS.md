@@ -139,7 +139,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Op zaterdag speelden we Vliegvangen, op bezems, hoog boven het grasveld. Ik had nog nooit op een bezem gezeten, en dat was te zien. Toen zoemde de Gouden Vlieg langs mijn neus, het snelste beestje van de wereld.
 
-## [ ] p08b.jpg
+## [x] p08b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). Marcel back on top of his broomstick, triumphant, a tiny glittering golden fly between his teeth, the stands behind him erupting in cheers. Far in the background, on top of a dark stone tower, the small silhouette of Corvus watches. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
