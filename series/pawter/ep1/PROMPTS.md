@@ -221,7 +221,7 @@ _Marcel zegt:_ Ik riep, Hazel klopte, en Bruno blafte zo hard dat het stof van h
 
 # Scène p13
 
-## [ ] p13a.jpg
+## [x] p13a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A tall stone chamber below an open trapdoor, where hundreds of pieces of cat kibble with tiny feathered wings flutter through the air like a flock of birds. Marcel, Hazel and Bruno have just landed and look up in awe. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
