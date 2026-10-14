@@ -31,7 +31,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Hij liet de brief vallen, precies in de kattenbak. Natuurlijk. Ik viste hem eruit en las de gouden letters: Geachte heer Marcel, u bent uitverkoren voor de Whiskerwood Academie voor Magische Katten.
 
-## [ ] p02b.jpg
+## [x] p02b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A kitchen at night: dozens of cream-coloured envelopes fly in through the cat flap in the back door and swirl through the air, piling up on the floor and counters. Marcel stands in the middle of the storm of letters, holding one opened letter, eyes wide. No writing on the envelopes. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
