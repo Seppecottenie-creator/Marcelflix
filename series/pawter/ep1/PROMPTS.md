@@ -229,7 +229,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ We kropen langs de hamster, die Bruno's buik nog altijd miste, en sprongen door het luik. Beneden fladderde een zwerm brokjes met vleugeltjes door de lucht. Honderden.
 
-## [ ] p13b.jpg
+## [x] p13b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Marcel leaps high through the fluttering swarm, mouth open, catching the one winged piece of kibble with a bent, broken wing, while Hazel points at it from below. Dynamic action, warm torchlight. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
