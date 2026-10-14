@@ -185,7 +185,7 @@ _Marcel zegt:_ Bruno rolde zich meteen op zijn rug, en de hamster, totaal ontwap
 
 # Scène p11
 
-## [ ] p11a.jpg
+## [x] p11a.jpg
 
 ```
 Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The dark stone room. Corvus perches on a high stone arch above Marcel, Hazel and Bruno, wings half spread, eyes glinting in the torchlight; the three look up in fear. Cold blue shadows, ominous. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
