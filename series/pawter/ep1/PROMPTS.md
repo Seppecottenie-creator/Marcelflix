@@ -13,7 +13,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Mijn leven was altijd heel eenvoudig. Eten, slapen en af en toe iets van de tafel duwen, gewoon om te zien of de zwaartekracht nog werkt.
 
-## [ ] p01b.jpg
+## [x] p01b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Night, rain streaming down a living-room window. Marcel sits on the windowsill and stares in surprise at the glass: outside on the wet ledge, Professor Otto holds a sealed cream-coloured envelope in his beak. Cold blue moonlight outside, warm lamplight inside. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
