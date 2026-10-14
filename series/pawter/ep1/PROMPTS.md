@@ -327,7 +327,7 @@ The great hall with hundreds of floating candles during a festive feast: long ta
 
 _Marcel zegt:_ Die avond was er een feestmaal in de grote zaal, met vis, taart en bergen brokjes. Huis Dutje won voor het eerst in duizend jaar de beker. Ze sliepen er allemaal doorheen.
 
-## [ ] p18b.jpg
+## [x] p18b.jpg
 
 ```
 Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). At the head table: Bruno with cake on his nose and Hazel reading a little book, next to Marcel, who sits proudly beside Professor Otto, candlelight in his glasses. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
