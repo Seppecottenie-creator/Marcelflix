@@ -21,12 +21,7 @@
         {
           "id": "p01b",
           "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Night, rain streaming down a living-room window. Marcel sits on the windowsill, ears pricked, looking up at the glass as something taps on it. Cold blue light outside, warm lamplight inside."
-        },
-        {
-          "id": "p01c",
-          "at": 4,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Close-up through the rainy window: Professor Otto stands on the wet outside ledge with a sealed cream-coloured envelope in his beak, staring straight in with his amber eyes."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Night, rain streaming down a living-room window. Marcel sits on the windowsill and stares in surprise at the glass: outside on the wet ledge, Professor Otto holds a sealed cream-coloured envelope in his beak. Cold blue moonlight outside, warm lamplight inside."
         }
       ],
       "next": "p02"
@@ -43,13 +38,8 @@
         },
         {
           "id": "p02b",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up: Marcel holds an opened letter of thick cream paper with a red wax seal between his front paws and reads it intently; the paper glows faintly golden. No readable writing."
-        },
-        {
-          "id": "p02c",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A kitchen at night: dozens of cream-coloured envelopes fly in through the cat flap in the back door and swirl through the air, piling up on the floor and counters. Marcel stands in the middle of the storm of letters, eyes wide. No writing on the envelopes."
+          "at": 3,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A kitchen at night: dozens of cream-coloured envelopes fly in through the cat flap in the back door and swirl through the air, piling up on the floor and counters. Marcel stands in the middle of the storm of letters, holding one opened letter, eyes wide. No writing on the envelopes."
         }
       ],
       "next": "p03"
@@ -62,17 +52,12 @@
         {
           "id": "p03a",
           "at": 0,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A dark kitchen lit by a single lamp, envelopes scattered everywhere. Professor Otto perches on the kitchen table among the letters, wings neatly folded, looking solemn and wise."
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen lit by a single lamp, envelopes scattered everywhere. Professor Otto perches on the kitchen table among the letters, looking solemnly at Marcel, who sits opposite him, eyes wide behind his tiny glasses."
         },
         {
           "id": "p03b",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's face, eyes wide behind his tiny round glasses, as if he has just heard enormous news; lamplight sparkles in his eyes."
-        },
-        {
-          "id": "p03c",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round kitchen clock on a dark wall shows one minute to three. Below it, Marcel sits on the floor in moonlight, looking up at the clock, his tail curled around his paws."
+          "at": 3,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round kitchen clock on a dark wall shows one minute to three. Below it, Marcel sits on the floor in moonlight, looking up at the clock, the cat flap in the back door beside him."
         }
       ],
       "next": "p04"
@@ -85,22 +70,12 @@
         {
           "id": "p04a",
           "at": 0,
-          "prompt": "A dark kitchen at night: the cat flap in the back door glows with bright golden light leaking around its edges, tiny golden sparkles drifting out into the room."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen at night: Marcel dives head first through the cat flap in the back door, which glows with bright golden light; sparkles burst around him, motion blur."
         },
         {
           "id": "p04b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel in mid-leap, diving head first through the glowing cat flap, golden light bursting around him, motion blur."
-        },
-        {
-          "id": "p04c",
           "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel tumbling through a swirling tunnel of stars and golden light, paws spread wide, glasses still on his nose, amazed."
-        },
-        {
-          "id": "p04d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Wide shot: a huge stone castle hall with long wooden tables and hundreds of real candles floating in the air. Marcel, tiny in the middle, has just landed on the stone floor and looks up in wonder."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel tumbles out of a swirl of stars and golden light and lands on the stone floor of a huge castle hall with long wooden tables and hundreds of real candles floating in the air. Wonder, warm candlelight."
         }
       ],
       "next": "p05"
@@ -113,20 +88,10 @@
         {
           "id": "p05a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). In the candlelit hall, Hazel and Bruno tumble onto the stone floor next to Marcel in a little cloud of golden sparkles."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). In the candlelit hall, Hazel and Bruno tumble onto the stone floor next to Marcel in a little cloud of golden sparkles; Hazel clutches her tiny stack of books, Bruno sniffs the air hungrily."
         },
         {
           "id": "p05b",
-          "at": 1,
-          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel proudly holding up her tiny stack of old books, looking very serious and clever."
-        },
-        {
-          "id": "p05c",
-          "at": 2,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). Close-up of Bruno, his long ears lying on the floor, sniffing the air hungrily towards a long table, eyes big and hopeful."
-        },
-        {
-          "id": "p05d",
           "at": 3,
           "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The three of them side by side, seen from behind, looking up at the enormous hall full of floating candles."
         }
@@ -141,20 +106,10 @@
         {
           "id": "p06a",
           "at": 0,
-          "prompt": "Characters in this shot: the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). The Hat lies on an old wooden stool in the centre of the candlelit hall, lit by a soft beam of light, rows of animal students watching from the long tables in the background."
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). In the centre of the candlelit hall, Professor Otto lowers the Hat onto Marcel's head with his talons; the Hat is far too big and slides down over one eye, its crease bent like a speaking mouth. Animal students watch from the long tables."
         },
         {
           "id": "p06b",
-          "at": 1,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). Professor Otto gently lowers the Hat onto Marcel's head with his talons; the Hat is far too big and slides down over one eye."
-        },
-        {
-          "id": "p06c",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). Close-up: the Hat on Marcel's head, its crease bent like a speaking mouth, Marcel's one visible eye looking up nervously."
-        },
-        {
-          "id": "p06d",
           "at": 4,
           "prompt": "A long table at the side of the hall where a row of different animal students, cats, a badger and a sheep, sleep with their heads on the table, while the animals at the other tables cheer."
         }
@@ -169,22 +124,12 @@
         {
           "id": "p07a",
           "at": 0,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vaulted castle cellar filled by one gigantic woven basket with soft blankets, where many cats and small animals sleep in a cosy heap; Bruno already snores among them. Warm candlelight."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vaulted castle cellar filled by one gigantic woven basket with soft blankets, where many cats and small animals sleep in a cosy heap. Marcel is curled up blissfully in the middle, Bruno snoring beside him. Warm candlelight."
         },
         {
           "id": "p07b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel curled up blissfully in the giant basket, eyes closed, glasses slightly askew, a happy smile."
-        },
-        {
-          "id": "p07c",
           "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). An old classroom with wooden desks: Marcel, one paw raised, makes a single striped sock float in the air, glowing faintly; he looks extremely proud."
-        },
-        {
-          "id": "p07d",
-          "at": 3,
-          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel by candlelight, pointing at the page of an old book that shows a drawing of a small glowing red stone shaped like a piece of cat kibble. No readable writing."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). An old classroom with wooden desks: Marcel, one paw raised, makes a single striped sock float in the air, glowing faintly, looking extremely proud. Beside him Hazel, unimpressed, points at an old book showing a drawing of a small glowing red stone shaped like a piece of cat kibble. No readable writing."
         }
       ],
       "next": "p08"
@@ -197,27 +142,12 @@
         {
           "id": "p08a",
           "at": 0,
-          "prompt": "Wide shot on a bright day: a green castle lawn surrounded by tall wooden stands full of cheering animals; several cats on old broomsticks hover high in the air."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A green castle lawn on a bright day, surrounded by tall wooden stands full of cheering animals. Marcel clings upside down underneath a wobbling broomstick high in the air, glasses askew, panicking; other cats on broomsticks fly around him."
         },
         {
           "id": "p08b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel clinging upside down underneath a wobbling broomstick in mid-air, glasses askew, panicking, blue sky behind him."
-        },
-        {
-          "id": "p08c",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Extreme close-up: a tiny glittering golden fly zooms past Marcel's nose, his eyes crossing behind his glasses to follow it."
-        },
-        {
-          "id": "p08d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel back on top of the broomstick, triumphant, the tiny golden fly between his teeth, the stands behind him erupting in cheers, motion blur."
-        },
-        {
-          "id": "p08e",
-          "at": 5,
-          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). A dark stone castle tower against the bright sky; on its very top sits the small silhouette of Corvus, watching."
+          "at": 3,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). Marcel back on top of his broomstick, triumphant, a tiny glittering golden fly between his teeth, the stands behind him erupting in cheers. Far in the background, on top of a dark stone tower, the small silhouette of Corvus watches."
         }
       ],
       "next": "p09"
@@ -230,22 +160,12 @@
         {
           "id": "p09a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel walking alone down a long moonlit castle corridor at night, his long shadow on the stone floor, curious."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dusty forgotten classroom at night, silver moonlight through a tall window. A tall ornate mirror with a carved golden frame stands with a white sheet half pulled off it. Marcel sits in front of it, looking up, curious."
         },
         {
           "id": "p09b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dusty forgotten classroom: a tall ornate mirror with a carved golden frame, a white sheet half pulled off it. Marcel sits in front of it, looking up. Silver moonlight."
-        },
-        {
-          "id": "p09c",
           "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The mirror's reflection shows a sunny dream instead of the dark room: a golden bowl overflowing with kibble, and Marcel curled up in a warm sunbeam with Hazel and Bruno beside him. The real Marcel sits in front of the mirror in the dark."
-        },
-        {
-          "id": "p09d",
-          "at": 3,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Professor Otto perches on a dusty desk beside Marcel in the moonlight, both looking at the mirror, Otto with a gentle, wise expression."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). The mirror's reflection shows a sunny dream instead of the dark room: a golden bowl overflowing with kibble, and Marcel curled up in a warm sunbeam with Hazel and Bruno beside him. The real Marcel sits in front of the mirror in the moonlit dark, and Professor Otto perches on a dusty desk beside him with a gentle, wise look."
         }
       ],
       "next": "p10"
@@ -258,22 +178,12 @@
         {
           "id": "p10a",
           "at": 0,
-          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Hazel leads Marcel and Bruno on tiptoe down a dark castle corridor, holding up a tiny candle, all three looking around nervously."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa). A heavy old wooden door creaks open. Marcel, Hazel holding a tiny candle, and Bruno peek into a dark stone room where the giant hamster sits on a wooden trapdoor in the floor, cheeks bulging, staring at them. The giant hamster is truly as big as a sofa."
         },
         {
           "id": "p10b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A heavy old wooden door creaks open; warm torchlight spills out onto Marcel, Hazel and Bruno, who peek in."
-        },
-        {
-          "id": "p10c",
-          "at": 2,
-          "prompt": "Characters in this shot: the giant hamster (a gigantic fluffy golden hamster, as big as a sofa). In a dark stone room, the giant hamster sits on a wooden trapdoor in the floor, cheeks bulging, staring at the intruders. The giant hamster is truly as big as a sofa."
-        },
-        {
-          "id": "p10d",
           "at": 4,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies on his back while the giant hamster happily tickles his belly with one paw; Marcel and Hazel watch from the doorway in disbelief."
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies on his back while the giant hamster happily tickles his belly with one paw; Marcel and Hazel watch from the doorway in disbelief. Moody torchlight, comedic."
         }
       ],
       "next": "p11"
@@ -286,22 +196,12 @@
         {
           "id": "p11a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno look up in fear at the dark vaulted ceiling of the stone room; the shadow of large wings passes over them."
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The dark stone room. Corvus perches on a high stone arch above Marcel, Hazel and Bruno, wings half spread, eyes glinting in the torchlight; the three look up in fear. Cold blue shadows, ominous."
         },
         {
           "id": "p11b",
-          "at": 1,
-          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Corvus perched on a high stone arch, wings half spread, eyes glinting in the torchlight, menacing."
-        },
-        {
-          "id": "p11c",
           "at": 2,
-          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Close-up of Corvus's sharp beak and piercing eye, as if whispering a secret, cold blue light."
-        },
-        {
-          "id": "p11d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A single black feather drifts down through the torchlight and lands on the stone floor right in front of Marcel's paws."
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Close-up of Corvus's sharp beak and piercing eye in the dark, as if whispering a terrible secret, a single black feather drifting down past him. Cold blue light."
         }
       ],
       "next": "p12"
@@ -314,22 +214,12 @@
         {
           "id": "p12a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno race up a narrow spiral stone staircase, motion blur, torchlight."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno race up a narrow spiral stone staircase in a castle tower, motion blur, torchlight."
         },
         {
           "id": "p12b",
-          "at": 1,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A round tower study full of old books, brass instruments and a painting of a very old cat; Professor Otto sleeps on his wooden perch, eyes closed."
-        },
-        {
-          "id": "p12c",
           "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Marcel calls up, Hazel knocks on the perch and Bruno barks, a little dust falling from the ceiling, while Professor Otto sleeps on."
-        },
-        {
-          "id": "p12d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno look at each other with determination in the doorway of the study; Professor Otto still asleep in the background."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A round tower study full of old books and brass instruments. Professor Otto sleeps on his wooden perch, eyes closed, while below him Marcel calls up, Hazel knocks on the perch and Bruno barks; a little dust falls from the ceiling. Comedic."
         }
       ],
       "next": "p13"
@@ -342,22 +232,12 @@
         {
           "id": "p13a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Seen from below: Marcel, Hazel and Bruno jump one after another through an open wooden trapdoor into the darkness."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A tall stone chamber below an open trapdoor, where hundreds of pieces of cat kibble with tiny feathered wings flutter through the air like a flock of birds. Marcel, Hazel and Bruno have just landed and look up in awe."
         },
         {
           "id": "p13b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A tall stone chamber where hundreds of pieces of cat kibble with tiny feathered wings flutter through the air like a flock of birds; the three friends look up in awe."
-        },
-        {
-          "id": "p13c",
           "at": 3,
-          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel pointing up at one single winged piece of kibble with a bent, broken wing."
-        },
-        {
-          "id": "p13d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel leaping high through the fluttering swarm, mouth open, catching the one winged piece of kibble, dynamic action."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Marcel leaps high through the fluttering swarm, mouth open, catching the one winged piece of kibble with a bent, broken wing, while Hazel points at it from below. Dynamic action, warm torchlight."
         }
       ],
       "next": "p14"
@@ -370,22 +250,12 @@
         {
           "id": "p14a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vast dark hall with a giant chessboard floor and huge stone cat statues as chess pieces; the three friends stand tiny at the edge of the board."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vast dark hall with a giant chessboard floor and huge stone cat statues as chess pieces. Marcel stands proudly on a square, chin up like a king; Hazel and Bruno stand on other squares, the stone pieces towering around them. Dramatic torchlight."
         },
         {
           "id": "p14b",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel stands proudly on a chess square, chin up like a king; Hazel and Bruno stand on other squares, huge stone cat pieces towering around them."
-        },
-        {
-          "id": "p14c",
           "at": 4,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies dramatically on his back on a chess square, one paw on his chest, as if fallen in battle; Marcel and Hazel look on, moved."
-        },
-        {
-          "id": "p14d",
-          "at": 5,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). Close-up of Bruno fast asleep and snoring on the chessboard, ears spread out, a peaceful smile."
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies dramatically on his back on a chess square, one paw on his chest, already fast asleep and snoring with a peaceful smile; Marcel and Hazel look on, moved."
         }
       ],
       "next": "p15"
@@ -398,22 +268,12 @@
         {
           "id": "p15a",
           "at": 0,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). A narrow stone passage where walls of purple magical flames rise on both sides of Marcel and Hazel."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). A narrow stone passage between walls of purple magical flames. Marcel and Hazel stand before a small wooden table with seven tiny glass bottles of different shapes and colours."
         },
         {
           "id": "p15b",
-          "at": 1,
-          "prompt": "Close-up of a small wooden table with seven tiny glass bottles of different shapes and colours, lit by purple firelight."
-        },
-        {
-          "id": "p15c",
-          "at": 2,
-          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Hazel holds up the smallest bottle to Marcel, both lit by purple firelight, a tender moment."
-        },
-        {
-          "id": "p15d",
-          "at": 5,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel walks bravely straight through a wall of purple flames, unharmed, his glasses reflecting the fire."
+          "at": 3,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Hazel holds up the smallest bottle to Marcel, both lit by purple firelight, a tender moment; behind Marcel a wall of purple flames waits."
         }
       ],
       "next": "p16"
@@ -426,22 +286,12 @@
         {
           "id": "p16a",
           "at": 0,
-          "prompt": "A round stone chamber: on a stone pedestal lies a small stone shaped like a piece of cat kibble, glowing warm red and lighting up the dark room."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round stone chamber: Marcel stands by a stone pedestal with one paw on a small stone shaped like a piece of cat kibble, which glows warm red and lights up his whiskers and glasses."
         },
         {
           "id": "p16b",
-          "at": 1,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's paw resting on the small glowing red stone, red light on his whiskers and glasses."
-        },
-        {
-          "id": "p16c",
           "at": 2,
-          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Corvus lands in front of Marcel with his wings spread wide, menacing, lit red from below by the glowing stone."
-        },
-        {
-          "id": "p16d",
-          "at": 4,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's face, torn and tempted, the red glow of the stone on his fur and the reflection of a golden bowl in his glasses."
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Corvus lands in front of Marcel with his wings spread wide, menacing, lit red from below by the glowing stone; Marcel looks torn, the reflection of a golden bowl in his glasses."
         }
       ],
       "next": "p17"
@@ -464,12 +314,7 @@
         {
           "id": "p17c",
           "at": 4,
-          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). In a torchlit corridor, Professor Otto stands wide awake with his huge wings spreading; Marcel skids to a stop in front of him."
-        },
-        {
-          "id": "p17d",
-          "at": 5,
-          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Corvus tumbling backwards out of an open arched window into the night sky, black feathers flying, blasted by a powerful gust of wind."
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). In a torchlit corridor, Professor Otto stands wide awake with his huge wings spread; Marcel skids to a stop in front of him, and behind them Corvus tumbles backwards out of an open arched window into the night sky, black feathers flying."
         }
       ],
       "next": "p18"
@@ -482,22 +327,12 @@
         {
           "id": "p18a",
           "at": 0,
-          "prompt": "The great hall with hundreds of floating candles during a festive feast: long tables full of fish, cakes and bowls of kibble, many animal students celebrating."
+          "prompt": "The great hall with hundreds of floating candles during a festive feast: long tables full of fish, cakes and bowls of kibble, a large golden cup on the table of animal students who are all fast asleep with their heads on the table."
         },
         {
           "id": "p18b",
-          "at": 1,
-          "prompt": "A large golden cup on a long table, surrounded by animal students fast asleep with their heads on the table."
-        },
-        {
-          "id": "p18c",
           "at": 3,
-          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). At the head table: Bruno with cake on his nose and Hazel reading a little book, next to Marcel, who sits proudly beside Professor Otto."
-        },
-        {
-          "id": "p18d",
-          "at": 5,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel, content and proud, candlelight reflected in his glasses, a small smile."
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). At the head table: Bruno with cake on his nose and Hazel reading a little book, next to Marcel, who sits proudly beside Professor Otto, candlelight in his glasses."
         }
       ],
       "next": "p19"
@@ -515,12 +350,7 @@
         {
           "id": "p19b",
           "at": 1,
-          "prompt": "A dark kitchen at night: the cat flap in the back door glows golden again."
-        },
-        {
-          "id": "p19c",
-          "at": 2,
-          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of a cream-coloured envelope with a black raven feather tied to it, lying on the floor below the glowing cat flap; Marcel's wide eyes shine in the shadows behind it."
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen at night: the cat flap in the back door glows golden again, and below it lies a cream-coloured envelope with a black raven feather tied to it. Marcel's wide eyes shine in the shadows."
         }
       ]
     }

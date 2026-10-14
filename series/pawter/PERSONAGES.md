@@ -16,8 +16,8 @@ Namen zijn gekozen zodat ze vlot klinken in de Engelse stem én in de Nederlands
 **Plaatsen:** Whiskerwood Academie voor Magische Katten (kasteel met zwevende kaarsen), Huis Klauw (toren) en Huis Dutje (kelder met één reuzenmand).
 **De Steen der Brokjes:** een klein steentje in de vorm van een brokje dat warm rood gloeit.
 
-## Verhaal (± 8,5 min, 19 scènes, 73 beelden, geen keuzes)
-Eén doorlopend verhaal met snel wisselende beelden: elke scène heeft één mp3, maar 3 tot 5 beelden (`shots`) die wisselen op het ritme van de zinnen (gemiddeld om de 7 seconden).
+## Verhaal (± 8,5 min, 19 scènes, 39 beelden, geen keuzes)
+Eén doorlopend verhaal met snel wisselende beelden: elke scène heeft één mp3, maar 2 (bij de climax 3) beelden (`shots`) die wisselen op het ritme van de zinnen (gemiddeld om de 13 seconden).
 
 p01 thuis · p02 de brieven · p03 Professor Otto · p04 door het kattenluik · p05 Hazel en Bruno · p06 de Hoed (Huis Dutje) · p07 de reuzenmand en de eerste spreuk · p08 Vliegvangen · p09 de spiegel · p10 de reuzenhamster · p11 Corvus · p12 Otto slaapt · p13 vliegende brokjes · p14 het schaakbord · p15 het toverdrankje · p16 de steen · p17 Marcel kiest zijn vrienden, Otto blaast Corvus weg · p18 het feestmaal · p19 teaser: *Harry Pawter en de Kamer der Krabpalen*.
 
