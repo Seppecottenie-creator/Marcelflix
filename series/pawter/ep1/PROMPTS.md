@@ -175,7 +175,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ De nacht daarna sleepte Hazel ons mee naar de verboden gang op de derde verdieping. Achter een zware deur lag een luik in de vloer. En op dat luik zat een hamster. Een gigantische hamster, zo groot als een zetel, met wangen vol geheimen.
 
-## [ ] p10b.jpg
+## [x] p10b.jpg
 
 ```
 Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies on his back while the giant hamster happily tickles his belly with one paw; Marcel and Hazel watch from the doorway in disbelief. Moody torchlight, comedic. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
