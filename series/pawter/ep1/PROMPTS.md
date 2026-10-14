@@ -49,7 +49,7 @@ Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy
 
 _Marcel zegt:_ Toen ik opkeek, zat de uil op de keukentafel, alsof hij er altijd al had gezeten. Professor Otto, stelde hij zich voor, directeur van Whiskerwood. Je bent geen gewone kat, zei hij, je bent een tovenaar die het nog niet weet.
 
-## [ ] p03b.jpg
+## [x] p03b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round kitchen clock on a dark wall shows one minute to three. Below it, Marcel sits on the floor in moonlight, looking up at the clock, the cat flap in the back door beside him. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
