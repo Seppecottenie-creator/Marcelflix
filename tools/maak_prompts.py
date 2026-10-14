@@ -10,6 +10,7 @@ Schrijft PROMPTS.md in de map van de aflevering, met per scène de volledige pro
 Scènes waarvan het beeld al bestaat, worden aangevinkt.
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -30,9 +31,32 @@ def main():
         "",
     ]
     done = 0
+    total = 0
+    split = lambda t: [x.strip() for x in re.findall(r'[^.!?…]+[.!?…]+["”’)]*|[^.!?…]+$', t) if x.strip()]
     for sid, sc in data["scenes"].items():
+        if sc.get("shots"):
+            # Scène met meerdere beelden: één prompt per shot, met de zinnen die erbij horen
+            sents = split(sc["text"])
+            lines += [f"# Scène {sid}", ""]
+            for i, sh in enumerate(sc["shots"]):
+                end = sc["shots"][i + 1]["at"] if i + 1 < len(sc["shots"]) else len(sents)
+                exists = any((ep_dir / f"{sh['id']}.{x}").exists() for x in ("jpg", "png", "webp", "jpeg"))
+                done += exists
+                total += 1
+                lines += [
+                    f"## {'[x]' if exists else '[ ]'} {sh['id']}.jpg",
+                    "",
+                    "```",
+                    f"{sh['prompt'].strip().rstrip('.')}. {style}",
+                    "```",
+                    "",
+                    f"_Marcel zegt:_ {' '.join(sents[sh['at']:end])}",
+                    "",
+                ]
+            continue
         if sc.get("image"):
             continue
+        total += 1
         exists = any((ep_dir / f"{sid}.{x}").exists() for x in ("jpg", "png", "webp", "jpeg"))
         done += exists
         lines += [
@@ -46,7 +70,6 @@ def main():
             "",
         ]
     (ep_dir / "PROMPTS.md").write_text("\n".join(lines), encoding="utf-8")
-    total = sum(1 for s in data["scenes"].values() if not s.get("image"))
     print(f"PROMPTS.md geschreven in {ep_dir.relative_to(ROOT)}  ({done}/{total} beelden klaar)")
 
 

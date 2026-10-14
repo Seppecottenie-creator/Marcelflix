@@ -248,7 +248,8 @@
         if (this.clock.useAudio) { voice.currentTime = off; if (!this.paused && voice.paused) voice.play().catch(() => {}); }
         this.clock.elapsed = off;
         this.clock.last = performance.now();
-        this.showImage(this.curImg, this.ep.scenes[id], this.clock.dur, off, true);
+        if (this.ep.scenes[id].shots) this.shotIdx = -1;
+        else this.showImage(this.curImg, this.ep.scenes[id], this.clock.dur, off, true);
       } else {
         this.history = this.history.slice(0, histStart).concat(ids.slice(0, k));
         voice.pause();
@@ -302,7 +303,7 @@
       const r = await fetch(this.base + "episode.json", { cache: "no-cache" });
       if (!r.ok) throw new Error("episode.json niet gevonden in " + this.base);
       this.ep = await r.json();
-      this.el.querySelector(".ept").textContent = "Afl. " + (this.o.episodeNumber || 1) + " · " + this.ep.title;
+      this.el.querySelector(".ept").textContent = this.o.series.type === "film" ? "Film" : "Afl. " + (this.o.episodeNumber || 1) + " · " + this.ep.title;
     }
 
     async start(fromScene) {
@@ -331,8 +332,8 @@
           <div class="tc">
             <small class="orig"><b>M</b> ORIGINAL</small>
             <h1 class="slogo ${esc(s.theme)}"><span class="l1">${esc(l[0])}</span>${l[1] ? `<span class="l2">${esc(l[1])}</span>` : ""}</h1>
-            <div class="epn">Seizoen 1 · Aflevering ${esc(this.o.episodeNumber || 1)}</div>
-            <div class="ept">${esc(this.ep.title)}</div>
+            ${s.type === "film" ? `<div class="epn">Een Marcelflix-film</div>`
+              : `<div class="epn">Seizoen 1 · Aflevering ${esc(this.o.episodeNumber || 1)}</div><div class="ept">${esc(this.ep.title)}</div>`}
           </div></div>`);
         this.el.appendChild(card);
         this.el.classList.add("modal");
@@ -358,12 +359,15 @@
       if (this.assetCache[id]) return this.assetCache[id];
       const sc = this.ep.scenes[id];
       const p = (async () => {
-        const img = await loadImage(this.imageUrls(id, sc));
+        // Scène met meerdere beelden ("shots"): laad ze allemaal
+        const shots = sc.shots ? await Promise.all(sc.shots.map(async sh =>
+          (await loadImage(sh.image ? [this.base + sh.image] : ["jpg", "png", "webp"].map(x => this.base + sh.id + "." + x))) || placeholder(sh.id, sh.prompt, sc.look))) : null;
+        const img = shots ? shots[0] : await loadImage(this.imageUrls(id, sc));
         const audioUrl = this.base + (sc.audio || id + ".mp3");
         let hasAudio = false;
         try { const r = await fetch(audioUrl, { method: "HEAD" }); hasAudio = r.ok; } catch (e) {}
         if (hasAudio) fetch(audioUrl).catch(() => {}); // cache opwarmen
-        return { img: img || placeholder(id, sc.prompt, sc.look), audioUrl: hasAudio ? audioUrl : null };
+        return { img: img || placeholder(id, sc.prompt, sc.look), shots, audioUrl: hasAudio ? audioUrl : null };
       })();
       return (this.assetCache[id] = p);
     }
@@ -436,7 +440,20 @@
 
       if (!useAudio) this.durs[id] = dur;
       offset = Math.min(offset, Math.max(0, dur - 0.2));
-      this.showImage(a.img, sc, dur, offset, offset > 0);
+      // "cues": gemeten starttijd (s) van elke zin in de mp3, voor exacte ondertitels
+      const cues = useAudio && Array.isArray(sc.cues) && sc.cues.length === sentences.length ? sc.cues : null;
+      const sentStart = (i) => cues ? cues[i] : dur * weights.slice(0, i).reduce((x, y) => x + y, 0) / total;
+      const MOTIONS = ["in", "left", "out", "right"];
+      const showShot = (k, at) => {
+        const sh = sc.shots[k], from = sentStart(sh.at), to = k + 1 < sc.shots.length ? sentStart(sc.shots[k + 1].at) : dur;
+        const off = Math.max(0, at - from);
+        this.shotIdx = k;
+        this.showImage(a.shots[k], { motion: sh.motion || MOTIONS[k % 4], focus: sh.focus, look: sc.look }, Math.max(2, to - from), off, off > 0.6);
+      };
+      const shotAt = (t) => { let k = 0; sc.shots.forEach((sh, i) => { if (sentStart(sh.at) <= t + 0.05) k = i; }); return k; };
+      this.shotIdx = -1;
+      if (a.shots) showShot(shotAt(offset), offset);
+      else this.showImage(a.img, sc, dur, offset, offset > 0);
       if (sc.sfx && Sound[sc.sfx] && offset < 0.5) Sound[sc.sfx]();
       Sound.duck(true);
 
@@ -445,8 +462,6 @@
         if (!this.paused) { try { await voice.play(); } catch (e) { useAudio = false; } }
         if (this.dead || token !== this.token) return;
       }
-      // "cues": gemeten starttijd (s) van elke zin in de mp3, voor exacte ondertitels
-      const cues = Array.isArray(sc.cues) && sc.cues.length === sentences.length ? sc.cues : null;
       const startPerf = performance.now();
       this.clock = { elapsed: offset, last: startPerf, useAudio, dur };
       const tail = TAIL;
@@ -463,6 +478,7 @@
         if (c.useAudio && cues) { while (idx + 1 < cues.length && c.elapsed >= cues[idx + 1]) idx++; }
         else for (let i = 0; i < weights.length; i++) { acc += weights[i] / total; if (p <= acc + 1e-6) { idx = i; break; } idx = i; }
         this.setSub(sentences[idx]);
+        if (a.shots) { const k = shotAt(c.elapsed); if (k !== this.shotIdx) showShot(k, c.elapsed); }
         if (!this.dragging) this.updateTimeline();
         if (c.elapsed >= c.dur + tail) { this.sceneDone(sc, token); return; }
         this.raf = requestAnimationFrame(loop);

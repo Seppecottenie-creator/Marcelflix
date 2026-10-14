@@ -1,222 +1,528 @@
 {
   "title": "Harry Pawter en de Steen der Brokjes",
   "series": "Harry Pawter en de Steen der Brokjes",
-  "start": "h01",
-  "style": "Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the scene says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.",
+  "start": "p01",
+  "style": "Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.",
   "refNote": "Werk in het gesprek waarin je de castfoto maakte (zie series/pawter/PERSONAGES.md) en voeg de castfoto toe.",
-  "endingsTotal": 3,
   "narrationLang": "en",
   "narrationVoice": "en-GB-RyanNeural",
+  "_uitleg_shots": "Elke scène heeft één mp3, maar meerdere beelden (shots). 'at' = bij welke zin (0 = eerste) het beeld verschijnt. Bestandsnaam = shot-id, bv. p04b.jpg.",
   "scenes": {
-    "h01": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Night, rain on the window. Marcel sits on a cosy living-room windowsill and stares in surprise at the glass: outside on the wet ledge, Professor Otto holds a sealed cream-coloured envelope in his beak. Raindrops on the glass, warm lamplight inside, cold blue moonlight outside.",
-      "text": "Mijn leven was altijd heel eenvoudig. Eten, slapen, uit het raam staren en af en toe iets van de tafel duwen om te zien of de zwaartekracht nog werkt. Tot die ene regenachtige avond, toen er iets tegen het raam tikte. Een uil. Een echte, grote uil, met een brief in zijn snavel, die me aankeek alsof hij al jaren naar me op zoek was.",
-      "narration": "My life was always very simple. Eat, sleep, stare out of the window, and now and then push something off the table to check that gravity still works. Until that one rainy evening, when something tapped on the window. An owl. A real, big owl, with a letter in its beak, looking at me as if it had been searching for me for years.",
-      "motion": "in",
-      "look": "warm",
-      "next": "h02"
+    "p01": {
+      "mood": "thuis",
+      "text": "Mijn leven was altijd heel eenvoudig. Eten, slapen en af en toe iets van de tafel duwen, gewoon om te zien of de zwaartekracht nog werkt. Tot die ene regenachtige avond. Er tikte iets tegen het raam. Een uil, groot als een kussen, met een brief in zijn snavel.",
+      "narration": "My life was always very simple. Eat, sleep, and now and then push something off the table, just to check that gravity still works. Until that one rainy evening. Something tapped on the window. An owl, as big as a cushion, with a letter in its beak.",
+      "shots": [
+        {
+          "id": "p01a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A cosy living room in the evening. Marcel sits on a wooden dining table and pushes a glass towards the edge with one paw, looking completely innocent. Warm lamplight."
+        },
+        {
+          "id": "p01b",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Night, rain streaming down a living-room window. Marcel sits on the windowsill, ears pricked, looking up at the glass as something taps on it. Cold blue light outside, warm lamplight inside."
+        },
+        {
+          "id": "p01c",
+          "at": 4,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Close-up through the rainy window: Professor Otto stands on the wet outside ledge with a sealed cream-coloured envelope in his beak, staring straight in with his amber eyes."
+        }
+      ],
+      "next": "p02"
     },
-    "h02": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A cosy kitchen at night. Dozens of sealed cream-coloured envelopes fly in through the cat flap in the back door and swirl through the air, piling up on the floor and the counters. Marcel stands among them on the kitchen floor, one paw on an opened letter, eyes wide. Magical and comedic, warm light. No writing on the envelopes.",
-      "text": "De uil liet de brief los, precies boven de kattenbak. Natuurlijk. Ik viste hem eruit en las de gouden letters: Geachte heer Marcel, u bent uitverkoren voor de Whiskerwood Academie voor Magische Katten. Ik dacht eerst aan reclame. Maar toen vlogen er tien brieven door het kattenluik, daarna vijftig, en binnen een minuut lag de hele keuken vol.",
-      "narration": "The owl let go of the letter right above the litter box. Of course. I fished it out and read the golden words: Dear Mister Marcel, you have been chosen for the Whiskerwood Academy for Magical Cats. At first I thought it was junk mail. But then ten letters flew in through the cat flap, then fifty, and within a minute the whole kitchen was full.",
-      "motion": "zoom",
-      "next": "h03"
+    "p02": {
+      "mood": "thuis",
+      "text": "Hij liet de brief vallen, precies in de kattenbak. Natuurlijk. Ik viste hem eruit en las de gouden letters: Geachte heer Marcel, u bent uitverkoren voor de Whiskerwood Academie voor Magische Katten. Reclame, dacht ik. Maar toen vlogen er tien brieven door het kattenluik, daarna vijftig, en binnen een minuut lag de hele keuken vol.",
+      "narration": "He dropped the letter right into the litter box. Of course. I fished it out and read the golden words: Dear Mister Marcel, you have been chosen for the Whiskerwood Academy for Magical Cats. Junk mail, I thought. But then ten letters flew in through the cat flap, then fifty, and within a minute the whole kitchen was full.",
+      "shots": [
+        {
+          "id": "p02a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A sealed cream-coloured envelope tumbles down and lands right in a cat litter box on a tiled floor. Marcel sits next to it, looking deeply offended. Soft night light."
+        },
+        {
+          "id": "p02b",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up: Marcel holds an opened letter of thick cream paper with a red wax seal between his front paws and reads it intently; the paper glows faintly golden. No readable writing."
+        },
+        {
+          "id": "p02c",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A kitchen at night: dozens of cream-coloured envelopes fly in through the cat flap in the back door and swirl through the air, piling up on the floor and counters. Marcel stands in the middle of the storm of letters, eyes wide. No writing on the envelopes."
+        }
+      ],
+      "next": "p03"
     },
-    "h03": {
-      "prompt": "Characters in this scene: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen at night, lit by a single lamp, envelopes scattered everywhere. Professor Otto perches on the kitchen table among the letters, looking solemnly at Marcel, who sits on a chair opposite him, listening closely. On the wall, a round kitchen clock shows one minute to three. Mysterious mix of warm lamplight and cold moonlight.",
-      "text": "Toen ik opkeek, zat de uil op de keukentafel, tussen de brieven, alsof hij er altijd al had gezeten. Hij stelde zich voor als Professor Otto, directeur van Whiskerwood. Hij zei dat ik geen gewone kat was, maar een tovenaar die gewoon nog niet wist hoe het moest. Om drie uur 's nachts, zei hij, wanneer alle katten ter wereld plots beginnen te rennen, gaat het kattenluik open naar een andere wereld. Ik keek naar de klok. Twee uur negenenvijftig.",
-      "narration": "When I looked up, the owl was sitting on the kitchen table among the letters, as if he had always been there. He introduced himself as Professor Otto, headmaster of Whiskerwood. He said I was no ordinary cat, but a wizard who simply didn't know how yet. At three in the morning, he said, when every cat in the world suddenly starts running, the cat flap opens into another world. I looked at the clock. Two fifty-nine.",
-      "motion": "left",
-      "look": "warm",
-      "next": "h04"
+    "p03": {
+      "mood": "mysterie",
+      "text": "Toen ik opkeek, zat de uil op de keukentafel, alsof hij er altijd al had gezeten. Professor Otto, stelde hij zich voor, directeur van Whiskerwood. Je bent geen gewone kat, zei hij, je bent een tovenaar die het nog niet weet. Om drie uur 's nachts, wanneer alle katten ter wereld plots beginnen te rennen, gaat het kattenluik open naar een andere wereld. Ik keek naar de klok. Twee uur negenenvijftig.",
+      "narration": "When I looked up, the owl was sitting on the kitchen table, as if he had always been there. Professor Otto, he introduced himself, headmaster of Whiskerwood. You are no ordinary cat, he said, you are a wizard who doesn't know it yet. At three in the morning, when every cat in the world suddenly starts running, the cat flap opens into another world. I looked at the clock. Two fifty-nine.",
+      "shots": [
+        {
+          "id": "p03a",
+          "at": 0,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A dark kitchen lit by a single lamp, envelopes scattered everywhere. Professor Otto perches on the kitchen table among the letters, wings neatly folded, looking solemn and wise."
+        },
+        {
+          "id": "p03b",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's face, eyes wide behind his tiny round glasses, as if he has just heard enormous news; lamplight sparkles in his eyes."
+        },
+        {
+          "id": "p03c",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round kitchen clock on a dark wall shows one minute to three. Below it, Marcel sits on the floor in moonlight, looking up at the clock, his tail curled around his paws."
+        }
+      ],
+      "next": "p04"
     },
-    "h04": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A grand stone hall in an old castle at night, hundreds of real candles floating in the air above long wooden tables. Marcel has just landed on the stone floor, a faint trail of golden sparkles behind him. Next to him stand Hazel, holding her tiny stack of books, and Bruno, ears dragging on the floor, looking around hungrily. Warm golden candlelight, wonder.",
-      "text": "Om exact drie uur begon het kattenluik te gloeien. Ik rende, zoals elke kat om die tijd rent, en dook erdoor. Ik viel door een tunnel van sterren en landde op mijn pootjes, natuurlijk, in een enorme zaal vol zwevende kaarsen. Naast me stonden twee andere nieuwe leerlingen. Hazel, een egeltje met een stapel boeken die groter was dan zijzelf, en Bruno, een bassetpup met oren tot op de grond, die meteen vroeg of hier ook ontbijt was.",
-      "narration": "At exactly three o'clock, the cat flap began to glow. I ran, the way every cat runs at that hour, and dived through it. I fell through a tunnel of stars and landed on my feet, of course, in an enormous hall full of floating candles. Next to me stood two other new students. Hazel, a little hedgehog with a pile of books bigger than herself, and Bruno, a basset puppy with ears down to the floor, who immediately asked if there was breakfast here.",
-      "motion": "out",
-      "look": "warm",
-      "sfx": "sting",
-      "next": "h05"
+    "p04": {
+      "mood": "magie",
+      "text": "Om exact drie uur begon het kattenluik te gloeien. Ik rende, zoals elke kat om die tijd rent, en dook erdoor. Ik viel door een tunnel van sterren, draaide drie keer om mijn as en landde op mijn pootjes. Natuurlijk. Ik stond in een zaal zo groot als tien huizen, met honderden kaarsen die gewoon in de lucht zweefden.",
+      "narration": "At exactly three o'clock, the cat flap began to glow. I ran, the way every cat runs at that hour, and dived through it. I fell through a tunnel of stars, spun around three times, and landed on my feet. Of course. I was standing in a hall as big as ten houses, with hundreds of candles simply floating in the air.",
+      "shots": [
+        {
+          "id": "p04a",
+          "at": 0,
+          "prompt": "A dark kitchen at night: the cat flap in the back door glows with bright golden light leaking around its edges, tiny golden sparkles drifting out into the room."
+        },
+        {
+          "id": "p04b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel in mid-leap, diving head first through the glowing cat flap, golden light bursting around him, motion blur."
+        },
+        {
+          "id": "p04c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel tumbling through a swirling tunnel of stars and golden light, paws spread wide, glasses still on his nose, amazed."
+        },
+        {
+          "id": "p04d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Wide shot: a huge stone castle hall with long wooden tables and hundreds of real candles floating in the air. Marcel, tiny in the middle, has just landed on the stone floor and looks up in wonder."
+        }
+      ],
+      "next": "p05"
     },
-    "h05": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The candlelit great hall. Marcel sits on a wooden stool with the Hat on his head, slipping down over one eye; the crease of the Hat looks like a mouth, as if it is speaking. Professor Otto watches from a tall wooden perch beside him. Hazel and Bruno watch nervously in the background. Warm candlelight, suspense.",
-      "text": "Midden in de zaal lag een oude, versleten hoed op een kruk. Professor Otto zette hem op mijn kop, en de hoed begon te praten, in mijn oor, met een stem als een krakende kast. Hmm, zei hij. Veel moed, nog meer honger en een verrassend groot talent om overal te slapen. Hij kon niet kiezen tussen twee huizen. Dus liet hij de keuze aan mij.",
-      "narration": "In the middle of the hall, an old, worn hat lay on a stool. Professor Otto placed it on my head, and the hat began to talk into my ear, in a voice like a creaking cupboard. Hmm, it said. Plenty of courage, even more hunger, and a surprising talent for sleeping anywhere. It could not choose between two houses. So it left the choice to me.",
-      "motion": "in",
-      "look": "warm",
-      "choice": {
-        "prompt": "In welk huis wil je?",
-        "options": [
-          {
-            "label": "Huis Klauw: voor de dapperen",
-            "next": "h06a"
-          },
-          {
-            "label": "Huis Dutje: voor de slapers",
-            "next": "h06b"
-          }
-        ],
-        "default": 0
-      }
+    "p05": {
+      "mood": "magie",
+      "text": "Naast me landden nog twee nieuwe leerlingen. Hazel, een egeltje met een stapel boeken die groter was dan zijzelf, die me meteen vertelde dat ze alle boeken van de school al gelezen had. En Bruno, een bassetpup met oren tot op de grond, die alleen wilde weten of er hier ook ontbijt was. Ik wist meteen: dit worden mijn vrienden. Of mijn fans.",
+      "narration": "Next to me, two more new students landed. Hazel, a hedgehog with a pile of books bigger than herself, who immediately told me she had already read every book in the school. And Bruno, a basset puppy with ears down to the floor, who only wanted to know if there was breakfast here. I knew right away: these would be my friends. Or my fans.",
+      "shots": [
+        {
+          "id": "p05a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). In the candlelit hall, Hazel and Bruno tumble onto the stone floor next to Marcel in a little cloud of golden sparkles."
+        },
+        {
+          "id": "p05b",
+          "at": 1,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel proudly holding up her tiny stack of old books, looking very serious and clever."
+        },
+        {
+          "id": "p05c",
+          "at": 2,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). Close-up of Bruno, his long ears lying on the floor, sniffing the air hungrily towards a long table, eyes big and hopeful."
+        },
+        {
+          "id": "p05d",
+          "at": 3,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The three of them side by side, seen from behind, looking up at the enormous hall full of floating candles."
+        }
+      ],
+      "next": "p06"
     },
-    "h06a": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). A round tower room in the castle with red velvet cushions, scratching posts and climbing ropes hanging from the wooden beams. Marcel stands proudly on a cushion, one paw raised, while a single striped sock floats in the air in front of him, glowing faintly. Hazel sits beside an open old book, unimpressed. Warm firelight.",
-      "text": "Huis Klauw woont in de hoogste toren, waar iedereen de hele dag aan klimtouwen hangt en elkaar uitdaagt om van de hoogste kast te springen. Ik voelde me meteen thuis. Op mijn eerste avond leerde ik mijn allereerste spreuk, en ik liet daarmee met veel succes een sok zweven. Hazel, die in hetzelfde huis zat, vond dat maar matig. Zij had intussen ontdekt dat er in het kasteel iets verborgen lag: de Steen der Brokjes, die ervoor zorgt dat je etensbak nooit, maar dan ook nooit meer leeg raakt.",
-      "narration": "House Claw lives in the highest tower, where everyone hangs from climbing ropes all day and dares each other to jump from the tallest cupboard. I felt at home straight away. On my first evening I learned my very first spell, and used it to make a sock float with great success. Hazel, who was in the same house, was not impressed. She had discovered that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.",
-      "motion": "right",
-      "look": "warm",
-      "next": "h07"
+    "p06": {
+      "mood": "magie",
+      "text": "Midden in de zaal lag een oude, versleten hoed op een kruk. Professor Otto zette hem op mijn kop, en de hoed begon te praten, met een stem als een krakende kast. Hmm, zei hij. Veel moed, nog meer honger, en een verrassend talent om overal te slapen. Huis Dutje, riep hij. De hele zaal applaudisseerde, behalve Huis Dutje zelf, want die lagen allemaal te slapen.",
+      "narration": "In the middle of the hall, an old, worn hat lay on a stool. Professor Otto placed it on my head, and the hat began to talk, in a voice like a creaking cupboard. Hmm, it said. Plenty of courage, even more hunger, and a surprising talent for sleeping anywhere. House Nap, it shouted. The whole hall applauded, except House Nap itself, because they were all fast asleep.",
+      "shots": [
+        {
+          "id": "p06a",
+          "at": 0,
+          "prompt": "Characters in this shot: the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). The Hat lies on an old wooden stool in the centre of the candlelit hall, lit by a soft beam of light, rows of animal students watching from the long tables in the background."
+        },
+        {
+          "id": "p06b",
+          "at": 1,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). Professor Otto gently lowers the Hat onto Marcel's head with his talons; the Hat is far too big and slides down over one eye."
+        },
+        {
+          "id": "p06c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); the Hat (an old, patched, pointed wizard hat with a crease that looks like a mouth). Close-up: the Hat on Marcel's head, its crease bent like a speaking mouth, Marcel's one visible eye looking up nervously."
+        },
+        {
+          "id": "p06d",
+          "at": 4,
+          "prompt": "A long table at the side of the hall where a row of different animal students, cats, a badger and a sheep, sleep with their heads on the table, while the animals at the other tables cheer."
+        }
+      ],
+      "next": "p07"
     },
-    "h06b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A cosy vaulted cellar room in the castle, filled by one gigantic woven basket with soft blankets. Marcel and Bruno lie curled up asleep in the basket among the blankets, while Hazel sits wide awake on the rim, reading an old book by the light of a single candle. Soft warm candlelight, sleepy and peaceful.",
-      "text": "Huis Dutje woont in de kelder, in één reusachtige mand waarin iedereen twintig uur per dag slaapt. Ik voelde me meteen thuis. Op mijn eerste avond leerde ik mijn allereerste spreuk, al werd ik pas wakker toen de les al lang voorbij was. Hazel was hier per ongeluk beland, en zij was de enige die wakker bleef. Zij had intussen ontdekt dat er in het kasteel iets verborgen lag: de Steen der Brokjes, die ervoor zorgt dat je etensbak nooit, maar dan ook nooit meer leeg raakt.",
-      "narration": "House Nap lives in the cellar, in one gigantic basket where everyone sleeps twenty hours a day. I felt at home straight away. On my first evening I learned my very first spell, although I only woke up long after the lesson had ended. Hazel had ended up here by accident, and she was the only one who stayed awake. She had discovered that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.",
-      "motion": "in",
-      "look": "warm",
-      "next": "h07"
+    "p07": {
+      "mood": "thuis",
+      "text": "Huis Dutje woont in de kelder, in één reusachtige mand waar iedereen twintig uur per dag slaapt. Ik voelde me meteen thuis. In mijn eerste les liet ik een sok zweven, wat volgens mij een record was. Hazel vond het matig. Zij had intussen in een stoffig boek ontdekt dat er in het kasteel iets verborgen lag: de Steen der Brokjes, die ervoor zorgt dat je etensbak nooit, maar dan ook nooit meer leeg raakt.",
+      "narration": "House Nap lives in the cellar, in one gigantic basket where everyone sleeps twenty hours a day. I felt at home straight away. In my first lesson I made a sock float, which I believe was a record. Hazel was not impressed. She had discovered in a dusty book that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.",
+      "shots": [
+        {
+          "id": "p07a",
+          "at": 0,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vaulted castle cellar filled by one gigantic woven basket with soft blankets, where many cats and small animals sleep in a cosy heap; Bruno already snores among them. Warm candlelight."
+        },
+        {
+          "id": "p07b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel curled up blissfully in the giant basket, eyes closed, glasses slightly askew, a happy smile."
+        },
+        {
+          "id": "p07c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). An old classroom with wooden desks: Marcel, one paw raised, makes a single striped sock float in the air, glowing faintly; he looks extremely proud."
+        },
+        {
+          "id": "p07d",
+          "at": 3,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel by candlelight, pointing at the page of an old book that shows a drawing of a small glowing red stone shaped like a piece of cat kibble. No readable writing."
+        }
+      ],
+      "next": "p08"
     },
-    "h07": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). Daytime above a green castle lawn surrounded by tall wooden stands. Marcel flies on an old wooden broomstick high in the air, leaning forward, mouth snapping at a tiny glittering golden fly just in front of his nose. Far in the background, on top of a dark stone tower, the small silhouette of Corvus watches. Dynamic, motion blur, bright sky.",
-      "text": "Op zaterdag speelden we Vliegvangen, de populairste sport van de school, op bezems, hoog boven het grasveld. Het doel: de Gouden Vlieg vangen, een minuscuul glinsterend beestje dat sneller is dan een gedachte. Ik had nog nooit op een bezem gezeten. Maar ik had wel jaren ervaring met vliegen vangen. Ik ving hem in drie seconden, met mijn mond, en het hele stadion ontplofte. Alleen ik zag het, hoog op de noordtoren: een zwarte vogel die alles bekeek.",
-      "narration": "On Saturday we played Flycatch, the most popular sport at the school, on broomsticks, high above the lawn. The goal: catch the Golden Fly, a tiny glittering creature faster than a thought. I had never sat on a broomstick before. But I did have years of experience catching flies. I caught it in three seconds, with my mouth, and the whole stadium exploded. Only I saw it, high on the north tower: a black bird watching everything.",
-      "motion": "zoom",
-      "next": "h07s"
+    "p08": {
+      "mood": "avontuur",
+      "text": "Op zaterdag speelden we Vliegvangen, op bezems, hoog boven het grasveld. Ik had nog nooit op een bezem gezeten, en dat was te zien. Toen zoemde de Gouden Vlieg langs mijn neus, het snelste beestje van de wereld. Maar ik heb jaren ervaring met vliegen. Ik ving hem in drie seconden, met mijn mond, en het hele stadion ontplofte. Alleen ik zag het: hoog op de noordtoren zat een zwarte vogel, die alles bekeek.",
+      "narration": "On Saturday we played Flycatch, on broomsticks, high above the lawn. I had never sat on a broomstick before, and it showed. Then the Golden Fly buzzed past my nose, the fastest creature in the world. But I have years of experience with flies. I caught it in three seconds, with my mouth, and the whole stadium exploded. Only I saw it: high on the north tower sat a black bird, watching everything.",
+      "shots": [
+        {
+          "id": "p08a",
+          "at": 0,
+          "prompt": "Wide shot on a bright day: a green castle lawn surrounded by tall wooden stands full of cheering animals; several cats on old broomsticks hover high in the air."
+        },
+        {
+          "id": "p08b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel clinging upside down underneath a wobbling broomstick in mid-air, glasses askew, panicking, blue sky behind him."
+        },
+        {
+          "id": "p08c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Extreme close-up: a tiny glittering golden fly zooms past Marcel's nose, his eyes crossing behind his glasses to follow it."
+        },
+        {
+          "id": "p08d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel back on top of the broomstick, triumphant, the tiny golden fly between his teeth, the stands behind him erupting in cheers, motion blur."
+        },
+        {
+          "id": "p08e",
+          "at": 5,
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). A dark stone castle tower against the bright sky; on its very top sits the small silhouette of Corvus, watching."
+        }
+      ],
+      "next": "p09"
     },
-    "h07s": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A forgotten, dusty classroom in the castle at night, silver moonlight through a tall window. Marcel sits in front of a tall, ornate old mirror with a carved golden frame. In the mirror, instead of the dark room, there is a sunny dream: a golden food bowl overflowing with kibble, and Marcel curled up in a warm sunbeam with Hazel and Bruno beside him. Professor Otto perches on a dusty desk next to the real Marcel. Dreamy and bittersweet.",
-      "text": "Die nacht kon ik niet slapen, wat voor een kat echt uitzonderlijk is. Ik dwaalde door het kasteel en vond, in een vergeten lokaal, een grote oude spiegel. Daarin zag ik niet mezelf, maar wat ik het allerliefste wilde: een etensbak die nooit leeg raakt, een eeuwige zonnestraal, en Hazel en Bruno naast me. Ik had er de hele nacht kunnen blijven zitten. Toen landde Professor Otto naast me en zei zacht dat een volle buik nog geen gelukkig hart is. Ik begreep er niets van. Toen nog niet.",
-      "narration": "That night I couldn't sleep, which for a cat is truly exceptional. I wandered through the castle and found, in a forgotten classroom, a large old mirror. In it I didn't see myself, but what I wanted most of all: a food bowl that never runs empty, an eternal sunbeam, and Hazel and Bruno beside me. I could have sat there all night. Then Professor Otto landed next to me and said softly that a full belly is not the same as a happy heart. I didn't understand a word of it. Not yet.",
-      "motion": "in",
-      "look": "warm",
-      "next": "h08"
+    "p09": {
+      "mood": "mysterie",
+      "text": "Die nacht kon ik niet slapen, wat voor een kat echt uitzonderlijk is. In een vergeten lokaal vond ik een oude spiegel. Ik zag er niet mezelf in, maar wat ik het allerliefste wilde: een etensbak die nooit leeg raakt, een eeuwige zonnestraal, en Hazel en Bruno naast me. Professor Otto landde naast me en zei zacht dat een volle buik nog geen gelukkig hart is. Ik begreep er niets van. Toen nog niet.",
+      "narration": "That night I couldn't sleep, which for a cat is truly exceptional. In a forgotten classroom, I found an old mirror. I didn't see myself in it, but what I wanted most of all: a food bowl that never runs empty, an eternal sunbeam, and Hazel and Bruno beside me. Professor Otto landed next to me and said softly that a full belly is not the same as a happy heart. I didn't understand a word of it. Not yet.",
+      "shots": [
+        {
+          "id": "p09a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel walking alone down a long moonlit castle corridor at night, his long shadow on the stone floor, curious."
+        },
+        {
+          "id": "p09b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dusty forgotten classroom: a tall ornate mirror with a carved golden frame, a white sheet half pulled off it. Marcel sits in front of it, looking up. Silver moonlight."
+        },
+        {
+          "id": "p09c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The mirror's reflection shows a sunny dream instead of the dark room: a golden bowl overflowing with kibble, and Marcel curled up in a warm sunbeam with Hazel and Bruno beside him. The real Marcel sits in front of the mirror in the dark."
+        },
+        {
+          "id": "p09d",
+          "at": 3,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Professor Otto perches on a dusty desk beside Marcel in the moonlight, both looking at the mirror, Otto with a gentle, wise expression."
+        }
+      ],
+      "next": "p10"
     },
-    "h08": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa). A dark stone corridor lit by a single torch. In the middle of the room the giant hamster sits on a wooden trapdoor in the floor, happily tickling the belly of Bruno, who lies on his back in front of it. Marcel and Hazel peek in from the doorway, amazed. Moody torchlight, comedic.",
-      "text": "Die nacht sleepte Hazel ons mee naar de verboden gang op de derde verdieping. Achter een deur lag een luik in de vloer, en op dat luik zat een hamster. Een gigantische hamster, zo groot als een zetel, met wangen vol geheimen. Volgens Hazel lag de steen daaronder. Bruno rolde zich meteen op zijn rug, en de hamster, totaal ontwapend, begon zijn buik te kriebelen.",
-      "narration": "That night, Hazel dragged us to the forbidden corridor on the third floor. Behind a door was a trapdoor in the floor, and on that trapdoor sat a hamster. A gigantic hamster, as big as a sofa, with cheeks full of secrets. According to Hazel, the stone lay beneath it. Bruno immediately rolled onto his back, and the hamster, completely disarmed, started tickling his belly.",
-      "motion": "left",
-      "next": "h09"
+    "p10": {
+      "mood": "mysterie",
+      "text": "De nacht daarna sleepte Hazel ons mee naar de verboden gang op de derde verdieping. Achter een zware deur lag een luik in de vloer. En op dat luik zat een hamster. Een gigantische hamster, zo groot als een zetel, met wangen vol geheimen. Bruno rolde zich meteen op zijn rug, en de hamster, totaal ontwapend, begon zijn buik te kriebelen.",
+      "narration": "The next night, Hazel dragged us to the forbidden corridor on the third floor. Behind a heavy door was a trapdoor in the floor. And on that trapdoor sat a hamster. A gigantic hamster, as big as a sofa, with cheeks full of secrets. Bruno immediately rolled onto his back, and the hamster, completely disarmed, started tickling his belly.",
+      "shots": [
+        {
+          "id": "p10a",
+          "at": 0,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Hazel leads Marcel and Bruno on tiptoe down a dark castle corridor, holding up a tiny candle, all three looking around nervously."
+        },
+        {
+          "id": "p10b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A heavy old wooden door creaks open; warm torchlight spills out onto Marcel, Hazel and Bruno, who peek in."
+        },
+        {
+          "id": "p10c",
+          "at": 2,
+          "prompt": "Characters in this shot: the giant hamster (a gigantic fluffy golden hamster, as big as a sofa). In a dark stone room, the giant hamster sits on a wooden trapdoor in the floor, cheeks bulging, staring at the intruders. The giant hamster is truly as big as a sofa."
+        },
+        {
+          "id": "p10d",
+          "at": 4,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); the giant hamster (a gigantic fluffy golden hamster, as big as a sofa); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies on his back while the giant hamster happily tickles his belly with one paw; Marcel and Hazel watch from the doorway in disbelief."
+        }
+      ],
+      "next": "p11"
     },
-    "h09": {
-      "prompt": "Characters in this scene: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The dark stone corridor. Corvus perches on a high stone arch above them, wings half spread, eyes glinting in the torchlight. Below, Marcel stands bravely in front of Hazel and Bruno, his fur slightly raised. A single black feather drifts down through the air. Cold blue shadows, ominous.",
-      "text": "Toen hoorde ik vleugels boven ons, en een koude stem uit het donker. Corvus, de raaf, ooit de beste leerling van Whiskerwood en nu de meest gevreesde. Hij wil de Steen der Brokjes, niet om zelf te eten, maar om alle etensbakken ter wereld voor altijd leeg te maken, behalve de zijne. Voor zonsopgang is hij terug, zei hij, en dan neemt hij hem mee. Toen was hij weg, en bleef er alleen een zwarte veer over.",
-      "narration": "Then I heard wings above us, and a cold voice from the dark. Corvus, the raven, once the best student at Whiskerwood and now the most feared. He wants the Kibble Stone, not to eat himself, but to make every food bowl in the world empty forever, except his own. He would be back before sunrise, he said, and then he would take it. Then he was gone, and only a black feather remained.",
-      "motion": "in",
-      "sfx": "sting",
-      "choice": {
-        "prompt": "Wat doe je?",
-        "options": [
-          {
-            "label": "Waarschuw Professor Otto",
-            "next": "h10a"
-          },
-          {
-            "label": "Ga zelf door het luik",
-            "next": "h10b"
-          }
-        ],
-        "default": 0
-      }
+    "p11": {
+      "mood": "gevaar",
+      "text": "Toen hoorde ik vleugels boven ons. Corvus, de raaf, ooit de beste leerling van Whiskerwood en nu de meest gevreesde. Ik wil de Steen der Brokjes, fluisterde hij, niet om zelf op te eten, maar om alle etensbakken ter wereld voor altijd leeg te maken, behalve de mijne. Voor zonsopgang kom ik hem halen. En weg was hij, met achterlating van één zwarte veer.",
+      "narration": "Then I heard wings above us. Corvus, the raven, once the best student at Whiskerwood and now the most feared. I want the Kibble Stone, he whispered, not to eat it myself, but to make every food bowl in the world empty forever, except mine. Before sunrise, I will come for it. And he was gone, leaving behind a single black feather.",
+      "shots": [
+        {
+          "id": "p11a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno look up in fear at the dark vaulted ceiling of the stone room; the shadow of large wings passes over them."
+        },
+        {
+          "id": "p11b",
+          "at": 1,
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Corvus perched on a high stone arch, wings half spread, eyes glinting in the torchlight, menacing."
+        },
+        {
+          "id": "p11c",
+          "at": 2,
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Close-up of Corvus's sharp beak and piercing eye, as if whispering a secret, cold blue light."
+        },
+        {
+          "id": "p11d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A single black feather drifts down through the torchlight and lands on the stone floor right in front of Marcel's paws."
+        }
+      ],
+      "next": "p12"
     },
-    "h10a": {
-      "prompt": "Characters in this scene: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A round tower study full of old books, brass instruments and a large painting of a very old cat on the wall. Professor Otto sleeps on a wooden perch, eyes closed. Below him Marcel calls up to him, Hazel knocks on the perch and Bruno barks, a little dust falling from the ceiling. Warm candlelight, comedic.",
-      "text": "We renden naar de werkkamer van Professor Otto, helemaal boven in de toren. Hij zat op zijn stok, ogen dicht, en snurkte zachtjes onder een schilderij van een heel oude kat. Ik riep zijn naam. Hazel klopte op zijn stok. Bruno blafte zo hard dat er stof van het plafond viel. Professor Otto opende één oog, zei dat uilen 's nachts werken maar niet op dinsdag, en sliep verder.",
-      "narration": "We ran to Professor Otto's study, right at the top of the tower. He sat on his perch, eyes closed, softly snoring beneath a painting of a very old cat. I called his name. Hazel knocked on his perch. Bruno barked so loudly that dust fell from the ceiling. Professor Otto opened one eye, said that owls work at night but not on Tuesdays, and went back to sleep.",
-      "motion": "right",
-      "look": "warm",
-      "next": "h11a"
+    "p12": {
+      "mood": "grappig",
+      "text": "We renden naar Professor Otto, helemaal boven in de toren. Hij sliep. Ik riep, Hazel klopte, en Bruno blafte zo hard dat het stof van het plafond viel. Professor Otto opende één oog, mompelde dat uilen 's nachts werken, maar niet op dinsdag, en sliep verder. Het was dinsdag. Dan maar zelf.",
+      "narration": "We ran to Professor Otto, right at the top of the tower. He was asleep. I called, Hazel knocked, and Bruno barked so loudly that dust fell from the ceiling. Professor Otto opened one eye, mumbled that owls work at night, but not on Tuesdays, and went back to sleep. It was Tuesday. We would have to do it ourselves.",
+      "shots": [
+        {
+          "id": "p12a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno race up a narrow spiral stone staircase, motion blur, torchlight."
+        },
+        {
+          "id": "p12b",
+          "at": 1,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). A round tower study full of old books, brass instruments and a painting of a very old cat; Professor Otto sleeps on his wooden perch, eyes closed."
+        },
+        {
+          "id": "p12c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Marcel calls up, Hazel knocks on the perch and Bruno barks, a little dust falling from the ceiling, while Professor Otto sleeps on."
+        },
+        {
+          "id": "p12d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel, Hazel and Bruno look at each other with determination in the doorway of the study; Professor Otto still asleep in the background."
+        }
+      ],
+      "next": "p13"
     },
-    "h11a": {
-      "prompt": "Characters in this scene: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A deep stone chamber at dawn, pale light falling from a high window. In the middle stands an empty stone pedestal. Marcel, Hazel, Bruno and Professor Otto stare at it in shock from the bottom of a stone staircase. Cold early-morning light, dust in the air.",
-      "text": "Pas toen de eerste vogels begonnen te fluiten, werd Professor Otto echt wakker. We vlogen, renden en rolden naar de derde verdieping. De gigantische hamster lag te slapen met een lege zak zonnebloempitten op zijn buik, een klassieke afleidingstruc. Het luik stond open. En helemaal beneden, in de laatste kamer, stond een sokkel waarop niets meer lag.",
-      "narration": "Only when the first birds began to sing did Professor Otto really wake up. We flew, ran and rolled to the third floor. The gigantic hamster was asleep with an empty bag of sunflower seeds on its belly, a classic distraction. The trapdoor stood open. And far below, in the last room, stood a pedestal with nothing on it anymore.",
-      "motion": "in",
-      "next": "h12a"
+    "p13": {
+      "mood": "avontuur",
+      "text": "We kropen langs de hamster, die Bruno's buik nog altijd miste, en sprongen door het luik. Beneden fladderde een zwerm brokjes met vleugeltjes door de lucht. Honderden. Maar één ervan was de sleutel naar de volgende deur, zei Hazel: het brokje met de gebroken vleugel. Ik sprong, ik draaide, ik viel bijna, en ik ving het, zoals de Gouden Vlieg.",
+      "narration": "We crept past the hamster, who was still missing Bruno's belly, and jumped through the trapdoor. Below, a swarm of kibble with tiny wings fluttered through the air. Hundreds. But only one of them was the key to the next door, Hazel said: the piece with the broken wing. I jumped, I twisted, I almost fell, and I caught it, just like the Golden Fly.",
+      "shots": [
+        {
+          "id": "p13a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Seen from below: Marcel, Hazel and Bruno jump one after another through an open wooden trapdoor into the darkness."
+        },
+        {
+          "id": "p13b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A tall stone chamber where hundreds of pieces of cat kibble with tiny feathered wings flutter through the air like a flock of birds; the three friends look up in awe."
+        },
+        {
+          "id": "p13c",
+          "at": 3,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books). Close-up of Hazel pointing up at one single winged piece of kibble with a bent, broken wing."
+        },
+        {
+          "id": "p13d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel leaping high through the fluttering swarm, mouth open, catching the one winged piece of kibble, dynamic action."
+        }
+      ],
+      "next": "p14"
     },
-    "h12a": {
-      "prompt": "Characters in this scene: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). Sunrise seen through a tall arched castle window. Outside, Corvus flies away into the pink sky with a small red glowing stone in his beak. Inside, on the stone windowsill, Marcel and Professor Otto watch him go, defeated. Golden-pink dawn light, bittersweet.",
-      "text": "Door het raam zagen we hem nog wegvliegen: Corvus, met een rood gloeiend brokje in zijn snavel. Professor Otto zuchtte diep en zei dat elke goede tovenaar minstens één keer te laat komt. Die ochtend, overal ter wereld, keken katten verbaasd naar hun etensbak. Leeg. Bruno huilde. Ik ook, een beetje, maar dan stoer.",
-      "narration": "Through the window, we could still see him flying away: Corvus, with a red glowing piece of kibble in his beak. Professor Otto sighed deeply and said that every good wizard is late at least once. That morning, all over the world, cats stared at their food bowls in surprise. Empty. Bruno cried. So did I, a little, but in a tough way.",
-      "motion": "out",
-      "ending": {
-        "id": "A",
-        "title": "Te laat"
-      },
-      "next": "h15"
+    "p14": {
+      "mood": "avontuur",
+      "text": "De volgende kamer was een reusachtig schaakbord, met stenen katten zo groot als kasten. We moesten meespelen. Bruno werd een paard, Hazel een toren en ik de koning, wat ik niet meer dan logisch vond. Om te winnen moest iemand zich opofferen. Bruno stapte naar voren, zei met trillende stem dat we zonder hem verder moesten, en viel dramatisch om. Twee seconden later lag hij te snurken.",
+      "narration": "The next room was an enormous chessboard, with stone cats as big as wardrobes. We had to play along. Bruno became a knight, Hazel a castle, and I the king, which I found only logical. To win, someone had to sacrifice themselves. Bruno stepped forward, said in a trembling voice that we had to go on without him, and dramatically fell over. Two seconds later he was snoring.",
+      "shots": [
+        {
+          "id": "p14a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vast dark hall with a giant chessboard floor and huge stone cat statues as chess pieces; the three friends stand tiny at the edge of the board."
+        },
+        {
+          "id": "p14b",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). Marcel stands proudly on a chess square, chin up like a king; Hazel and Bruno stand on other squares, huge stone cat pieces towering around them."
+        },
+        {
+          "id": "p14c",
+          "at": 4,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). Bruno lies dramatically on his back on a chess square, one paw on his chest, as if fallen in battle; Marcel and Hazel look on, moved."
+        },
+        {
+          "id": "p14d",
+          "at": 5,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears). Close-up of Bruno fast asleep and snoring on the chessboard, ears spread out, a peaceful smile."
+        }
+      ],
+      "next": "p15"
     },
-    "h10b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A tall stone chamber where hundreds of pieces of cat kibble with tiny feathered wings flutter through the air like a flock of birds. Marcel leaps high, mouth open, towards one winged piece. Hazel points from below and Bruno chases the others. Magical and dynamic, warm torchlight.",
-      "text": "We kropen langs de hamster en sprongen door het luik. Beneden fladderde er een zwerm brokjes met vleugeltjes door de lucht, honderden, en maar één ervan was de sleutel naar de volgende deur. Hazel zei dat ik moest zoeken naar het brokje met een gebroken vleugel. Ik zag het meteen. Ik sprong, ik draaide, ik viel bijna, en ik ving het, met mijn tanden, zoals de Gouden Vlieg.",
-      "narration": "We crept past the hamster and jumped through the trapdoor. Below, a swarm of kibble with tiny wings fluttered through the air, hundreds of them, and only one was the key to the next door. Hazel said I had to look for the piece with a broken wing. I spotted it at once. I jumped, I twisted, I almost fell, and I caught it, with my teeth, just like the Golden Fly.",
-      "motion": "zoom",
-      "next": "h11b"
+    "p15": {
+      "mood": "gevaar",
+      "text": "In de laatste gang sloegen paarse vlammen op, voor en achter ons. Op een tafel stonden zeven flesjes en een raadsel. Hazel dacht vier seconden na en wees het kleinste flesje aan. Er was maar genoeg voor één. Ze gaf het aan mij en zei dat ze toch te klein was voor heldendaden. Het smaakte naar tonijn en moed, en ik liep dwars door het vuur.",
+      "narration": "In the last corridor, purple flames rose up in front of us and behind us. On a table stood seven little bottles and a riddle. Hazel thought for four seconds and pointed at the smallest bottle. There was only enough for one. She handed it to me and said she was too small for heroics anyway. It tasted of tuna and courage, and I walked straight through the fire.",
+      "shots": [
+        {
+          "id": "p15a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). A narrow stone passage where walls of purple magical flames rise on both sides of Marcel and Hazel."
+        },
+        {
+          "id": "p15b",
+          "at": 1,
+          "prompt": "Close-up of a small wooden table with seven tiny glass bottles of different shapes and colours, lit by purple firelight."
+        },
+        {
+          "id": "p15c",
+          "at": 2,
+          "prompt": "Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Hazel holds up the smallest bottle to Marcel, both lit by purple firelight, a tender moment."
+        },
+        {
+          "id": "p15d",
+          "at": 5,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel walks bravely straight through a wall of purple flames, unharmed, his glasses reflecting the fire."
+        }
+      ],
+      "next": "p16"
     },
-    "h11b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). A vast dark hall with a giant chessboard floor and huge stone cat statues as chess pieces. Bruno lies dramatically on his back on one of the squares, eyes closed, as if fallen in battle. Marcel and Hazel stand on the board looking at him, moved. Dramatic torchlight, long shadows.",
-      "text": "De volgende kamer was een reusachtig schaakbord met stenen katten, zo groot als kasten. Wij moesten meespelen. Bruno werd een paard, Hazel een toren en ik de koning, wat ik eerlijk gezegd niet meer dan logisch vond. Om te winnen moest iemand zich opofferen. Bruno stapte naar voren, zei met trillende stem dat we zonder hem verder moesten gaan, en viel dramatisch om. Twee seconden later lag hij te snurken.",
-      "narration": "The next room was an enormous chessboard with stone cats as big as wardrobes. We had to play along. Bruno became a knight, Hazel a castle and I the king, which, to be honest, I found only logical. To win, someone had to sacrifice themselves. Bruno stepped forward, said in a trembling voice that we had to go on without him, and dramatically fell over. Two seconds later he was snoring.",
-      "motion": "left",
-      "next": "h12b"
+    "p16": {
+      "mood": "gevaar",
+      "text": "Achter het vuur lag de Steen der Brokjes op een sokkel, rood gloeiend, warm als een zonnige vensterbank. Ik nam hem in mijn poot. Op dat moment landde Corvus voor me, zijn vleugels wijd, zijn ogen als twee zwarte knikkers. Geef hem aan mij, fluisterde hij, en je krijgt een eigen etensbak, van goud, voor altijd. Een etensbak die nooit leeg raakt. Precies wat ik in de spiegel had gezien.",
+      "narration": "Behind the fire, the Kibble Stone lay on a pedestal, glowing red, warm as a sunny windowsill. I took it in my paw. At that moment Corvus landed in front of me, wings spread wide, eyes like two black marbles. Give it to me, he whispered, and you will have your own food bowl, made of gold, forever. A food bowl that never runs empty. Exactly what I had seen in the mirror.",
+      "shots": [
+        {
+          "id": "p16a",
+          "at": 0,
+          "prompt": "A round stone chamber: on a stone pedestal lies a small stone shaped like a piece of cat kibble, glowing warm red and lighting up the dark room."
+        },
+        {
+          "id": "p16b",
+          "at": 1,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's paw resting on the small glowing red stone, red light on his whiskers and glasses."
+        },
+        {
+          "id": "p16c",
+          "at": 2,
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Corvus lands in front of Marcel with his wings spread wide, menacing, lit red from below by the glowing stone."
+        },
+        {
+          "id": "p16d",
+          "at": 4,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel's face, torn and tempted, the red glow of the stone on his fur and the reflection of a golden bowl in his glasses."
+        }
+      ],
+      "next": "p17"
     },
-    "h12b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Hazel (a small hedgehog who always carries a tiny stack of old books). A narrow stone passage with a wall of purple magical flames. On a small wooden table stand seven tiny glass bottles of different shapes. Hazel holds up the smallest bottle to Marcel, who looks determined. Purple and golden firelight on their faces.",
-      "text": "In de laatste gang stonden zeven flesjes op een tafel, en achter ons sloegen paarse vlammen op. Hazel las het raadsel, dacht vier seconden na en wees het kleinste flesje aan. Er was maar genoeg voor één. Ze gaf het aan mij en zei dat ze toch al te klein was voor heldendaden. Ik dronk het op. Het smaakte naar tonijn en moed, en ik liep dwars door het vuur.",
-      "narration": "In the last corridor, seven little bottles stood on a table, and purple flames rose up behind us. Hazel read the riddle, thought for four seconds, and pointed at the smallest bottle. There was only enough for one. She handed it to me and said she was too small for heroics anyway. I drank it. It tasted of tuna and courage, and I walked straight through the fire.",
-      "motion": "in",
-      "next": "h13b"
+    "p17": {
+      "mood": "triomf",
+      "text": "Maar toen dacht ik aan Hazel, die me haar flesje gaf. Aan Bruno, snurkend op een schaakbord. Een volle buik is nog geen gelukkig hart. Ik draaide me om en rende, met de steen in mijn mond en Corvus vlak achter me, door het vuur, over het schaakbord, het luik uit. Daar stond Professor Otto, klaarwakker. Hij spreidde zijn vleugels en liet één oehoe horen, zo krachtig dat Corvus door het raam de nacht in werd geblazen.",
+      "narration": "But then I thought of Hazel, who gave me her bottle. Of Bruno, snoring on a chessboard. A full belly is not the same as a happy heart. I turned and ran, with the stone in my mouth and Corvus right behind me, through the fire, across the chessboard, out of the trapdoor. There stood Professor Otto, wide awake. He spread his wings and let out a single hoot, so powerful that Corvus was blown out of the window into the night.",
+      "shots": [
+        {
+          "id": "p17a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel with his eyes closed, remembering; in a soft, dreamy glow around him, faint memories of Hazel holding up a bottle and Bruno asleep. Warm golden light."
+        },
+        {
+          "id": "p17b",
+          "at": 3,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). Marcel sprints across the giant chessboard with the glowing red stone in his mouth, Corvus swooping right behind him, dynamic motion blur."
+        },
+        {
+          "id": "p17c",
+          "at": 4,
+          "prompt": "Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). In a torchlit corridor, Professor Otto stands wide awake with his huge wings spreading; Marcel skids to a stop in front of him."
+        },
+        {
+          "id": "p17d",
+          "at": 5,
+          "prompt": "Characters in this shot: Corvus (a large, glossy black raven with piercing eyes). Corvus tumbling backwards out of an open arched window into the night sky, black feathers flying, blasted by a powerful gust of wind."
+        }
+      ],
+      "next": "p18"
     },
-    "h13b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). A round stone chamber. Marcel stands beside a stone pedestal, one paw on a small kibble-shaped stone that glows with a warm red light, lighting up his face and whiskers. Corvus has just landed in front of him, wings spread wide, menacing. Dramatic red glow against deep shadows.",
-      "text": "Achter het vuur lag de Steen der Brokjes op een sokkel, rood gloeiend, warm als een zonnige vensterbank. Ik nam hem in mijn poot. Op datzelfde moment landde Corvus voor me, zijn vleugels wijd, zijn ogen als twee zwarte knikkers. Geef hem aan mij, fluisterde hij, en je krijgt een eigen etensbak, van goud, voor altijd. Professor Otto was ver weg. Het was aan mij.",
-      "narration": "Behind the fire, the Kibble Stone lay on a pedestal, glowing red, warm as a sunny windowsill. I took it in my paw. At that very moment Corvus landed in front of me, wings spread wide, eyes like two black marbles. Give it to me, he whispered, and you will have your own food bowl, made of gold, forever. Professor Otto was far away. It was up to me.",
-      "motion": "in",
-      "sfx": "sting",
-      "choice": {
-        "prompt": "Wat doe je met de steen?",
-        "options": [
-          {
-            "label": "Eet de Steen der Brokjes op",
-            "next": "h14b"
-          },
-          {
-            "label": "Ren ermee naar Professor Otto",
-            "next": "h14c"
-          }
-        ],
-        "default": 1
-      }
+    "p18": {
+      "mood": "triomf",
+      "text": "Die avond was er een feestmaal in de grote zaal, met vis, taart en bergen brokjes. Huis Dutje won voor het eerst in duizend jaar de beker. Ze sliepen er allemaal doorheen. Bruno had taart op zijn neus, Hazel las een boek over mij, en ik mocht naast Professor Otto zitten. De steen bewaren we voortaan in de kelder, onder de mand, waar niemand ooit wakker genoeg is om hem te stelen. Ik was geen gewone kat meer.",
+      "narration": "That evening there was a feast in the great hall, with fish, cake and mountains of kibble. House Nap won the cup for the first time in a thousand years. They slept through all of it. Bruno had cake on his nose, Hazel read a book about me, and I got to sit next to Professor Otto. From now on, the stone is kept in the cellar, under the basket, where nobody is ever awake enough to steal it. I was no ordinary cat anymore.",
+      "shots": [
+        {
+          "id": "p18a",
+          "at": 0,
+          "prompt": "The great hall with hundreds of floating candles during a festive feast: long tables full of fish, cakes and bowls of kibble, many animal students celebrating."
+        },
+        {
+          "id": "p18b",
+          "at": 1,
+          "prompt": "A large golden cup on a long table, surrounded by animal students fast asleep with their heads on the table."
+        },
+        {
+          "id": "p18c",
+          "at": 3,
+          "prompt": "Characters in this shot: Bruno (a clumsy, cheerful basset hound puppy with very long ears); Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). At the head table: Bruno with cake on his nose and Hazel reading a little book, next to Marcel, who sits proudly beside Professor Otto."
+        },
+        {
+          "id": "p18d",
+          "at": 5,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel, content and proud, candlelight reflected in his glasses, a small smile."
+        }
+      ],
+      "next": "p19"
     },
-    "h14b": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes). The round stone chamber in soft morning light. Marcel lies blissfully on his back on the floor with a round, full belly, paws in the air, glowing faintly red from within, a happy silly face, his glasses askew. Professor Otto stands beside him, looking down, unimpressed. Warm and comedic.",
-      "text": "Ik deed wat elke kat zou doen. Ik at hem op. Corvus krijste, want wat je opeet, kan niemand meer stelen. Een warme gloed trok door mijn hele lijf, en mijn buik voelde vol, echt vol, voor het eerst in mijn leven. Professor Otto vond me de volgende ochtend, op mijn rug, gelukkig, en niet in staat om te bewegen. Ik zou nooit meer honger hebben. Wat eerlijk gezegd ook een beetje saai bleek.",
-      "narration": "I did what any cat would do. I ate it. Corvus screeched, because what you have eaten, nobody can steal. A warm glow spread through my whole body, and my belly felt full, truly full, for the first time in my life. Professor Otto found me the next morning, on my back, happy, and unable to move. I would never be hungry again. Which, to be honest, also turned out to be a bit boring.",
-      "motion": "out",
-      "look": "warm",
-      "ending": {
-        "id": "B",
-        "title": "Eeuwig verzadigd"
-      },
-      "next": "h15"
-    },
-    "h14c": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Hazel (a small hedgehog who always carries a tiny stack of old books); Bruno (a clumsy, cheerful basset hound puppy with very long ears). The great hall with floating candles during a festive evening feast. Long tables full of fish, cake and bowls of kibble. Marcel sits proudly at the head table next to Professor Otto, with Hazel and Bruno beside them, Bruno with cake on his nose. A large golden cup stands on the table. Warm, joyful golden light, celebration.",
-      "text": "Ik draaide me om en rende, met de steen in mijn mond en Corvus vlak achter me. Door het vuur, over het schaakbord, langs de snurkende Bruno, het luik uit. Daar, in de gang, stond Professor Otto, klaarwakker, alsof hij al die tijd had gewacht. Hij spreidde zijn vleugels en liet één enkele oehoe horen, zo krachtig dat Corvus door het raam terug de nacht in werd geblazen. Die avond kreeg ons huis de beker, at de hele school taart, en mocht ik naast Professor Otto zitten. Ik was geen gewone kat meer.",
-      "narration": "I turned around and ran, with the stone in my mouth and Corvus right behind me. Through the fire, across the chessboard, past the snoring Bruno, out of the trapdoor. There in the corridor stood Professor Otto, wide awake, as if he had been waiting all along. He spread his wings and let out a single hoot, so powerful that Corvus was blown back out of the window into the night. That evening our house won the cup, the whole school ate cake, and I got to sit next to Professor Otto. I was no ordinary cat anymore.",
-      "motion": "out",
-      "look": "warm",
-      "ending": {
-        "id": "C",
-        "title": "Het feestmaal"
-      },
-      "next": "h15"
-    },
-    "h15": {
-      "prompt": "Characters in this scene: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen at night. The cat flap in the back door glows with a soft golden light. A single cream-coloured envelope with a black raven feather tied to it lies on the floor just inside the flap. Marcel, in the foreground, stares at it from the shadows, eyes wide and glowing. Mysterious, cold blue and warm gold.",
-      "text": "Weken later, thuis, op een gewone dinsdag, lag ik op de vensterbank alsof er nooit iets gebeurd was. Om drie uur 's nachts begon het kattenluik weer te gloeien. Er viel een nieuwe brief door, met een zwarte veer eraan vast. Binnenkort op Marcelflix: Harry Pawter en de Kamer der Krabpalen.",
-      "narration": "Weeks later, at home, on an ordinary Tuesday, I lay on the windowsill as if nothing had ever happened. At three in the morning, the cat flap began to glow again. A new letter fell through, with a black feather attached to it. Coming soon to Marcelflix: Harry Pawter and the Chamber of Scratching Posts.",
-      "motion": "in"
+    "p19": {
+      "mood": "mysterie",
+      "text": "Weken later, thuis, lag ik op de vensterbank alsof er nooit iets gebeurd was. Om drie uur 's nachts begon het kattenluik weer te gloeien. Er viel een nieuwe brief door, met een zwarte veer eraan vast. Binnenkort op Marcelflix: Harry Pawter en de Kamer der Krabpalen.",
+      "narration": "Weeks later, at home, I lay on the windowsill as if nothing had ever happened. At three in the morning, the cat flap began to glow again. A new letter fell through, with a black feather attached to it. Coming soon to Marcelflix: Harry Pawter and the Chamber of Scratching Posts.",
+      "shots": [
+        {
+          "id": "p19a",
+          "at": 0,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel asleep on a sunny living-room windowsill at home, peaceful, his tiny glasses on his nose."
+        },
+        {
+          "id": "p19b",
+          "at": 1,
+          "prompt": "A dark kitchen at night: the cat flap in the back door glows golden again."
+        },
+        {
+          "id": "p19c",
+          "at": 2,
+          "prompt": "Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of a cream-coloured envelope with a black raven feather tied to it, lying on the floor below the glowing cat flap; Marcel's wide eyes shine in the shadows behind it."
+        }
+      ]
     }
   }
 }

@@ -1,132 +1,120 @@
 # Stem: Harry Pawter en de Steen der Brokjes (Engelse vertelstem, Nederlandse ondertitels)
 
-Plak per scène de Engelse tekst in ElevenLabs (zelfde stem en instellingen als The Rookie), download de mp3 en bewaar hem als `<scène-ID>.mp3` in deze map.
-Of stuur ze allemaal in één zip, genummerd in de volgorde hieronder; dan zet ik ze juist en meet ik de ondertiteltiming.
+Eén mp3 per scène (19 in totaal). Plak per scène de Engelse tekst in ElevenLabs (zelfde stem en instellingen als The Rookie) en bewaar hem als `<scène-ID>.mp3`.
+Of stuur ze allemaal in één zip, genummerd 1 tot 19 in de volgorde hieronder; dan zet ik ze juist en meet ik de timing van ondertitels en beelden.
 
-Totaal: 8138 tekens (21 scènes).
+Totaal: 6710 tekens.
 
-## 1. h01.mp3 (328 tekens)
-
-```
-My life was always very simple. Eat, sleep, stare out of the window, and now and then push something off the table to check that gravity still works. Until that one rainy evening, when something tapped on the window. An owl. A real, big owl, with a letter in its beak, looking at me as if it had been searching for me for years.
-```
-
-## 2. h02.mp3 (345 tekens)
+## 1. p01.mp3 (248 tekens)
 
 ```
-The owl let go of the letter right above the litter box. Of course. I fished it out and read the golden words: Dear Mister Marcel, you have been chosen for the Whiskerwood Academy for Magical Cats. At first I thought it was junk mail. But then ten letters flew in through the cat flap, then fifty, and within a minute the whole kitchen was full.
+My life was always very simple. Eat, sleep, and now and then push something off the table, just to check that gravity still works. Until that one rainy evening. Something tapped on the window. An owl, as big as a cushion, with a letter in its beak.
 ```
 
-## 3. h03.mp3 (418 tekens)
+## 2. p02.mp3 (322 tekens)
 
 ```
-When I looked up, the owl was sitting on the kitchen table among the letters, as if he had always been there. He introduced himself as Professor Otto, headmaster of Whiskerwood. He said I was no ordinary cat, but a wizard who simply didn't know how yet. At three in the morning, he said, when every cat in the world suddenly starts running, the cat flap opens into another world. I looked at the clock. Two fifty-nine.
+He dropped the letter right into the litter box. Of course. I fished it out and read the golden words: Dear Mister Marcel, you have been chosen for the Whiskerwood Academy for Magical Cats. Junk mail, I thought. But then ten letters flew in through the cat flap, then fifty, and within a minute the whole kitchen was full.
 ```
 
-## 4. h04.mp3 (446 tekens)
+## 3. p03.mp3 (389 tekens)
 
 ```
-At exactly three o'clock, the cat flap began to glow. I ran, the way every cat runs at that hour, and dived through it. I fell through a tunnel of stars and landed on my feet, of course, in an enormous hall full of floating candles. Next to me stood two other new students. Hazel, a little hedgehog with a pile of books bigger than herself, and Bruno, a basset puppy with ears down to the floor, who immediately asked if there was breakfast here.
+When I looked up, the owl was sitting on the kitchen table, as if he had always been there. Professor Otto, he introduced himself, headmaster of Whiskerwood. You are no ordinary cat, he said, you are a wizard who doesn't know it yet. At three in the morning, when every cat in the world suddenly starts running, the cat flap opens into another world. I looked at the clock. Two fifty-nine.
 ```
 
-## 5. h05.mp3 (339 tekens)
+## 4. p04.mp3 (312 tekens)
 
 ```
-In the middle of the hall, an old, worn hat lay on a stool. Professor Otto placed it on my head, and the hat began to talk into my ear, in a voice like a creaking cupboard. Hmm, it said. Plenty of courage, even more hunger, and a surprising talent for sleeping anywhere. It could not choose between two houses. So it left the choice to me.
+At exactly three o'clock, the cat flap began to glow. I ran, the way every cat runs at that hour, and dived through it. I fell through a tunnel of stars, spun around three times, and landed on my feet. Of course. I was standing in a hall as big as ten houses, with hundreds of candles simply floating in the air.
 ```
 
-## 6. h06a.mp3 (470 tekens)
+## 5. p05.mp3 (338 tekens)
 
 ```
-House Claw lives in the highest tower, where everyone hangs from climbing ropes all day and dares each other to jump from the tallest cupboard. I felt at home straight away. On my first evening I learned my very first spell, and used it to make a sock float with great success. Hazel, who was in the same house, was not impressed. She had discovered that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.
+Next to me, two more new students landed. Hazel, a hedgehog with a pile of books bigger than herself, who immediately told me she had already read every book in the school. And Bruno, a basset puppy with ears down to the floor, who only wanted to know if there was breakfast here. I knew right away: these would be my friends. Or my fans.
 ```
 
-## 7. h06b.mp3 (453 tekens)
+## 6. p06.mp3 (367 tekens)
 
 ```
-House Nap lives in the cellar, in one gigantic basket where everyone sleeps twenty hours a day. I felt at home straight away. On my first evening I learned my very first spell, although I only woke up long after the lesson had ended. Hazel had ended up here by accident, and she was the only one who stayed awake. She had discovered that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.
+In the middle of the hall, an old, worn hat lay on a stool. Professor Otto placed it on my head, and the hat began to talk, in a voice like a creaking cupboard. Hmm, it said. Plenty of courage, even more hunger, and a surprising talent for sleeping anywhere. House Nap, it shouted. The whole hall applauded, except House Nap itself, because they were all fast asleep.
 ```
 
-## 8. h07.mp3 (430 tekens)
+## 7. p07.mp3 (376 tekens)
 
 ```
-On Saturday we played Flycatch, the most popular sport at the school, on broomsticks, high above the lawn. The goal: catch the Golden Fly, a tiny glittering creature faster than a thought. I had never sat on a broomstick before. But I did have years of experience catching flies. I caught it in three seconds, with my mouth, and the whole stadium exploded. Only I saw it, high on the north tower: a black bird watching everything.
+House Nap lives in the cellar, in one gigantic basket where everyone sleeps twenty hours a day. I felt at home straight away. In my first lesson I made a sock float, which I believe was a record. Hazel was not impressed. She had discovered in a dusty book that something was hidden in the castle: the Kibble Stone, which makes sure your food bowl never, ever runs empty again.
 ```
 
-## 9. h07s.mp3 (480 tekens)
+## 8. p08.mp3 (397 tekens)
 
 ```
-That night I couldn't sleep, which for a cat is truly exceptional. I wandered through the castle and found, in a forgotten classroom, a large old mirror. In it I didn't see myself, but what I wanted most of all: a food bowl that never runs empty, an eternal sunbeam, and Hazel and Bruno beside me. I could have sat there all night. Then Professor Otto landed next to me and said softly that a full belly is not the same as a happy heart. I didn't understand a word of it. Not yet.
+On Saturday we played Flycatch, on broomsticks, high above the lawn. I had never sat on a broomstick before, and it showed. Then the Golden Fly buzzed past my nose, the fastest creature in the world. But I have years of experience with flies. I caught it in three seconds, with my mouth, and the whole stadium exploded. Only I saw it: high on the north tower sat a black bird, watching everything.
 ```
 
-## 10. h08.mp3 (372 tekens)
+## 9. p09.mp3 (403 tekens)
 
 ```
-That night, Hazel dragged us to the forbidden corridor on the third floor. Behind a door was a trapdoor in the floor, and on that trapdoor sat a hamster. A gigantic hamster, as big as a sofa, with cheeks full of secrets. According to Hazel, the stone lay beneath it. Bruno immediately rolled onto his back, and the hamster, completely disarmed, started tickling his belly.
+That night I couldn't sleep, which for a cat is truly exceptional. In a forgotten classroom, I found an old mirror. I didn't see myself in it, but what I wanted most of all: a food bowl that never runs empty, an eternal sunbeam, and Hazel and Bruno beside me. Professor Otto landed next to me and said softly that a full belly is not the same as a happy heart. I didn't understand a word of it. Not yet.
 ```
 
-## 11. h09.mp3 (382 tekens)
+## 10. p10.mp3 (336 tekens)
 
 ```
-Then I heard wings above us, and a cold voice from the dark. Corvus, the raven, once the best student at Whiskerwood and now the most feared. He wants the Kibble Stone, not to eat himself, but to make every food bowl in the world empty forever, except his own. He would be back before sunrise, he said, and then he would take it. Then he was gone, and only a black feather remained.
+The next night, Hazel dragged us to the forbidden corridor on the third floor. Behind a heavy door was a trapdoor in the floor. And on that trapdoor sat a hamster. A gigantic hamster, as big as a sofa, with cheeks full of secrets. Bruno immediately rolled onto his back, and the hamster, completely disarmed, started tickling his belly.
 ```
 
-## 12. h10a.mp3 (359 tekens)
+## 11. p11.mp3 (331 tekens)
 
 ```
-We ran to Professor Otto's study, right at the top of the tower. He sat on his perch, eyes closed, softly snoring beneath a painting of a very old cat. I called his name. Hazel knocked on his perch. Bruno barked so loudly that dust fell from the ceiling. Professor Otto opened one eye, said that owls work at night but not on Tuesdays, and went back to sleep.
+Then I heard wings above us. Corvus, the raven, once the best student at Whiskerwood and now the most feared. I want the Kibble Stone, he whispered, not to eat it myself, but to make every food bowl in the world empty forever, except mine. Before sunrise, I will come for it. And he was gone, leaving behind a single black feather.
 ```
 
-## 13. h11a.mp3 (327 tekens)
+## 12. p12.mp3 (315 tekens)
 
 ```
-Only when the first birds began to sing did Professor Otto really wake up. We flew, ran and rolled to the third floor. The gigantic hamster was asleep with an empty bag of sunflower seeds on its belly, a classic distraction. The trapdoor stood open. And far below, in the last room, stood a pedestal with nothing on it anymore.
+We ran to Professor Otto, right at the top of the tower. He was asleep. I called, Hazel knocked, and Bruno barked so loudly that dust fell from the ceiling. Professor Otto opened one eye, mumbled that owls work at night, but not on Tuesdays, and went back to sleep. It was Tuesday. We would have to do it ourselves.
 ```
 
-## 14. h12a.mp3 (334 tekens)
+## 13. p13.mp3 (348 tekens)
 
 ```
-Through the window, we could still see him flying away: Corvus, with a red glowing piece of kibble in his beak. Professor Otto sighed deeply and said that every good wizard is late at least once. That morning, all over the world, cats stared at their food bowls in surprise. Empty. Bruno cried. So did I, a little, but in a tough way.
+We crept past the hamster, who was still missing Bruno's belly, and jumped through the trapdoor. Below, a swarm of kibble with tiny wings fluttered through the air. Hundreds. But only one of them was the key to the next door, Hazel said: the piece with the broken wing. I jumped, I twisted, I almost fell, and I caught it, just like the Golden Fly.
 ```
 
-## 15. h10b.mp3 (362 tekens)
+## 14. p14.mp3 (373 tekens)
 
 ```
-We crept past the hamster and jumped through the trapdoor. Below, a swarm of kibble with tiny wings fluttered through the air, hundreds of them, and only one was the key to the next door. Hazel said I had to look for the piece with a broken wing. I spotted it at once. I jumped, I twisted, I almost fell, and I caught it, with my teeth, just like the Golden Fly.
+The next room was an enormous chessboard, with stone cats as big as wardrobes. We had to play along. Bruno became a knight, Hazel a castle, and I the king, which I found only logical. To win, someone had to sacrifice themselves. Bruno stepped forward, said in a trembling voice that we had to go on without him, and dramatically fell over. Two seconds later he was snoring.
 ```
 
-## 16. h11b.mp3 (386 tekens)
+## 15. p15.mp3 (361 tekens)
 
 ```
-The next room was an enormous chessboard with stone cats as big as wardrobes. We had to play along. Bruno became a knight, Hazel a castle and I the king, which, to be honest, I found only logical. To win, someone had to sacrifice themselves. Bruno stepped forward, said in a trembling voice that we had to go on without him, and dramatically fell over. Two seconds later he was snoring.
+In the last corridor, purple flames rose up in front of us and behind us. On a table stood seven little bottles and a riddle. Hazel thought for four seconds and pointed at the smallest bottle. There was only enough for one. She handed it to me and said she was too small for heroics anyway. It tasted of tuna and courage, and I walked straight through the fire.
 ```
 
-## 17. h12b.mp3 (363 tekens)
+## 16. p16.mp3 (371 tekens)
 
 ```
-In the last corridor, seven little bottles stood on a table, and purple flames rose up behind us. Hazel read the riddle, thought for four seconds, and pointed at the smallest bottle. There was only enough for one. She handed it to me and said she was too small for heroics anyway. I drank it. It tasted of tuna and courage, and I walked straight through the fire.
+Behind the fire, the Kibble Stone lay on a pedestal, glowing red, warm as a sunny windowsill. I took it in my paw. At that moment Corvus landed in front of me, wings spread wide, eyes like two black marbles. Give it to me, he whispered, and you will have your own food bowl, made of gold, forever. A food bowl that never runs empty. Exactly what I had seen in the mirror.
 ```
 
-## 18. h13b.mp3 (348 tekens)
+## 17. p17.mp3 (424 tekens)
 
 ```
-Behind the fire, the Kibble Stone lay on a pedestal, glowing red, warm as a sunny windowsill. I took it in my paw. At that very moment Corvus landed in front of me, wings spread wide, eyes like two black marbles. Give it to me, he whispered, and you will have your own food bowl, made of gold, forever. Professor Otto was far away. It was up to me.
+But then I thought of Hazel, who gave me her bottle. Of Bruno, snoring on a chessboard. A full belly is not the same as a happy heart. I turned and ran, with the stone in my mouth and Corvus right behind me, through the fire, across the chessboard, out of the trapdoor. There stood Professor Otto, wide awake. He spread his wings and let out a single hoot, so powerful that Corvus was blown out of the window into the night.
 ```
 
-## 19. h14b.mp3 (381 tekens)
+## 18. p18.mp3 (421 tekens)
 
 ```
-I did what any cat would do. I ate it. Corvus screeched, because what you have eaten, nobody can steal. A warm glow spread through my whole body, and my belly felt full, truly full, for the first time in my life. Professor Otto found me the next morning, on my back, happy, and unable to move. I would never be hungry again. Which, to be honest, also turned out to be a bit boring.
+That evening there was a feast in the great hall, with fish, cake and mountains of kibble. House Nap won the cup for the first time in a thousand years. They slept through all of it. Bruno had cake on his nose, Hazel read a book about me, and I got to sit next to Professor Otto. From now on, the stone is kept in the cellar, under the basket, where nobody is ever awake enough to steal it. I was no ordinary cat anymore.
 ```
 
-## 20. h14c.mp3 (513 tekens)
+## 19. p19.mp3 (278 tekens)
 
 ```
-I turned around and ran, with the stone in my mouth and Corvus right behind me. Through the fire, across the chessboard, past the snoring Bruno, out of the trapdoor. There in the corridor stood Professor Otto, wide awake, as if he had been waiting all along. He spread his wings and let out a single hoot, so powerful that Corvus was blown back out of the window into the night. That evening our house won the cup, the whole school ate cake, and I got to sit next to Professor Otto. I was no ordinary cat anymore.
-```
-
-## 21. h15.mp3 (302 tekens)
-
-```
-Weeks later, at home, on an ordinary Tuesday, I lay on the windowsill as if nothing had ever happened. At three in the morning, the cat flap began to glow again. A new letter fell through, with a black feather attached to it. Coming soon to Marcelflix: Harry Pawter and the Chamber of Scratching Posts.
+Weeks later, at home, I lay on the windowsill as if nothing had ever happened. At three in the morning, the cat flap began to glow again. A new letter fell through, with a black feather attached to it. Coming soon to Marcelflix: Harry Pawter and the Chamber of Scratching Posts.
 ```

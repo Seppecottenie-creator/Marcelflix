@@ -79,7 +79,9 @@ Terugkerende cast en het plan voor aflevering 2 en 3: `series/rookie/PERSONAGES.
 Bouw de volledige Marcelflix-site met de pilot als speelbare aflevering, eerst met placeholders voor beelden en audio. Andere series tonen als "Binnenkort". Voeg ook een script toe dat de `.txt`-bestanden en mp3's per scène genereert via edge-tts.
 
 ## Film: Harry Pawter en de Steen der Brokjes (`pawter`)
-Interactieve film van ± 9 min: 21 scènes, 3 keuzes, 3 eindes; Engelse vertelstem (`narration`) met Nederlandse ondertitels. Script: `series/pawter/ep1/episode.json`, cast en castfoto-prompt: `series/pawter/PERSONAGES.md`. Staat op `soon` tot de beelden en stem klaar zijn; testen via `#/kijk/pawter/ep1/test`.
+Op vraag: **één doorlopend verhaal zonder keuzes**, rap tempo met veel beelden. ± 8,5 min, 19 scènes (één mp3 per scène), 73 beelden via `shots` (elk beeld verschijnt bij zin `at`, bestandsnaam = shot-id, bv. `p04b.jpg`). Engelse vertelstem (`narration`) met Nederlandse ondertitels.
+Script: `series/pawter/ep1/episode.json`; cast en castfoto-prompt: `series/pawter/PERSONAGES.md`. Staat op `soon` tot alles klaar is; testen via `#/kijk/pawter/ep1/test`.
+**Muziek (wens, nog te bouwen):** geen muziek die constant hetzelfde is. Verschillende deuntjes doorheen de film, per `mood` van de scène, die mooi in elkaar overvloeien.
 
 ## Status (september 2026)
 De site is gebouwd: `index.html`, `css/style.css`, `js/app.js` (views + routing), `js/player.js` (interactieve speler), `js/sound.js` (gesynthetiseerde geluiden).

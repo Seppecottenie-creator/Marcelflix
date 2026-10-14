@@ -16,20 +16,17 @@ Namen zijn gekozen zodat ze vlot klinken in de Engelse stem én in de Nederlands
 **Plaatsen:** Whiskerwood Academie voor Magische Katten (kasteel met zwevende kaarsen), Huis Klauw (toren) en Huis Dutje (kelder met één reuzenmand).
 **De Steen der Brokjes:** een klein steentje in de vorm van een brokje dat warm rood gloeit.
 
-## Verhaal (± 9 min, 21 beelden, 3 keuzes, 3 eindes)
-h01–h05 brief, Professor Otto, door het kattenluik naar Whiskerwood, de Hoed → **keuze 1: Huis Klauw of Huis Dutje** (h06a / h06b) →
-h07 Vliegvangen, h07s de spiegel, h08 de reuzenhamster, h09 Corvus → **keuze 2: Professor Otto waarschuwen of zelf door het luik**
-- Otto waarschuwen: h10a, h11a, h12a → **Einde A: Te laat**
-- Zelf gaan: h10b vliegende brokjes, h11b schaakbord, h12b toverdrankje, h13b de steen → **keuze 3**
-  - Opeten: h14b → **Einde B: Eeuwig verzadigd**
-  - Naar Otto rennen: h14c → **Einde C: Het feestmaal**
+## Verhaal (± 8,5 min, 19 scènes, 73 beelden, geen keuzes)
+Eén doorlopend verhaal met snel wisselende beelden: elke scène heeft één mp3, maar 3 tot 5 beelden (`shots`) die wisselen op het ritme van de zinnen (gemiddeld om de 7 seconden).
 
-h15 teaser: *Harry Pawter en de Kamer der Krabpalen*.
+p01 thuis · p02 de brieven · p03 Professor Otto · p04 door het kattenluik · p05 Hazel en Bruno · p06 de Hoed (Huis Dutje) · p07 de reuzenmand en de eerste spreuk · p08 Vliegvangen · p09 de spiegel · p10 de reuzenhamster · p11 Corvus · p12 Otto slaapt · p13 vliegende brokjes · p14 het schaakbord · p15 het toverdrankje · p16 de steen · p17 Marcel kiest zijn vrienden, Otto blaast Corvus weg · p18 het feestmaal · p19 teaser: *Harry Pawter en de Kamer der Krabpalen*.
+
+**Muziek (nog te maken):** geen constante achtergrondmuziek. Per deel een ander deuntje dat mooi overvloeit in het volgende; elke scène heeft al een `mood` (thuis, magie, mysterie, avontuur, gevaar, grappig, triomf).
 
 ## Beelden maken
 1. Begin een **nieuw gesprek** in ChatGPT. Voeg de Harry Pawter-poster toe (`assets/covers/pawter.jpg`) als referentie voor Marcel met zijn brilletje.
 2. Laat de **castfoto** maken met de prompt hieronder. Bewaar als `assets/cast/cast-pawter.jpg`.
-3. Maak de **scènes** één voor één uit `ep1/PROMPTS.md`, in hetzelfde gesprek, telkens met de castfoto erbij.
+3. Maak de **beelden** één voor één uit `ep1/PROMPTS.md` (p01a, p01b, …), in hetzelfde gesprek, telkens met de castfoto erbij.
 
 ### Prompt castfoto
 ```
