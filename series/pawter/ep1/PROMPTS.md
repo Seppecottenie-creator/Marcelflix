@@ -275,7 +275,7 @@ _Marcel zegt:_ Er was maar genoeg voor één. Ze gaf het aan mij en zei dat ze t
 
 # Scène p16
 
-## [ ] p16a.jpg
+## [x] p16a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A round stone chamber: Marcel stands by a stone pedestal with one paw on a small stone shaped like a piece of cat kibble, which glows warm red and lights up his whiskers and glasses. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
