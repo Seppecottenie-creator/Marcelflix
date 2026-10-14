@@ -265,7 +265,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ In de laatste gang sloegen paarse vlammen op, voor en achter ons. Op een tafel stonden zeven flesjes en een raadsel. Hazel dacht vier seconden na en wees het kleinste flesje aan.
 
-## [ ] p15b.jpg
+## [x] p15b.jpg
 
 ```
 Characters in this shot: Hazel (a small hedgehog who always carries a tiny stack of old books); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Hazel holds up the smallest bottle to Marcel, both lit by purple firelight, a tender moment; behind Marcel a wall of purple flames waits. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
