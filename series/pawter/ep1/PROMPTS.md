@@ -319,7 +319,7 @@ _Marcel zegt:_ Daar stond Professor Otto, klaarwakker. Hij spreidde zijn vleugel
 
 # Scène p18
 
-## [ ] p18a.jpg
+## [x] p18a.jpg
 
 ```
 The great hall with hundreds of floating candles during a festive feast: long tables full of fish, cakes and bowls of kibble, a large golden cup on the table of animal students who are all fast asleep with their heads on the table. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
