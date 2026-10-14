@@ -283,7 +283,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Achter het vuur lag de Steen der Brokjes op een sokkel, rood gloeiend, warm als een zonnige vensterbank. Ik nam hem in mijn poot.
 
-## [ ] p16b.jpg
+## [x] p16b.jpg
 
 ```
 Characters in this shot: Corvus (a large, glossy black raven with piercing eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Corvus lands in front of Marcel with his wings spread wide, menacing, lit red from below by the glowing stone; Marcel looks torn, the reflection of a golden bowl in his glasses. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
