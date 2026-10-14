@@ -41,7 +41,7 @@ _Marcel zegt:_ Reclame, dacht ik. Maar toen vlogen er tien brieven door het katt
 
 # Scène p03
 
-## [ ] p03a.jpg
+## [x] p03a.jpg
 
 ```
 Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A dark kitchen lit by a single lamp, envelopes scattered everywhere. Professor Otto perches on the kitchen table among the letters, looking solemnly at Marcel, who sits opposite him, eyes wide behind his tiny glasses. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
