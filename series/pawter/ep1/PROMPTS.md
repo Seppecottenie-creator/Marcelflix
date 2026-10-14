@@ -67,7 +67,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Om exact drie uur begon het kattenluik te gloeien. Ik rende, zoals elke kat om die tijd rent, en dook erdoor.
 
-## [ ] p04b.jpg
+## [x] p04b.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Marcel tumbles out of a swirl of stars and golden light and lands on the stone floor of a huge castle hall with long wooden tables and hundreds of real candles floating in the air. Wonder, warm candlelight. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
