@@ -131,7 +131,7 @@ _Marcel zegt:_ In mijn eerste les liet ik een sok zweven, wat volgens mij een re
 
 # Scène p08
 
-## [ ] p08a.jpg
+## [x] p08a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A green castle lawn on a bright day, surrounded by tall wooden stands full of cheering animals. Marcel clings upside down underneath a wobbling broomstick high in the air, glasses askew, panicking; other cats on broomsticks fly around him. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
