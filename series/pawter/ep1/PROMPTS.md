@@ -293,7 +293,7 @@ _Marcel zegt:_ Op dat moment landde Corvus voor me, zijn vleugels wijd, zijn oge
 
 # Scène p17
 
-## [ ] p17a.jpg
+## [x] p17a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). Close-up of Marcel with his eyes closed, remembering; in a soft, dreamy glow around him, faint memories of Hazel holding up a bottle and Bruno asleep. Warm golden light. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
