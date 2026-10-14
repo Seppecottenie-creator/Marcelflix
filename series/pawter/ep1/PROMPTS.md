@@ -309,7 +309,7 @@ Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes
 
 _Marcel zegt:_ Ik draaide me om en rende, met de steen in mijn mond en Corvus vlak achter me, door het vuur, over het schaakbord, het luik uit.
 
-## [ ] p17c.jpg
+## [x] p17c.jpg
 
 ```
 Characters in this shot: Professor Otto (a large, wise old eagle-owl with fluffy ear tufts and amber eyes); Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses); Corvus (a large, glossy black raven with piercing eyes). In a torchlit corridor, Professor Otto stands wide awake with his huge wings spread; Marcel skids to a stop in front of him, and behind them Corvus tumbles backwards out of an open arched window into the night sky, black feathers flying. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
