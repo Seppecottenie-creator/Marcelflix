@@ -23,7 +23,7 @@ _Marcel zegt:_ Tot die ene regenachtige avond. Er tikte iets tegen het raam. Een
 
 # Scène p02
 
-## [ ] p02a.jpg
+## [x] p02a.jpg
 
 ```
 Characters in this shot: Marcel (the grey British Shorthair cat with orange eyes, wearing tiny round wire-rimmed glasses). A sealed cream-coloured envelope tumbles down and lands right in a cat litter box on a tiled floor. Marcel sits next to it, looking deeply offended. Soft night light. Same characters as in the cast photo. A real photograph, like a still from a live-action fantasy film, magical but realistic light, shallow depth of field, subtle film grain, 16:9 landscape. All characters are real animals at their real size, unless the shot says otherwise. Not a painting, not digital art, not CGI. No people, no text, no letters.
