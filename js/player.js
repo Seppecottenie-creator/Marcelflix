@@ -308,7 +308,10 @@
 
     async start(fromScene) {
       try { await this.load(); } catch (e) { this.fail(e); return; }
-      Sound.startPad(this.o.series.theme, this.o.series.music);
+      // Scènes met een "mood": wisselende muziek die in elkaar overvloeit; anders één sfeer per serie
+      this.moods = Object.values(this.ep.scenes).some(x => x.mood);
+      if (this.moods) Sound.setMood(this.ep.scenes[fromScene || this.ep.start].mood);
+      else Sound.startPad(this.o.series.theme, this.o.series.music);
       this.preload(fromScene || this.ep.start);
       if (!fromScene) await this.titleCard();
       if (this.dead) return;
@@ -409,6 +412,7 @@
       this.cur = id;
       this.history.push(id);
       this.chap = this.chapter();
+      if (this.moods && sc.mood) Sound.setMood(sc.mood);
       this.o.store.setContinue(this.o.series.id, this.o.episodeId, id, this.history.length);
       const token = (this.token = {});
       const a = await this.assets(id);

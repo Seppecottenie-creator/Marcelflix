@@ -80,8 +80,8 @@ Bouw de volledige Marcelflix-site met de pilot als speelbare aflevering, eerst m
 
 ## Film: Harry Pawter en de Steen der Brokjes (`pawter`)
 Op vraag: **één doorlopend verhaal zonder keuzes**, rap tempo met veel beelden. ± 8,5 min, 19 scènes (één mp3 per scène), 39 beelden via `shots` (elk beeld verschijnt bij zin `at`, bestandsnaam = shot-id, bv. `p04b.jpg`). Engelse vertelstem (`narration`) met Nederlandse ondertitels.
-Script: `series/pawter/ep1/episode.json`; cast en castfoto-prompt: `series/pawter/PERSONAGES.md`. Staat op `soon` tot alles klaar is; testen via `#/kijk/pawter/ep1/test`.
-**Muziek (wens, nog te bouwen):** geen muziek die constant hetzelfde is. Verschillende deuntjes doorheen de film, per `mood` van de scène, die mooi in elkaar overvloeien.
+Script: `series/pawter/ep1/episode.json`; cast en castfoto-prompt: `series/pawter/PERSONAGES.md`. Speelbaar (status `available`); 39 beelden en 19 mp3's klaar (stem 10% vertraagd + 0,5 s pauze tussen zinnen).
+**Muziek:** geen constante achtergrondmuziek: `Sound.setMood()` in `js/sound.js` speelt per `mood` van de scène (thuis, magie, mysterie, avontuur, gevaar, grappig, triomf) een eigen gesynthetiseerd deuntje en laat het in ~4 s overvloeien in het volgende.
 
 ## Status (september 2026)
 De site is gebouwd: `index.html`, `css/style.css`, `js/app.js` (views + routing), `js/player.js` (interactieve speler), `js/sound.js` (gesynthetiseerde geluiden).

@@ -178,7 +178,8 @@
         env(g, t, 0.005, 0.035, 0.22); o.connect(f).connect(g).connect(master); o.start(t); o.stop(t + 0.3);
       }, 190);
     },
-    stopPad() {
+    stopPad(keepMood) {
+      if (!keepMood && curMood) this.stopMood();
       if (arpTimer) { clearInterval(arpTimer); arpTimer = null; }
       if (musicEl) { musicEl.pause(); musicEl = null; }
       if (padNodes && ctx) {
@@ -191,9 +192,131 @@
       }
     },
     duck(on) {
+      ducked = on;
       if (padNodes && ctx) padNodes.out.gain.setTargetAtTime(on ? 0.018 : 0.05, ctx.currentTime, 0.3);
       if (musicEl) musicEl.volume = on ? 0.1 : 0.22;
+      if (moodBus && ctx) moodBus.gain.setTargetAtTime(on ? 0.45 : 1, ctx.currentTime, 0.4);
+    },
+
+    /* ---------- Muziek per stemming ("mood" per scène) ----------
+       Elke stemming is een klein, zelf gespeeld deuntje (akkoorden + motiefje).
+       Bij een andere stemming vloeit het oude deuntje in ~4 s over in het nieuwe. */
+    setMood(name) {
+      if (!ensure()) return;
+      const def = MOODS[name] || MOODS.thuis;
+      if (curMood && curMood.name === name) return;
+      this.stopPad(true);
+      if (!moodBus) { moodBus = ctx.createGain(); moodBus.gain.value = ducked ? 0.45 : 1; moodBus.connect(master); }
+      const t = ctx.currentTime, old = curMood;
+      if (old) {
+        old.out.gain.cancelScheduledValues(t);
+        old.out.gain.setValueAtTime(Math.max(old.out.gain.value, 0.0001), t);
+        old.out.gain.linearRampToValueAtTime(0.0001, t + XFADE);
+        setTimeout(() => { clearInterval(old.timer); try { old.out.disconnect(); } catch (e) {} }, XFADE * 1000 + 600);
+      }
+      const out = ctx.createGain(); out.gain.value = 0.0001;
+      out.gain.linearRampToValueAtTime(def.vol || 0.06, t + (old ? XFADE : 2.5));
+      const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.frequency.value = def.cutoff || 2400; f.Q.value = 0.7;
+      f.connect(out).connect(moodBus);
+      const m = { name, out, bus: f, step: 0, next: t + 0.1, def };
+      const spb = 60 / def.bpm / 2;              // achtste noten
+      m.timer = setInterval(() => {
+        if (!ctx) return;
+        while (m.next < ctx.currentTime + 0.25) {
+          const bar = Math.floor(m.step / 8), chord = def.chords[bar % def.chords.length];
+          def.play(m, m.next, m.step % 8, chord, spb);
+          m.step++; m.next += spb;
+        }
+      }, 80);
+      curMood = m;
+    },
+    stopMood() {
+      if (!curMood || !ctx) return;
+      const m = curMood, t = ctx.currentTime; curMood = null;
+      m.out.gain.cancelScheduledValues(t);
+      m.out.gain.setValueAtTime(Math.max(m.out.gain.value, 0.0001), t);
+      m.out.gain.linearRampToValueAtTime(0.0001, t + 1.5);
+      setTimeout(() => { clearInterval(m.timer); try { m.out.disconnect(); } catch (e) {} }, 2000);
     }
+  };
+
+  /* ---------- instrumentjes voor de stemmingen ---------- */
+  const XFADE = 4;
+  let moodBus = null, curMood = null, ducked = false;
+  const N = (semi) => 440 * Math.pow(2, (semi - 9) / 12);   // semi 0 = C4
+  function tone(dest, t, freq, dur, { type = "triangle", vol = 0.2, a = 0.01, rel = null, detune = 0 } = {}) {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = type; o.frequency.value = freq; o.detune.value = detune;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(vol, t + a);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + a + (rel ?? dur));
+    o.connect(g).connect(dest); o.start(t); o.stop(t + a + (rel ?? dur) + 0.05);
+  }
+  function bell(dest, t, freq, vol = 0.12, len = 1.6) {
+    tone(dest, t, freq, len, { type: "sine", vol, a: 0.005 });
+    tone(dest, t, freq * 2.01, len * 0.5, { type: "sine", vol: vol * 0.35, a: 0.005 });
+  }
+  function padChord(dest, t, notes, len, vol = 0.05, type = "sawtooth") {
+    notes.forEach((n, i) => [-6, 6].forEach(d => tone(dest, t, N(n), len, { type: i ? type : "sine", vol: vol / notes.length * 2, a: len * 0.35, rel: len * 0.75, detune: d })));
+  }
+  function thump(dest, t, freq = 70, vol = 0.35, len = 0.35) {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = "sine"; o.frequency.setValueAtTime(freq * 1.6, t); o.frequency.exponentialRampToValueAtTime(freq * 0.6, t + len);
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + 0.005); g.gain.exponentialRampToValueAtTime(0.0001, t + len);
+    o.connect(g).connect(dest); o.start(t); o.stop(t + len + 0.05);
+  }
+  // akkoorden als halve tonen t.o.v. C4 (wortel eerst)
+  const MOODS = {
+    thuis: { bpm: 76, vol: 0.07, cutoff: 2600,                 // warm speeldoosje, F groot
+      chords: [[-7, 9, 12, 16], [-10, 5, 9, 14], [-14, 5, 10, 14], [-12, 4, 7, 12]],
+      play(m, t, s, c, spb) {
+        if (s === 0) { padChord(m.bus, t, c.slice(1).map(n => n - 12), spb * 8, 0.035, "triangle"); tone(m.bus, t, N(c[0]), spb * 6, { type: "sine", vol: 0.12, a: 0.05 }); }
+        const arp = [1, 2, 3, 2, 1, 2, 3, 2][s]; bell(m.bus, t, N(c[arp] + 12), s % 2 ? 0.035 : 0.06, 1.2);
+      } },
+    magie: { bpm: 104, vol: 0.065, cutoff: 5200,               // fonkelende celesta, D groot / B klein
+      chords: [[-10, 14, 18, 21], [-13, 11, 14, 18], [-17, 7, 11, 14], [-15, 9, 13, 16]],
+      play(m, t, s, c, spb) {
+        if (s === 0) { padChord(m.bus, t, c.slice(1).map(n => n - 12), spb * 8, 0.04, "triangle"); tone(m.bus, t, N(c[0]), spb * 7, { type: "sine", vol: 0.1, a: 0.1 }); }
+        const arp = [1, 2, 3, 2, 3, 1, 3, 2][s]; bell(m.bus, t, N(c[arp] + 12 * (s > 3 ? 2 : 1)), 0.05, 1.5);
+        if (s === 6 && Math.random() < 0.6) bell(m.bus, t + spb / 2, N(c[3] + 24), 0.025, 2);
+      } },
+    mysterie: { bpm: 60, vol: 0.075, cutoff: 1500,             // trage, mysterieuze mineur, A klein
+      chords: [[-15, 9, 12, 16], [-19, 5, 9, 12], [-22, 2, 5, 9], [-20, 4, 8, 11]],
+      play(m, t, s, c, spb) {
+        if (s === 0) { padChord(m.bus, t, c.slice(1).map(n => n - 12), spb * 8, 0.06); tone(m.bus, t, N(c[0]), spb * 8, { type: "sine", vol: 0.14, a: 0.6 }); }
+        if (s === 3 || (s === 6 && Math.random() < 0.5)) bell(m.bus, t, N(c[1 + (m.step % 3)] + 12), 0.045, 2.6);
+      } },
+    avontuur: { bpm: 122, vol: 0.06, cutoff: 3000,             // stuwende ostinato, D klein
+      chords: [[-22, 2, 5, 9], [-26, -2, 2, 5], [-24, 0, 4, 7], [-27, 1, 4, 9]],
+      play(m, t, s, c, spb) {
+        tone(m.bus, t, N(c[0]), spb * 0.8, { type: "sawtooth", vol: 0.07, a: 0.005, rel: spb * 0.7 });
+        tone(m.bus, t, N(c[0] + 12), spb * 0.6, { type: "triangle", vol: 0.05, a: 0.005, rel: spb * 0.5 });
+        if (s % 2 === 0) tone(m.bus, t, N(c[[1, 2, 3, 2][s / 2]] + 12), spb * 0.9, { type: "sawtooth", vol: 0.035, a: 0.01, rel: spb * 0.8 });
+        if (s === 0 || s === 4) thump(m.bus, t, 62, 0.3);
+        if (s === 0) padChord(m.bus, t, c.slice(1), spb * 8, 0.03);
+      } },
+    gevaar: { bpm: 92, vol: 0.075, cutoff: 1300,               // laag, dreigend, hartslag, C klein
+      chords: [[-24, 0, 3, 7], [-28, -4, 0, 3], [-29, -5, -2, 2], [-24, 0, 3, 6]],
+      play(m, t, s, c, spb) {
+        if (s === 0) { padChord(m.bus, t, c.slice(1).map(n => n - 12), spb * 8, 0.07); tone(m.bus, t, N(c[0]), spb * 8, { type: "sawtooth", vol: 0.06, a: 0.3, detune: -8 }); }
+        if (s === 0 || s === 1) thump(m.bus, t, 55, s ? 0.22 : 0.32, 0.3);
+        tone(m.bus, t, N(c[2]), spb * 0.5, { type: "triangle", vol: 0.02, a: 0.01, rel: spb * 0.45 });
+      } },
+    grappig: { bpm: 112, vol: 0.06, cutoff: 3600,              // huppelende pizzicato, C groot
+      chords: [[-24, 4, 7, 12], [-29, 2, 7, 11], [-27, 0, 4, 9], [-29, 2, 7, 11]],
+      play(m, t, s, c, spb) {
+        if (s % 4 === 0) tone(m.bus, t, N(c[0]), spb * 0.6, { type: "triangle", vol: 0.13, a: 0.005, rel: spb * 0.5 });
+        if (s % 4 === 2) [1, 2].forEach(i => tone(m.bus, t, N(c[i]), spb * 0.4, { type: "triangle", vol: 0.05, a: 0.005, rel: spb * 0.35 }));
+        if ([0, 3, 5, 6].includes(s)) tone(m.bus, t, N(c[[3, 2, 3, 1][[0, 3, 5, 6].indexOf(s)]] + 12), spb * 0.4, { type: "square", vol: 0.018, a: 0.005, rel: spb * 0.3 });
+      } },
+    triomf: { bpm: 96, vol: 0.07, cutoff: 3200,                // feestelijke fanfare, C groot
+      chords: [[-24, 4, 7, 12], [-19, 5, 9, 12], [-17, 7, 11, 14], [-24, 4, 7, 12]],
+      play(m, t, s, c, spb) {
+        if (s === 0) { padChord(m.bus, t, c.slice(1), spb * 8, 0.06); thump(m.bus, t, 80, 0.32, 0.6); tone(m.bus, t, N(c[0]), spb * 7, { type: "sawtooth", vol: 0.05, a: 0.05 }); }
+        if (s === 4) thump(m.bus, t, 80, 0.2, 0.5);
+        if (s === 6 || s === 7) tone(m.bus, t, N(c[s === 6 ? 2 : 3] + 12), spb * 0.8, { type: "sawtooth", vol: 0.03, a: 0.02, rel: spb * 0.7 });
+        bell(m.bus, t, N(c[1 + (s % 3)] + 24), 0.02, 0.8);
+      } }
   };
 
   window.Sound = S;

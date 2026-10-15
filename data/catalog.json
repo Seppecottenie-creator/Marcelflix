@@ -410,7 +410,7 @@
       "poster": "assets/covers/pawter.jpg",
       "backdrop": "assets/covers/pawter-wide.jpg",
       "theme": "pawter",
-      "status": "soon",
+      "status": "available",
       "episodes": [
         {
           "id": "ep1",
