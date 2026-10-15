@@ -63,7 +63,7 @@
   function ribbon(s) {
     if (s.status === "soon") return `<div class="ribbon soon">BINNENKORT</div>`;
     if (s.status === "secret") return `<div class="ribbon new"><span>GEHEIM</span></div>`;
-    return `<div class="ribbon new"><span>NIEUWE AFLEVERING</span></div>`;
+    return `<div class="ribbon new"><span>NIEUW</span></div>`;
   }
   function currentProfile() { return CONFIG.profiles.find(p => p.id === Store.d.profile) || CONFIG.profiles[0]; }
   /* Profieliconen: Marcel in zijn filmrollen (uitsnede uit de covers) en klassieke emoji's.
@@ -207,7 +207,7 @@
     window.onscroll = onScroll; onScroll();
     document.getElementById("bell").onclick = () => {
       const f = byId(CONFIG.featured);
-      toast(`Nieuw: ${f.title}, aflevering 1 staat klaar. Marcel verwacht dat je kijkt.`, 3500);
+      toast(`Nieuw: ${f.title}${f.type === "film" ? " staat klaar" : ", aflevering 1 staat klaar"}. Marcel verwacht dat je kijkt.`, 3500);
     };
   }
 
@@ -219,7 +219,7 @@
     const reminded = Store.d.remind[s.id];
     return `<div class="badge-orig"><b>M</b> ${s.type === "film" ? "FILM" : "SERIE"}</div>
       ${slogo(s)}
-      <div class="meta"><span class="match">${s.match}% match</span><span>${s.year}</span><span class="age">${esc(s.age)}</span><span>${soon ? "Binnenkort" : "Nieuwe aflevering"}</span></div>
+      <div class="meta"><span class="match">${s.match}% match</span><span>${s.year}</span><span class="age">${esc(s.age)}</span><span>${soon ? "Binnenkort" : "Nieuw"}</span></div>
       <p class="desc">${esc(soon ? (s.tagline || s.description) : s.description)}</p>
       <div class="btns">
         ${soon
@@ -295,6 +295,7 @@
         ${slides.length > 1 ? `<div class="hero-dots">${slides.map((x, i) => `<button data-slide="${i}" aria-label="${esc(x.title)}" class="${i === 0 ? "on" : ""}"><i></i></button>`).join("")}</div>` : ""}
       </section>
       <div class="rows">
+        ${row("Nieuw op Marcelflix", (CONFIG.nieuw || []).map(byId).filter(s => s && pub.includes(s)).map(cardHtml).join(""))}
         ${secret.length ? row("Speciaal voor jou 🔓", secret.map(cardHtml).join("")) : ""}
         ${row("Verder kijken als " + esc(currentProfile().name),
           conts.map(c => `<button class="card wide" data-play="${esc(c.s.id)}" data-ep="${esc(c.ep.id)}">

@@ -17,7 +17,7 @@
       "defaultAvatar": "rookie"
     }
   ],
-  "featured": "rookie",
+  "featured": "pawter",
   "voice": {
     "rate": "-10%",
     "pitch": "-5Hz",
@@ -25,24 +25,29 @@
   },
   "_uitleg_top10": "Volgorde van de rij 'Top 10 van het moment' op home (id's uit data/catalog.json).",
   "top10": [
+    "pawter",
     "rookie",
     "heist",
     "catanic",
     "stranger",
     "bond",
     "katten",
-    "pawter",
     "topgun",
     "crown",
     "homealone"
   ],
   "_uitleg_hero": "Titels die in de grote banner bovenaan de home om de beurt verschijnen (eerste = uitgelicht).",
   "hero": [
+    "pawter",
     "rookie",
     "heist",
     "catanic",
     "stranger",
-    "bond",
-    "pawter"
+    "bond"
+  ],
+  "_uitleg_nieuw": "Titels in de rij 'Nieuw op Marcelflix' bovenaan de home (nieuwste eerst).",
+  "nieuw": [
+    "pawter",
+    "rookie"
   ]
 }
